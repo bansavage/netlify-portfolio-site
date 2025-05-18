@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Kyle Bansavage</title>
+
+    <!-- TODO: Add new favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+      @font-face {
+        font-family: 'Founders grotesk web';
+        src: url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd41a7cb2a746c0821_founders-grotesk-web-regular.woff2') format('woff2'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bfe32d786390350fc6_founders-grotesk-web-regular.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bda3ffd637071b2706_founders-grotesk-web-regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Founders grotesk web';
+        src: url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bdc55298b00a485908_founders-grotesk-web-light.woff2') format('woff2'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd8b78542cd97ed8b5_founders-grotesk-web-light.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd3043e18a2ad51b52_founders-grotesk-web-light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+      }
+
+      body * {
+        font-family: "Michroma", sans-serif;
+      }
+
+      figure.wp-block-video {
+        z-index: 0;
+        width: 100vw;
+        height: 100vh;
+        inset: 0;
+        margin: 0;
+      }
+
+      video {
+        object-fit: cover;
+        z-index: -100;
+        background-position: 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+      }
+
+      .hero-section {
+        position: relative;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .flex-header {
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        color: white;
+        align-items: flex-end;
+
+        @media (max-width: 789px) {
+          margin-bottom: 50px;
+          bottom: calc(env(safe-area-inset-bottom) + 45px);
+        }
+      }
+
+      .flex-header__left {
+        padding-left: 2rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h1 {
+          font-size: 6rem;
+          letter-spacing: -3px;
+          margin: 0;
+        }
+
+        @media (max-width: 789px) {
+          padding-left: 1rem;
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .flex-header__right {
+        padding-right: 2rem;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-transform: uppercase;
+
+        @media (max-width: 789px) {
+          font-size: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
+
+      .info-section {
+        background: black;
+        color: #FFF;
+        min-height: 100dvh;
+        padding: 100px 50px 50px 50px;
+      }
+
+      .info-section__inner {
+        width: 50%;
+        margin: 0 auto;
+
+        @media (max-width: 789px) {
+          width: auto;
+        }
+
+        h2:not(:first-of-type) {
+          margin-top: 2em;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      .info__heading {
+        color: #FFF;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
+
+      .info__link_p {
+        margin-top: 2em;
+      }
+
+      .info__link {
+        color: #FFF !important;
+        text-decoration: underline !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="flex-header">
+        <div class="flex-header__left">
+          <h1>Kyle <br> Bansavage</h1>
+        </div>
+        <div class="flex-header__right">
+          <div>Web Developer &</div>
+          <div>Shopify Expert</div>
+          <div>Based in NYC.</div>
+        </div>
+      </div>
+      <figure class="wp-block-video"><video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video></figure>
+      <!-- https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.web -->
+
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+      <div class="info-section__inner">
+
+        <h2 class="info__heading">About</h2>
+        <p>Hyper-focused on building & growing brands.</p>
+
+        <h2 class="info__heading">Services</h2>
+        <p>
+          <b>Strategy</b>: Customization, Retention, Loyalty & Membership, Subscription
+        </p>
+        <p>
+          <b>Development</b>: Shopify Plus, Wordpress, Webflow, Squarespace, Custom Builds
+        </p>
+
+        <h2 class="info__heading">Clients</h2>
+        <p>
+          Anastasia Beverly Hills, AriZona Iced Tea, Bethenny Frankel,
+          Bogg Bag, Boy Smells, Dylan's Candy Bar, Fair Harbor, Frances Valentine, Gucci, Hedley & Bennett, Kulson, Mociun,
+          Nine West, Paper Planes, Pier1 Imports, Readers Digest, Rocketbook, Veronica Beard
+        </p>
+
+        <p class="info__link_p">
+          <a class="info__link" href="mailto:kylebansavage@gmail.com">
+            Get in touch.
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
