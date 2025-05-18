@@ -35,18 +35,11 @@
         margin: 0;
         padding: 0;
         max-width: 100vw;
+        min-height: 100%;
       }
 
       body * {
         font-family: "Michroma", sans-serif;
-      }
-
-      figure.wp-block-video {
-        z-index: 0;
-        width: 100vw;
-        height: 100vh;
-        inset: 0;
-        margin: 0;
       }
 
       video {
@@ -61,29 +54,29 @@
       }
 
       .hero-section {
-        position: relative;
-        height: 100vh;
-        overflow-x: hidden;
+        width: 100vw;
+        height: 100%;
+        position: fixed;
       }
 
       .flex-header {
         z-index: 1;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 30px;
+        /* display: flex;
+        justify-content: space-between; */
         width: 100%;
         color: white;
         align-items: flex-end;
+        position: fixed;
+        margin: 0 !important;
+        bottom: 0;
 
-        @media (max-width: 789px) {
+        /* @media (max-width: 789px) {
           margin-bottom: 50px;
           bottom: calc(env(safe-area-inset-bottom) + 45px);
-        }
+        } */
       }
 
       .flex-header__left {
-        padding-left: 2rem;
         font-weight: bold;
         display: flex;
         flex-direction: column;
@@ -96,7 +89,6 @@
         }
 
         @media (max-width: 789px) {
-          padding-left: 1rem;
           h1 {
             font-size: 2.5rem;
           }
@@ -164,7 +156,7 @@
     <div class="hero-section">
       <div class="flex-header">
         <div class="flex-header__left">
-          <h1>Kyle <br> Bansavage</h1>
+          <h1>Kyle <br>Bansavage</h1>
         </div>
         <div class="flex-header__right">
           <div>Web Developer &</div>
@@ -172,39 +164,9 @@
           <div>Based in NYC.</div>
         </div>
       </div>
-      <figure class="wp-block-video"><video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video></figure>
+        <video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video>
       <!-- https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.web -->
 
-    </div>
-
-    <!-- Info Section -->
-    <div class="info-section">
-      <div class="info-section__inner">
-
-        <h2 class="info__heading">About</h2>
-        <p>Hyper-focused on building & growing brands.</p>
-
-        <h2 class="info__heading">Services</h2>
-        <p>
-          <b>Strategy</b>: Customization, Retention, Loyalty & Membership, Subscription
-        </p>
-        <p>
-          <b>Development</b>: Shopify Plus, Wordpress, Webflow, Squarespace, Custom Builds
-        </p>
-
-        <h2 class="info__heading">Clients</h2>
-        <p>
-          Anastasia Beverly Hills, AriZona Iced Tea, Bethenny Frankel,
-          Bogg Bag, Boy Smells, Dylan's Candy Bar, Fair Harbor, Frances Valentine, Gucci, Hedley & Bennett, Kulson, Mociun,
-          Nine West, Paper Planes, Pier1 Imports, Readers Digest, Rocketbook, Veronica Beard
-        </p>
-
-        <p class="info__link_p">
-          <a class="info__link" href="mailto:kylebansavage@gmail.com">
-            Get in touch.
-          </a>
-        </p>
-      </div>
     </div>
   </body>
 </html>
