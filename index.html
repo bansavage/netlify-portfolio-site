@@ -67,10 +67,12 @@
         position: fixed;
         margin: 0 !important;
         bottom: 0;
+        padding: 0 0 0.8rem 0.8rem;
 
-        @media (min-width: 990px) {
+        @media (min-width: 1150px) {
           display: flex;
           justify-content: space-between;
+          padding: 0;
         }
       }
 
@@ -81,10 +83,11 @@
         justify-content: flex-end;
 
         h1 {
-          font-size: 5rem;
+          font-size: 4rem;
           letter-spacing: -3px;
           margin: 0;
-          @media (min-width: 990px) {
+          text-transform: uppercase;
+          @media (min-width: 1150px) {
             padding-left: 2rem;
           }
         }
@@ -92,6 +95,11 @@
         @media (max-width: 989px) {
           h1 {
             font-size: 3rem;
+          }
+        }
+        @media (max-width: 500px) {
+          h1 {
+            font-size: 2.5rem;
           }
         }
       }
@@ -104,9 +112,8 @@
         justify-content: flex-end;
         text-transform: uppercase;
 
-        @media (max-width: 789px) {
+        @media (max-width: 989px) {
           font-size: 1rem;
-          padding-right: 1rem;
         }
       }
 
@@ -252,6 +259,7 @@
     <nav class="drawer" id="drawerMenu" aria-hidden="true">
       <div class="drawer__links">
         <a href="#work" class="drawer__link">WORK</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <a href="#about" class="drawer__link">ABOUT</a>
         <a href="#services" class="drawer__link">SERVICES</a>
       </div>
@@ -288,7 +296,7 @@
           <h1>Kyle <br>Bansavage</h1>
         </div>
         <div class="flex-header__right">
-          <div>Luxury Brand Developer</div>
+          <div>Luxury Digital Developer.</div>
           <div>Based in NYC.</div>
         </div>
       </div>
