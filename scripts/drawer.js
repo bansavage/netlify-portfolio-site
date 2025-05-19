@@ -1,5 +1,6 @@
 const hamburger = document.getElementById('hamburger-btn');
 const drawer = document.getElementById('drawer-menu');
+const overlay = document.getElementById('drawer-overlay');
 let isOpen = false;
 function toggleDrawer() {
   isOpen = !isOpen;
@@ -7,6 +8,7 @@ function toggleDrawer() {
   hamburger.classList.toggle('open', isOpen);
   drawer.setAttribute('aria-hidden', !isOpen);
   hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  overlay.classList.toggle('open', isOpen);
 }
 hamburger.addEventListener('click', toggleDrawer);
 hamburger.addEventListener('keydown', (e) => {
@@ -14,6 +16,9 @@ hamburger.addEventListener('keydown', (e) => {
     e.preventDefault();
     toggleDrawer();
   }
+});
+overlay.addEventListener('click', () => {
+  if (isOpen) toggleDrawer();
 });
 // Optional: close drawer when clicking a link
 document.querySelectorAll('.drawer__link').forEach(link => {
