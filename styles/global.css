@@ -77,7 +77,7 @@ body {
 }
 @media (min-width: 990px) {
   .drawer {
-    width: 85vw;
+    width: 90vw;
   }
 }
 .drawer.open {
