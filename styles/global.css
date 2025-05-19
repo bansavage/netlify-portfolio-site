@@ -21,6 +21,78 @@ body {
   min-height: 100%;
 }
 
+video {
+  object-fit: cover;
+  z-index: -100;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+}
+
+.hero {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  font-family: "Michroma";
+}
+
+.hero__title {
+  color: #FFF;
+  position: fixed;
+  margin: 0 !important;
+  bottom: 0;
+  padding: 0 0 2rem 2rem;
+  @media (max-width: 989px) {
+    padding: 0 0 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    letter-spacing: -3px;
+    margin: 0;
+    text-transform: uppercase;
+    @media (max-width: 990px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 630px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.tagline {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  font-family: "Michroma";
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  @media (max-width: 989px) {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px
+  }
+
+  /* font-family: 'Founders grotesk web'; */
+  /* letter-spacing: 3px; */
+  /* font-weight: 300; */
+  /* font-size: 14px; */
+}
+
 /* Hamburger and Drawer Styles */
 .hamburger {
   position: fixed;
@@ -82,7 +154,7 @@ body {
 
 @media (min-width: 990px) {
   .drawer {
-    max-width: 90vw;
+    max-width: 75vw;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -95,16 +167,17 @@ body {
 .drawer__links {
   flex: 3 1 0;
   max-height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
+  padding: 2rem 2rem 0 2rem;
 }
 .drawer__work {
   flex: 2 1 0;
-  max-height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
+  padding: 0 2rem 2rem 2rem;
 }
 @media (min-width: 990px) {
+  .drawer__work {
+    max-height: none;
+    padding: 2rem;
+  }
   .drawer__work,
   .drawer__links {
     overflow-y: auto;

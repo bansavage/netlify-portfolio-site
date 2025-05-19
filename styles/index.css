@@ -9,38 +9,22 @@ video {
   position: absolute;
 }
 
-.hero-section {
+.hero {
   width: 100vw;
   height: 100%;
   position: fixed;
   font-family: "Michroma";
 }
 
-.flex-header {
-  z-index: 1;
-  width: 100%;
-  color: white;
-  align-items: flex-end;
+.hero__title {
+  color: #FFF;
   position: fixed;
   margin: 0 !important;
   bottom: 0;
   padding: 0 0 0.8rem 0.8rem;
 
-  @media (min-width: 1150px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-}
-
-.flex-header__left {
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     letter-spacing: -3px;
     margin: 0;
     text-transform: uppercase;
@@ -61,15 +45,19 @@ video {
   }
 }
 
-.flex-header__right {
-  padding-right: 2rem;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.tagline {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  font-family: "Michroma";
+  color: #FFF;
   text-transform: uppercase;
+  font-size: 1.5rem;
 
-  @media (max-width: 989px) {
-    font-size: 1rem;
-  }
+  /* font-family: 'Founders grotesk web'; */
+  /* letter-spacing: 3px; */
+  /* font-weight: 300; */
+  /* font-size: 14px; */
 }
