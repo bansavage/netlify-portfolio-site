@@ -61,8 +61,6 @@
 
       .flex-header {
         z-index: 1;
-        /* display: flex;
-        justify-content: space-between; */
         width: 100%;
         color: white;
         align-items: flex-end;
@@ -70,10 +68,10 @@
         margin: 0 !important;
         bottom: 0;
 
-        /* @media (max-width: 789px) {
-          margin-bottom: 50px;
-          bottom: calc(env(safe-area-inset-bottom) + 45px);
-        } */
+        @media (min-width: 990px) {
+          display: flex;
+          justify-content: space-between;
+        }
       }
 
       .flex-header__left {
@@ -83,14 +81,17 @@
         justify-content: flex-end;
 
         h1 {
-          font-size: 6rem;
+          font-size: 5rem;
           letter-spacing: -3px;
           margin: 0;
+          @media (min-width: 990px) {
+            padding-left: 2rem;
+          }
         }
 
-        @media (max-width: 789px) {
+        @media (max-width: 989px) {
           h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
           }
         }
       }
@@ -149,9 +150,137 @@
         color: #FFF !important;
         text-decoration: underline !important;
       }
+
+      /* Hamburger and Drawer Styles */
+      .hamburger {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .hamburger__icon, .hamburger__icon--close {
+        width: 35px;
+        height: 35px;
+        display: block;
+      }
+      .hamburger__icon span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: all 0.25s cubic-bezier(.4,0,.2,1);
+      }
+      .hamburger.open .hamburger__icon span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .hamburger.open .hamburger__icon span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open .hamburger__icon span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+      /* Drawer styles */
+      .drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.97);
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .drawer.open {
+        transform: translateX(0);
+      }
+      .drawer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+      }
+      .drawer__link {
+        color: #fff;
+        font-size: 2.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: color 0.2s;
+      }
+      .drawer__link:hover {
+        color: #aaa;
+      }
+      @media (max-width: 789px) {
+        .drawer__link {
+          font-size: 1.5rem;
+        }
+        .hamburger {
+          top: 1rem;
+          right: 1rem;
+          width: 32px;
+          height: 32px;
+        }
+      }
     </style>
   </head>
   <body>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburgerBtn" aria-label="Open menu" tabindex="0">
+      <div class="hamburger__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Drawer -->
+    <nav class="drawer" id="drawerMenu" aria-hidden="true">
+      <div class="drawer__links">
+        <a href="#work" class="drawer__link">WORK</a>
+        <a href="#about" class="drawer__link">ABOUT</a>
+        <a href="#services" class="drawer__link">SERVICES</a>
+      </div>
+    </nav>
+    <script>
+      const hamburger = document.getElementById('hamburgerBtn');
+      const drawer = document.getElementById('drawerMenu');
+      let isOpen = false;
+      function toggleDrawer() {
+        isOpen = !isOpen;
+        drawer.classList.toggle('open', isOpen);
+        hamburger.classList.toggle('open', isOpen);
+        drawer.setAttribute('aria-hidden', !isOpen);
+        hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      }
+      hamburger.addEventListener('click', toggleDrawer);
+      hamburger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleDrawer();
+        }
+      });
+      // Optional: close drawer when clicking a link
+      document.querySelectorAll('.drawer__link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (isOpen) toggleDrawer();
+        });
+      });
+    </script>
     <!-- Hero Section -->
     <div class="hero-section">
       <div class="flex-header">
@@ -159,14 +288,11 @@
           <h1>Kyle <br>Bansavage</h1>
         </div>
         <div class="flex-header__right">
-          <div>Web Developer &</div>
-          <div>Shopify Expert</div>
+          <div>Luxury Brand Developer</div>
           <div>Based in NYC.</div>
         </div>
       </div>
-        <video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video>
-      <!-- https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.web -->
-
+      <video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video>
     </div>
   </body>
 </html>
