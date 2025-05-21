@@ -253,6 +253,7 @@ video {
 }
 
 
+/* Overlay */
 .drawer-overlay {
   position: fixed;
   top: 0;
@@ -270,10 +271,21 @@ video {
   pointer-events: auto;
 }
 
-.drawer__work-item:not(:first-child) {
-  margin-top: 3rem;
+/* Work */
+.drawer__work-container {
+  @media (max-width: 989px) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+  }
 }
 
+@media (min-width: 990px) {
+  .drawer__work-item:not(:first-child) {
+    margin-top: 3rem;
+  }
+}
 
 .drawer__work-item {
   font-family: 'Founders grotesk web';
@@ -289,5 +301,11 @@ video {
   }
   p {
     font-weight: 300;
+  }
+
+  @media (max-width: 989px) {
+    flex: 0 0 70%;
+    scroll-snap-align: start;
+    padding-right: 2rem;
   }
 }
