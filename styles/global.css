@@ -163,7 +163,7 @@ video {
 .drawer.open {
   transform: translateX(0);
 }
-.drawer__links {
+.drawer__about {
   flex: 3 1 0;
   max-height: 100vh;
   padding: 2rem 2rem 0 2rem;
@@ -178,11 +178,11 @@ video {
     padding: 2rem;
   }
   .drawer__work,
-  .drawer__links {
+  .drawer__about {
     overflow-y: auto;
   }
 }
-.drawer__link,
+
 .drawer__subheader {
   font-size: 1rem;
   text-decoration: none;
@@ -193,11 +193,12 @@ video {
   font-family: "Michroma";
   margin-bottom: 1rem;
 }
+
 .drawer__link:hover {
   color: #aaa;
 }
 
-.drawer__link-container {
+.drawer__about-container {
   text-align: left;
   margin-bottom: 2rem;
 }
@@ -242,9 +243,6 @@ video {
 }
 
 @media (max-width: 989px) {
-  .drawer__link {
-    font-size: 1.5rem;
-  }
   .hamburger {
     top: 1rem;
     right: 1rem;
