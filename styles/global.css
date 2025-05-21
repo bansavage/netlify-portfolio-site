@@ -132,6 +132,16 @@ video {
 .hamburger.open .hamburger__icon span {
   background: #000;
 }
+
+@media (max-width: 989px) {
+  .hamburger {
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+  }
+}
+
 /* Drawer styles */
 .drawer {
   position: fixed;
@@ -170,7 +180,7 @@ video {
 }
 .drawer__work {
   flex: 2 1 0;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 @media (min-width: 990px) {
   .drawer__work {
@@ -242,14 +252,6 @@ video {
   }
 }
 
-@media (max-width: 989px) {
-  .hamburger {
-    top: 1rem;
-    right: 1rem;
-    width: 32px;
-    height: 32px;
-  }
-}
 
 .drawer-overlay {
   position: fixed;
@@ -266,4 +268,26 @@ video {
 .drawer-overlay.open {
   opacity: 1;
   pointer-events: auto;
+}
+
+.drawer__work-item:not(:first-child) {
+  margin-top: 3rem;
+}
+
+
+.drawer__work-item {
+  font-family: 'Founders grotesk web';
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h3 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  p {
+    font-weight: 300;
+  }
 }
