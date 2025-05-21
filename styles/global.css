@@ -58,9 +58,9 @@ video {
       font-size: 4rem;
     }
     @media (max-width: 630px) {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
       font-size: 2.5rem;
     }
   }
@@ -75,7 +75,7 @@ video {
   font-family: "Michroma";
   color: #FFF;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   @media (max-width: 989px) {
     top: 1rem;
@@ -84,13 +84,8 @@ video {
   }
 
   @media (max-width: 500px) {
-    font-size: 14px
+    font-size: 12px
   }
-
-  /* font-family: 'Founders grotesk web'; */
-  /* letter-spacing: 3px; */
-  /* font-weight: 300; */
-  /* font-size: 14px; */
 }
 
 /* Hamburger and Drawer Styles */
@@ -120,6 +115,10 @@ video {
   margin: 5px 0;
   border-radius: 2px;
   transition: all 0.75s cubic-bezier(.4,0,.2,1);
+}
+.hamburger__icon span:nth-child(2) {
+  display: block;
+  transition: all 0.25s cubic-bezier(.4,0,.2,1);
 }
 .hamburger.open .hamburger__icon span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
@@ -171,7 +170,7 @@ video {
 }
 .drawer__work {
   flex: 2 1 0;
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem;
 }
 @media (min-width: 990px) {
   .drawer__work {
@@ -185,7 +184,7 @@ video {
 }
 .drawer__link,
 .drawer__subheader {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 2px;
@@ -207,7 +206,7 @@ video {
   margin: 0 0 0.5rem 0;
   font-size: 0.95rem;
   font-family: 'Founders grotesk web';
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
@@ -217,12 +216,22 @@ video {
   }
 }
 
+.drawer__flex {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  @media (max-width: 380px) {
+    justify-content: space-between;
+    gap: unset;
+  }
+}
+
 .drawer__list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-family: 'Founders grotesk web';
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
