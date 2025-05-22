@@ -309,3 +309,21 @@ video {
     padding-right: 2rem;
   }
 }
+
+.work__image {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.55s;
+}
+
+.drawer.open .work__image {
+  opacity: 1;
+}
+
+/* Stagger the delays for images */
+.drawer.open .drawer__work-item:nth-child(1) .work__image {
+  transition-delay: 0.55s;
+}
+.drawer.open .drawer__work-item:nth-child(2) .work__image {
+  transition-delay: 0.65s;
+}
