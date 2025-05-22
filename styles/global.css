@@ -314,6 +314,10 @@ video {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   transition-delay: 0.55s;
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center;
 }
 
 .drawer.open .work__image {
