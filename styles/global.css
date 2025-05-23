@@ -44,25 +44,13 @@ video {
   position: fixed;
   margin: 0 !important;
   bottom: 0;
-  padding: 0 0 2rem 2rem;
-  @media (max-width: 989px) {
-    padding: 0 0 1rem 1rem;
-  }
+  padding: 1rem;
 
   h1 {
     font-size: 10.5vw;
     letter-spacing: -3px;
     margin: 0;
     text-transform: uppercase;
-    @media (max-width: 990px) {
-      font-size: 4rem;
-    }
-    @media (max-width: 630px) {
-      font-size: 2.75rem;
-    }
-    @media (max-width: 400px) {
-      font-size: 2.5rem;
-    }
   }
 }
 
@@ -175,7 +163,6 @@ video {
 }
 .drawer__about {
   flex: 3 1 0;
-  max-height: 100vh;
   padding: 2rem 2rem 0 2rem;
 }
 .drawer__work {
@@ -219,6 +206,7 @@ video {
   font-family: 'Founders grotesk web';
   font-size: 1.15rem;
   font-weight: 300;
+  color: #4d4d4d;
 }
 
 @media (min-width: 990px) {
@@ -244,6 +232,7 @@ video {
   font-family: 'Founders grotesk web';
   font-size: 1.15rem;
   font-weight: 300;
+  color: #4d4d4d;
 }
 
 @media (min-width: 990px) {
@@ -302,6 +291,8 @@ video {
   }
   p {
     font-weight: 300;
+    margin-top: 10px;
+    color: #4d4d4d;
   }
 
   @media (max-width: 989px) {
