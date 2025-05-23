@@ -5,206 +5,299 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Kyle Bansavage</title>
-
-    <!-- TODO: Add new favicon -->
-    <link rel="icon" href="images/favicon.ico">
-
+    <link rel="icon" href="images/favicon-diamond.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
     <!-- Styles -->
-    <style>
-      @font-face {
-        font-family: 'Founders grotesk web';
-        src: url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd41a7cb2a746c0821_founders-grotesk-web-regular.woff2') format('woff2'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bfe32d786390350fc6_founders-grotesk-web-regular.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bda3ffd637071b2706_founders-grotesk-web-regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Founders grotesk web';
-        src: url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bdc55298b00a485908_founders-grotesk-web-light.woff2') format('woff2'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd8b78542cd97ed8b5_founders-grotesk-web-light.eot') format('embedded-opentype'), url('https://cdn.prod.website-files.com/60f97005bd6ca06d27ec77ad/60f974bd3043e18a2ad51b52_founders-grotesk-web-light.woff') format('woff');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        max-width: 100vw;
-      }
-
-      body * {
-        font-family: "Michroma", sans-serif;
-      }
-
-      figure.wp-block-video {
-        z-index: 0;
-        width: 100vw;
-        height: 100vh;
-        inset: 0;
-        margin: 0;
-      }
-
-      video {
-        object-fit: cover;
-        z-index: -100;
-        background-position: 50%;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        position: absolute;
-      }
-
-      .hero-section {
-        position: relative;
-        height: 100vh;
-        overflow-x: hidden;
-      }
-
-      .flex-header {
-        z-index: 1;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 30px;
-        width: 100%;
-        color: white;
-        align-items: flex-end;
-
-        @media (max-width: 789px) {
-          margin-bottom: 50px;
-          bottom: calc(env(safe-area-inset-bottom) + 45px);
-        }
-      }
-
-      .flex-header__left {
-        padding-left: 2rem;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
-        h1 {
-          font-size: 6rem;
-          letter-spacing: -3px;
-          margin: 0;
-        }
-
-        @media (max-width: 789px) {
-          padding-left: 1rem;
-          h1 {
-            font-size: 2.5rem;
-          }
-        }
-      }
-
-      .flex-header__right {
-        padding-right: 2rem;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        text-transform: uppercase;
-
-        @media (max-width: 789px) {
-          font-size: 1rem;
-          padding-right: 1rem;
-        }
-      }
-
-
-      .info-section {
-        background: black;
-        color: #FFF;
-        min-height: 100dvh;
-        padding: 100px 50px 50px 50px;
-      }
-
-      .info-section__inner {
-        width: 50%;
-        margin: 0 auto;
-
-        @media (max-width: 789px) {
-          width: auto;
-        }
-
-        h2:not(:first-of-type) {
-          margin-top: 2em;
-        }
-
-        p {
-          font-size: 18px;
-        }
-      }
-
-      .info__heading {
-        color: #FFF;
-        font-size: 1.5rem;
-        margin-bottom: 0;
-        text-transform: uppercase;
-      }
-
-      .info__link_p {
-        margin-top: 2em;
-      }
-
-      .info__link {
-        color: #FFF !important;
-        text-decoration: underline !important;
-      }
-    </style>
+    <link href="./styles/global.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="./scripts/drawer.js" defer></script>
   </head>
   <body>
-    <!-- Hero Section -->
-    <div class="hero-section">
-      <div class="flex-header">
-        <div class="flex-header__left">
-          <h1>Kyle <br> Bansavage</h1>
-        </div>
-        <div class="flex-header__right">
-          <div>Web Developer &</div>
-          <div>Shopify Expert</div>
-          <div>Based in NYC.</div>
-        </div>
-      </div>
-      <figure class="wp-block-video"><video autoplay loop muted src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm" playsinline></video></figure>
-      <!-- https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.web -->
 
+    <!-- Header -->
+    <div class="tagline">
+      <div>Luxury Digital Developer.</div>
+      <div>New York, NY.</div>
     </div>
 
-    <!-- Info Section -->
-    <div class="info-section">
-      <div class="info-section__inner">
-
-        <h2 class="info__heading">About</h2>
-        <p>Hyper-focused on building & growing brands.</p>
-
-        <h2 class="info__heading">Services</h2>
-        <p>
-          <b>Strategy</b>: Customization, Retention, Loyalty & Membership, Subscription
-        </p>
-        <p>
-          <b>Development</b>: Shopify Plus, Wordpress, Webflow, Squarespace, Custom Builds
-        </p>
-
-        <h2 class="info__heading">Clients</h2>
-        <p>
-          Anastasia Beverly Hills, AriZona Iced Tea, Bethenny Frankel,
-          Bogg Bag, Boy Smells, Dylan's Candy Bar, Fair Harbor, Frances Valentine, Gucci, Hedley & Bennett, Kulson, Mociun,
-          Nine West, Paper Planes, Pier1 Imports, Readers Digest, Rocketbook, Veronica Beard
-        </p>
-
-        <p class="info__link_p">
-          <a class="info__link" href="mailto:kylebansavage@gmail.com">
-            Get in touch.
-          </a>
-        </p>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger-btn" aria-label="Open menu" tabindex="0">
+      <div class="hamburger__icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+    </div>
+    <!-- Drawer Overlay -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <!-- Drawer -->
+
+    <!--
+    <a href="./index.html" class="drawer__link">Home</a>
+    <a href="./about.html" class="drawer__link">About</a>
+    <a href="./work.html" class="drawer__link">Work</a>
+    <a href="./services.html" class="drawer__link">Services</a>
+    <a class="info__link" href="mailto:kylebansavage@gmail.com">
+      Get in touch.
+    </a>
+    -->
+
+    <nav class="drawer" id="drawer-menu" aria-hidden="true">
+      <div class="drawer__about">
+        <div class="drawer__about-container">
+          <h2 class="drawer__subheader">Intro</h2>
+          <p class="drawer__copy">
+            Trusted by discerning brands, Kyle Bansavage specializes in crafting bespoke digital experiences within the fashion and wellness industries.
+            With a focus on innovation and performance, I deliver cutting-edge development solutions that drive growth, enhance customer engagement, and help businesses thrive.
+          </p>
+        </div>
+        <div class="drawer__about-container">
+          <h2 class="drawer__subheader">Services</h2>
+          <div class="drawer__flex">
+            <ul class="drawer__list">
+              <li>Web Development</li>
+              <li>Site Customization</li>
+              <li>Loyalty & Membership</li>
+              <li>Subscription</li>
+              <li>Retention</li>
+            </ul>
+            <ul class="drawer__list">
+              <li>Shopify Plus</li>
+              <li>Wordpress</li>
+              <li>Webflow</li>
+              <li>Squarespace</li>
+              <li>Custom Builds</li>
+            </ul>
+          </div>
+        </div>
+        <div class="drawer__about-container">
+          <h2 class="drawer__subheader">Clients</h2>
+          <div class="drawer__flex">
+            <ul class="drawer__list">
+              <li>Anastasia Beverly Hills</li>
+              <li>AriZona Iced Tea</li>
+              <li>Bethenny Frankel</li>
+              <li>Bogg Bag</li>
+              <li>Boy Smells</li>
+              <li>Dylan's Candy Bar</li>
+              <li>Fair Harbor</li>
+              <li>Fleur du Mal</li>
+              <li>Frances Valentine</li>
+              <li>Gucci</li>
+            </ul>
+            <ul class="drawer__list">
+              <li>Hedley & Bennett</li>
+              <li>Kulson</li>
+              <li>Mociun</li>
+              <li>Nine West</li>
+              <li>Paper Planes</li>
+              <li>Pier1 Imports</li>
+              <li>Readers Digest</li>
+              <li>Rocketbook</li>
+              <li>TWP</li>
+              <li>Veronica Beard</li>
+              <li>Whole Latte Love</li>
+            </ul>
+          </div>
+          <p class="drawer__copy">
+
+
+          </p>
+        </div>
+      </div>
+      <div class="drawer__work">
+        <h2 class="drawer__subheader">Work</h2>
+        <div class="drawer__work-container">
+          <div class="drawer__work-item">
+            <a href="https://www.anastasiabeverlyhills.com/" target="_blank">
+              <img class="work__image" src="./images/abh.webp" alt="Anastasia Beverly Hills">
+              <h3>
+                Anastasia Beverly Hills
+              </h3>
+              <p>
+                The global beauty brand renowned by celebrities and influencers.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://drinkarizona.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/arizona.webp" alt="AriZona Iced Tea">
+              <h3>
+                AriZona Iced Tea
+              </h3>
+              <p>
+                The classic beverage enjoyed by millions of people.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.pier1.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/pier1.webp" alt="Pier1 Imports">
+              <h3>
+                Pier1 Imports
+              </h3>
+              <p>
+                Classic American home furnishings and decor.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://francesvalentine.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/fv.webp" alt="Frances Valentine">
+              <h3>
+                Frances Valentine
+              </h3>
+              <p>
+                Kate Spade's vintage-inspired, joyful designs.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.hedleyandbennett.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/hb.webp" alt="Hedley & Bennett">
+              <h3>
+                Hedley & Bennett
+              </h3>
+              <p>
+                The culinary industry's coveted handcrafted aprons.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.paperplane.shop/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/planes.jpg" alt="Paper Planes">
+              <h3>
+                Paper Planes
+              </h3>
+              <p>
+                Jay-Z's lifestyle apparel and accessories brand.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://veronicabeard.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/vb.webp" alt="Veronica Beard">
+              <h3>
+                Veronica Beard
+              </h3>
+              <p>
+                Sophisticated classics that speak to today's multifaceted woman.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://agcf.com/" target="_blank">
+              <img class="work__image" src="./images/agcf.webp" alt="AGCF">
+              <!-- https://agcf.com/cdn/shop/files/Ascot-Gray.jpg?v=1741883376&width=600 -->
+              <h3>
+                AGCF
+              </h3>
+              <p>
+                Alexandra Gucci's purpose-driven luxury handbags.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://boggbag.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/bogg.webp" alt="Bogg Bag">
+              <h3>
+                Bogg Bag
+              </h3>
+              <p>
+                The life-proof bag built to hold it all.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.conigliopalmbeach.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/cpb.webp" alt="Coniglio Palm Beach">
+              <h3>
+                Coniglio Palm Beach
+              </h3>
+              <p>
+                Sustainable garments that embrace the evolution of women's bodies.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://greysonclothiers.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/greyson.webp" alt="Greyson Clothiers">
+              <h3>
+                Greyson Clothiers
+              </h3>
+              <p>
+                Redefining menswear by uniting fashion and sport.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://fleurdumal.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/fdm.webp" alt="Fleur du Mal">
+              <h3>
+                Fleur du Mal
+              </h3>
+              <p>
+                Luxury lingerie that speaks to the duality of dressing & undressing.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://mociun.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/mociun.webp" alt="Mociun">
+              <h3>
+                Mociun
+              </h3>
+              <p>
+                One-of-a-kind custom jewelry handmade in Brooklyn.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.wholelattelove.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/wll.webp" alt="Whole Latte Love">
+              <h3>
+                Whole Latte Love
+              </h3>
+              <p>
+                Deluxe espresso machines & high quality coffee.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.twpclothing.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/twp.webp" alt="TWP">
+              <h3>
+                TWP
+              </h3>
+              <p>
+                Womenswear that blends the utilitarian spirit of the American Midwest with metropolitan sensibility.
+              </p>
+            </a>
+          </div>
+          <div class="drawer__work-item">
+            <a href="https://www.tobeinbloom.com/" target="_blank">
+              <img class="work__image" loading="lazy" src="./images/inbloom.webp" alt="Inbloom">
+              <h3>
+                Inbloom
+              </h3>
+              <p>
+                Holistic nourishment for mind & body, founded by Kate Hudson.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero__title">
+        <h1>Bansavage</h1>
+      </div>
+      <video autoplay loop muted playsinline src="https://cdn.shopify.com/videos/c/o/v/1606e509730d459682e5d9ce32a3379e.webm"></video>
     </div>
   </body>
 </html>
