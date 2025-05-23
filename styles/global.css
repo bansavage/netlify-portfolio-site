@@ -158,6 +158,11 @@ video {
     justify-content: flex-start;
   }
 }
+@media (min-width: 1600px) {
+  .drawer {
+    max-width: 50vw;
+  }
+}
 .drawer.open {
   transform: translateX(0);
 }
@@ -166,17 +171,22 @@ video {
   padding: 2rem 2rem 0 2rem;
 }
 .drawer__work {
-  flex: 2 1 0;
   padding: 0 2rem 2rem 2rem;
 }
 @media (min-width: 990px) {
   .drawer__work {
     max-height: none;
     padding: 2rem;
+    border-left: 1px solid #ddd;
   }
   .drawer__work,
   .drawer__about {
     overflow-y: auto;
+  }
+}
+@media (min-width: 2000px) {
+  .drawer__about{
+    padding: 2rem 5rem
   }
 }
 
@@ -278,9 +288,9 @@ video {
 
 .drawer__work-item {
   font-family: 'Founders grotesk web';
+  max-width: 300px;
 
   img {
-    max-width: 300px;
     height: auto;
   }
   h3 {
