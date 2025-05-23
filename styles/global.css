@@ -172,7 +172,6 @@ video {
 }
 .drawer__work {
   padding: 0 1rem 1rem 1rem;
-  margin-bottom: 2rem;
 }
 @media (min-width: 430px) {
   .drawer__about {
@@ -187,7 +186,6 @@ video {
     max-height: none;
     padding: 2rem;
     border-left: 1px solid #ddd;
-    margin-bottom: 0;
   }
   .drawer__work,
   .drawer__about {
