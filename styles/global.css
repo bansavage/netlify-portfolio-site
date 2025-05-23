@@ -50,7 +50,7 @@ video {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 10.5vw;
     letter-spacing: -3px;
     margin: 0;
     text-transform: uppercase;
@@ -291,7 +291,7 @@ video {
   font-family: 'Founders grotesk web';
 
   img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
   }
   h3 {
