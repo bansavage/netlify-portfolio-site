@@ -50,6 +50,8 @@ video {
   margin: 0 !important;
   bottom: 0;
   padding: 1rem 1rem 0 1rem;
+  text-align: center;
+  width: calc(100% - 2rem);
 
   h1 {
     font-size: 10.25vw;
@@ -178,14 +180,14 @@ video {
   padding: 1rem 1rem 0 1rem;
 }
 .drawer__work {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
 }
 @media (min-width: 430px) {
   .drawer__about {
     padding: 2rem 2rem 0 2rem;
   }
   .drawer__work {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
   }
 }
 @media (min-width: 990px) {
@@ -193,6 +195,7 @@ video {
     max-height: none;
     padding: 2rem;
     border-left: 1px solid #ddd;
+    padding: 2rem;
   }
   .drawer__work,
   .drawer__about {
@@ -361,4 +364,19 @@ video {
     scroll-snap-align: start;
     padding-right: 2rem;
   }
+}
+
+@media (max-width: 989px) {
+  .desktop-only {
+    display: none;
+  }
+}
+@media (min-width: 990px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.drawer__about.mobile-only {
+  padding-top: 0;
 }
