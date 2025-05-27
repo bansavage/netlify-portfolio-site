@@ -225,6 +225,12 @@ video {
   font-size: 1.15rem;
   font-weight: 300;
   color: #4d4d4d;
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid #4d4d4d;
+    color: #4d4d4d;
+  }
 }
 
 @media (min-width: 990px) {
