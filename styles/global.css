@@ -207,16 +207,10 @@ video {
 
 .drawer__subheader {
   font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  transition: color 0.2s;
-  font-family: 'Founders grotesk web';
+  font-weight: 400;
+  letter-spacing: 0px;
   margin-bottom: 1rem;
-}
-
-.drawer__link:hover {
-  color: #aaa;
+  font-family: "Libre Baskerville", serif;
 }
 
 .drawer__about-container {
