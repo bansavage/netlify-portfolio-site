@@ -160,7 +160,7 @@ video {
 
 @media (min-width: 990px) {
   .drawer {
-    max-width: 75vw;
+    max-width: 62vw;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -223,9 +223,8 @@ video {
 
 .drawer__copy {
   margin: 0 0 0.5rem 0;
-  font-size: 0.95rem;
   font-family: 'Founders grotesk web';
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #4d4d4d;
 
@@ -238,7 +237,7 @@ video {
 
 @media (min-width: 990px) {
   .drawer__copy {
-    max-width: 800px;
+    max-width: 500px;
   }
 }
 
@@ -257,7 +256,7 @@ video {
   padding: 0;
   list-style: none;
   font-family: 'Founders grotesk web';
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #4d4d4d;
 }
