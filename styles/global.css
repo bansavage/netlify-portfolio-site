@@ -1,385 +1,210 @@
 @font-face {
-  font-family: 'Founders grotesk web';
-  src: url('../fonts/founders-grotesk-web-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
+  font-family: "ITC Garamond";
+  font-style: italic;
+  font-weight: 300;
+  src: url('../assets/ITCGaramondStd-LtNarrowIta.woff2') format("woff2")
 }
 
 @font-face {
-  font-family: 'Founders grotesk web';
-  src: url('../fonts/founders-grotesk-web-light.woff2') format('woff2');
+  font-display: swap;
+  font-family: "ITC Garamond";
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/ITCGaramondStd-LtNarrow.woff2') format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ITC Garamond Std";
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/ITCGaramondStd-BkNarrow.woff2') format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "ITC Garamond Std";
+  font-style: italic;
+  font-weight: 700;
+  src: url('../assets/ITCGaramondStd-BkNarrowIta.woff2') format("woff2")
+}
+
+@font-face {
+  font-family: "ITCGaramondStd-LtCond";
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  src: url('../assets/ITCGaramondStdLtCond.woff2') format("woff2")
 }
+
+@font-face {
+  font-family: 'ITCGaramondStd-LtNarrow-Fallback';
+  src: local(Times New Roman);
+  size-adjust: 84%;
+  ascent-override: normal;
+  descent-override: normal;
+  line-gap-override: normal;
+}
+
+@font-face {
+  font-family: 'ITCGaramondStdLtCond-Fallback';
+  src: local(Times New Roman);
+  size-adjust: 79%;
+  ascent-override: normal;
+  descent-override: normal;
+  line-gap-override: normal;
+}
+
+/* Global Variables */
+:root {
+  --font-size-base: 16px;
+  --font-size-h1: 4rem;
+  --primary-color: #000;
+  --secondary-color: #AFE2E5;
+  --tertiary-color: #F9F0E9;
+  --background-color: rgb(246, 213, 213);
+  --font-family-cond: 'ITCGaramondStd-LtCond', 'ITCGaramondStdLtCond-Fallback';
+  --font-family-narrow: 'ITCGaramondStd-LtNarrow', 'ITCGaramondStd-LtNarrow-Fallback';
+}
+
 
 body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
   min-height: 100%;
+  font-size: var(--font-size-base);
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+body.custom-bg {
+  background-color: var(--secondary-color);
+  background-image: url("https://images.ctfassets.net/hsst7dmi6ghe/1RwHLfk8QAcmomQlbW8kTk/d05621f82d104c07975a5e9297be62c7/pacific-breeze.png");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: 0% 0%;
 }
 
-video {
-  object-fit: cover;
-  z-index: -100;
-  background-position: 50%;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  position: absolute;
-}
-
-.hero {
-  width: 100vw;
-  height: 100%;
-  position: fixed;
-  font-family: "Michroma";
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
-.hero__title {
-  color: #FFF;
-  position: fixed;
-  margin: 0 !important;
-  bottom: 0;
-  padding: 1rem 1rem 0 1rem;
-  text-align: center;
-  width: calc(100% - 2rem);
-
-  h1 {
-    font-size: 10.25vw;
-    letter-spacing: -3px;
-    margin: 0;
-    text-transform: uppercase;
+#main {
+  @media (min-width: 769px) {
+    max-width: 675px;
+    margin: 0 auto;
   }
 }
 
-.tagline {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
-  z-index: 999;
-  cursor: pointer;
-  font-family: 'Founders grotesk web';
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 18px;
+p, a {
+  font-family: "ITC Garamond";
   font-weight: 300;
-  letter-spacing: 3px;
+  color: var(--primary-color);
+}
 
-  @media (max-width: 989px) {
-    top: 1rem;
-    left: 1rem;
-    font-size: 18px;
-  }
-
-  @media (max-width: 500px) {
-    font-size: 14px;
+/* Intro Container */
+.intro-container {
+  margin: 1rem;
+}
+h1 {
+  font-family: var(--font-family-cond);
+  font-size: var(--font-size-h1);
+}
+.intro {
+  font-size: 1.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
   }
 }
 
-/* Hamburger and Drawer Styles */
-.hamburger {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1001;
-  width: 40px;
-  height: 40px;
+/* Press Quote Box */
+.press-quote-box {
+  border: 8px solid var(--background-color);
+  margin: 1rem;
+  overflow: visible;
+  position: relative;
+}
+
+#box-things {
+  margin-top: 14rem;
+}
+
+#box-performance {
+  margin-top: 7rem;
+}
+
+.press-quote-header {
+  background-color: var(--background-color);
+  font-family: "ITC Garamond";
+  font-style: italic;
+  font-weight: 300;
+  padding: 0.3rem 0.75rem;
+  font-size: 2rem;
+}
+
+.press-quote-body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.hamburger__icon {
-  width: 35px;
-  height: 35px;
-  display: block;
-}
-.hamburger__icon span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: #fff;
-  margin: 5px 0;
-  border-radius: 2px;
-  transition: all 0.75s cubic-bezier(.4,0,.2,1);
-}
-.hamburger__icon span:nth-child(2) {
-  display: block;
-  transition: all 0.25s cubic-bezier(.4,0,.2,1);
-}
-.hamburger.open .hamburger__icon span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.hamburger.open .hamburger__icon span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open .hamburger__icon span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-.hamburger.open .hamburger__icon span {
-  background: #000;
+  align-items: stretch;
+  background-color: var(--tertiary-color);
+  min-height: 180px;
 }
 
-@media (max-width: 989px) {
-  .hamburger {
-    top: 1rem;
-    right: 1rem;
-    width: 32px;
-    height: 32px;
+.press-quote-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  a {
+    font-size: 1.25rem;
   }
 }
 
-/* Drawer styles */
-.drawer {
-  position: fixed;
-  top: 0;
+.press-quote-text {
+  font-family: "ITC Garamond";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  border: none;
+  color: #222;
+  line-height: 1.2;
+}
+
+.press-quote-source {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.15rem;
+  font-style: normal;
+}
+
+.press-quote-source-letter {
+  font-family: "ITC Garamond Std";
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #111;
+}
+
+.press-quote-source-label {
+  font-family: "ITC Garamond Std";
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #111;
+  padding-bottom: 0.25rem;
+}
+
+.press-quote-image {
+  flex-shrink: 0;
+  width: 280px;
+  position: relative;
+}
+
+.press-quote-image img {
+  position: absolute;
+  bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
-  background: #F5F5F5;
-  color: #000;
-  z-index: 1000;
-  transform: translateX(100%);
-  transition: transform 0.75s ease-in-out;
+  z-index: 10;
 }
-@media (max-width: 989px) {
-  .drawer {
-    overflow-y: scroll;
+
+@media (max-width: 500px) {
+  #palm-tree-left {
+    left: -15%;
+    bottom: 15%;
   }
-}
-
-@media (min-width: 990px) {
-  .drawer {
-    max-width: 62vw;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: flex-start;
-  }
-}
-@media (min-width: 1600px) {
-  .drawer {
-    max-width: 50vw;
-  }
-}
-.drawer.open {
-  transform: translateX(0);
-}
-.drawer__about {
-  flex: 3 1 0;
-  padding: 1rem 1rem 0 1rem;
-}
-.drawer__work {
-  padding: 0 1rem 0 1rem;
-}
-@media (min-width: 430px) {
-  .drawer__about {
-    padding: 2rem 2rem 0 2rem;
-  }
-  .drawer__work {
-    padding: 0 2rem 0 2rem;
-  }
-}
-@media (min-width: 990px) {
-  .drawer__work {
-    max-height: none;
-    padding: 2rem;
-    border-left: 1px solid #ddd;
-    padding: 2rem;
-  }
-  .drawer__work,
-  .drawer__about {
-    overflow-y: auto;
-  }
-}
-@media (min-width: 2000px) {
-  .drawer__about{
-    padding: 2rem 5rem
-  }
-}
-
-.drawer__subheader {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0px;
-  margin-bottom: 1rem;
-  font-family: "Libre Baskerville", serif;
-}
-
-.drawer__about-container {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.drawer__copy {
-  margin: 0 0 0.5rem 0;
-  font-family: 'Founders grotesk web';
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #4d4d4d;
-
-  a {
-    text-decoration: none;
-    border-bottom: 1px solid #4d4d4d;
-    color: #4d4d4d;
-  }
-}
-
-@media (min-width: 990px) {
-  .drawer__copy {
-    max-width: 500px;
-  }
-}
-
-.drawer__flex {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  @media (max-width: 380px) {
-    justify-content: space-between;
-    gap: unset;
-  }
-}
-
-.drawer__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: 'Founders grotesk web';
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #4d4d4d;
-}
-
-.drawer__list--work li {
-  padding-bottom: 1rem;
-}
-
-@media (min-width: 990px) {
-  .drawer__list {
-    max-width: 800px;
-  }
-}
-
-
-/* Overlay */
-.drawer-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(30, 30, 30, 0.85);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 999;
-  transition: opacity 0.25s ease-in-out;
-}
-.drawer-overlay.open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Work */
-.drawer__work-container {
-  @media (max-width: 989px) {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (min-width: 990px) {
-  .drawer__work-item:not(:first-child) {
-    margin-top: 3rem;
-  }
-}
-
-.drawer__work-item {
-  font-family: 'Founders grotesk web';
-  max-width: 300px;
-
-  img {
-    height: auto;
-  }
-  h3 {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-  p {
-    font-weight: 300;
-    margin-top: 10px;
-    color: #4d4d4d;
-  }
-
-  @media (max-width: 989px) {
-    flex: 0 0 70%;
-    scroll-snap-align: start;
-    padding-right: 2rem;
-  }
-}
-
-.work__image {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  transition-delay: 0.55s;
-  width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  object-position: center;
-}
-
-.drawer.open .work__image {
-  opacity: 1;
-}
-
-/* Stagger the delays for images */
-.drawer.open .drawer__work-item:nth-child(1) .work__image {
-  transition-delay: 0.55s;
-}
-.drawer.open .drawer__work-item:nth-child(2) .work__image {
-  transition-delay: 0.65s;
-}
-
-.drawer__work-item > a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  cursor: pointer;
-}
-
-@media (max-width: 989px) {
-  .drawer__work-container > a {
-    flex: 0 0 70%;
-    scroll-snap-align: start;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width: 989px) {
-  .desktop-only {
-    display: none;
-  }
-}
-@media (min-width: 990px) {
-  .mobile-only {
-    display: none;
-  }
-}
-
-.drawer__about.mobile-only {
-  padding-top: 0;
 }

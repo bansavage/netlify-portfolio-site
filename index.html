@@ -4,362 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Bansavage Digital</title>
+    <title>Kyle Bansavage</title>
     <link rel="icon" href="images/logo-b.png">
     <meta property="og:image" content="https://kylebansavage.com/images/meta-image.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link href="./styles/global.css" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="./scripts/drawer.js" defer></script>
   </head>
-  <body>
+  <body class="custom-bg">
 
-    <!-- Header -->
-    <div class="tagline">
-      <div>Kyle Bansavage.</div>
-      <div>New York, NY.</div>
+    <div id="main">
+
+      <div class="intro-container">
+        <h1>Hi, I'm Kyle Bansavage</h1>
+        <p class="intro">
+          I'm a web developer & performance specialist based in Miami. I'm currently working as a Solutions Partner for <a href="https://www.ordergroove.com/" target="_blank">Ordergroove</a>,
+          Fractional Tech Director for <a href="https://www.myntr.io" target="_blank">Myntr</a>, and founder of the development agency: <a href="https://www.bansavage.dev" target="_blank">Bansavage Digital</a>.
+        </p>
+      </div>
+
+      <div class="press-quote-box" id="box-things">
+        <div class="press-quote-header">Things I like</div>
+        <div class="press-quote-body">
+          <div class="press-quote-content">
+            <!-- <blockquote class="press-quote-text">Effective as it is chic</blockquote>
+            <cite class="press-quote-source">
+              <span class="press-quote-source-letter">W</span>
+              <span class="press-quote-source-label">MAGAZINE</span>
+            </cite> -->
+            <ul>
+              <li><a href="https://openclaw.ai/" target="_blank">OpenClaw</a></li>
+              <li><a href="https://aistudio.google.com/" target="_blank">Google AI</a></li>
+              <li><a href="https://mrdoob.com/" target="_blank">Mr Doob</a></li>
+            </ul>
+          </div>
+          <div class="press-quote-image">
+            <img src="./assets/palm-tree.png" alt="Press quote image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="press-quote-box" id="box-performance">
+        <div class="press-quote-header">Performance</div>
+        <div class="press-quote-body">
+          <div class="press-quote-content">
+            <ul>
+              <li><a href="https://treo.sh/sitespeed" target="_blank">RUM Site Metrics</a></li>
+              <li><a href="https://screenspan.net/fallback" target="_blank">Font Fallback</a></li>
+              <li><a href="https://www.speedcurve.com/" target="_blank">Speed Curve</a></li>
+              <li><a href="https://www.catchpoint.com/webpagetest" target="_blank">WebPageTest</a></li>
+              <li><a href="https://performance.shopify.com/" target="_blank">Shopify Performance Blog</a></li>
+              <li><a href="https://performanceobserver.dev/" target="_blank">PerformanceObserver</a></li>
+              <li><a href="https://www.nywebperformance.com/" target="_blank">NY Web Performance</a></li>
+              <li><a href="https://benevolent-hamster-8fd29f.netlify.app/" target="_blank">Sia's Deck</a></li>
+            </ul>
+
+          </div>
+          <div class="press-quote-image">
+            <img src="./assets/palm-tree-left.png" alt="Press quote image" id="palm-tree-left"/>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger-btn" aria-label="Open menu" tabindex="0">
-      <div class="hamburger__icon">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-
-    <!-- Drawer Overlay -->
-    <div class="drawer-overlay" id="drawer-overlay"></div>
-
-    <!-- Drawer -->
-    <nav class="drawer" id="drawer-menu" aria-hidden="true">
-      <div class="drawer__about">
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">About</h2>
-          <p class="drawer__copy">
-            Trusted by discerning brands, Bansavage Digital specializes in crafting bespoke digital experiences.
-            Setting new standards in development solutions that drive growth and optimize customer engagement.
-
-            <!-- Kyle Bansavage is a software engineer with 8+ years of experience designing and delivering scalable software systems and backend services.
-             Skilled in JavaScript/TypeScript, React/Next.js, Node.js/GraphQL, and AWS, with expertise in microservices, CI/CD, testing, and accessibility.
-             Kyle has a proven track record of improving performance, reliability, and user engagement through modern architectures and Agile practices. -->
-
-            <!-- Trusted by discerning brands, Kyle Bansavage specializes in crafting bespoke digital experiences within the fashion and wellness industries.
-            With a focus on innovation and performance, he delivers cutting-edge development solutions that drive growth, enhance customer engagement, and help businesses thrive. -->
-          </p>
-        </div>
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Services</h2>
-          <div class="drawer__flex">
-            <ul class="drawer__list">
-              <li>Web Performance & Site Speed</li>
-              <li>Relationship Commerce</li>
-              <li>Loyalty & Membership</li>
-              <li>Shopify Development</li>
-              <li>App Implementation</li>
-              <li>Subscriptions</li>
-            </ul>
-            <!-- <ul class="drawer__list">
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Vue</li>
-              <li>Pinia</li>
-              <li>Tailwind CSS</li>
-              <li>Webpack</li>
-              <li>Vite</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>REST APIs</li>
-              <li>GraphQL</li>
-              <li>Prisma</li>
-            </ul>
-            <ul class="drawer__list">
-              <li>SQL</li>
-              <li>Redis</li>
-              <li>Algolia</li>
-              <li>AWS (EC2, S3, Lambda)</li>
-              <li>Heroku</li>
-              <li>CI/CD (GitHub Actions)</li>
-              <li>Microservices</li>
-              <li>System Architecture</li>
-              <li>Testing</li>
-              <li>Agile</li>
-              <li>Scrum</li>
-              <li>SDLC</li>
-              <li>Accessibility</li>
-            </ul> -->
-          </div>
-        </div>
-        <!-- <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Work</h2>
-          <div class="drawer__flex">
-            <ul class="drawer__list">
-              <li>Anastasia Beverly Hills</li>
-              <li>AriZona Iced Tea</li>
-              <li>Bethenny Frankel</li>
-              <li>Bogg Bag</li>
-              <li>Bonafide</li>
-              <li>Boy Smells</li>
-              <li>Dylan's Candy Bar</li>
-              <li>Fair Harbor</li>
-              <li>Fleur du Mal</li>
-              <li>Frances Valentine</li>
-              <li>Gucci</li>
-            </ul>
-            <ul class="drawer__list">
-              <li>Hedley & Bennett</li>
-              <li>Kulson</li>
-              <li>Mociun</li>
-              <li>Nine West</li>
-              <li>Paper Planes</li>
-              <li>Pier1 Imports</li>
-              <li>Readers Digest</li>
-              <li>Rocketbook</li>
-              <li>TWP</li>
-              <li>Veronica Beard</li>
-              <li>Whole Latte Love</li>
-            </ul>
-            <ul class="drawer__list drawer__list--work">
-              <li>Scaled engineering operations from 3 to 30 developers by establishing CI/CD pipelines, coding standards, and Agile practices which contributed to $1M in first-year revenue, Shopify Plus Partner status, and acquisition by Revyrie Global.</li>
-              <li>Architected a reusable frontend framework (Vue, Vite, Pinia, Tailwind, GraphQL) adopted across 10+ production storefronts, reducing build time by 25% and improving conversion rates by 35%.</li>
-              <li>Implemented passwordless authentication with Node.js microservices and subscription APIs, increasing customer lifetime value by 30% and reducing support requests by 40%.</li>
-              <li>Deployed Heroku-hosted Node.js/Express microservices for risk screening, order fulfillment, and shipping-label generation, processing 200+ orders per day and doubling label throughput.</li>
-              <li>Built a Node.js integration to sync Contentful CMS with Shopify, automating updates for 4,000+ products and eliminating manual data entry.</li>
-            </ul>
-          </div>
-        </div> -->
-        <div class="drawer__about-container desktop-only">
-          <h2 class="drawer__subheader">Contact</h2>
-          <p class="drawer__copy">
-            <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://www.linkedin.com/in/kylebansavage/" target="_blank">LinkedIn</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://github.com/bansavage" target="_blank">GitHub</a>
-          </p>
-        </div>
-      </div>
-      <div class="drawer__work">
-        <h2 class="drawer__subheader">Clients</h2>
-        <div class="drawer__work-container">
-          <!-- <div class="drawer__work-item">
-            <a href="https://shop.marriott.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/marriott.jpg" alt="Marriott">
-              <h3>
-                Marriott International
-              </h3>
-              <p>
-                The world's largest hotel company.
-              </p>
-            </a>
-          </div> -->
-          <div class="drawer__work-item">
-            <a href="https://www.anastasiabeverlyhills.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/abh.webp" alt="Anastasia Beverly Hills">
-              <h3>
-                Anastasia Beverly Hills
-              </h3>
-              <p>
-                The global beauty brand renowned by celebrities and influencers.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://drinkarizona.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/arizona.webp" alt="AriZona Iced Tea">
-              <h3>
-                AriZona Iced Tea
-              </h3>
-              <p>
-                The classic beverage enjoyed by millions of people.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.pier1.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/pier1.webp" alt="Pier1 Imports">
-              <h3>
-                Pier1 Imports
-              </h3>
-              <p>
-                Classic American home furnishings and decor.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://francesvalentine.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/fv.webp" alt="Frances Valentine">
-              <h3>
-                Frances Valentine
-              </h3>
-              <p>
-                Kate Spade's vintage-inspired, joyful designs.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.hedleyandbennett.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/hb.webp" alt="Hedley & Bennett">
-              <h3>
-                Hedley & Bennett
-              </h3>
-              <p>
-                The culinary industry's coveted handcrafted aprons.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.paperplane.shop/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/planes.jpg" alt="Paper Planes">
-              <h3>
-                Paper Planes
-              </h3>
-              <p>
-                Jay-Z's lifestyle apparel and accessories brand.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.twpclothing.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/twp.webp" alt="TWP">
-              <h3>
-                TWP
-              </h3>
-              <p>
-                Womenswear that blends the utilitarian spirit of the American Midwest with metropolitan sensibility.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://veronicabeard.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/vb.webp" alt="Veronica Beard">
-              <h3>
-                Veronica Beard
-              </h3>
-              <p>
-                Sophisticated classics that speak to today's multifaceted woman.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://agcf.com/" target="_blank">
-              <img class="work__image" src="./images/agcf.webp" alt="AGCF">
-              <!-- https://agcf.com/cdn/shop/files/Ascot-Gray.jpg?v=1741883376&width=600 -->
-              <h3>
-                AGCF
-              </h3>
-              <p>
-                Alexandra Gucci's purpose-driven luxury handbags.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://boggbag.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/bogg.webp" alt="Bogg Bag">
-              <h3>
-                Bogg Bag
-              </h3>
-              <p>
-                The life-proof bag built to hold it all.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.conigliopalmbeach.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/cpb.webp" alt="Coniglio Palm Beach">
-              <h3>
-                Coniglio Palm Beach
-              </h3>
-              <p>
-                Sustainable styles inspired by the life & color of Palm Beach.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://greysonclothiers.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/greyson.webp" alt="Greyson Clothiers">
-              <h3>
-                Greyson Clothiers
-              </h3>
-              <p>
-                Redefining menswear by uniting fashion and sport.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://fleurdumal.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/fdm.webp" alt="Fleur du Mal">
-              <h3>
-                Fleur du Mal
-              </h3>
-              <p>
-                Luxury lingerie that speaks to the duality of dressing & undressing.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://mociun.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/mociun.webp" alt="Mociun">
-              <h3>
-                Mociun
-              </h3>
-              <p>
-                One-of-a-kind custom jewelry handmade in Brooklyn.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.wholelattelove.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/wll.webp" alt="Whole Latte Love">
-              <h3>
-                Whole Latte Love
-              </h3>
-              <p>
-                Deluxe espresso machines & high quality coffee.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.tobeinbloom.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/inbloom.webp" alt="Inbloom">
-              <h3>
-                Inbloom
-              </h3>
-              <p>
-                Holistic nourishment for mind & body, founded by Kate Hudson.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="drawer__about mobile-only">
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Contact</h2>
-          <p class="drawer__copy">
-            <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://www.linkedin.com/in/kylebansavage/" target="_blank">LinkedIn</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://github.com/bansavage" target="_blank">GitHub</a>
-          </p>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero__title">
-        <img src="./images/bansavage.png" alt="Text that says Bansavage" loading="eager" width="100%" height="100px">
-      </div>
-      <video autoplay loop muted playsinline src="./images/Kyle-Reel.webm"></video>
-    </div>
   </body>
 </html>

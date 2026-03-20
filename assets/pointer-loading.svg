@@ -1,0 +1,48 @@
+<svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1994_20182)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 6H4V21H5V20H6V19H7V18H8V20H9V22H10V23H12V22H13V20H12V18H11V17H15V16H14V15H13V14H12V13H11V12H10V11H9V10H8V9H7V8H6V7H5V6ZM6 8V9H7V10H8V11H9V12H10V13H11V14H12V15H13V16H11H10V18H11V20H12V22H10V20H9V18H8V17H7V18H6V19H5V8H6Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 8H5V19H6V18H7V17H8V18H9V20H10V22H12V20H11V18H10V16H11H12H13V15H12V14H11V13H10V12H9V11H8V10H7V9H6V8Z" fill="white"/>
+<rect x="14" y="7" width="1" height="1" fill="white"/>
+<rect x="15" y="6" width="1" height="1" fill="white"/>
+<rect x="15" y="8" width="1" height="1" fill="white"/>
+<rect x="16" y="7" width="1" height="1" fill="white"/>
+<rect x="14" y="1" width="1" height="5" fill="white"/>
+<rect x="14" y="6" width="1" height="1" fill="black"/>
+<rect x="15" y="7" width="1" height="1" fill="black"/>
+<rect x="16" y="8" width="1" height="1" fill="black"/>
+<rect x="14" y="8" width="1" height="1" fill="black"/>
+<rect x="11" y="9" width="7" height="1" fill="black"/>
+<rect x="11" y="1" width="1" height="2" fill="black"/>
+<rect x="11" y="7" width="1" height="2" fill="black"/>
+<rect x="12" y="3" width="1" height="1" fill="black"/>
+<rect x="12" y="6" width="1" height="1" fill="black"/>
+<rect x="13" y="4" width="1" height="2" fill="black"/>
+<rect x="16" y="3" width="1" height="1" fill="black"/>
+<rect x="16" y="6" width="1" height="1" fill="black"/>
+<rect x="15" y="4" width="1" height="2" fill="black"/>
+<rect x="17" y="1" width="1" height="2" fill="black"/>
+<rect x="17" y="7" width="1" height="2" fill="black"/>
+<rect x="13" y="1" width="1" height="3" fill="white"/>
+<rect x="12" y="1" width="1" height="2" fill="white"/>
+<rect x="16" y="1" width="1" height="2" fill="white"/>
+<rect x="15" y="1" width="1" height="3" fill="white"/>
+<rect x="13" y="7" width="1" height="1" fill="black"/>
+<rect x="12" y="8" width="1" height="1" fill="black"/>
+<rect x="13" y="8" width="1" height="1" fill="white"/>
+<rect x="12" y="7" width="1" height="1" fill="white"/>
+<rect x="13" y="6" width="1" height="1" fill="white"/>
+<rect x="11" width="7" height="1" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_d_1994_20182" x="-1" y="0" width="22" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1994_20182"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1994_20182" result="shape"/>
+</filter>
+</defs>
+</svg>
