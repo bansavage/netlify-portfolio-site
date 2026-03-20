@@ -9,11 +9,14 @@
     <meta property="og:image" content="https://kylebansavage.com/images/meta-image.png">
     <!-- Styles -->
     <link href="./styles/global.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="./scripts/index.js" defer></script>
   </head>
   <body class="custom-bg">
 
     <div id="main">
 
+      <!-- Intro -->
       <div class="intro-container">
         <h1>Hi, I'm Kyle Bansavage</h1>
         <p class="intro">
@@ -22,6 +25,7 @@
         </p>
       </div>
 
+      <!-- Things I like -->
       <div class="press-quote-box" id="box-things">
         <div class="press-quote-header">Things I like</div>
         <div class="press-quote-body">
@@ -35,14 +39,16 @@
               <li><a href="https://openclaw.ai/" target="_blank">OpenClaw</a></li>
               <li><a href="https://aistudio.google.com/" target="_blank">Google AI</a></li>
               <li><a href="https://mrdoob.com/" target="_blank">Mr Doob</a></li>
+              <li><a href="https://pablotheflamingo.com/" target="_blank">Pablo the Flamingo</a></li>
             </ul>
           </div>
           <div class="press-quote-image">
-            <img src="./assets/palm-tree.png" alt="Press quote image" />
+            <img src="./assets/palm-tree.png" alt="Press quote image" loading="eager"/>
           </div>
         </div>
       </div>
 
+      <!-- Performance -->
       <div class="press-quote-box" id="box-performance">
         <div class="press-quote-header">Performance</div>
         <div class="press-quote-body">
@@ -60,8 +66,24 @@
 
           </div>
           <div class="press-quote-image">
-            <img src="./assets/palm-tree-left.png" alt="Press quote image" id="palm-tree-left"/>
+            <img src="./assets/palm-tree-left.png" alt="Press quote image" id="palm-tree-left" loading="lazy"/>
           </div>
+        </div>
+      </div>
+
+      <!-- Play Video Button -->
+      <button id="play-video-button">Free LLM Tokens?</button>
+    </div>
+
+    <!-- Video Overlay -->
+    <div id="video-overlay">
+      <div class="press-quote-box" id="box-performance">
+        <div class="press-quote-header">You didn't say the magic word</div>
+        <div class="press-quote-body">
+          <div class="press-quote-content">
+            <video height="540" width="540" loop id="the-king-video">
+              <source src="./assets/theKing.mp4" type="video/mp4" fetchpriority="high">
+            </video>
         </div>
       </div>
     </div>
