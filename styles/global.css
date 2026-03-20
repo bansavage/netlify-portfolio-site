@@ -236,7 +236,7 @@ h1 {
 /* Play Video Button */
 #play-video-button {
   display: block;
-  margin: 10rem 1rem 1rem 1rem;
+  margin: 10rem 1rem 5rem 1rem;
   padding: 0.6rem 1.4rem;
   font-family: var(--font-family-cond);
   font-size: 1.5rem;
