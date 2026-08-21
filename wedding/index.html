@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Kyle &amp; Daina — Wedding</title>
+<meta name="description" content="Design direction, dress code and reference for Kyle &amp; Daina's wedding — Riviera Maya, November 2027.">
+<link rel="icon" href="../assets/logo-b.png">
+<meta property="og:title" content="Kyle &amp; Daina — Wedding">
+<meta property="og:description" content="Design direction, dress code and reference. Riviera Maya, November 2027.">
+<meta property="og:image" content="https://kylebansavage.com/assets/meta-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lima:#B8D430;      /* lime */
+  --cempasuchil:#F2A33C; /* marigold */
+  --buganvilia:#E0387E; /* bougainvillea pink */
+  --cobalto:#2B4FC4;    /* cobalt */
+  --olivo:#6E7A3A;      /* olive */
+  --barro:#C4562F;      /* terracotta */
+  --hueso:#F6F1E4;      /* bone */
+  --tinta:#20241C;      /* near-black ink */
+  --sombra:#4A4F42;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--hueso);color:var(--tinta);
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+  font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 80px}
+
+/* ---- masthead ---- */
+.mast{padding:56px 0 28px}
+.kicker{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--sombra);
+  display:block;margin-top:18px;
+}
+h1{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(40px,9vw,74px);line-height:.95;letter-spacing:-.02em;
+}
+h1 em{font-style:italic;color:var(--barro)}
+.sub{margin-top:16px;font-size:17px;max-width:52ch;color:var(--sombra)}
+
+/* ---- color bar signature ---- */
+.bar{display:flex;height:16px;margin:0 -20px}
+.bar span{flex:1}
+
+/* ---- index ---- */
+section{padding:44px 0 0}
+h2{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(27px,5.5vw,38px);line-height:1.05;margin-bottom:20px;
+}
+
+.links{list-style:none;display:grid;gap:12px}
+.links a{
+  display:block;text-decoration:none;color:inherit;
+  background:#fff;border:1px solid rgba(32,36,28,.14);border-left:5px solid var(--accent,var(--lima));
+  border-radius:4px;padding:20px 22px;
+  transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease;
+}
+.links a:hover,.links a:focus-visible{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(32,36,28,.10);
+  outline:none;
+}
+.links a:focus-visible{border-color:var(--accent)}
+.links .ttl{
+  font-family:'Instrument Serif',Georgia,serif;font-size:26px;line-height:1.1;
+  display:flex;align-items:baseline;gap:10px;
+}
+.links .ttl .arw{font-family:'Space Mono',monospace;font-size:15px;color:var(--sombra);transition:transform .14s ease}
+.links a:hover .arw{transform:translateX(4px)}
+.links .desc{font-size:14.5px;color:var(--sombra);margin-top:8px;max-width:56ch}
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <h1>Kyle &amp; Daina&rsquo;s <em>Wedding</em></h1>
+    <span class="kicker">Cancún · Nov 2027</span>
+  </div>
+  <div class="bar">
+    <span style="background:var(--lima)"></span>
+    <span style="background:var(--cempasuchil)"></span>
+    <span style="background:var(--barro)"></span>
+    <span style="background:var(--buganvilia)"></span>
+    <span style="background:var(--cobalto)"></span>
+    <span style="background:var(--olivo)"></span>
+  </div>
+
+  <section>
+    <h2>The Vision</h2>
+    <ul class="links">
+      <li>
+        <a href="./art-direction.html" style="--accent:var(--barro)">
+          <span class="ttl">Design Guide <span class="arw">&rarr;</span></span>
+          <span class="desc">The entire art direction: palette, typography, &amp; decorations.</span>
+        </a>
+      </li>
+      <li>
+        <a href="./venue-flipbook.html" style="--accent:var(--cobalto)">
+          <span class="ttl">Venue Flipbook <span class="arw">&rarr;</span></span>
+          <span class="desc">A curated list of possible venues.</span>
+        </a>
+      </li>
+      <li>
+        <a href="./guest-inspo.html" style="--accent:var(--buganvilia)">
+          <span class="ttl">Guest Outfit Inspo <span class="arw">&rarr;</span></span>
+          <span class="desc">Visual reference for guests on what to wear.</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>

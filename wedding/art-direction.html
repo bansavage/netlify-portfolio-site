@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Kyle &amp; Daina — Design Direction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lima:#B8D430;      /* lime — the loudest one */
+  --cempasuchil:#F2A33C; /* marigold */
+  --buganvilia:#E0387E; /* bougainvillea pink */
+  --cobalto:#2B4FC4;    /* cobalt */
+  --olivo:#6E7A3A;      /* olive */
+  --barro:#C4562F;      /* terracotta */
+  --hueso:#F6F1E4;      /* bone — the only neutral */
+  --tinta:#20241C;      /* near-black ink */
+  --sombra:#4A4F42;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--hueso);color:var(--tinta);
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+  font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 80px}
+
+.backlink{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  font-family:'Space Mono',monospace;font-size:13.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sombra);margin-bottom:20px;
+  transition:color .14s ease;
+}
+.backlink .arw{transition:transform .14s ease}
+.backlink:hover,.backlink:focus-visible{color:var(--barro)}
+.backlink:hover .arw{transform:translateX(-3px)}
+/* ---- masthead ---- */
+.mast{padding:56px 0 28px}
+h1{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(40px,9vw,74px);line-height:.95;letter-spacing:-.02em;
+}
+h1 em{font-style:italic;color:var(--barro)}
+.sub{margin-top:16px;font-size:17px;max-width:52ch;color:var(--sombra)}
+
+/* ---- color bar signature ---- */
+.bar{display:flex;height:16px;margin:0 -20px}
+.bar span{flex:1}
+
+/* ---- sections ---- */
+section{padding:44px 0;border-bottom:1px solid rgba(32,36,28,.18)}
+.num{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--sombra);margin-bottom:10px;display:block;
+}
+h2{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(27px,5.5vw,38px);line-height:1.05;margin-bottom:14px;
+}
+h3{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:800;margin:26px 0 10px;color:var(--sombra);
+}
+p{margin-bottom:14px;max-width:60ch}
+p:last-child{margin-bottom:0}
+strong{font-weight:800}
+
+/* ---- swatches ---- */
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin-top:8px}
+.sw{border-radius:3px;overflow:hidden;border:1px solid rgba(32,36,28,.14)}
+.sw .chip{height:76px}
+.sw .meta{padding:8px 9px;background:#fff}
+.sw .nm{font-size:12.5px;font-weight:800;line-height:1.2}
+.sw .hex{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--sombra);margin-top:2px}
+
+/* ---- do / don't ---- */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+@media(max-width:560px){.dd{grid-template-columns:1fr}}
+.dd > div{padding:16px 17px;border-radius:4px}
+.do{background:#fff;border-left:5px solid var(--lima)}
+.dont{background:#fff;border-left:5px solid var(--buganvilia)}
+.dd h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px;font-weight:800}
+.do h4{color:var(--olivo)} .dont h4{color:var(--buganvilia)}
+.dd ul{list-style:none;font-size:14.5px}
+.dd li{padding:4px 0 4px 16px;position:relative;line-height:1.45}
+.dd li::before{position:absolute;left:0;font-weight:800}
+.do li::before{content:"+";color:var(--lima)}
+.dont li::before{content:"\2013";color:var(--buganvilia)}
+
+/* ---- type specimens ---- */
+.spec{background:#fff;border:1px solid rgba(32,36,28,.14);border-radius:4px;padding:20px;margin-top:12px}
+.spec .lbl{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sombra);margin-bottom:12px}
+.d1{font-family:'Instrument Serif',serif;font-size:38px;line-height:1.05}
+.d2{font-family:'Bricolage Grotesque',sans-serif;font-size:19px;font-weight:600}
+.d3{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.banned{
+  margin-top:12px;padding:14px 16px;background:#fff;
+  border:1px dashed var(--buganvilia);border-radius:4px;
+}
+.banned .x{font-family:'Instrument Serif',serif;font-style:italic;font-size:27px;color:rgba(32,36,28,.3);text-decoration:line-through;text-decoration-color:var(--buganvilia);text-decoration-thickness:2px}
+
+/* ---- invite card ---- */
+.card{
+  background:var(--tinta);color:var(--hueso);border-radius:5px;
+  padding:32px 28px;margin-top:14px;
+}
+.card .line{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--lima);margin-bottom:16px}
+.card .big{font-family:'Instrument Serif',serif;font-size:clamp(24px,5vw,33px);line-height:1.18;margin-bottom:14px}
+.card .small{font-size:14.5px;color:rgba(246,241,228,.72);max-width:46ch}
+.card .small b{color:var(--hueso);font-weight:600}
+
+/* ---- picado ---- */
+.picado{display:flex;gap:0;margin-top:14px;border-radius:4px;overflow:hidden}
+.picado div{flex:1;height:54px;position:relative}
+.picado div::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:12px;
+  background:radial-gradient(circle at 8px 12px, transparent 6px, currentColor 6px);
+  background-size:16px 16px;color:var(--hueso);
+}
+.note{font-size:13.5px;color:var(--sombra);margin-top:10px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a>
+    <h1>Art <em>Direction</em></h1>
+    <p class="sub">The venue gives us jungle, candlelight and paper. The guests give us color.</p>
+  </div>
+  <div class="bar">
+    <span style="background:var(--lima)"></span>
+    <span style="background:var(--cempasuchil)"></span>
+    <span style="background:var(--barro)"></span>
+    <span style="background:var(--buganvilia)"></span>
+    <span style="background:var(--cobalto)"></span>
+    <span style="background:var(--olivo)"></span>
+  </div>
+
+  <section>
+    <span class="num">01 — Palette</span>
+    <h2>Six colors, one neutral</h2>
+    <p>Pulled from the fashion references and from Mexican vernacular color: marigold from Día de Muertos, bougainvillea off any wall in Oaxaca, cobalt from Talavera tile. These drive the papel picado, the printed pieces and the dress code alike.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#B8D430"></div><div class="meta"><div class="nm">Lima</div><div class="hex">#B8D430</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F2A33C"></div><div class="meta"><div class="nm">Cempasúchil</div><div class="hex">#F2A33C</div></div></div>
+      <div class="sw"><div class="chip" style="background:#C4562F"></div><div class="meta"><div class="nm">Barro</div><div class="hex">#C4562F</div></div></div>
+      <div class="sw"><div class="chip" style="background:#E0387E"></div><div class="meta"><div class="nm">Buganvilia</div><div class="hex">#E0387E</div></div></div>
+      <div class="sw"><div class="chip" style="background:#2B4FC4"></div><div class="meta"><div class="nm">Cobalto</div><div class="hex">#2B4FC4</div></div></div>
+      <div class="sw"><div class="chip" style="background:#6E7A3A"></div><div class="meta"><div class="nm">Olivo</div><div class="hex">#6E7A3A</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F6F1E4"></div><div class="meta"><div class="nm">Hueso</div><div class="hex">#F6F1E4</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">02 — Typography</span>
+    <h2>No script. Ever.</h2>
+    <p>Three faces, fixed roles. Any printed piece the resort produces — menus, table numbers, signage, seating chart — uses these and nothing else.</p>
+    <div class="spec">
+      <div class="lbl">Display — Instrument Serif</div>
+      <div class="d1">Cena · Brindis · Baile</div>
+    </div>
+    <div class="spec">
+      <div class="lbl">Body — Bricolage Grotesque</div>
+      <div class="d2">Taquiza with a live taquero, esquites, late-night tacos at eleven.</div>
+    </div>
+    <div class="spec">
+      <div class="lbl">Utility — Space Mono</div>
+      <div class="d3">Mesa 04 · 8:30 PM · Jungle Rock</div>
+    </div>
+    <div class="banned">
+      <div class="lbl" style="color:var(--buganvilia)">Never — no exceptions</div>
+      <div class="x">Kyle &amp; Daina</div>
+      <p style="font-size:13.5px;margin-top:10px;margin-bottom:0">No wedding script, no calligraphy face, no flourished italic. If a proof comes back with one, it gets rejected.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">03 — Dress code</span>
+    <h2>The part that does the work</h2>
+    <p>Sixty people in black and beige on a resort deck looks like a conference. The same sixty in lime, marigold and magenta under candlelight looks like nothing else. <strong>This is the cheapest design decision available and the highest impact one.</strong></p>
+    <p>A vague dress code produces black. So the invitation has to name the colors and name what to avoid.</p>
+    <div class="dd">
+      <div class="do">
+        <h4>Ask for</h4>
+        <ul>
+          <li>Saturated color — the palette above</li>
+          <li>Loose 70s tailoring, wide lapels, pleated trousers</li>
+          <li>Linen and silk with a sheen</li>
+          <li>Camp collars, bold ties, tinted sunglasses</li>
+          <li>Fluid draped shapes, kimono sleeves, deep V</li>
+          <li>Vintage jewellery, statement earrings, beaded bags</li>
+        </ul>
+      </div>
+      <div class="dont">
+        <h4>Steer away from</h4>
+        <ul>
+          <li>Black, navy, charcoal, beige</li>
+          <li>Tuxedos and black tie</li>
+          <li>Matching parties — nobody coordinates</li>
+          <li>Pastels and blush</li>
+          <li>Anything stiff or structured</li>
+          <li>White, obviously</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Wording for the invitation</h3>
+    <div class="card">
+      <div class="line">Dress</div>
+      <div class="big">Dress like the place: loud, warm, a little bit 1974.</div>
+      <p class="small">Think lime, marigold, terracotta, magenta, cobalt. Linen suits and long fluid dresses. <b>Please leave the black tie and the beige at home</b> — we would rather you were overdressed in color than correct in navy.</p>
+    </div>
+    <p class="note">Send the palette image with the save-the-date, not the invitation. People buy outfits early.</p>
+  </section>
+
+  <section>
+    <span class="num">04 — Papel picado</span>
+    <h2>Same six colors overhead</h2>
+    <p>Strung over the reception in the palette above rather than the default red-white-green. It moves in the wind, it photographs against sky, and it is the one decoration that adds to the setting instead of competing with it.</p>
+    <div class="picado">
+      <div style="background:#B8D430"></div>
+      <div style="background:#F2A33C"></div>
+      <div style="background:#C4562F"></div>
+      <div style="background:#E0387E"></div>
+      <div style="background:#2B4FC4"></div>
+      <div style="background:#6E7A3A"></div>
+    </div>
+    <p class="note">Ask the resort whether they stock it and who hangs it. Bought locally it costs very little; the labour is the real line item.</p>
+  </section>
+
+  <section>
+    <span class="num">05 — Everything else</span>
+    <h2>What stays off the table</h2>
+    <p><strong>Tables:</strong> bare wood or plain linen. Candles in clusters — pillars and votives. <strong>No floral centrepieces.</strong> Bud vases with loose greenery if anything at all.</p>
+    <p><strong>Light:</strong> candlelight and warm string light only. No uplighting, no color wash, no monogram projection.</p>
+    <p><strong>Flowers:</strong> her bouquet, and that is close to it. Ceremony backdrop stays minimal — the setting is the backdrop.</p>
+    <p><strong>Print:</strong> menus and table numbers in the three faces above, printed on uncoated stock. Numbers, not names, for tables.</p>
+  </section>
+
+</div>
+</body>
+</html>
