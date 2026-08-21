@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>Guest Dress — Reference</title>
+<script src="./lang.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -56,6 +57,20 @@ figcaption{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em
 .rules{display:grid;gap:9px;margin-top:6px}
 .rule{display:flex;gap:11px;font-size:14.5px;align-items:baseline}
 .rule b{font-family:'Space Mono',monospace;color:var(--lima);font-size:11px;min-width:16px}
+
+/* ---- language switcher ---- */
+.langbar{display:inline-flex;align-items:center;gap:4px;flex:0 0 auto}
+.lang{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  padding:6px 10px;border-radius:999px;line-height:1;
+  font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.1em;
+  color:inherit;opacity:.4;filter:grayscale(1);
+  transition:opacity .14s ease,filter .14s ease,background-color .14s ease;
+}
+.lang:hover,.lang:focus-visible{opacity:.9;filter:grayscale(0);outline:none}
+.lang:focus-visible{box-shadow:0 0 0 2px currentColor}
+.lang[aria-current="true"]{opacity:1;filter:none;background-color:rgba(128,128,128,.16)}
+.lang svg{display:block;border-radius:2px;flex:0 0 auto}
 /* nav */
 .nav{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px 16px}
 .btn{background:var(--tinta);color:var(--hueso);border:none;border-radius:99px;padding:11px 20px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13.5px;cursor:pointer}
@@ -68,7 +83,7 @@ figcaption{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em
 </head>
 <body>
 <div class="deck-wrap">
-  <div class="bar"><a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a><span class="counter" id="counter"></span></div>
+  <div class="bar"><a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a><div class="langbar"><a class="lang" href="./guest-inspo.html" hreflang="en" lang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 24 16" width="24" height="16" aria-hidden="true" focusable="false"><rect width="24" height="16" fill="#F7F7F7"/><g fill="#B22234"><rect width="24" height="1.23" y="0"/><rect width="24" height="1.23" y="2.46"/><rect width="24" height="1.23" y="4.92"/><rect width="24" height="1.23" y="7.38"/><rect width="24" height="1.23" y="9.85"/><rect width="24" height="1.23" y="12.31"/><rect width="24" height="1.23" y="14.77"/></g><rect width="10.5" height="8.6" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="1.9" r=".6"/><circle cx="5.2" cy="1.9" r=".6"/><circle cx="8.4" cy="1.9" r=".6"/><circle cx="3.6" cy="4.3" r=".6"/><circle cx="6.8" cy="4.3" r=".6"/><circle cx="2" cy="6.7" r=".6"/><circle cx="5.2" cy="6.7" r=".6"/><circle cx="8.4" cy="6.7" r=".6"/></g></svg><span>EN</span></a><a class="lang" href="./mx/guest-inspo.html" hreflang="es-MX" lang="es" aria-label="Español"><svg viewBox="0 0 24 16" width="24" height="16" aria-hidden="true" focusable="false"><rect width="8" height="16" fill="#006847"/><rect x="8" width="8" height="16" fill="#F7F7F7"/><rect x="16" width="8" height="16" fill="#CE1126"/><circle cx="12" cy="8" r="2.5" fill="none" stroke="#6E7A3A" stroke-width="1.1"/><circle cx="12" cy="8" r="1" fill="#8B5A2B"/></svg><span>ES</span></a></div><span class="counter" id="counter"></span></div>
   <div class="stage" id="stage">
 
   <section class="page cover on">

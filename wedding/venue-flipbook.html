@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>Riviera Maya Venue Flipbook — Kyle × Wedding 2027</title>
+<script src="./lang.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -77,6 +78,20 @@ h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(
 .mhead{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:17px;color:var(--deep);margin:12px 0 2px}
 .tot{background:var(--foam);border-radius:10px;padding:9px 12px;margin-top:8px;font-weight:700;color:var(--deep);display:flex;justify-content:space-between}
 .note{font-size:12.5px;color:var(--mute);line-height:1.5;margin-top:10px}
+
+/* ---- language switcher ---- */
+.langbar{display:inline-flex;align-items:center;gap:4px;flex:0 0 auto}
+.lang{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  padding:6px 10px;border-radius:999px;line-height:1;
+  font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.1em;
+  color:inherit;opacity:.4;filter:grayscale(1);
+  transition:opacity .14s ease,filter .14s ease,background-color .14s ease;
+}
+.lang:hover,.lang:focus-visible{opacity:.9;filter:grayscale(0);outline:none}
+.lang:focus-visible{box-shadow:0 0 0 2px currentColor}
+.lang[aria-current="true"]{opacity:1;filter:none;background-color:rgba(128,128,128,.16)}
+.lang svg{display:block;border-radius:2px;flex:0 0 auto}
 /* nav */
 .nav{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px 16px}
 .btn{background:var(--deep);color:#fff;border:none;border-radius:999px;padding:12px 22px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;cursor:pointer}
@@ -102,7 +117,7 @@ h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(
 <body>
 <div class="deck">
   <div class="bar">
-    <a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a>
+    <a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a><div class="langbar"><a class="lang" href="./venue-flipbook.html" hreflang="en" lang="en" aria-label="English" aria-current="true"><svg viewBox="0 0 24 16" width="24" height="16" aria-hidden="true" focusable="false"><rect width="24" height="16" fill="#F7F7F7"/><g fill="#B22234"><rect width="24" height="1.23" y="0"/><rect width="24" height="1.23" y="2.46"/><rect width="24" height="1.23" y="4.92"/><rect width="24" height="1.23" y="7.38"/><rect width="24" height="1.23" y="9.85"/><rect width="24" height="1.23" y="12.31"/><rect width="24" height="1.23" y="14.77"/></g><rect width="10.5" height="8.6" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="1.9" r=".6"/><circle cx="5.2" cy="1.9" r=".6"/><circle cx="8.4" cy="1.9" r=".6"/><circle cx="3.6" cy="4.3" r=".6"/><circle cx="6.8" cy="4.3" r=".6"/><circle cx="2" cy="6.7" r=".6"/><circle cx="5.2" cy="6.7" r=".6"/><circle cx="8.4" cy="6.7" r=".6"/></g></svg><span>EN</span></a><a class="lang" href="./mx/venue-flipbook.html" hreflang="es-MX" lang="es" aria-label="Español"><svg viewBox="0 0 24 16" width="24" height="16" aria-hidden="true" focusable="false"><rect width="8" height="16" fill="#006847"/><rect x="8" width="8" height="16" fill="#F7F7F7"/><rect x="16" width="8" height="16" fill="#CE1126"/><circle cx="12" cy="8" r="2.5" fill="none" stroke="#6E7A3A" stroke-width="1.1"/><circle cx="12" cy="8" r="1" fill="#8B5A2B"/></svg><span>ES</span></a></div>
     <div class="counter" id="counter" aria-hidden="true">01 / 29</div>
   </div>
   <div class="stage" id="stage">
