@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Kyle &amp; Daina — Find the Venue</title>
+<meta name="description" content="Venue-decision dashboard — Riviera Maya, November 2027.">
+<link rel="icon" href="../assets/logo-b.png">
+<script src="./lang.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lima:#B8D430;
+  --cempasuchil:#F2A33C;
+  --buganvilia:#E0387E;
+  --cobalto:#2B4FC4;
+  --olivo:#6E7A3A;
+  --barro:#C4562F;
+  --hueso:#F6F1E4;
+  --tinta:#20241C;
+  --sombra:#4A4F42;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--hueso);color:var(--tinta);
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+  font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 100px}
+
+/* ---- backlink ---- */
+.backlink{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  font-family:'Space Mono',monospace;font-size:13.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sombra);margin-bottom:20px;
+  transition:color .14s ease;
+}
+.backlink .arw{transition:transform .14s ease}
+.backlink:hover,.backlink:focus-visible{color:var(--barro)}
+.backlink:hover .arw{transform:translateX(-3px)}
+
+/* ---- masthead ---- */
+.mast{padding:56px 0 28px}
+.kicker{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--sombra);
+  display:block;margin-top:18px;
+}
+h1{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(38px,7.5vw,64px);line-height:.98;letter-spacing:-.02em;
+}
+h1 em{font-style:italic;color:var(--barro)}
+.sub{margin-top:16px;font-size:16.5px;max-width:64ch;color:var(--sombra)}
+
+/* ---- color bar ---- */
+.bar{display:flex;height:16px;margin:0 -20px}
+.bar span{flex:1}
+
+/* ---- section titles ---- */
+h2{
+  font-family:'Instrument Serif',Georgia,serif;font-weight:400;
+  font-size:clamp(24px,4.5vw,32px);line-height:1.05;
+}
+.sec{padding:44px 0 0}
+.sec .num{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--sombra);margin-bottom:8px;display:block;
+}
+.sec p.desc{margin-top:10px;font-size:14.5px;color:var(--sombra);max-width:70ch}
+
+/* ---- top summary tiles ---- */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.tile{
+  background:#fff;border:1px solid rgba(32,36,28,.14);border-top:5px solid var(--accent,var(--barro));
+  border-radius:6px;padding:18px 20px 20px;display:flex;flex-direction:column;min-height:150px;
+}
+.tile .tk{
+  font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--sombra);display:block;margin-bottom:12px;
+}
+.tile-reqs{list-style:none;display:flex;flex-direction:column;gap:8px}
+.tile-reqs li{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:700;color:var(--tinta)}
+.tile-reqs .d{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.tile-top{list-style:none;display:flex;flex-direction:column;gap:9px;counter-reset:top}
+.tile-top li{display:flex;align-items:baseline;gap:9px;font-size:14px;color:var(--tinta)}
+.tile-top li b{font-weight:700}
+.tile-top .rk{font-family:'Space Mono',monospace;font-size:11px;color:var(--cobalto);flex:0 0 16px}
+.tile-cost{flex:1;display:flex;flex-direction:column;justify-content:center}
+.tile-cost .amt{font-family:'Instrument Serif',Georgia,serif;font-size:40px;line-height:1;color:var(--barro)}
+.tile-cost .cap{font-size:13px;color:var(--tinta);margin-top:8px;line-height:1.4}
+.tile-cost .fine{font-size:11.5px;color:var(--sombra);margin-top:8px;line-height:1.4}
+@media(max-width:760px){ .tiles{grid-template-columns:1fr} }
+
+/* ---- core requirements bullet list ---- */
+.reqs{list-style:none;display:grid;gap:10px;margin-top:18px}
+.reqs li{
+  display:flex;gap:14px;align-items:flex-start;
+  background:#fff;border:1px solid rgba(32,36,28,.14);border-left:5px solid var(--accent,var(--lima));
+  border-radius:4px;padding:14px 18px;
+}
+.reqs .mk{
+  font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.1em;
+  color:var(--accent,var(--barro));line-height:1.9;flex:0 0 22px;
+}
+.reqs .tx b{font-weight:800}
+.reqs .tx{font-size:14.5px;color:var(--sombra);line-height:1.5}
+.reqs .tx b{color:var(--tinta)}
+
+/* ---- budget card ---- */
+.card{
+  background:var(--tinta);color:var(--hueso);border-radius:8px;
+  padding:26px 26px;margin-top:16px;
+}
+.card .line{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--lima);margin-bottom:14px}
+.card .big{font-family:'Instrument Serif',serif;font-size:clamp(21px,4vw,27px);line-height:1.2;margin-bottom:14px}
+.budget-grid{display:grid;grid-template-columns:1fr auto;gap:6px 18px;font-size:13.5px}
+.budget-grid .lbl{color:rgba(246,241,228,.78)}
+.budget-grid .amt{font-family:'Space Mono',monospace;font-weight:700;color:var(--hueso);white-space:nowrap;text-align:right}
+.budget-grid .grp{grid-column:1 / -1;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--cempasuchil);margin-top:12px;padding-top:10px;border-top:1px solid rgba(246,241,228,.16)}
+.budget-grid .grp:first-child{margin-top:0;padding-top:0;border-top:none}
+
+/* ---- legend ---- */
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;font-size:12.5px;color:var(--sombra)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dot.y{background:var(--olivo)}
+.dot.p{background:var(--cempasuchil)}
+.dot.n{background:var(--buganvilia)}
+
+/* ---- toolbar ---- */
+.toolbar{
+  position:sticky;top:0;z-index:10;background:var(--hueso);
+  padding:16px 0 14px;margin-top:30px;border-bottom:1px solid rgba(32,36,28,.16);
+}
+.toolbar-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.toolbar-row + .toolbar-row{margin-top:10px}
+.tlabel{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--sombra);margin-right:4px;flex:0 0 auto}
+.chip-btn{
+  font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:700;
+  padding:8px 14px;border-radius:999px;border:1.5px solid rgba(32,36,28,.22);
+  background:#fff;color:var(--tinta);cursor:pointer;transition:all .13s ease;
+  display:inline-flex;align-items:center;gap:7px;
+}
+.chip-btn:hover{border-color:var(--barro)}
+.chip-btn.active{background:var(--tinta);color:var(--hueso);border-color:var(--tinta)}
+.chip-btn.active .swatch{background:var(--lima)}
+.chip-btn .swatch{width:8px;height:8px;border-radius:50%;background:rgba(32,36,28,.3)}
+select, input[type="text"]{
+  font-family:'Bricolage Grotesque',sans-serif;font-size:13.5px;font-weight:600;
+  padding:8px 12px;border-radius:999px;border:1.5px solid rgba(32,36,28,.22);
+  background:#fff;color:var(--tinta);
+}
+input[type="text"]{min-width:220px}
+input[type="text"]::placeholder{color:rgba(32,36,28,.4)}
+.reset-btn{
+  font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.08em;
+  color:var(--barro);background:none;border:none;cursor:pointer;text-decoration:underline;
+  padding:8px 4px;
+}
+.count{font-family:'Space Mono',monospace;font-size:12px;color:var(--sombra);margin-top:14px}
+
+/* ---- venue rows (list, image left / text right) ---- */
+.vlist{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.vrow{
+  display:flex;background:#fff;border:1px solid rgba(32,36,28,.14);border-radius:6px;
+  overflow:hidden;border-left:5px solid var(--accent, var(--sombra));
+}
+.vrow .photo{flex:0 0 260px;min-height:180px;background:var(--tinta) center/cover no-repeat;position:relative}
+.vrow .photo .pill{position:absolute;top:10px;left:10px}
+.vrow .content{flex:1 1 auto;min-width:0;padding:18px 22px;display:flex;flex-direction:column;gap:9px}
+.vrow .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.pill{
+  font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:4px 9px;border-radius:999px;color:#fff;white-space:nowrap;
+}
+.pill.quoted{background:var(--barro)}
+.pill.shortlist{background:var(--cobalto)}
+.pill.other{background:var(--olivo)}
+.vrow .ttl{font-family:'Instrument Serif',Georgia,serif;font-size:25px;line-height:1.12}
+.vrow .loc{font-size:12.5px;color:var(--sombra);letter-spacing:.02em}
+.vrow .eyebrow{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sombra)}
+
+.stars{display:flex;gap:3px;align-items:center}
+.stars .st{width:8px;height:8px;border-radius:50%;background:#E4DCC6;border:1px solid rgba(32,36,28,.18)}
+.stars .st.f{background:var(--cempasuchil);border-color:var(--cempasuchil)}
+.stars .lbl{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--sombra);margin-left:4px}
+
+.pricebox{display:flex;gap:8px;flex-wrap:wrap}
+.pricebox .p{background:var(--hueso);border-radius:8px;padding:7px 11px;font-family:'Space Mono',monospace}
+.pricebox .p .lb{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--sombra)}
+.pricebox .p .vl{font-size:15px;font-weight:700;color:var(--tinta)}
+.pricebox .p.win{background:var(--cempasuchil)}
+
+.needs{display:flex;flex-wrap:wrap;gap:6px}
+.need{
+  display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;
+  padding:4px 9px;border-radius:999px;background:var(--hueso);border:1px solid rgba(32,36,28,.14);
+}
+.need .m{font-size:11px}
+.need.y{color:var(--olivo)} .need.y .m{color:var(--olivo)}
+.need.p{color:#8A6412} .need.p .m{color:#B8860B}
+.need.n{color:var(--buganvilia)} .need.n .m{color:var(--buganvilia)}
+
+.verdict{font-size:13.5px;color:var(--tinta);line-height:1.5;max-width:74ch}
+.warn{font-size:12.5px;color:#7A2E3D;background:#F7E9EC;border-radius:6px;padding:9px 11px;line-height:1.45;max-width:74ch}
+.warn b{color:#5E2230}
+
+details{margin-top:2px}
+details summary{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--sombra);cursor:pointer;list-style:none;
+}
+details summary::-webkit-details-marker{display:none}
+details summary:before{content:"+ ";color:var(--barro)}
+details[open] summary:before{content:"\2013 ";color:var(--barro)}
+details .body{margin-top:10px;display:flex;flex-direction:column;gap:8px;max-width:74ch}
+.needdetail{font-size:12px;color:var(--sombra);line-height:1.5}
+.needdetail b{color:var(--tinta)}
+
+.flipbooklink{
+  font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--sombra);text-decoration:none;margin-top:4px;padding-top:6px;
+  display:inline-flex;align-items:center;gap:5px;
+}
+.flipbooklink:hover{color:var(--barro)}
+
+.empty{padding:60px 0;text-align:center;color:var(--sombra);font-size:14.5px}
+
+/* ---- pagination ---- */
+.pagination{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:28px;flex-wrap:wrap}
+.pgbtn{
+  font-family:'Space Mono',monospace;font-size:12.5px;font-weight:700;
+  min-width:34px;height:34px;padding:0 10px;border-radius:999px;
+  border:1.5px solid rgba(32,36,28,.22);background:#fff;color:var(--tinta);cursor:pointer;
+}
+.pgbtn:hover:not(:disabled){border-color:var(--barro)}
+.pgbtn.active{background:var(--tinta);color:var(--hueso);border-color:var(--tinta)}
+.pgbtn:disabled{opacity:.35;cursor:default}
+.pgbtn.nav{font-family:'Space Mono',monospace;letter-spacing:.05em}
+
+.footnote{margin-top:56px;padding-top:20px;border-top:1px solid rgba(32,36,28,.18);font-size:12.5px;color:var(--sombra);line-height:1.6}
+
+@media(max-width:640px){
+  .toolbar{position:static}
+  input[type="text"]{min-width:0;width:100%}
+  .vrow{flex-direction:column}
+  .vrow .photo{flex-basis:200px;width:100%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="backlink" href="./index.html"><span class="arw">&larr;</span> Wedding</a>
+
+  <div class="mast">
+    <h1>Find the <em>Venue</em></h1>
+    <span class="kicker">Cancún &middot; Nov 2027 &middot; Decision dashboard</span>
+  </div>
+
+  <div class="bar">
+    <span style="background:var(--lima)"></span>
+    <span style="background:var(--cempasuchil)"></span>
+    <span style="background:var(--barro)"></span>
+    <span style="background:var(--buganvilia)"></span>
+    <span style="background:var(--cobalto)"></span>
+    <span style="background:var(--olivo)"></span>
+  </div>
+
+  <div class="tiles">
+    <div class="tile" style="--accent:var(--olivo)">
+      <span class="tk">Core requirements</span>
+      <ul class="tile-reqs" id="tileReqs"></ul>
+    </div>
+    <div class="tile" style="--accent:var(--cobalto)">
+      <span class="tk">Top venues</span>
+      <ol class="tile-top" id="tileTop"></ol>
+    </div>
+    <div class="tile" style="--accent:var(--barro)">
+      <span class="tk">Estimated cost</span>
+      <div class="tile-cost" id="tileCost"></div>
+    </div>
+  </div>
+
+  <section class="sec">
+    <span class="num">02 — The brief</span>
+    <h2>Our core requirements</h2>
+    <ul class="reqs">
+      <li style="--accent:var(--olivo)"><span class="mk">01</span><span class="tx"><b>A beautiful, scenic resort</b> &mdash; natural beauty doing the decorating, not a ballroom we have to dress up ourselves.</span></li>
+      <li style="--accent:var(--cempasuchil)"><span class="mk">02</span><span class="tx"><b>Taquiza with a live taquero</b> &mdash; a real taco station, not a 3-course plated dinner standing in for it.</span></li>
+      <li style="--accent:var(--cobalto)"><span class="mk">03</span><span class="tx"><b>Mariachi &amp; live music</b> &mdash; outside entertainment welcome, no vendor lockout.</span></li>
+      <li style="--accent:var(--buganvilia)"><span class="mk">04</span><span class="tx"><b>A late-night reception</b> &mdash; no early noise curfew forcing the party indoors or shut down by 11.</span></li>
+      <li style="--accent:var(--barro)"><span class="mk">05</span><span class="tx"><b>Papel picado overhead</b> &mdash; strung over the reception in our six-color palette, not the default red-white-green.</span></li>
+      <li style="--accent:var(--lima)"><span class="mk">06</span><span class="tx"><b>Fashion</b> &mdash; a backdrop worthy of the dress code, so loud color and 70s tailoring pop instead of fighting a beige ballroom.</span></li>
+    </ul>
+    <p class="desc">Every venue below is scored against these six. &#10003; means it's built in or entirely our call, ~ means it's likely but needs confirming with the resort, &#10007; means it works against the standard package. Filter and search below.</p>
+  </section>
+
+  <div class="toolbar">
+    <div class="toolbar-row">
+      <span class="tlabel">Core needs</span>
+      <button class="chip-btn" data-need="beauty"><span class="swatch"></span>Beautiful resort (4&ndash;5&#9679;)</button>
+      <button class="chip-btn" data-need="taquiza"><span class="swatch"></span>Taquiza / tacos</button>
+      <button class="chip-btn" data-need="mariachi"><span class="swatch"></span>Mariachi &amp; live music</button>
+      <button class="chip-btn" data-need="latenight"><span class="swatch"></span>Late-night reception</button>
+      <button class="chip-btn" data-need="papel"><span class="swatch"></span>Papel picado</button>
+      <button class="chip-btn" data-need="fashion"><span class="swatch"></span>Fashion</button>
+    </div>
+    <div class="toolbar-row">
+      <span class="tlabel">Show</span>
+      <button class="chip-btn active" data-view="all"><span class="swatch"></span>All venues</button>
+      <button class="chip-btn" data-view="quoted"><span class="swatch"></span>Paradise-quoted</button>
+      <button class="chip-btn" data-view="shortlist"><span class="swatch"></span>Top 5 shortlist</button>
+      <select id="regionSelect">
+        <option value="">All regions</option>
+      </select>
+      <select id="sortSelect">
+        <option value="curated">Sort: Curated order</option>
+        <option value="beauty">Sort: Most beautiful</option>
+        <option value="price">Sort: Price (quoted first)</option>
+        <option value="az">Sort: A&ndash;Z</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search venue or location&hellip;">
+      <button class="reset-btn" id="resetBtn">Reset filters</button>
+    </div>
+    <div class="legend">
+      <span><span class="dot y"></span>Built in / your call</span>
+      <span><span class="dot p"></span>Ask &amp; confirm with the resort</span>
+      <span><span class="dot n"></span>Works against the standard package</span>
+    </div>
+  </div>
+
+  <div class="count" id="countLabel"></div>
+  <div class="vlist" id="grid"></div>
+  <div class="empty" id="emptyState" style="display:none">No venues match this combination. Try loosening a filter.</div>
+  <div class="pagination" id="pagination"></div>
+
+  <section class="sec">
+    <span class="num">03 — Budget reality</span>
+    <h2>What mariachi and papel picado actually cost</h2>
+    <div class="card">
+      <div class="line">Real numbers &middot; Aug 2026</div>
+      <div class="big">Using the two cheapest live Paradise quotes, at 57 attending &mdash; stress-tested at 65.</div>
+      <div class="budget-grid" id="budgetGrid"></div>
+    </div>
+  </section>
+
+  <div class="footnote">
+    Sourced from the venue flipbook and the four live Paradise Weddings quotes (Aug 2026 snapshot &mdash; reconfirm before booking). Taquiza, mariachi, papel picado and late-night status are marked &ldquo;ask&rdquo; wherever the flipbook didn&rsquo;t confirm it directly &mdash; treat those as RFP questions, not promises. &middot; <a href="./venue-flipbook.html" style="color:inherit">Open the full flipbook &rarr;</a>
+  </div>
+
+</div>
+
+<script id="venue-data" type="application/json">{"venues": [{"id": 4, "title": "Majestic Mirage Costa Mujeres", "category": "quoted", "rank": 1, "eyebrow": null, "region": "Paradise-quoted", "loc": "Costa Mujeres · ~30–40 min from CUN", "verdict": "The cost leader — by roughly $3,700. Two sections under one roof: Family Club for all ages where your sister and the teens stay, and The Club (18+) for everyone else, split by a natural fence. All guests get Club Level privileges either way, so nobody is in a lesser product. All-suite, 1,000+ sq ft, separate bedroom and living area. The price above already strips out the resort's $4,900 photo/video, which we don't need — and the free-wedding program (26–27 rooms × 4 nights) covers ceremony set-up, cake, flowers, and sound.", "warn": "The catch — a 4-night minimum. That's ~$450 more per room for every guest, which is real RSVP-yield risk at 91 invited. It also happens to be what clears the free-wedding threshold. Weakest of the four on natural setting.", "checks": [{"status": "y", "text": "✓ Teens ok, one roof"}, {"status": "y", "text": "✓ Cheapest quoted"}, {"status": "p", "text": "~ 4-night minimum"}, {"status": "p", "text": "~ Taquiza unconfirmed"}], "lotus": 3, "prices": [{"label": "57 guests", "value": "$6,981", "win": true}, {"label": "65 guests", "value": "$7,525", "win": true}], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Unconfirmed with Paradise — chase this before signing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-04.jpeg"}, {"id": 5, "title": "Grand Fiesta Americana Coral Beach", "category": "quoted", "rank": 2, "eyebrow": null, "region": "Paradise-quoted", "loc": "Cancún hotel zone · ~20–30 min from CUN", "verdict": "Best logistics and the only transparent pricing of the four. ABRAZO package, 16% tax stated as included. Mexican-owned (Posadas). Closest airport of the group. All-suite, and crucially the suites sleep 4–6 — the only property where our \"4 family guests in one covered room\" plan actually works. Kids club is 3–12 with a separate teens' lounge, so the 13-year-old lands with the teens, not the toddlers. The \"choose your venue in person\" programme gives two complimentary nights to pick the venue and do the tasting.", "warn": "Watch: the reception is a 3-course plated meal as standard — the opposite of our taquiza spec. Negotiable, but unconfirmed. Menu tasting only comes after a signed contract. Service charge may sit on top of the stated 16% tax.", "checks": [{"status": "y", "text": "✓ Teens + teen lounge"}, {"status": "y", "text": "✓ Tax stated"}, {"status": "y", "text": "✓ Suites sleep 4–6"}, {"status": "n", "text": "✗ Plated, not stations"}], "lotus": 3, "prices": [{"label": "57 guests", "value": "$10,669", "win": false}, {"label": "65 guests", "value": "$11,549", "win": false}], "buyout": false, "tags": {"taquiza": {"status": "no", "note": "Standard reception is 3-course plated, the opposite of a taquiza. Negotiable but unconfirmed."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-05.jpeg"}, {"id": 6, "title": "Generations × El Dorado (Karisma) — El Dorado Royale Casitas", "category": "quoted", "rank": 4, "eyebrow": null, "region": "Paradise-quoted", "loc": "Punta Brava · ~30 min from CUN", "verdict": "Real, itemized Paradise quote for El Dorado Royale Casitas: free ceremony + $129 minister + $300 Jungle Rock venue + chairs + $102pp taco station + $17pp al pastor upgrade + $48pp cocktail hour + 2 extra hours — roughly $14,700–15,335 for the event itself at 57 guests. Confirms the taquiza directly, at a real price, and buys two extra hours of reception time. Host at Generations (all ages), adults lodge at El Dorado Royale next door.", "warn": "Quote covers ceremony + cocktail hour + reception only — photo/film, mariachi, DJ, flights, and rooms are NOT included and stack on top. Per-person room pricing still breaks the covered-rooms plan (4 people in one suite saves nothing), and this remains the priciest of the four Paradise quotes even after the real numbers came in below the earlier ~$16k estimate.", "checks": [{"status": "y", "text": "✓ Teens at Generations"}, {"status": "y", "text": "✓ Taquiza priced ($102pp)"}, {"status": "y", "text": "✓ Real itemized quote"}, {"status": "n", "text": "✗ Still highest cost"}], "lotus": 5, "prices": [{"label": "57 guests (low)", "value": "$14,700", "win": false}, {"label": "57 guests (high)", "value": "$15,335", "win": false}], "buyout": false, "tags": {"taquiza": {"status": "yes", "note": "Confirmed and priced directly in the live quote — $102pp taco station plus a $17pp al pastor upgrade."}, "mariachi": {"status": "ask", "note": "Not included in this quote — mariachi stays an outside vendor, budgeted separately at $3–4k."}, "papel": {"status": "ask", "note": "Not part of this quote — ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "The quote already includes 2 extra hours beyond the standard package — a good sign, though the actual outdoor-sound curfew still isn't stated."}}, "image": "images/venue-06.jpeg", "src": "Live Paradise quote, El Dorado Royale Casitas: free ceremony + $129 minister + $300 Jungle Rock + chairs + $102pp taco station + $17pp al pastor + $48pp cocktail hour + 2 extra hours. Excludes photo/film, mariachi, DJ, flights, rooms.", "sortOrder": 7}, {"id": 7, "title": "Dreams Tulum", "category": "quoted", "rank": 3, "eyebrow": null, "region": "Paradise-quoted", "loc": "Tulum · ~1h20 from CUN", "verdict": "The only quote that bundles the entire weekend. Beyond Memorable covers 50–79 guests with no per-head overage — our 65-guest stress test fits inside the base price — and it is the sole package including both a welcome cocktail party and a two-hour rehearsal dinner. Buffet is standard, so station-service taquiza should be a natural fit rather than a fight. No venue surcharges appeared in any of their materials.", "warn": "Hardest to justify. Furthest airport at 1h20 with no transfers included, tax status unconfirmed (could be $16,635), and the most exposed beach of the four for seaweed and weather.", "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ Welcome + rehearsal bundled"}, {"status": "y", "text": "✓ No venue fee"}, {"status": "n", "text": "✗ Furthest, no transfers"}], "lotus": 4, "prices": [{"label": "Beyond Memorable", "value": "$12,699", "win": false}, {"label": "If +31% tax", "value": "$16,635", "win": false}], "buyout": false, "tags": {"taquiza": {"status": "yes", "note": "Buffet is standard here, so a live-taquero station should be a natural fit."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-07.jpeg", "sortOrder": 6}, {"id": 8, "title": "Finest Playa Mujeres", "category": "shortlist", "rank": 1, "eyebrow": "★ Shortlist #1", "region": "Flipbook shortlist", "loc": "Playa Mujeres · ~35–45 min from CUN", "verdict": "The cleanest answer to your setup that exists. One resort, two worlds: a family side where your sister and the kids stay, and a dedicated adults-only wing for everyone else — plus adults-only venues you can host in. Nobody books a second hotel, nobody rides a shuttle, and the guest list stays entirely yours. It solves the constraint by architecture rather than by policy exception, which is why it leads the board.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 3, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-08.jpeg"}, {"id": 9, "title": "TRS Coral × Grand Palladium", "category": "shortlist", "rank": 2, "eyebrow": "★ Shortlist #2 · One written answer away", "region": "Flipbook shortlist", "loc": "Costa Mujeres · ~30–40 min from CUN", "verdict": "Two resorts, one complex, one open question. Grand Palladium is the family half — where the kids stay — and TRS Coral is the adults-only half, connected by a shared village of restaurants and bars. Hosting on the TRS side gives you the grown-up setting; the make-or-break detail is whether minors lodged at Palladium may attend a private event there. Palladium's wedding program has historically been flexible on this, but it goes in the RFP and gets answered in writing before this ranks any higher.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "y", "text": "✓ Airport ≤45m"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 3, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-09.jpeg"}, {"id": 10, "title": "Dreams × Secrets Playa Mujeres", "category": "shortlist", "rank": 3, "eyebrow": "★ Shortlist #3 · The flip", "region": "Flipbook shortlist", "loc": "Playa Mujeres · ~35–45 min from CUN", "verdict": "The combo, run backwards — which is what makes it safe. Secrets brand rules bar minors from the property outright, so the event goes to Dreams Playa Mujeres next door, where a family resort can host any guest list you write. Adults who want the quiet side simply sleep at Secrets and walk over. Calm Playa Mujeres water, newer builds on both sides, and no policy waiver required from anyone.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 3, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-10.jpeg"}, {"id": 11, "title": "Dreams Playa Mujeres · Dreams Vista", "category": "shortlist", "rank": 4, "eyebrow": "★ Shortlist #4 · Simplest path", "region": "Flipbook shortlist", "loc": "Three of your YouTube picks · all ~20–45 min from CUN", "verdict": "The straightforward option, no tricks required. Family all-inclusives host your ceremony and reception exactly as you specify — adults-only guest list, teens included, done. You trade ambient kids at the pool and buffet for zero policy risk, zero split-property logistics, and generally softer rates than the adults-only tier. Dreams Playa Mujeres has the better grounds and golf-course setting; Dreams Vista is the value pick on the north strip.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "y", "text": "✓ Airport ≤45m"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 2, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-11.jpeg"}, {"id": 12, "title": "Las Caletas (Adventure Weddings)", "category": "shortlist", "rank": 5, "eyebrow": "★ Shortlist #5 · Wild card", "region": "Flipbook shortlist", "loc": "Private cove south of Puerto Vallarta", "verdict": "The most memorable-per-dollar venue in Mexico. Your whole group boards boats in Puerto Vallarta, sails to a private jungle cove with no road access, marries barefoot as the sun goes down, and cruises home under the stars. It's a private venue, so age rules are whatever you say they are — the teens are a non-issue. Priced per person as an event, paired with any PV hotel for lodging; your US hubs each take one stop.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-12.jpeg"}, {"id": 13, "title": "Hotel Xcaret México", "category": "other", "rank": null, "eyebrow": "Nature max · The family sibling", "region": "Quintana Roo", "loc": "Riviera Maya (Xcaret) · ~50–60 min from CUN", "verdict": "The nature card that survives your constraint. The adults-only Arte is out, but its sibling Hotel Xcaret México shares the same rivers, cenotes, and jungle-threaded architecture — and welcomes all ages. It is the most \"the place is the décor\" property on the coast, and every guest's stay includes admission to all the Xcaret parks, which quietly doubles as your guest entertainment for the whole weekend. Rooms run high, so it pressures the block more than the shortlist does.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "n", "text": "✗ Airport ≤45m"}, {"status": "p", "text": "~ $30k model"}], "lotus": 5, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-13.jpeg"}, {"id": 14, "title": "Hyatt Ziva × Zilara Cancún", "category": "other", "rank": null, "eyebrow": "Combo · The flip", "region": "Quintana Roo", "loc": "Cancún hotel zone · ~20 min from CUN", "verdict": "Your original Hyatt pick, now the right one. Ziva is the all-ages half and Zilara its adults-only twin a few minutes down the strip. Host at Ziva — kids permitted, guest list yours — and let anyone craving quiet book Zilara. Best airport proximity of anything on this list at roughly twenty minutes, on a strong hotel-zone beach, with Hyatt's wedding machinery and volume promos behind it. The trade is hotel-zone bustle over secluded grounds.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "y", "text": "✓ Airport ≤45m"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 2, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-14.jpeg"}, {"id": 15, "title": "Zoëtry Villa Rolandi · Isla Mujeres", "category": "other", "rank": null, "eyebrow": "Wild card · Near-buyout", "region": "Quintana Roo", "loc": "Isla Mujeres · ferry from Cancún", "verdict": "Your group is roughly the entire hotel. Thirty-five suites on Isla Mujeres, reached by private catamaran — a whole-island-wedding feeling no big resort can manufacture. At 57–65 guests you'd need overflow rooms elsewhere on the island. Zoëtry properties skew adults-oriented without always being strictly 18+, so the minimum-age policy is the first thing to confirm before this earns a serious look.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "p", "text": "~ $30k model"}], "lotus": 4, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-15.jpeg"}, {"id": 16, "title": "Conrad Tulum Riviera Maya", "category": "other", "rank": null, "eyebrow": "Quintana Roo · All-ages", "region": "Quintana Roo", "loc": "Punta Sur, Tulum corridor · ~35 min from TQO", "verdict": "Arguably the best pure architecture on the coast — cenote-inspired courtyards, reflecting pools, and stone that photographs beautifully at any hour. All-ages, so the teens are simply guests. It is not all-inclusive by default, which means food and beverage moves to à la carte and your budget model changes shape: better ceiling on quality, worse predictability on total.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "p", "text": "~ $30k model"}], "lotus": 4, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-16.jpeg"}, {"id": 17, "title": "Hotel Esencia", "category": "other", "rank": null, "eyebrow": "Benchmark tier", "region": "Quintana Roo", "loc": "Xpu-Há · ~60 min from CUN", "verdict": "A duchess's former estate, now the most photographed boutique property in Mexico. All-ages and utterly gorgeous, but it is a buyout-economics venue — the invoice for 57–65 guests lives in a different budget universe than yours. Keep it as the palette reference: bare tables, white linen, jungle and sea doing all the work. That look is reproducible at the shortlist properties for a fraction of the cost.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-17.jpeg"}, {"id": 18, "title": "Chablé Maroma", "category": "other", "rank": null, "eyebrow": "Benchmark tier", "region": "Quintana Roo", "loc": "Punta Maroma · ~40 min from CUN", "verdict": "Peak White Lotus casting — wellness-luxe villas where jungle meets a private beach, the closest thing in Mexico to the show's visual language. Villa rates say honeymoon rather than 57-guest wedding, and the property skews adult enough that the minimum-age policy needs checking before anything else. Taste reference, not a candidate.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "y", "text": "✓ 4-hub lift"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-18.jpeg"}, {"id": 19, "title": "Hacienda Xcanatún", "category": "other", "rank": null, "eyebrow": "Hacienda · Yucatán", "region": "Haciendas — Yucatán", "loc": "Mérida, Yucatán · ~30–40 min from MID (direct MIA flights)", "verdict": "The charm you keep picturing — with the math you should see first. An 18th-century sisal hacienda run by Angsana: gardens, chapel, colonial stone, event spaces holding 60–70. Ages are entirely your call on a private property. But haciendas are not all-inclusive — you rebuild catering, bar, rentals, sound, and coordination from scratch, and a real 50-guest wedding here ran about $38k in 2024 before anyone's travel. With only 18 suites, most of your group sleeps off-site in Mérida.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "y", "text": "✓ Airport ≤45m"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-19.jpeg"}, {"id": 20, "title": "Hacienda Temozón", "category": "other", "rank": null, "eyebrow": "Hacienda · Yucatán", "region": "Haciendas — Yucatán", "loc": "Temozón Sur · ~45 min south of Mérida · ~75–90 min from MID", "verdict": "The postcard hacienda. Marriott Luxury Collection, oxblood façades, jungle gardens, and the pool everyone has seen on Pinterest. Twenty-eight rooms means the same overflow problem as Xcanatún with a longer transfer from Mérida, and the same à-la-carte cost structure underneath. Spectacular for a 30-guest weekend with a bigger budget; a heavy lift at 57–65 under $30k.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "n", "text": "✗ Airport ≤45m"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-20.jpeg"}, {"id": 21, "title": "Hacienda Sac Chich", "category": "other", "rank": null, "eyebrow": "Hacienda · Yucatán", "region": "Haciendas — Yucatán", "loc": "Acanceh, Yucatán · ~45 min from MID", "verdict": "The moss-covered arch from every Yucatán wedding editorial lives here. Colonial ruins plus the modernist Casa Sisal, with capacity up to 150 — the one hacienda that could actually seat your whole group. It carries the same à-la-carte economics as its neighbors, though: the budget breaks well before the beauty does.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-21.jpeg"}, {"id": 22, "title": "Dreams × Secrets Vallarta Bay", "category": "other", "rank": null, "eyebrow": "Pacific · The flip", "region": "Pacific — Vallarta/Nayarit", "loc": "Puerto Vallarta · ~15 min from PVR", "verdict": "The flip, Pacific edition. Host at family-side Dreams; adults who prefer quiet sleep at Secrets in the same complex. Ten minutes from the Malecón and old town, with mountains falling into the bay — a backdrop Cancún structurally cannot offer. Rates run friendly. The cost is travel: your Tampa, Pittsburgh, and New York guests each take one stop, while the Monterrey contingent flies direct.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 3, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-22.jpeg"}, {"id": 23, "title": "Dreams × Secrets Bahía Mita", "category": "other", "rank": null, "eyebrow": "Pacific · The flip", "region": "Pacific — Vallarta/Nayarit", "loc": "Bahía de Banderas · ~45 min from PVR", "verdict": "The most scenery-forward mainstream all-inclusive on the Pacific. Jungle hills spilling into surf coves near Punta Mita, with the family Dreams side hosting your event and Secrets next door for the adults. Newer property, so the wedding operation has less mileage than the Cancún veterans — worth probing in the RFP. Same one-stop tax for the US hubs.", "warn": null, "checks": [{"status": "p", "text": "~ Teens: confirm"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "y", "text": "✓ $30k model"}], "lotus": 4, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-23.jpeg"}, {"id": 24, "title": "Grand Velas Riviera Nayarit", "category": "other", "rank": null, "eyebrow": "Pacific · All-ages", "region": "Pacific — Vallarta/Nayarit", "loc": "Nuevo Vallarta · ~25 min from PVR", "verdict": "The luxury all-inclusive wedding institution of the Pacific. Family-friendly by design, with flawless execution and food that genuinely outclasses the category. Priced to match, which is the whole problem: at 57–65 guests plus a room block, it pushes past the ceiling before the photographer is hired.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "p", "text": "~ $30k model"}], "lotus": 3, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-24.jpeg"}, {"id": 25, "title": "W Punta de Mita", "category": "other", "rank": null, "eyebrow": "Pacific · Design-forward", "region": "Pacific — Vallarta/Nayarit", "loc": "Punta de Mita · ~45 min from PVR", "verdict": "Design-hotel energy on a proper swim beach — bold color, playful interiors, and one of the better stretches of sand in Nayarit. All-ages. Not all-inclusive, so food and beverage is à la carte and the budget model loses its guardrails. Only makes sense if the all-inclusive requirement ever drops.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "p", "text": "~ $30k model"}], "lotus": 4, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-25.jpeg"}, {"id": 26, "title": "Hotel San Cristóbal · Todos Santos", "category": "other", "rank": null, "eyebrow": "Baja · Buyout wild card", "region": "Baja & Inland", "loc": "Todos Santos · ~75 min from SJD", "verdict": "The one Baja survivor, and it survives by being private. A 32-room Bunkhouse boutique on a wild Pacific beach an hour north of Cabo — surf-town cool, desert light, zero resort gloss. A buyout puts every rule in your hands, including ages. Everything is à la carte and the beach is for looking, not swimming; your US hubs take one stop, Monterrey flies direct to Cabo.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "y", "text": "✓ <$500 rooms"}, {"status": "p", "text": "~ 4-hub lift"}, {"status": "p", "text": "~ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-26.jpeg"}, {"id": 27, "title": "San Miguel de Allende", "category": "other", "rank": null, "eyebrow": "Inland benchmark", "region": "Baja & Inland", "loc": "Guanajuato highlands · BJX/QRO + drive", "verdict": "Mexico's most beautiful wedding town. Rooftop ceremonies over the pink parroquia, cobblestone streets, colonial courtyards — and no beach and no all-inclusive anywhere in it. That means it prices like a US wedding, $40k and up once catering, rentals, and vendors are assembled. It is the gorgeous answer to a question you are not asking.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "p", "text": "~ <$500 rooms"}, {"status": "n", "text": "✗ 4-hub lift"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": true, "tags": {"taquiza": {"status": "yes", "note": "You build the catering from scratch here, so a taquiza is entirely your call."}, "mariachi": {"status": "yes", "note": "Private property — outside entertainment is entirely your call."}, "papel": {"status": "yes", "note": "Private property — hang whatever you like."}, "latenight": {"status": "yes", "note": "No other resort guests to disturb — the party can run as late as the venue allows."}}, "image": "images/venue-27.jpeg"}, {"id": 28, "title": "Banyan Tree Mayakoba", "category": "other", "rank": null, "eyebrow": "Benchmark · The actual White Lotus", "region": "Quintana Roo", "loc": "Mayakoba, Playa del Carmen · ~45–50 min from CUN", "verdict": "Included so you know what the top of the mountain costs. Private-pool villas threaded through mangrove lagoons — the literal visual language of the show, since this brand's Thai properties are where it was filmed. All-ages, villas from around $800 a night, not all-inclusive, and a 57-guest wedding here roughly doubles your ceiling. Use it as the taste reference and buy the look at Xcaret México or Finest instead.", "warn": null, "checks": [{"status": "y", "text": "✓ Teens ok"}, {"status": "n", "text": "✗ <$500 rooms"}, {"status": "p", "text": "~ Airport ≤45m"}, {"status": "n", "text": "✗ $30k model"}], "lotus": 5, "prices": [], "buyout": false, "tags": {"taquiza": {"status": "ask", "note": "Not confirmed — most all-inclusive buffets can flex to a taco station, but get it in writing."}, "mariachi": {"status": "ask", "note": "Outside entertainment usually needs the resort's vendor sign-off and often a vendor fee — confirm in the RFP."}, "papel": {"status": "ask", "note": "Ask whether the resort stocks papel picado and who's allowed to hang it overhead."}, "latenight": {"status": "ask", "note": "Most Mexican resorts cut outdoor amplified sound around 11pm–midnight by policy — confirm the actual curfew and indoor after-party option."}}, "image": "images/venue-28.jpeg"}], "budget": {"page": 29, "title": "Real numbers, real gap.", "eyebrow": "Where the budget stands · Aug 2026", "rank": null, "qbadge": null, "tribbon": null, "loc": null, "verdict": "Using the two cheapest live quotes, at 57 attending and stress-tested at 65 :", "warn": null, "stats": [], "checks": [], "lotus_filled": 0, "lotus_total": 0, "lotus_label": null, "prices": [], "mrows": ["Event cost (ceremony + cocktail + reception, no resort photo/video) $6,981–7,525", "Documentary photo + film (outside team) + vendor fee $7–9k", "Mariachi + outside Mexican DJ $3–4k", "2 covered rooms × 4 nights — target $0 via comps $0–4.8k", "6 Monterrey flights ~$1.3k", "Welcome dinner, papel picado, candles, misc $2–3k", "Event cost (ABRAZO, 16% tax included) $10,669–11,549", "Welcome dinner at $15 pp beyond 20 ~$555", "Everything else as above $10–17k"], "src": null}}</script>
+<script>
+(function(){
+  var DATA = JSON.parse(document.getElementById('venue-data').textContent);
+  var venues = DATA.venues;
+  var budget = DATA.budget;
+  var PAGE_SIZE = 10;
+
+  // ---- derive the Fashion tag (not in the source flipbook — inferred from setting) ----
+  venues.forEach(function(v){
+    if(v.buyout){
+      v.tags.fashion = { status: 'yes', note: 'Private property — style the whole space to match the dress code, no house look to fight.' };
+    } else if(v.lotus >= 4){
+      v.tags.fashion = { status: 'yes', note: 'Jungle, water, or stone doing the work — loud color photographs beautifully against this setting.' };
+    } else if(v.lotus === 3){
+      v.tags.fashion = { status: 'ask', note: 'A decent backdrop, not a showstopper — check event-space photos before betting the palette on it.' };
+    } else {
+      v.tags.fashion = { status: 'no', note: 'More hotel-zone/ballroom than scenic — a loud dress code will fight the backdrop rather than pop against it.' };
+    }
+  });
+
+  // ---- top tiles ----
+  var REQ_NAMES = [
+    { label: 'Beautiful resort', color: 'var(--olivo)' },
+    { label: 'Taquiza', color: 'var(--cempasuchil)' },
+    { label: 'Mariachi', color: 'var(--cobalto)' },
+    { label: 'Late-night reception', color: 'var(--buganvilia)' },
+    { label: 'Papel picado', color: 'var(--barro)' },
+    { label: 'Fashion', color: 'var(--lima)' }
+  ];
+  var tileReqs = document.getElementById('tileReqs');
+  REQ_NAMES.forEach(function(r){
+    var li = document.createElement('li');
+    li.innerHTML = '<span class="d" style="background:' + r.color + '"></span>' + r.label;
+    tileReqs.appendChild(li);
+  });
+
+  var tileTop = document.getElementById('tileTop');
+  var TOP_VENUES = [
+    'Dreams Tulum',
+    'Dorado Royale Casitas',
+    'Grand Palladium',
+    'Finest Playa Mujeres',
+    'Hacienda &amp; Hotel Xcaret'
+  ];
+  TOP_VENUES.forEach(function(name, i){
+    var li = document.createElement('li');
+    li.innerHTML = '<span class="rk">' + String(i + 1).padStart(2,'0') + '</span><b>' + name + '</b>';
+    tileTop.appendChild(li);
+  });
+
+  var quotedWithPrice = venues.filter(function(v){ return v.category === 'quoted' && v.prices && v.prices.length; });
+  var lowCosts = quotedWithPrice.map(function(v){
+    var nums = v.prices.map(function(p){ return parseFloat(p.value.replace(/[^0-9.]/g,'')); }).filter(function(n){ return !isNaN(n); });
+    return nums.length ? Math.min.apply(null, nums) : NaN;
+  }).filter(function(n){ return !isNaN(n); });
+  var highCosts = quotedWithPrice.map(function(v){
+    var nums = v.prices.map(function(p){ return parseFloat(p.value.replace(/[^0-9.]/g,'')); }).filter(function(n){ return !isNaN(n); });
+    return nums.length ? Math.max.apply(null, nums) : NaN;
+  }).filter(function(n){ return !isNaN(n); });
+  var minLow = lowCosts.length ? Math.min.apply(null, lowCosts) : null;
+  var maxHigh = highCosts.length ? Math.max.apply(null, highCosts) : null;
+  var tileCost = document.getElementById('tileCost');
+  if(minLow !== null && maxHigh !== null){
+    tileCost.innerHTML =
+      '<div class="amt">$' + minLow.toLocaleString() + '&ndash;$' + maxHigh.toLocaleString() + '</div>' +
+      '<div class="fine">*excludes rooms, flights, outside photo/film</div>';
+  }
+
+  // ---- render budget card ----
+  var budgetGrid = document.getElementById('budgetGrid');
+  var groups = [
+    { label: 'Majestic Mirage — cheapest live quote', rows: budget.mrows.slice(0,6) },
+    { label: 'Grand Fiesta Americana Coral Beach — next cheapest', rows: budget.mrows.slice(6,9) }
+  ];
+  groups.forEach(function(g){
+    var h = document.createElement('div');
+    h.className = 'grp';
+    h.textContent = g.label;
+    budgetGrid.appendChild(h);
+    g.rows.forEach(function(row){
+      var m = row.match(/^(.*?)(~?[\$][\d,.–\-–k]+.*)$/);
+      var lbl = m ? m[1].trim() : row;
+      var amt = m ? m[2].trim() : '';
+      var l = document.createElement('div'); l.className='lbl'; l.textContent = lbl;
+      var a = document.createElement('div'); a.className='amt'; a.textContent = amt;
+      budgetGrid.appendChild(l); budgetGrid.appendChild(a);
+    });
+  });
+
+  // ---- populate region select ----
+  var regionSelect = document.getElementById('regionSelect');
+  var regions = [];
+  venues.forEach(function(v){ if(v.category==='other' && regions.indexOf(v.region)===-1) regions.push(v.region); });
+  regions.forEach(function(r){
+    var o = document.createElement('option'); o.value = r; o.textContent = r;
+    regionSelect.appendChild(o);
+  });
+
+  var state = {
+    needs: {},
+    view: 'all',
+    region: '',
+    sort: 'curated',
+    q: '',
+    page: 1
+  };
+
+  function needStatus(v, need){
+    if(need === 'beauty') return v.lotus >= 4 ? 'y' : (v.lotus === 3 ? 'p' : 'n');
+    return v.tags[need].status === 'yes' ? 'y' : (v.tags[need].status === 'ask' ? 'p' : 'n');
+  }
+
+  function matches(v){
+    for(var need in state.needs){
+      if(state.needs[need]){
+        var s = needStatus(v, need);
+        if(s === 'n') return false;
+      }
+    }
+    if(state.view === 'quoted' && v.category !== 'quoted') return false;
+    if(state.view === 'shortlist' && v.category !== 'shortlist') return false;
+    if(state.region && v.region !== state.region) return false;
+    if(state.q){
+      var hay = (v.title + ' ' + (v.loc||'') + ' ' + (v.verdict||'')).toLowerCase();
+      if(hay.indexOf(state.q.toLowerCase()) === -1) return false;
+    }
+    return true;
+  }
+
+  function priceNum(v){
+    if(!v.prices || !v.prices.length) return null;
+    var raw = v.prices[0].value.replace(/[^0-9.]/g,'');
+    return raw ? parseFloat(raw) : null;
+  }
+
+  function sortList(list){
+    var arr = list.slice();
+    if(state.sort === 'beauty'){
+      arr.sort(function(a,b){ return b.lotus - a.lotus; });
+    } else if(state.sort === 'price'){
+      arr.sort(function(a,b){
+        var pa = priceNum(a), pb = priceNum(b);
+        if(pa===null && pb===null) return 0;
+        if(pa===null) return 1;
+        if(pb===null) return -1;
+        return pa - pb;
+      });
+    } else if(state.sort === 'az'){
+      arr.sort(function(a,b){ return a.title.localeCompare(b.title); });
+    } else {
+      arr.sort(function(a,b){
+        return (a.sortOrder != null ? a.sortOrder : a.id) - (b.sortOrder != null ? b.sortOrder : b.id);
+      });
+    }
+    return arr;
+  }
+
+  var NEED_LABEL = {
+    taquiza: 'Taquiza', mariachi: 'Mariachi', papel: 'Papel picado', latenight: 'Late-night', fashion: 'Fashion'
+  };
+  var STATUS_MARK = { y: '\u2713', p: '~', n: '\u2717' };
+
+  function accentFor(cat){
+    return cat === 'quoted' ? 'var(--barro)' : cat === 'shortlist' ? 'var(--cobalto)' : 'var(--olivo)';
+  }
+
+  function renderRow(v){
+    var el = document.createElement('div');
+    el.className = 'vrow';
+    el.style.setProperty('--accent', accentFor(v.category));
+
+    var badgeText = v.category === 'quoted' ? ('Paradise quote #' + v.rank)
+      : v.category === 'shortlist' ? ('Shortlist #' + v.rank)
+      : v.region;
+
+    var stars = '';
+    for(var i=1;i<=5;i++){ stars += '<span class="st' + (i<=v.lotus ? ' f' : '') + '"></span>'; }
+
+    var priceHtml = '';
+    if(v.prices && v.prices.length){
+      priceHtml = '<div class="pricebox">' + v.prices.map(function(p){
+        return '<div class="p' + (p.win ? ' win' : '') + '"><div class="lb">' + p.label + '</div><div class="vl">' + p.value + '</div></div>';
+      }).join('') + '</div>';
+    }
+
+    var needsHtml = '<div class="needs">' + ['taquiza','mariachi','latenight','papel','fashion'].map(function(need){
+      var s = needStatus(v, need);
+      return '<span class="need ' + s + '"><span class="m">' + STATUS_MARK[s] + '</span>' + NEED_LABEL[need] + '</span>';
+    }).join('') + '</div>';
+
+    var needDetailHtml = ['taquiza','mariachi','latenight','papel','fashion'].map(function(need){
+      return '<div class="needdetail"><b>' + NEED_LABEL[need] + ':</b> ' + v.tags[need].note + '</div>';
+    }).join('');
+
+    var warnHtml = v.warn ? '<div class="warn"><b>Watch:</b> ' + v.warn + '</div>' : '';
+
+    el.innerHTML =
+      '<div class="photo" style="background-image:url(\'' + v.image + '\')"><span class="pill ' + v.category + '">' + badgeText + '</span></div>' +
+      '<div class="content">' +
+        '<div class="toprow">' +
+          '<div>' +
+            (v.eyebrow ? '<div class="eyebrow">' + v.eyebrow + '</div>' : '') +
+            '<div class="ttl">' + v.title + '</div>' +
+          '</div>' +
+        '</div>' +
+        (v.loc ? '<div class="loc">' + v.loc + '</div>' : '') +
+        '<div class="stars">' + stars + '<span class="lbl">Beauty &middot; how much the setting does the d\u00e9cor</span></div>' +
+        priceHtml +
+        needsHtml +
+        '<p class="verdict">' + v.verdict + '</p>' +
+        warnHtml +
+        '<details><summary>Why each need is marked this way</summary><div class="body">' + needDetailHtml + '</div></details>' +
+        '<a class="flipbooklink" href="./venue-flipbook.html">Open in full flipbook (p.' + String(v.id).padStart(2,'0') + ') &rarr;</a>' +
+      '</div>';
+
+    return el;
+  }
+
+  function renderPagination(totalPages){
+    var pg = document.getElementById('pagination');
+    pg.innerHTML = '';
+    if(totalPages <= 1) return;
+
+    function btn(label, page, opts){
+      opts = opts || {};
+      var b = document.createElement('button');
+      b.className = 'pgbtn' + (opts.nav ? ' nav' : '') + (page === state.page ? ' active' : '');
+      b.textContent = label;
+      b.disabled = !!opts.disabled;
+      b.addEventListener('click', function(){ state.page = page; render(); window.scrollTo({top: document.getElementById('grid').offsetTop - 90, behavior:'smooth'}); });
+      return b;
+    }
+
+    pg.appendChild(btn('\u2190 Prev', Math.max(1, state.page - 1), {nav:true, disabled: state.page === 1}));
+    for(var p = 1; p <= totalPages; p++){
+      pg.appendChild(btn(String(p), p));
+    }
+    pg.appendChild(btn('Next \u2192', Math.min(totalPages, state.page + 1), {nav:true, disabled: state.page === totalPages}));
+  }
+
+  function render(){
+    var grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    var filtered = venues.filter(matches);
+    var sorted = sortList(filtered);
+    var totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+    if(state.page > totalPages) state.page = totalPages;
+    if(state.page < 1) state.page = 1;
+
+    document.getElementById('countLabel').textContent = sorted.length + ' of ' + venues.length + ' venues' +
+      (totalPages > 1 ? ' \u00b7 page ' + state.page + ' of ' + totalPages : '');
+    document.getElementById('emptyState').style.display = sorted.length ? 'none' : 'block';
+
+    var start = (state.page - 1) * PAGE_SIZE;
+    var pageItems = sorted.slice(start, start + PAGE_SIZE);
+    pageItems.forEach(function(v){ grid.appendChild(renderRow(v)); });
+
+    renderPagination(totalPages);
+  }
+
+  // ---- wire up controls ----
+  document.querySelectorAll('.chip-btn[data-need]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var need = btn.getAttribute('data-need');
+      state.needs[need] = !state.needs[need];
+      btn.classList.toggle('active', !!state.needs[need]);
+      state.page = 1;
+      render();
+    });
+  });
+
+  document.querySelectorAll('.chip-btn[data-view]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.chip-btn[data-view]').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      state.view = btn.getAttribute('data-view');
+      state.page = 1;
+      render();
+    });
+  });
+
+  regionSelect.addEventListener('change', function(){ state.region = regionSelect.value; state.page = 1; render(); });
+  document.getElementById('sortSelect').addEventListener('change', function(e){ state.sort = e.target.value; state.page = 1; render(); });
+  document.getElementById('searchInput').addEventListener('input', function(e){ state.q = e.target.value; state.page = 1; render(); });
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    state = { needs: {}, view: 'all', region: '', sort: 'curated', q: '', page: 1 };
+    document.querySelectorAll('.chip-btn[data-need]').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelectorAll('.chip-btn[data-view]').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelector('.chip-btn[data-view="all"]').classList.add('active');
+    regionSelect.value = '';
+    document.getElementById('sortSelect').value = 'curated';
+    document.getElementById('searchInput').value = '';
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
