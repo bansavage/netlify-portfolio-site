@@ -1,365 +1,166 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Bansavage</title>
-    <link rel="icon" href="images/logo-b.png">
-    <meta property="og:image" content="https://kylebansavage.com/images/meta-image.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Styles -->
-    <link href="./styles/global.css" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="./scripts/drawer.js" defer></script>
-  </head>
-  <body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kyle Bansavage · Software Engineer</title>
+  <meta name="description" content="Kyle Bansavage builds custom AI systems that turn inbox requests into QuickBooks invoices, and Shopify commerce infrastructure. New York &amp; Miami.">
+  <meta name="theme-color" content="#02030A">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.bansavage.dev/">
+  <meta property="og:title" content="Kyle Bansavage · Software Engineer">
+  <meta property="og:description" content="Custom AI systems and commerce infrastructure for real businesses.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&amp;family=Share+Tech+Mono&amp;family=VT323&amp;display=swap">
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="fx fx--vig" aria-hidden="true"></div>
+  <div class="fx fx--scan" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <div class="tagline">
-      <div>Digital Agency.</div>
-      <div>New York & Miami.</div>
-    </div>
-
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger-btn" aria-label="Open menu" tabindex="0">
-      <div class="hamburger__icon">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-
-    <!-- Drawer Overlay -->
-    <div class="drawer-overlay" id="drawer-overlay"></div>
-
-    <!-- Drawer -->
-    <nav class="drawer" id="drawer-menu" aria-hidden="true">
-      <div class="drawer__about">
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">About</h2>
-          <p class="drawer__copy">
-            Trusted by discerning brands, Bansavage specializes in crafting bespoke digital experiences.
-            Setting new standards in development solutions that drive growth and optimize customer engagement.
-
-            <!-- Kyle Bansavage is a software engineer with 8+ years of experience designing and delivering scalable software systems and backend services.
-             Skilled in JavaScript/TypeScript, React/Next.js, Node.js/GraphQL, and AWS, with expertise in microservices, CI/CD, testing, and accessibility.
-             Kyle has a proven track record of improving performance, reliability, and user engagement through modern architectures and Agile practices. -->
-
-            <!-- Trusted by discerning brands, Kyle Bansavage specializes in crafting bespoke digital experiences within the fashion and wellness industries.
-            With a focus on innovation and performance, he delivers cutting-edge development solutions that drive growth, enhance customer engagement, and help businesses thrive. -->
-          </p>
-        </div>
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Services</h2>
-          <div class="drawer__flex">
-            <ul class="drawer__list">
-              <li>Web Performance & Site Speed</li>
-              <li>Relationship Commerce</li>
-              <li>Loyalty & Membership</li>
-              <li>Shopify Development</li>
-              <li>App Implementation</li>
-              <li>Subscriptions</li>
-            </ul>
-            <!-- <ul class="drawer__list">
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Vue</li>
-              <li>Pinia</li>
-              <li>Tailwind CSS</li>
-              <li>Webpack</li>
-              <li>Vite</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>REST APIs</li>
-              <li>GraphQL</li>
-              <li>Prisma</li>
-            </ul>
-            <ul class="drawer__list">
-              <li>SQL</li>
-              <li>Redis</li>
-              <li>Algolia</li>
-              <li>AWS (EC2, S3, Lambda)</li>
-              <li>Heroku</li>
-              <li>CI/CD (GitHub Actions)</li>
-              <li>Microservices</li>
-              <li>System Architecture</li>
-              <li>Testing</li>
-              <li>Agile</li>
-              <li>Scrum</li>
-              <li>SDLC</li>
-              <li>Accessibility</li>
-            </ul> -->
-          </div>
-        </div>
-        <!-- <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Work</h2>
-          <div class="drawer__flex">
-            <ul class="drawer__list">
-              <li>Anastasia Beverly Hills</li>
-              <li>AriZona Iced Tea</li>
-              <li>Bethenny Frankel</li>
-              <li>Bogg Bag</li>
-              <li>Bonafide</li>
-              <li>Boy Smells</li>
-              <li>Dylan's Candy Bar</li>
-              <li>Fair Harbor</li>
-              <li>Fleur du Mal</li>
-              <li>Frances Valentine</li>
-              <li>Gucci</li>
-            </ul>
-            <ul class="drawer__list">
-              <li>Hedley & Bennett</li>
-              <li>Kulson</li>
-              <li>Mociun</li>
-              <li>Nine West</li>
-              <li>Paper Planes</li>
-              <li>Pier1 Imports</li>
-              <li>Readers Digest</li>
-              <li>Rocketbook</li>
-              <li>TWP</li>
-              <li>Veronica Beard</li>
-              <li>Whole Latte Love</li>
-            </ul>
-            <ul class="drawer__list drawer__list--work">
-              <li>Scaled engineering operations from 3 to 30 developers by establishing CI/CD pipelines, coding standards, and Agile practices which contributed to $1M in first-year revenue, Shopify Plus Partner status, and acquisition by Revyrie Global.</li>
-              <li>Architected a reusable frontend framework (Vue, Vite, Pinia, Tailwind, GraphQL) adopted across 10+ production storefronts, reducing build time by 25% and improving conversion rates by 35%.</li>
-              <li>Implemented passwordless authentication with Node.js microservices and subscription APIs, increasing customer lifetime value by 30% and reducing support requests by 40%.</li>
-              <li>Deployed Heroku-hosted Node.js/Express microservices for risk screening, order fulfillment, and shipping-label generation, processing 200+ orders per day and doubling label throughput.</li>
-              <li>Built a Node.js integration to sync Contentful CMS with Shopify, automating updates for 4,000+ products and eliminating manual data entry.</li>
-            </ul>
-          </div>
-        </div> -->
-        <div class="drawer__about-container desktop-only">
-          <h2 class="drawer__subheader">Contact</h2>
-          <p class="drawer__copy">
-            <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://www.linkedin.com/in/kylebansavage/" target="_blank">LinkedIn</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://github.com/bansavage" target="_blank">GitHub</a>
-          </p>
-        </div>
-      </div>
-      <div class="drawer__work">
-        <h2 class="drawer__subheader">Clients</h2>
-        <div class="drawer__work-container">
-          <!-- <div class="drawer__work-item">
-            <a href="https://shop.marriott.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/marriott.jpg" alt="Marriott">
-              <h3>
-                Marriott International
-              </h3>
-              <p>
-                The world's largest hotel company.
-              </p>
-            </a>
-          </div> -->
-          <div class="drawer__work-item">
-            <a href="https://www.anastasiabeverlyhills.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/abh.webp" alt="Anastasia Beverly Hills">
-              <h3>
-                Anastasia Beverly Hills
-              </h3>
-              <p>
-                The global beauty brand renowned by celebrities and influencers.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://drinkarizona.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/arizona.webp" alt="AriZona Iced Tea">
-              <h3>
-                AriZona Iced Tea
-              </h3>
-              <p>
-                The classic beverage enjoyed by millions of people.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.pier1.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/pier1.webp" alt="Pier1 Imports">
-              <h3>
-                Pier1 Imports
-              </h3>
-              <p>
-                Classic American home furnishings and decor.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://francesvalentine.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/fv.webp" alt="Frances Valentine">
-              <h3>
-                Frances Valentine
-              </h3>
-              <p>
-                Kate Spade's vintage-inspired, joyful designs.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.hedleyandbennett.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/hb.webp" alt="Hedley & Bennett">
-              <h3>
-                Hedley & Bennett
-              </h3>
-              <p>
-                The culinary industry's coveted handcrafted aprons.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.paperplane.shop/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/planes.jpg" alt="Paper Planes">
-              <h3>
-                Paper Planes
-              </h3>
-              <p>
-                Jay-Z's lifestyle apparel and accessories brand.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.twpclothing.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/twp.webp" alt="TWP">
-              <h3>
-                TWP
-              </h3>
-              <p>
-                Womenswear that blends the utilitarian spirit of the American Midwest with metropolitan sensibility.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://veronicabeard.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/vb.webp" alt="Veronica Beard">
-              <h3>
-                Veronica Beard
-              </h3>
-              <p>
-                Sophisticated classics that speak to today's multifaceted woman.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://agcf.com/" target="_blank">
-              <img class="work__image" src="./images/agcf.webp" alt="AGCF">
-              <!-- https://agcf.com/cdn/shop/files/Ascot-Gray.jpg?v=1741883376&width=600 -->
-              <h3>
-                AGCF
-              </h3>
-              <p>
-                Alexandra Gucci's purpose-driven luxury handbags.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://boggbag.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/bogg.webp" alt="Bogg Bag">
-              <h3>
-                Bogg Bag
-              </h3>
-              <p>
-                The life-proof bag built to hold it all.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.conigliopalmbeach.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/cpb.webp" alt="Coniglio Palm Beach">
-              <h3>
-                Coniglio Palm Beach
-              </h3>
-              <p>
-                Sustainable styles inspired by the life & color of Palm Beach.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://greysonclothiers.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/greyson.webp" alt="Greyson Clothiers">
-              <h3>
-                Greyson Clothiers
-              </h3>
-              <p>
-                Redefining menswear by uniting fashion and sport.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://fleurdumal.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/fdm.webp" alt="Fleur du Mal">
-              <h3>
-                Fleur du Mal
-              </h3>
-              <p>
-                Luxury lingerie that speaks to the duality of dressing & undressing.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://mociun.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/mociun.webp" alt="Mociun">
-              <h3>
-                Mociun
-              </h3>
-              <p>
-                One-of-a-kind custom jewelry handmade in Brooklyn.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.wholelattelove.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/wll.webp" alt="Whole Latte Love">
-              <h3>
-                Whole Latte Love
-              </h3>
-              <p>
-                Deluxe espresso machines & high quality coffee.
-              </p>
-            </a>
-          </div>
-          <div class="drawer__work-item">
-            <a href="https://www.tobeinbloom.com/" target="_blank">
-              <img class="work__image" loading="lazy" src="./images/inbloom.webp" alt="Inbloom">
-              <h3>
-                Inbloom
-              </h3>
-              <p>
-                Holistic nourishment for mind & body, founded by Kate Hudson.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="drawer__about mobile-only">
-        <div class="drawer__about-container">
-          <h2 class="drawer__subheader">Contact</h2>
-          <p class="drawer__copy">
-            <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://www.linkedin.com/in/kylebansavage/" target="_blank">LinkedIn</a>
-          </p>
-          <p class="drawer__copy">
-            <a href="https://github.com/bansavage" target="_blank">GitHub</a>
-          </p>
-        </div>
-      </div>
+  <header class="hud hud--top">
+    <a class="brand" href="#boot"><i aria-hidden="true"></i>BANSAVAGE.DEV</a>
+    <nav class="nav" aria-label="Nodes">
+      <a href="#ai"><b>01</b><span class="lbl">AI_OPS</span></a>
+      <a href="#commerce"><b>02</b><span class="lbl">COMMERCE</span></a>
+      <a href="#ps"><b>03</b><span class="lbl">PROCESSES</span></a>
+      <a href="#contact"><b>04</b><span class="lbl">CONTACT</span></a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero__title">
-        <img src="./images/bansavage.png" alt="Text that says Bansavage" loading="eager" width="100%" height="100px">
+  <main>
+    <section class="node node--hero" id="boot" data-node="00 // BOOT">
+      <div class="boot" id="boot-log">
+        <div><span class="txt">&gt; ESTABLISHING LINK TO BANSAVAGE.DEV</span><span class="lead"></span><span class="st">OK</span></div>
+        <div><span class="txt">&gt; HANDSHAKE // NODE NYC-MIA // TLS 1.3</span><span class="lead"></span><span class="st">OK</span></div>
+        <div><span class="txt">&gt; MOUNT /systems/ai-ops /systems/commerce</span><span class="lead"></span><span class="st">OK</span></div>
+        <div><span class="txt">&gt; ACCESS</span><span class="lead"></span><span class="st grant">GRANTED</span></div>
       </div>
-      <video autoplay loop muted playsinline src="./images/Kyle-Reel.webm"></video>
-    </div>
-  </body>
+      <div class="hero">
+        <h1><span class="glitch" data-text="Kyle">Kyle</span><br><span class="glitch" data-text="Bansavage">Bansavage</span></h1>
+        <div class="roles">Software engineer // AI systems // Commerce infrastructure</div>
+        <p class="lede">I build the machine behind the business.<span>Custom AI that turns inbox requests into real QuickBooks invoices. Shopify engineering for brands like Veronica Beard and What A Room. New York &amp; Miami.</span></p>
+        <div class="actions">
+          <a class="btn" href="#ai">Enter the system ↓</a>
+          <a class="btn btn--ghost" href="#contact">Open a ticket</a>
+        </div>
+        <div class="hint">Scroll to fly · Move to look · Keys 0–4 jump</div>
+      </div>
+    </section>
+
+    <section class="transit" data-node="-- // TRANSIT" aria-hidden="true"><p>&gt; routing via bus 0x1F // descending to node 01 </p></section>
+
+    <section class="node node--r" id="ai" data-node="01 // AI_OPS">
+      <article class="panel">
+        <div class="bar"><span>Node 01 // AI_OPS</span><span class="live">Online</span></div>
+        <div class="body">
+          <h2 data-scramble>Your inbox, invoiced.</h2>
+          <p>Custom AI systems for real local businesses. Emails become QuickBooks invoices. Spreadsheets edit themselves from plain English. Nothing posts until a person approves it.</p>
+          <pre class="term" data-play><span class="ln" style="--i:0"><span class="t">$</span> tail -f /var/log/inbox-invoice</span>
+  <span class="ln" style="--i:1"><span class="t">09:14:02</span> <span class="k1">MAIL </span> dana@coastal "Henderson patio"</span>
+  <span class="ln" style="--i:2"><span class="t">09:14:02</span> <span class="k2">PARSE</span> customer → QBO #214</span>
+  <span class="ln" style="--i:3"><span class="t">09:14:02</span> <span class="k2">PARSE</span> 38 × LAB-HARD  @85.00    3,230.00</span>
+  <span class="ln" style="--i:4"><span class="t">09:14:02</span> <span class="k2">PARSE</span> 14 × MAT-SAND  @32.00      448.00</span>
+  <span class="ln" style="--i:5"><span class="t">09:14:02</span> <span class="k2">PARSE</span>  1 × MAT-PAVER @2140.00  2,140.00</span>
+  <span class="ln" style="--i:6"><span class="t">09:14:03</span> <span class="k3">DRAFT</span> INV-1047  NET15  total 5,818.00</span>
+  <span class="ln" style="--i:7"><span class="t">09:16:40</span> <span class="k3">WAIT </span> approval ▸ jess <span class="ok">✓</span></span>
+  <span class="ln" style="--i:8"><span class="t">09:16:41</span> <span class="k4">POST</span>  INV-1047 → QuickBooks  <span class="ok">201</span></span>
+  <span class="ln" style="--i:9"><span class="t">$</span> xlsx apply "add margin col, flag &lt; 20%"</span>
+  <span class="ln" style="--i:10">  <span class="k1">+ D1:D5 written</span>   <span class="k3">! 2 rows flagged</span><span class="cur"></span></span></pre>
+          <span class="tag">Sample data · scripted replay</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="transit transit--short" data-node="-- // TRANSIT" aria-hidden="true"><p>&gt; bus 0x2A // node 02 commerce </p></section>
+
+    <section class="node" id="commerce" data-node="02 // COMMERCE">
+      <article class="panel panel--amber">
+        <div class="bar"><span>Node 02 // COMMERCE</span><span class="live">Online</span></div>
+        <div class="body">
+          <h2 data-scramble>Shopify that holds up.</h2>
+          <p>Storefront engineering, custom apps, subscriptions and integrations for brands that can’t afford downtime. Now shipping What A Room and commerce at Myntr.</p>
+          <ul class="brands">
+            <li class="act"><span class="a">0x020</span><span class="n" data-scramble-soft>WHAT_A_ROOM</span></li>
+            <li class="act"><span class="a">0x031</span><span class="n" data-scramble-soft>MYNTR_COMMERCE</span></li>
+            <li><span class="a">0x042</span><span class="n" data-scramble-soft>VERONICA_BEARD</span></li>
+            <li><span class="a">0x053</span><span class="n" data-scramble-soft>ANASTASIA_BEVERLY_HILLS</span></li>
+            <li><span class="a">0x064</span><span class="n" data-scramble-soft>ARIZONA_ICED_TEA</span></li>
+            <li><span class="a">0x075</span><span class="n" data-scramble-soft>PIER_1_IMPORTS</span></li>
+            <li><span class="a">0x086</span><span class="n" data-scramble-soft>FRANCES_VALENTINE</span></li>
+            <li><span class="a">0x097</span><span class="n" data-scramble-soft>HEDLEY_AND_BENNETT</span></li>
+            <li><span class="a">0x0A8</span><span class="n" data-scramble-soft>PAPER_PLANES</span></li>
+            <li><span class="a">0x0B9</span><span class="n" data-scramble-soft>TWP</span></li>
+            <li><span class="a">0x0CA</span><span class="n" data-scramble-soft>AGCF</span></li>
+            <li><span class="a">0x0DB</span><span class="n" data-scramble-soft>BOGG_BAG</span></li>
+            <li><span class="a">0x0EC</span><span class="n" data-scramble-soft>CONIGLIO_PALM_BEACH</span></li>
+            <li><span class="a">0x0FD</span><span class="n" data-scramble-soft>GREYSON_CLOTHIERS</span></li>
+            <li><span class="a">0x10E</span><span class="n" data-scramble-soft>FLEUR_DU_MAL</span></li>
+            <li><span class="a">0x11F</span><span class="n" data-scramble-soft>MOCIUN</span></li>
+            <li><span class="a">0x130</span><span class="n" data-scramble-soft>WHOLE_LATTE_LOVE</span></li>
+            <li><span class="a">0x141</span><span class="n" data-scramble-soft>INBLOOM</span></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="transit transit--short" data-node="-- // TRANSIT" aria-hidden="true"><p>&gt; bus 0x3C // node 03 processes </p></section>
+
+    <section class="node node--r" id="ps" data-node="03 // PROCESSES">
+      <article class="panel">
+        <div class="bar"><span>Node 03 // PROCESSES</span><span class="live">4 running</span></div>
+        <div class="body">
+          <h2 data-scramble>Currently running.</h2>
+          <pre class="term" data-play><span class="ln" style="--i:0"><span class="t">$</span> ps -u kyle</span>
+  <span class="ln" style="--i:1"><span class="t">PID  STAT  PROCESS</span></span>
+  <span class="ln" style="--i:2">001  <span class="k3">R+</span>    founder@bansavage</span>
+  <span class="ln" style="--i:3">002  <span class="k3">R+</span>    partner@harrison-benjamin-ai</span>
+  <span class="ln" style="--i:4">003  <span class="k3">R+</span>    tech-director@myntr-commerce</span>
+  <span class="ln" style="--i:5">004  <span class="k3">R+</span>    solutions@ordergroove</span>
+  <span class="ln" style="--i:6"><span class="t">$</span> git log --oneline --before=now <span class="t"># confirm before launch</span></span>
+  <span class="ln" style="--i:7"><span class="k2">*</span> scaled eng team 3 → 30 · shopify plus partner</span>
+  <span class="ln" style="--i:8"><span class="k2">*</span> frontend framework across 10+ storefronts</span>
+  <span class="ln" style="--i:9"><span class="k2">*</span> contentful → shopify sync · 4,000+ products<span class="cur"></span></span></pre>
+          <div class="stack" aria-label="Stack">
+            <span>TypeScript</span><span>Node</span><span>React</span><span>Next.js</span><span>Vue</span><span>GraphQL</span><span>Postgres</span><span>Redis</span><span>AWS</span><span>Shopify Plus</span><span>Hydrogen</span><span>Functions</span><span>QuickBooks API</span><span>Microsoft Graph</span><span>LLM tooling</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="transit transit--short" data-node="-- // TRANSIT" aria-hidden="true"><p>&gt; bus 0x4E // node 04 contact </p></section>
+
+    <section class="node" id="contact" data-node="04 // CONTACT">
+      <article class="panel">
+        <div class="bar"><span>Node 04 // CONTACT</span><span class="live">Listening</span></div>
+        <div class="body">
+          <h2 data-scramble>Tell me what’s slow.</h2>
+          <p>Describe the part of your week that eats the most time. I’ll reply with how I’d build it.</p>
+          <form id="tx" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+            <div class="field"><label for="tx-slow">&gt; What’s slow?</label><textarea id="tx-slow" name="slow" placeholder="every job email gets retyped into quickbooks at night…"></textarea></div>
+            <div class="field"><label for="tx-mail">&gt; Your email</label><input id="tx-mail" name="email" type="email" placeholder="you@company.com" autocomplete="email"></div>
+            <div class="actions"><button class="btn" type="submit">Transmit ▸</button></div>
+            <p class="out" id="tx-out" role="status" aria-live="polite"></p>
+          </form>
+          <div class="mail"><span class="tag">Direct line</span><b id="mail">kyle@bansavage.dev</b><button class="btn btn--ghost" type="button" id="copy" style="padding:9px 12px;font-size:12px">Copy</button></div>
+          <div class="links"><a href="https://www.linkedin.com/in/kylebansavage/">LinkedIn ↗</a><a href="https://github.com/bansavage">GitHub ↗</a></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="hud hud--bot">
+    <span class="on">Sys online</span>
+    <span id="h-node">Node 00 // Boot</span>
+    <span class="wide" id="h-depth">Depth 0000.0</span>
+    <span class="wide" id="h-vel">Vel 07.0</span>
+    <span id="h-clock">NYC·MIA --:--:-- ET</span>
+    <span class="wide">Keys 0–4 jump</span>
+  </footer>
+</body>
 </html>
