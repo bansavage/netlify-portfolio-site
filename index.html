@@ -1,92 +1,648 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Kyle Bansavage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Kyle Bansavage | Programmer &amp; Software Engineer, Miami</title>
+    <meta name="description" content="Kyle Bansavage is a programmer and software engineer in Miami, focused on AI technology, web development, Shopify, subscriptions, and page speed. Founder of Bansavage, Lead AI Engineer at Harrison Benjamin AI, Fractional Tech Director at Myntr.">
+    <meta name="theme-color" content="#000080">
     <link rel="icon" href="assets/logo-b.png">
+    <meta property="og:title" content="Kyle Bansavage">
+    <meta property="og:description" content="Programmer and software engineer in Miami. AI technology, web dev, Shopify, subscriptions, page speed.">
     <meta property="og:image" content="https://kylebansavage.com/assets/meta-image.png">
+    <link rel="preconnect" href="https://images.ctfassets.net">
     <!-- Styles -->
     <link href="./styles/global.css" rel="stylesheet">
     <!-- Scripts -->
+    <script>
+      // Without JS (or if the desktop never boots) the page falls back to a plain readable document.
+      document.documentElement.className = 'js';
+      setTimeout(function () {
+        if (!window.B95 || !window.B95.booted) document.documentElement.className = '';
+      }, 8000);
+    </script>
+    <script src="./scripts/portrait.js" defer></script>
+    <script src="./scripts/wm.js" defer></script>
+    <script src="./scripts/terminal.js" defer></script>
     <script src="./scripts/index.js" defer></script>
   </head>
-  <body class="custom-bg">
+  <body>
 
-    <div id="main">
+    <!-- Icon sprite: 32x32 pixel icons drawn as SVG, no image requests -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="clip-globe"><circle cx="16" cy="16" r="12"/></clipPath>
+      </defs>
 
-      <!-- Intro -->
-      <div class="intro-container">
-        <h1>Hi, I'm Kyle Bansavage</h1>
-        <p class="intro">
-          I'm a web developer & performance specialist based in Miami. I'm currently working as a Solutions Partner for <a href="https://www.ordergroove.com/" target="_blank">Ordergroove</a>,
-          Fractional Tech Director for <a href="https://www.myntr.io" target="_blank">Myntr</a>, and founder of the development agency: <a href="https://www.bansavage.dev" target="_blank">Bansavage</a>.
+      <symbol id="i-folder" viewBox="0 0 32 32">
+        <path fill="#000" d="M1 9V7h1V6h1V5h9v1h1v1h1v1h13v1h1v17h-1v1H2v-1H1z"/>
+        <path fill="#b98b1f" d="M3 6h9v1h1v1h1v1H2V8h1z"/>
+        <path fill="#f6cf57" d="M2 9h25v17H2z"/>
+        <path fill="#fff1a8" d="M2 9h25v1H3v16H2z"/>
+        <path fill="#b98b1f" d="M26 10h1v16H3v-1h23z"/>
+      </symbol>
+      <symbol id="i-folder-about" viewBox="0 0 32 32">
+        <use href="#i-folder"/>
+        <path fill="#000080" d="M13 12h4v1h1v3h-1v1h-4v-1h-1v-3h1zM9 24v-3h1v-1h1v-1h1v-1h6v1h1v1h1v1h1v3z"/>
+      </symbol>
+      <symbol id="i-folder-work" viewBox="0 0 32 32">
+        <use href="#i-folder"/>
+        <path fill="#000" fill-rule="evenodd" d="M12 12h6v1h1v2h4v9H7v-9h4v-2h1zm1 2v1h4v-1z"/>
+        <path fill="#9a5b1e" d="M8 16h14v7H8z"/>
+        <path fill="#c98a3c" d="M8 16h14v1H8z"/>
+        <path fill="#000" d="M8 19h14v1H8z"/>
+        <path fill="#ffd21f" d="M14 18h2v3h-2z"/>
+      </symbol>
+      <symbol id="i-folder-contact" viewBox="0 0 32 32">
+        <use href="#i-folder"/>
+        <path fill="#000" d="M6 13h18v11H6z"/>
+        <path fill="#fff" d="M7 14h16v9H7z"/>
+        <path fill="none" stroke="#000" d="M7.5 14.5l7.5 5.5 7.5-5.5"/>
+      </symbol>
+      <symbol id="i-folder-links" viewBox="0 0 32 32">
+        <use href="#i-folder"/>
+        <path fill="#000" d="M9 11h6v2h0v-2h6v2h2v6h-2v2h-2v2h-2v2h-4v-2h-2v-2H9v-2H7v-6h2z"/>
+        <path fill="#e00000" d="M10 12h4v2h2v-2h4v2h2v4h-2v2h-2v2h-2v2h-2v-2h-2v-2h-2v-2H8v-4h2z"/>
+        <path fill="#ff9a9a" d="M10 14h2v2h-2z"/>
+      </symbol>
+
+      <symbol id="i-computer" viewBox="0 0 32 32">
+        <path fill="#000" d="M4 2h24v1h1v17h-1v1H4v-1H3V3h1z"/>
+        <path fill="#c0c0c0" d="M4 3h24v17H4z"/>
+        <path fill="#fff" d="M4 3h24v1H5v16H4z"/>
+        <path fill="#808080" d="M27 4h1v16H5v-1h22z"/>
+        <path fill="#000" d="M7 6h18v11H7z"/>
+        <path fill="#5cc9e4" d="M8 7h16v9H8z"/>
+        <path fill="#c0c0c0" d="M8 14h16v2H8z"/>
+        <path fill="#0a8f2a" d="M9 14h3v2H9z"/>
+        <path fill="#fff" d="M10 9h4v3h-4zm6 0h6v1h-6z"/>
+        <path fill="#000080" d="M10 9h4v1h-4z"/>
+        <path fill="#000" d="M11 21h10v2H11z"/>
+        <path fill="#808080" d="M12 21h8v1h-8z"/>
+        <path fill="#000" d="M2 23h28v1h1v5h-1v1H2v-1H1v-5h1z"/>
+        <path fill="#c0c0c0" d="M2 24h28v5H2z"/>
+        <path fill="#fff" d="M2 24h28v1H3v4H2z"/>
+        <path fill="#808080" d="M29 25h1v4H3v-1h26z"/>
+        <path fill="#000" d="M18 26h9v1h-9z"/>
+        <path fill="#00c000" d="M5 26h2v1H5z"/>
+      </symbol>
+
+      <symbol id="i-txt" viewBox="0 0 32 32">
+        <path fill="#000" d="M6 2h14l6 6v22H6z"/>
+        <path fill="#fff" d="M7 3h12v6h6v20H7z"/>
+        <path fill="#c0c0c0" d="M20 4l4 4h-4z"/>
+        <path fill="#000080" d="M9 12h14v1H9zm0 3h14v1H9zm0 3h14v1H9zm0 3h14v1H9zm0 3h9v1H9z"/>
+      </symbol>
+      <symbol id="i-doc" viewBox="0 0 32 32">
+        <path fill="#000" d="M6 2h14l6 6v22H6z"/>
+        <path fill="#fff" d="M7 3h12v6h6v20H7z"/>
+        <path fill="#c0c0c0" d="M20 4l4 4h-4z"/>
+        <path fill="#000080" d="M9 6h7v8H9z"/>
+        <path fill="#fff" d="M11 8h3v2h-3zm-1 3h5v2h-5z"/>
+        <path fill="#808080" d="M18 11h5v1h-5zm0 2h5v1h-5zM9 17h14v1H9zm0 3h14v1H9zm0 3h14v1H9zm0 3h10v1H9z"/>
+      </symbol>
+      <symbol id="i-bmp" viewBox="0 0 32 32">
+        <path fill="#000" d="M3 5h26v22H3z"/>
+        <path fill="#fff" d="M4 6h24v20H4z"/>
+        <path fill="#7fd7ee" d="M6 8h20v16H6z"/>
+        <path fill="#ffe14d" d="M20 10h3v3h-3z"/>
+        <path fill="#0a8f2a" d="M6 24v-4l5-5 5 5 3-3 7 6v1z"/>
+      </symbol>
+
+      <symbol id="i-terminal" viewBox="0 0 32 32">
+        <path fill="#000" d="M2 4h28v1h1v22h-1v1H2v-1H1V5h1z"/>
+        <path fill="#c0c0c0" d="M2 5h28v22H2z"/>
+        <path fill="#fff" d="M2 5h28v1H3v21H2z"/>
+        <path fill="#808080" d="M29 6h1v21H3v-1h26z"/>
+        <path fill="#000080" d="M4 7h24v3H4z"/>
+        <path fill="#c0c0c0" d="M24 8h3v1h-3z"/>
+        <path fill="#1f2a8a" d="M4 11h24v14H4z"/>
+        <path fill="#fff" d="M6 13h2v1H6zm2 1h2v1H8zm2 1h2v1h-2zm-2 1h2v1H8zm-2 1h2v1H6zm8 1h6v1h-6z"/>
+        <path fill="#3dff7a" d="M22 16h2v3h-2z"/>
+      </symbol>
+
+      <symbol id="i-mail" viewBox="0 0 32 32">
+        <path fill="#000" d="M2 7h28v19H2z"/>
+        <path fill="#fff" d="M3 8h26v17H3z"/>
+        <path fill="none" stroke="#808080" d="M3.500 24.500l9-8m16 8l-9-8"/>
+        <path fill="none" stroke="#000" d="M3.500 8.500L16 18l12.500-9.500"/>
+      </symbol>
+
+      <symbol id="i-globe" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="12.5" fill="#1b4fd1"/>
+        <g clip-path="url(#clip-globe)" fill="#19a84a">
+          <path d="M7 7h6v2h3v3h-3v3h-3v3H7v-3H4v-4h3zM18 14h6v2h3v6h-4v4h-4v-5h-2v-4h1zM20 4h5v3h3v3h-7z"/>
+        </g>
+        <circle cx="16" cy="16" r="12.5" fill="none" stroke="#000"/>
+        <path fill="#9fc1ff" d="M9 8h3v1H9zM8 9h1v2H8z"/>
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 32 32">
+        <use href="#i-globe"/>
+        <path fill="#000" d="M1 20h12v12H1z"/>
+        <path fill="#fff" d="M2 21h10v10H2z"/>
+        <path fill="#000" d="M7 23h4v4h-1v-2H9v1H8v1H7v1H6v1H4v-1h1v-1h1v-1h1v-1h1v-1H7z"/>
+      </symbol>
+
+      <symbol id="i-trash" viewBox="0 0 32 32">
+        <path fill="#000" fill-rule="evenodd" d="M12 3h8v1h1v2h5v1h1v4h-2l-1 18h-1v1H9v-1H8L7 11H5V7h1V6h5V4h1zm1 2v1h6V5z"/>
+        <path fill="#dfdfdf" d="M6 7h20v3H6z"/>
+        <path fill="#fff" d="M6 7h20v1H6z"/>
+        <path fill="#c0c0c0" d="M8 11h16l-1 18H9z"/>
+        <path fill="#fff" d="M9 12h2v16h-1z"/>
+        <path fill="#808080" d="M13 13h1v14h-1zm3 0h1v14h-1zm3 0h1v14h-1zm3-1h1l-1 16h-1z"/>
+      </symbol>
+
+      <symbol id="i-coin" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="12.5" fill="#ffd21f" stroke="#000"/>
+        <circle cx="16" cy="16" r="9.5" fill="none" stroke="#b8860b"/>
+        <path fill="#fff7c2" d="M10 8h4v1h-3v1h-1v3H9v-4h1z"/>
+        <path fill="#7a5200" d="M12 11h8v2h-3v9h-2v-9h-3z"/>
+      </symbol>
+
+      <symbol id="i-bulb" viewBox="0 0 32 32">
+        <path fill="#000" d="M12 2h8v1h2v1h1v1h1v2h1v6h-1v2h-1v1h-1v2h-1v8h-1v2h-1v1h-2v-1h-1v-2h-1v-8h-1v-2H9v-1H8v-2H7V7h1V5h1V4h1V3h2z"/>
+        <path fill="#ffe14d" d="M12 3h8v1h2v1h1v2h1v6h-1v2h-1v1h-1v2H11v-2h-1v-1H9v-2H8V7h1V5h1V4h2z"/>
+        <path fill="#fff" d="M12 5h3v1h-2v1h-1v2h-1V6h1z"/>
+        <path fill="#c0c0c0" d="M12 19h8v7h-1v2h-6v-2h-1z"/>
+        <path fill="#808080" d="M12 21h8v1h-8zm0 2h8v1h-8zm1 2h6v1h-6z"/>
+      </symbol>
+
+      <symbol id="i-power" viewBox="0 0 32 32">
+        <path fill="#000" d="M4 2h24v1h1v17h-1v1H4v-1H3V3h1z"/>
+        <path fill="#c0c0c0" d="M4 3h24v17H4z"/>
+        <path fill="#fff" d="M4 3h24v1H5v16H4z"/>
+        <path fill="#808080" d="M27 4h1v16H5v-1h22z"/>
+        <path fill="#000" d="M7 6h18v11H7z"/>
+        <path fill="#ffe14d" d="M15 8h4v1h-2v1h-1v3h1v1h2v1h-4v-1h-1v-1h-1v-3h1V9h1z"/>
+        <path fill="#fff" d="M21 9h1v1h-1zm-11 3h1v1h-1z"/>
+        <path fill="#000" d="M11 21h10v2H11z"/>
+        <path fill="#808080" d="M12 21h8v1h-8z"/>
+        <path fill="#000" d="M2 23h28v1h1v5h-1v1H2v-1H1v-5h1z"/>
+        <path fill="#c0c0c0" d="M2 24h28v5H2z"/>
+        <path fill="#fff" d="M2 24h28v1H3v4H2z"/>
+        <path fill="#808080" d="M29 25h1v4H3v-1h26z"/>
+      </symbol>
+
+      <symbol id="i-palm" viewBox="0 0 32 32">
+        <path fill="#000" d="M13 31l2-9v-8h5v8l2 9z"/>
+        <path fill="#9a5b1e" d="M15 30l1-8v-7h3v7l1 8z"/>
+        <path fill="#000" d="M17 15L3 7 0 13l8 1-7 3v6l11-5zM17 15L8 1h7l4 9zM18 15l3-14 7 3-6 11zM19 14l13-5v7l-9 2zM19 15l12 4-1 7-9-7z"/>
+        <path fill="#0a8f2a" d="M17 14L4 8l-2 4 9 1zM17 14L10 2h4l4 8zM18 14l4-11 4 2-5 9zM19 14l12-4v4l-8 2zM17 15L3 17l-1 5 9-4zM19 15l11 5-1 4-8-6z"/>
+        <path fill="#2fd45a" d="M16 13l-9-3 3-1zM17 12l-4-8 2 1zM19 12l3-7 1 2zM20 13l8-2-1 2z"/>
+      </symbol>
+
+      <symbol id="i-error" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="13.5" fill="#e00000" stroke="#000"/>
+        <path fill="#fff" d="M9 11l2-2 5 5 5-5 2 2-5 5 5 5-2 2-5-5-5 5-2-2 5-5z"/>
+      </symbol>
+      <symbol id="i-info" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="13.5" fill="#fff" stroke="#000"/>
+        <path fill="#0000c0" d="M14 7h4v4h-4zm-2 6h6v9h2v2h-8v-2h2v-7h-2z"/>
+      </symbol>
+
+      <symbol id="i-print" viewBox="0 0 16 16">
+        <path fill="#000" d="M4 1h8v4h2v1h1v6h-3v3H4v-3H1V6h1V5h2z"/>
+        <path fill="#fff" d="M5 2h6v3H5zm0 8h6v4H5z"/>
+        <path fill="#c0c0c0" d="M2 6h12v5h-2V9H4v2H2z"/>
+        <path fill="#00c000" d="M12 7h1v1h-1z"/>
+      </symbol>
+      <symbol id="i-up" viewBox="0 0 16 16">
+        <path fill="#000" d="M1 4h5l1 1h8v9H1z"/>
+        <path fill="#f6cf57" d="M2 5h4l1 1h7v7H2z"/>
+        <path fill="#000" d="M8 12V9H6l3-3 3 3h-2v3z"/>
+      </symbol>
+      <symbol id="i-chip" viewBox="0 0 16 16">
+        <path fill="#000" d="M5 1h1v2H5zm3 0h1v2H8zm3 0h1v2h-1zM5 13h1v2H5zm3 0h1v2H8zm3 0h1v2h-1zM1 5h2v1H1zm0 3h2v1H1zm0 3h2v1H1zm12-6h2v1h-2zm0 3h2v1h-2zm0 3h2v1h-2z"/>
+        <path fill="#000" d="M3 3h10v10H3z"/>
+        <path fill="#808080" d="M4 4h8v8H4z"/>
+        <path fill="#c0c0c0" d="M5 5h6v6H5z"/>
+      </symbol>
+    </svg>
+
+    <!-- Power-on self test (first paint) -->
+    <div class="post" id="post" role="status" aria-label="Starting up">
+      <pre class="post__text" id="post-text">Bansavage Modular BIOS v9.5
+Copyright (C) 1995-2026, Bansavage Systems
+</pre>
+      <p class="post__hint">Press <b>ESC</b> or tap to skip</p>
+    </div>
+
+    <!-- Desktop -->
+    <div class="desktop" id="desktop">
+      <img class="desktop__palm" src="./assets/palm-95.png" width="100" height="114" alt="" decoding="async">
+      <ul class="icons" id="icons" aria-label="Desktop"></ul>
+      <div class="windows" id="windows"></div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar" id="taskbar">
+      <button type="button" class="start" id="start" aria-haspopup="true" aria-expanded="false">
+        <svg class="ico ico--16" aria-hidden="true"><use href="#i-palm"/></svg><b>Start</b>
+      </button>
+      <div class="tasks" id="tasks"></div>
+      <div class="tray"><time class="tray__clock" id="clock"></time></div>
+    </div>
+    <div class="start-menu" id="start-menu" role="menu" aria-label="Start" hidden>
+      <div class="start-menu__banner" aria-hidden="true"><span><b>Bansavage</b>95</span></div>
+      <ul class="start-menu__items" id="start-items"></ul>
+    </div>
+
+    <!--
+      The "hard drive". Real, crawlable content: the window manager borrows these
+      nodes when a folder or document is opened, and puts them back on close.
+      Without JavaScript this is simply the page.
+    -->
+    <main class="files" id="files">
+      <header class="files__intro">
+        <h1>Kyle Bansavage</h1>
+        <p>Programmer &amp; software engineer in Miami. AI technology, web dev, Shopify, subscriptions, page speed.</p>
+      </header>
+
+      <!-- C:\Kyle\About -->
+      <section class="folder" id="folder-about" data-title="About" data-icon="folder-about" data-path="C:\Kyle\About">
+        <h2>About</h2>
+
+        <article class="file prose" data-name="About Me.txt" data-icon="txt">
+          <h3>Hi, I'm Kyle Bansavage.</h3>
+          <p>I'm a programmer and software engineer based in Miami.</p>
+          <p>My focus: AI technology, web development, Shopify, subscriptions, and page speed.</p>
+          <p>
+            I'm the founder of the development agency <a href="https://www.bansavage.dev" target="_blank" rel="noopener">Bansavage</a>,
+            Lead AI Engineer at <a href="http://harrisonbenjamin.ai/" target="_blank" rel="noopener">Harrison Benjamin AI</a>,
+            and Fractional Tech Director for <a href="https://www.myntr.io" target="_blank" rel="noopener">Myntr</a>.
+          </p>
+          <p>
+            I'm also a Solutions Partner at <a href="https://www.ordergroove.com/" target="_blank" rel="noopener">Ordergroove</a>,
+            implementing highly technical subscription integrations with some of the biggest brands in the world.
+          </p>
+          <p>
+            9+ years delivering ecommerce for luxury brands and leading global dev teams:
+            full-stack development, Shopify architecture, and performance optimization.
+          </p>
+        </article>
+
+        <article class="file" data-name="Kyle.bmp" data-icon="bmp" data-size="3.0 KB">
+          <figure class="bitmap">
+            <img src="./assets/kyle-95.png" width="128" height="128" alt="Portrait of Kyle Bansavage, dithered down to 16 colors" loading="lazy">
+            <figcaption>Kyle.bmp &middot; 128 &times; 128 &middot; 16 colors</figcaption>
+          </figure>
+        </article>
+
+        <article class="file prose" data-name="Education.txt" data-icon="txt">
+          <h3>Education</h3>
+          <p class="meta">May 2018 &middot; Rochester, NY</p>
+          <p><b>Bachelor of Science in Information Technology</b><br>Rochester Institute of Technology</p>
+        </article>
+      </section>
+
+      <!-- C:\Kyle\Work -->
+      <section class="folder" id="folder-work" data-title="Work" data-icon="folder-work" data-path="C:\Kyle\Work">
+        <h2>Work</h2>
+
+        <article class="file prose" data-name="Bansavage.txt" data-icon="txt">
+          <h3>Founder <span class="at">Bansavage</span></h3>
+          <p class="meta">New York &amp; Miami</p>
+          <p>My development agency. What we do:</p>
+          <ul>
+            <li>Web performance &amp; site speed</li>
+            <li>Shopify development</li>
+            <li>Subscriptions</li>
+            <li>Loyalty &amp; membership</li>
+            <li>Relationship commerce</li>
+            <li>App implementation</li>
+          </ul>
+          <p><a href="https://www.bansavage.dev" target="_blank" rel="noopener">bansavage.dev</a></p>
+        </article>
+
+        <article class="file prose" data-name="Harrison Benjamin AI.txt" data-icon="txt">
+          <h3>Lead AI Engineer <span class="at">Harrison Benjamin AI</span></h3>
+          <p class="meta">Present</p>
+          <ul>
+            <li>Engineered custom AI platforms that automate the busywork: virtual agents read incoming email and turn it into invoices and QuickBooks estimates.</li>
+            <li>Built HomeAgent, an iOS app for keeping track of everything in your home, with AI that spots what's wrong with an item.</li>
+          </ul>
+          <p><a href="http://harrisonbenjamin.ai/" target="_blank" rel="noopener">harrisonbenjamin.ai</a></p>
+        </article>
+
+        <article class="file prose" data-name="Ordergroove.txt" data-icon="txt">
+          <h3>Solutions Partner <span class="at">Ordergroove</span></h3>
+          <p class="meta">Jan 2026 &ndash; Present &middot; Miami, FL</p>
+          <p>Implementing highly technical subscription integrations with some of the biggest brands in the world.</p>
+          <p><a href="https://www.ordergroove.com/" target="_blank" rel="noopener">ordergroove.com</a></p>
+        </article>
+
+        <article class="file prose" data-name="Myntr.txt" data-icon="txt">
+          <h3>Fractional Tech Director <span class="at">Myntr</span></h3>
+          <p class="meta">June 2021 &ndash; Present &middot; New York, NY &middot; a Revyrie Global company &middot; previously Lead Developer</p>
+          <ul>
+            <li>Co-founded a development agency that generated $1M in first-year revenue, earned Shopify Plus Partner status, and scaled from 3 to 30 members, culminating in acquisition by Revyrie Global.</li>
+            <li>Increased customer lifetime value by 30% and decreased support requests by 40% through passwordless authentication using Node.js microservices and subscription APIs.</li>
+            <li>Engineered and deployed a front-end component framework using Vue.js, Pinia, Vite, Tailwind, and GraphQL, reducing development time by 25% and increasing conversion rates by 35%.</li>
+          </ul>
+          <p><a href="https://www.myntr.io" target="_blank" rel="noopener">myntr.io</a></p>
+        </article>
+
+        <article class="file prose" data-name="Overdose Digital.txt" data-icon="txt">
+          <h3>Senior Developer <span class="at">Overdose Digital</span></h3>
+          <p class="meta">Dec 2019 &ndash; June 2021 &middot; New York, NY</p>
+          <ul>
+            <li>Managed a distributed team of 20 developers across 6 countries, ensuring on-time delivery for clients with a combined annual revenue of $1.25B by establishing and scaling development workflows with Git, CI/CD, and sprint planning.</li>
+            <li>Engineered a Node.js and Express application to synchronize Contentful CMS with Shopify, automating the management of over 4,000 products.</li>
+          </ul>
+        </article>
+
+        <article class="file prose" data-name="Whole Latte Love.txt" data-icon="txt">
+          <h3>Full-Stack Developer <span class="at">Whole Latte Love</span></h3>
+          <p class="meta">May 2018 &ndash; Dec 2019 &middot; New York, NY</p>
+          <ul>
+            <li>Replatformed from Magento 2 to Shopify Plus and implemented an order-handling application processing 200+ daily orders.</li>
+            <li>Engineered a suite of microservices on Heroku using Node.js and Express to increase fulfillment label creation by 2x, and created a scalable product comparison application using the Algolia API.</li>
+            <li>Built and maintained high-volume websites and microservices for multiple multimillion-dollar brands, integrating payment, fulfillment and inventory APIs.</li>
+          </ul>
+        </article>
+
+        <article class="file prose" data-name="Mitsubishi Electric.txt" data-icon="txt">
+          <h3>Software Engineer <span class="at">Mitsubishi Electric</span></h3>
+          <p class="meta">June 2017 &ndash; May 2018 &middot; New York, NY</p>
+          <ul>
+            <li>Built a C# .NET desktop application that improved Microsoft SharePoint file organization and usability for 1,000+ employees.</li>
+          </ul>
+        </article>
+
+        <article class="file" data-name="Clients" data-icon="folder">
+          <h3 class="listing__title">Clients</h3>
+          <ul class="listing">
+            <li><a href="https://whataroom.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>What A Room</b><i>Custom-built sofas and sectionals, made in the USA.</i></span></a></li>
+            <li><a href="https://www.anastasiabeverlyhills.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Anastasia Beverly Hills</b><i>The global beauty brand renowned by celebrities and influencers.</i></span></a></li>
+            <li><a href="https://drinkarizona.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>AriZona Iced Tea</b><i>The classic beverage enjoyed by millions of people.</i></span></a></li>
+            <li><a href="https://www.pier1.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Pier1 Imports</b><i>Classic American home furnishings and decor.</i></span></a></li>
+            <li><a href="https://francesvalentine.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Frances Valentine</b><i>Kate Spade's vintage-inspired, joyful designs.</i></span></a></li>
+            <li><a href="https://www.hedleyandbennett.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Hedley &amp; Bennett</b><i>The culinary industry's coveted handcrafted aprons.</i></span></a></li>
+            <li><a href="https://www.paperplane.shop/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Paper Planes</b><i>Jay-Z's lifestyle apparel and accessories brand.</i></span></a></li>
+            <li><a href="https://www.twpclothing.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>TWP</b><i>Womenswear that blends the utilitarian spirit of the American Midwest with metropolitan sensibility.</i></span></a></li>
+            <li><a href="https://veronicabeard.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Veronica Beard</b><i>Sophisticated classics that speak to today's multifaceted woman.</i></span></a></li>
+            <li><a href="https://agcf.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>AGCF</b><i>Alexandra Gucci's purpose-driven luxury handbags.</i></span></a></li>
+            <li><a href="https://boggbag.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Bogg Bag</b><i>The life-proof bag built to hold it all.</i></span></a></li>
+            <li><a href="https://www.conigliopalmbeach.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Coniglio Palm Beach</b><i>Sustainable styles inspired by the life &amp; color of Palm Beach.</i></span></a></li>
+            <li><a href="https://greysonclothiers.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Greyson Clothiers</b><i>Redefining menswear by uniting fashion and sport.</i></span></a></li>
+            <li><a href="https://fleurdumal.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Fleur du Mal</b><i>Luxury lingerie that speaks to the duality of dressing &amp; undressing.</i></span></a></li>
+            <li><a href="https://mociun.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Mociun</b><i>One-of-a-kind custom jewelry handmade in Brooklyn.</i></span></a></li>
+            <li><a href="https://www.wholelattelove.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Whole Latte Love</b><i>Deluxe espresso machines &amp; high quality coffee.</i></span></a></li>
+            <li><a href="https://www.tobeinbloom.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Inbloom</b><i>Holistic nourishment for mind &amp; body, founded by Kate Hudson.</i></span></a></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- C:\Kyle\Contact -->
+      <section class="folder" id="folder-contact" data-title="Contact" data-icon="folder-contact" data-path="C:\Kyle\Contact">
+        <h2>Contact</h2>
+
+        <article class="file" data-name="Email Kyle" data-icon="mail">
+          <form class="compose" id="compose" action="mailto:kyle@bansavage.dev" method="get">
+            <div class="compose__row">
+              <label for="compose-to">To:</label>
+              <input class="field" id="compose-to" type="text" value="kyle@bansavage.dev" readonly>
+            </div>
+            <div class="compose__row">
+              <label for="compose-subject">Subject:</label>
+              <input class="field" id="compose-subject" name="subject" type="text" value="Hello from kylebansavage.com" autocomplete="off">
+            </div>
+            <label class="visually-hidden" for="compose-body">Message</label>
+            <textarea class="field" id="compose-body" name="body" rows="7" placeholder="Write a message, then hit Send. It opens in your own mail app."></textarea>
+            <div class="compose__actions">
+              <button type="submit" class="btn btn--default">Send</button>
+              <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a>
+            </div>
+          </form>
+        </article>
+
+        <article class="file" data-name="LinkedIn" data-icon="link" data-href="https://www.linkedin.com/in/kylebansavage">
+          <div class="shortcut">
+            <svg class="ico" aria-hidden="true"><use href="#i-link"/></svg>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/kylebansavage</p>
+            <a class="btn" href="https://www.linkedin.com/in/kylebansavage" target="_blank" rel="noopener">Open</a>
+          </div>
+        </article>
+
+        <article class="file" data-name="GitHub" data-icon="link" data-href="https://github.com/bansavage">
+          <div class="shortcut">
+            <svg class="ico" aria-hidden="true"><use href="#i-link"/></svg>
+            <h3>GitHub</h3>
+            <p>github.com/bansavage</p>
+            <a class="btn" href="https://github.com/bansavage" target="_blank" rel="noopener">Open</a>
+          </div>
+        </article>
+
+        <article class="file" data-name="Bansavage.dev" data-icon="link" data-href="https://www.bansavage.dev">
+          <div class="shortcut">
+            <svg class="ico" aria-hidden="true"><use href="#i-link"/></svg>
+            <h3>Bansavage</h3>
+            <p>bansavage.dev &middot; my development agency</p>
+            <a class="btn" href="https://www.bansavage.dev" target="_blank" rel="noopener">Open</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Resume.doc -->
+      <section class="doc resume" id="doc-resume" data-title="Resume.doc">
+        <h2 class="resume__name">Kyle Bansavage</h2>
+        <p class="resume__contact">
+          Miami, FL &bull;
+          <a href="mailto:kyle@bansavage.dev">kyle@bansavage.dev</a> &bull;
+          <a href="https://kylebansavage.com">kylebansavage.com</a> &bull;
+          <a href="https://www.linkedin.com/in/kylebansavage" target="_blank" rel="noopener">LinkedIn</a> &bull;
+          <a href="https://github.com/bansavage" target="_blank" rel="noopener">GitHub</a>
         </p>
-      </div>
 
-      <!-- Things I like -->
-      <div class="press-quote-box" id="box-things">
-        <div class="press-quote-header">Things I like</div>
-        <div class="press-quote-body">
-          <div class="press-quote-content">
-            <!-- <blockquote class="press-quote-text">Effective as it is chic</blockquote>
-            <cite class="press-quote-source">
-              <span class="press-quote-source-letter">W</span>
-              <span class="press-quote-source-label">MAGAZINE</span>
-            </cite> -->
+        <h3>Summary</h3>
+        <p>
+          Programmer and software engineer with 9+ years of experience delivering ecommerce solutions for luxury brands
+          and managing global teams. Focused on AI technology, web development, Shopify, subscriptions, and page speed.
+        </p>
+
+        <h3>Work Experience</h3>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Founder</b><span>Present</span></p>
+          <p class="resume__sub"><span>Bansavage</span><span>New York &amp; Miami</span></p>
+          <ul>
+            <li>Development agency focused on web performance, Shopify development, subscriptions, loyalty and membership, and app implementation.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Lead AI Engineer</b><span>Present</span></p>
+          <p class="resume__sub"><span>Harrison Benjamin AI</span><span></span></p>
+          <ul>
+            <li>Engineered custom AI platforms that automate the busywork: virtual agents read incoming email and turn it into invoices and QuickBooks estimates.</li>
+            <li>Built HomeAgent, an iOS app for keeping track of everything in your home, with AI that spots what's wrong with an item.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Solutions Partner</b><span>Jan 2026 &ndash; Present</span></p>
+          <p class="resume__sub"><span>Ordergroove</span><span>Miami, FL</span></p>
+          <ul>
+            <li>Implementing highly technical subscription integrations with some of the biggest brands in the world.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Fractional Tech Director</b><span>June 2021 &ndash; Present</span></p>
+          <p class="resume__sub"><span>Myntr (<i>company of Revyrie Global</i>) &middot; previously Lead Developer</span><span>New York, NY</span></p>
+          <ul>
+            <li>Co-founded a development agency that generated $1M in first-year revenue, earned Shopify Plus Partner status, and scaled from 3 to 30 members, culminating in acquisition by Revyrie Global.</li>
+            <li>Increased customer lifetime value by 30% and decreased support requests by 40% through passwordless authentication using Node.js microservices and subscription APIs.</li>
+            <li>Engineered and deployed a front-end component framework using Vue.js, Pinia, Vite, Tailwind, and GraphQL, reducing development time by 25% and increasing conversion rates by 35%.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Senior Developer</b><span>Dec 2019 &ndash; June 2021</span></p>
+          <p class="resume__sub"><span>Overdose Digital</span><span>New York, NY</span></p>
+          <ul>
+            <li>Managed a distributed team of 20 developers across 6 countries, ensuring on-time delivery for clients with a combined annual revenue of $1.25B by establishing and scaling development workflows with Git, CI/CD, and sprint planning.</li>
+            <li>Engineered a Node.js and Express application to synchronize Contentful CMS with Shopify, automating the management of over 4,000 products.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Full-Stack Developer</b><span>May 2018 &ndash; Dec 2019</span></p>
+          <p class="resume__sub"><span>Whole Latte Love</span><span>New York, NY</span></p>
+          <ul>
+            <li>Replatformed from Magento 2 to Shopify Plus and implemented an order-handling application processing 200+ daily orders.</li>
+            <li>Engineered a suite of microservices on Heroku using Node.js and Express to increase fulfillment label creation by 2x, and created a scalable product comparison application using the Algolia API.</li>
+            <li>Built and maintained high-volume websites and microservices for multiple multimillion-dollar brands, integrating payment, fulfillment and inventory APIs.</li>
+          </ul>
+        </div>
+
+        <div class="resume__role">
+          <p class="resume__head"><b>Software Engineer</b><span>June 2017 &ndash; May 2018</span></p>
+          <p class="resume__sub"><span>Mitsubishi Electric</span><span>New York, NY</span></p>
+          <ul>
+            <li>Built a C# .NET desktop application that improved Microsoft SharePoint file organization and usability for 1,000+ employees.</li>
+          </ul>
+        </div>
+
+        <h3>Skills</h3>
+        <p class="resume__skills">
+          <b>Languages</b>: JavaScript (ES6+), TypeScript<br>
+          <b>Frameworks</b>: React, Next.js, Vue.js, Pinia, Vuex, Tailwind CSS<br>
+          <b>Tools &amp; Platforms</b>: Node.js, Express.js, Webpack, Vite, Prisma, GraphQL, RESTful APIs, Microservices, Shopify Plus<br>
+          <b>Practices</b>: CI/CD, Performance Optimization, Solution Architecture
+        </p>
+
+        <h3>Education</h3>
+        <div class="resume__role">
+          <p class="resume__head"><b>Bachelor of Science in Information Technology</b><span>May 2018</span></p>
+          <p class="resume__sub"><span>Rochester Institute of Technology</span><span>Rochester, NY</span></p>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="doc" id="doc-links" data-title="Links">
+        <h2>Links</h2>
+        <h3 class="listing__title">Companies</h3>
+        <ul class="listing listing--compact">
+          <li><a href="https://www.bansavage.dev" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Bansavage</b><i>bansavage.dev</i></span></a></li>
+          <li><a href="https://www.ordergroove.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Ordergroove</b><i>ordergroove.com</i></span></a></li>
+          <li><a href="http://harrisonbenjamin.ai/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Harrison Benjamin AI</b><i>harrisonbenjamin.ai</i></span></a></li>
+          <li><a href="https://www.myntr.io" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Myntr</b><i>myntr.io</i></span></a></li>
+        </ul>
+        <h3 class="listing__title">Web Performance</h3>
+        <ul class="listing listing--compact">
+          <li><a href="https://treo.sh/sitespeed" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>RUM Site Metrics</b><i>treo.sh/sitespeed</i></span></a></li>
+          <li><a href="https://screenspan.net/fallback" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Font Fallback</b><i>screenspan.net/fallback</i></span></a></li>
+          <li><a href="https://www.speedcurve.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Speed Curve</b><i>speedcurve.com</i></span></a></li>
+          <li><a href="https://www.catchpoint.com/webpagetest" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>WebPageTest</b><i>catchpoint.com/webpagetest</i></span></a></li>
+          <li><a href="https://performance.shopify.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Shopify Performance Blog</b><i>performance.shopify.com</i></span></a></li>
+          <li><a href="https://performanceobserver.dev/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>PerformanceObserver</b><i>performanceobserver.dev</i></span></a></li>
+          <li><a href="https://www.nywebperformance.com/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>NY Web Performance</b><i>nywebperformance.com</i></span></a></li>
+          <li><a href="https://benevolent-hamster-8fd29f.netlify.app/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-link"/></svg><span><b>Sia's Deck</b><i>benevolent-hamster-8fd29f.netlify.app</i></span></a></li>
+        </ul>
+      </section>
+
+      <!-- Kyle's Computer -->
+      <section class="doc system" id="doc-system" data-title="System Properties">
+        <h2>Kyle's Computer</h2>
+
+        <section class="tabpanel" data-tab="General">
+          <div class="system__general">
+            <div class="system__monitor" aria-hidden="true">
+              <img src="./assets/kyle-95.png" width="128" height="128" alt="" loading="lazy">
+            </div>
+            <dl class="system__specs">
+              <dt>System:</dt>
+              <dd>Bansavage 95</dd>
+              <dd>Version 9.5.0</dd>
+              <dt>Registered to:</dt>
+              <dd>Kyle Bansavage</dd>
+              <dd>Programmer / Software Engineer</dd>
+              <dd>Miami, FL</dd>
+              <dt>Computer:</dt>
+              <dd>AI technology, web dev, Shopify, subscriptions, page speed</dd>
+              <dd>Uptime: <span data-uptime>9+ years</span> (since June 2017)</dd>
+              <dd>100% Y2K compliant</dd>
+            </dl>
+          </div>
+        </section>
+
+        <section class="tabpanel" data-tab="Device Manager">
+          <h3 class="visually-hidden">Skills</h3>
+          <div class="tree field">
+            <p class="tree__root"><svg class="ico ico--16" aria-hidden="true"><use href="#i-computer"/></svg>Kyle</p>
             <ul>
-              <li><a href="https://openclaw.ai/" target="_blank">OpenClaw</a></li>
-              <li><a href="https://aistudio.google.com/" target="_blank">Google AI</a></li>
-              <li><a href="https://mrdoob.com/" target="_blank">Mr Doob</a></li>
-              <li><a href="https://pablotheflamingo.com/" target="_blank">Pablo the Flamingo</a></li>
+              <li><details open><summary><svg class="ico ico--16" aria-hidden="true"><use href="#i-chip"/></svg>Languages</summary>
+                <ul><li>JavaScript (ES6+)</li><li>TypeScript</li></ul></details></li>
+              <li><details open><summary><svg class="ico ico--16" aria-hidden="true"><use href="#i-chip"/></svg>Frameworks</summary>
+                <ul><li>React</li><li>Next.js</li><li>Vue.js</li><li>Pinia</li><li>Vuex</li><li>Tailwind CSS</li></ul></details></li>
+              <li><details open><summary><svg class="ico ico--16" aria-hidden="true"><use href="#i-chip"/></svg>Tools &amp; Platforms</summary>
+                <ul><li>Node.js</li><li>Express.js</li><li>Webpack</li><li>Vite</li><li>Prisma</li><li>GraphQL</li><li>RESTful APIs</li><li>Microservices</li><li>Shopify Plus</li></ul></details></li>
+              <li><details><summary><svg class="ico ico--16" aria-hidden="true"><use href="#i-chip"/></svg>Practices</summary>
+                <ul><li>CI/CD</li><li>Performance Optimization</li><li>Solution Architecture</li></ul></details></li>
+              <li><details><summary><svg class="ico ico--16" aria-hidden="true"><use href="#i-chip"/></svg>Integrations</summary>
+                <ul><li>Ordergroove subscriptions</li><li>Contentful</li><li>Algolia</li><li>Heroku</li></ul></details></li>
             </ul>
           </div>
-          <div class="press-quote-image">
-            <img src="./assets/palm-tree.png" alt="Press quote image" loading="eager"/>
-          </div>
-        </div>
-      </div>
+        </section>
 
-      <!-- Performance -->
-      <div class="press-quote-box" id="box-performance">
-        <div class="press-quote-header">Performance</div>
-        <div class="press-quote-body">
-          <div class="press-quote-content">
-            <ul>
-              <li><a href="https://treo.sh/sitespeed" target="_blank">RUM Site Metrics</a></li>
-              <li><a href="https://screenspan.net/fallback" target="_blank">Font Fallback</a></li>
-              <li><a href="https://www.speedcurve.com/" target="_blank">Speed Curve</a></li>
-              <li><a href="https://www.catchpoint.com/webpagetest" target="_blank">WebPageTest</a></li>
-              <li><a href="https://performance.shopify.com/" target="_blank">Shopify Performance Blog</a></li>
-              <li><a href="https://performanceobserver.dev/" target="_blank">PerformanceObserver</a></li>
-              <li><a href="https://www.nywebperformance.com/" target="_blank">NY Web Performance</a></li>
-              <li><a href="https://benevolent-hamster-8fd29f.netlify.app/" target="_blank">Sia's Deck</a></li>
-            </ul>
+        <section class="tabpanel" data-tab="Performance">
+          <fieldset class="group">
+            <legend>Performance status</legend>
+            <dl class="props">
+              <dt>Time to first byte:</dt><dd data-perf="ttfb">&ndash;</dd>
+              <dt>First contentful paint:</dt><dd data-perf="fcp">&ndash;</dd>
+              <dt>Largest contentful paint:</dt><dd data-perf="lcp">&ndash;</dd>
+              <dt>Cumulative layout shift:</dt><dd data-perf="cls">&ndash;</dd>
+              <dt>Requests:</dt><dd data-perf="req">&ndash;</dd>
+              <dt>Page weight:</dt><dd data-perf="bytes">&ndash;</dd>
+              <dt>DOM nodes:</dt><dd data-perf="dom">&ndash;</dd>
+              <dt>JS frameworks:</dt><dd>0</dd>
+              <dt>Web fonts:</dt><dd>0</dd>
+            </dl>
+          </fieldset>
+          <p class="system__verdict" data-perf="verdict">Measured live in your browser for this page load.</p>
+        </section>
+      </section>
 
-          </div>
-          <div class="press-quote-image">
-            <img src="./assets/palm-tree-left.png" alt="Press quote image" id="palm-tree-left" loading="lazy"/>
-          </div>
-        </div>
-      </div>
-
-      <!-- Play Video Button -->
-      <button id="play-video-button">Free LLM Tokens?</button>
-    </div>
-
-    <!-- Video Overlay -->
-    <div id="video-overlay">
-      <div class="press-quote-box" id="box-performance">
-        <div class="press-quote-header">You didn't say the magic word</div>
-        <div class="press-quote-body">
-          <div class="press-quote-content">
-            <video height="540" width="540" loop id="the-king-video">
-              <source src="./assets/theKing.mp4" type="video/mp4" fetchpriority="high">
-            </video>
-        </div>
-      </div>
-    </div>
+      <!-- Recycle Bin -->
+      <section class="doc" id="doc-trash" data-title="Recycle Bin">
+        <h2>Recycle Bin</h2>
+        <table class="details">
+          <thead><tr><th>Name</th><th>Original Location</th><th>Size</th></tr></thead>
+          <tbody>
+            <tr><td>render-blocking.js</td><td>C:\head</td><td>412 KB</td></tr>
+            <tr><td>unused.css</td><td>C:\theme\assets</td><td>840 KB</td></tr>
+            <tr><td>hero-FINAL-v7.png</td><td>C:\uploads</td><td>6.2 MB</td></tr>
+            <tr><td>layout-shift.gif</td><td>C:\above-the-fold</td><td>1.1 MB</td></tr>
+            <tr><td>jquery-1.4.2.min.js</td><td>C:\vendor</td><td>72 KB</td></tr>
+            <tr><td>third-party-tags (37)</td><td>C:\tag-manager</td><td>2.4 MB</td></tr>
+            <tr><td>node_modules</td><td>C:\everywhere</td><td>1.8 GB</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
   </body>
 </html>
