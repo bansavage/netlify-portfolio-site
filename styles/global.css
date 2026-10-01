@@ -17,7 +17,7 @@
 
   /* Desktop (the ocean tile from the previous site) */
   --desk: #afe2e5;
-  --wallpaper: url("https://images.ctfassets.net/hsst7dmi6ghe/1RwHLfk8QAcmomQlbW8kTk/d05621f82d104c07975a5e9297be62c7/pacific-breeze.png");
+  --wallpaper: url("../assets/pacific-breeze.png");
 
   /* Console */
   --term-bg: #1f2a8a;
