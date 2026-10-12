@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F4EDDA">
+<title>Kyle &amp; Daina — Save the Date</title>
+<!-- THE SAVE THE DATE: the page guests are sent, at kylebansavage.com/wedding/save-the-date. Wooden doors open on a sheet of tropical wallpaper; the camera pushes in through the leaves, a title card comes and goes, a monkey swings across, and the last leaves part to uncover the copy, printed in the golden middle of it. Music from the tap on Open.
+     (It began as version 7 of the "coming soon" studies: ../coming-soon/v7/ is that version as it stood on the day this page was made from it, kept for the record. Changes are made HERE.) -->
+<meta name="description" content="Kyle &amp; Daina are getting married. Quintana Roo, México, November 2027.">
+<link rel="canonical" href="https://www.kylebansavage.com/wedding/save-the-date/">
+<link rel="icon" href="./favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<!-- WHAT A LINK TO THIS PAGE LOOKS LIKE when it is sent in iMessage, Slack, WhatsApp, a text or an e-mail: the title and the
+     line under it are right here, and the picture is ./share.jpg (1200 × 630: the initials on the page's own foliage).
+     The addresses are written out in full, with www, because that is where the site lives and not every app follows a redirect.
+     If the picture is ever changed, give the new one a new name (share-2.jpg): apps keep the old one by its address. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kyle &amp; Daina">
+<meta property="og:title" content="Kyle &amp; Daina — Save the Date">
+<meta property="og:description" content="Kyle &amp; Daina are getting married. Quintana Roo, México, November 2027.">
+<meta property="og:url" content="https://www.kylebansavage.com/wedding/save-the-date/">
+<meta property="og:image" content="https://www.kylebansavage.com/wedding/save-the-date/share.jpg">
+<meta property="og:image:secure_url" content="https://www.kylebansavage.com/wedding/save-the-date/share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The initials K and D joined by a marigold ampersand, in cream on dark green tropical leaves, above the words Save the Date.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kyle &amp; Daina — Save the Date">
+<meta name="twitter:description" content="Kyle &amp; Daina are getting married. Quintana Roo, México, November 2027.">
+<meta name="twitter:image" content="https://www.kylebansavage.com/wedding/save-the-date/share.jpg">
+<meta name="twitter:image:alt" content="The initials K and D joined by a marigold ampersand, in cream on dark green tropical leaves, above the words Save the Date.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Trajan Pro Bold, for the title card ("Coming next year"; canopy.css has the @font-face rules) -->
+<link rel="preload" href="./fonts/TrajanPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<!-- The music: asked for now, as the page loads, so that it is there by the time Open is tapped (js/main.js: SOUND fetches it and plays it from memory) -->
+<link rel="preload" href="./audio/white-lotus-theme.mp3" as="fetch" type="audio/mpeg" crossorigin>
+<link rel="stylesheet" href="./canopy.css">
+<script>
+  /* Until the animation takes over, hide the copy so it does not flash. If the script never
+     arrives (blocked CDN, old browser), give up after 4s and show the plain static page. */
+  document.documentElement.classList.add('js');
+  window.__canopyFallback = function () { document.documentElement.classList.remove('js'); };
+  window.__canopyTimer = setTimeout(window.__canopyFallback, 4000);
+</script>
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" crossorigin>
+</head>
+<body>
+
+<div class="stage">
+  <!-- The page is layered, bottom to top: (a) the ground, (b) the copy, (c) the foliage, the doors and their Open button, the title card and the monkey of the prologue, (d) the linen finish, (e) Replay. -->
+
+  <!-- (a) THE GROUND: cream linen with the pale-gold field in the middle of it (js/ground.js paints it). -->
+  <canvas class="ground" aria-hidden="true"></canvas>
+
+  <!-- (b) THE COPY, printed on the gold. Change names, place and date right here: it is ordinary text. -->
+  <main class="copy">
+    <div class="block" id="block">
+      <h1 class="names"><span class="line"><span class="word">Kyle</span> <em class="word amp">&amp;</em></span> <span class="line"><span class="word">Daina</span></span></h1>
+      <p class="sub"><span class="ink">are getting married</span></p>
+      <div class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="place"><span class="ink">Quintana Roo, México</span></p>
+      <p class="date"><span class="ink">November 2027</span></p>
+      <!-- THE BUTTON: opens the form where a guest leaves a name, an email, an address and a phone number, so that an invitation can be sent.
+           The words on it and the form it opens are both right here. (It opens in a new tab: the form is Google's own page.) -->
+      <p class="note"><a class="ink" href="https://forms.gle/B6YAsgDBqTWuhPFTA" target="_blank" rel="noopener">Get your invite <span class="go" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </main>
+
+  <!-- (c) THE FOLIAGE (WebGL), see-through wherever there is no leaf: the leaves are IN FRONT of the copy,
+       and the only way the names are seen is for the leaves to move out of the way. -->
+  <!-- (during the push through the leaves only: deep shade behind the foliage, so that where two leaves do not
+       quite meet it is shadow that shows, not the bare sheet. It is taken away, unseen, before the last leaves part.) -->
+  <div class="backing" aria-hidden="true" hidden></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <!-- THE DOORS: a pair of slatted wooden doors, painted like the wallpaper (js/doors.js). The page opens
+       on them, shut; Open (or a tap anywhere on them) swings them back and the camera goes through. -->
+  <div class="doors" aria-hidden="true"><canvas class="door l"></canvas><canvas class="door r"></canvas></div>
+  <!-- (under the button: a word about the music, so that it is neither missed nor a surprise. It is part of the button: it comes and goes with it, and a tap on it opens the doors too.) -->
+  <button class="open" type="button" aria-label="Open the doors. Music plays: turn your sound on.">Open<span class="hint" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" focusable="false"><path d="M3 9.4h3.7l4.8-4v13.2l-4.8-4H3z"/><path class="line" d="M14.7 9a4.3 4.3 0 0 1 0 6"/><path class="line" d="M17.3 6.3a8 8 0 0 1 0 11.4"/></svg>Turn your sound on</span></button>
+
+  <!-- THE PROLOGUE (version 7; js/main.js: PRO). After the doors, while the camera pushes in through the leaves:
+       the title card comes up out of a blur in front of the wallpaper, stays a moment and goes … -->
+  <p class="card" aria-hidden="true" hidden><span>Coming</span> <span>next year</span></p>
+  <!-- … and then the monkey swings across on a liana (js/swing.js paints it and fills this in) -->
+  <div class="swing" aria-hidden="true" hidden></div>
+  <!-- bare linen over all of the above until the doors and the wallpaper behind them are painted and ready:
+       then it lifts once, so the picture arrives whole instead of piece by piece -->
+  <div class="veil" aria-hidden="true"></div>
+  <!-- "Loading...": a paper tag where the Open button is about to be, there from the first moment the page is seen.
+       It stays, on the bare linen and then on the doors, until the button can take its place (the words are right here). -->
+  <p class="loading" aria-hidden="true">Loading<i>.</i><i>.</i><i>.</i></p>
+
+  <!-- (d) The wallpaper finish: woven linen and the soft light of the wall, over the artwork AND the type. -->
+  <canvas class="finish" aria-hidden="true"></canvas>
+
+  <!-- (e) -->
+  <button class="replay" type="button" hidden>Replay</button>
+  <!-- the music starts with the tap on Open; this turns it off and on.
+       A speaker while the sound is on; the same speaker crossed out when it is off. -->
+  <button class="sound" type="button" aria-pressed="true" aria-label="Sound on. Turn sound off" hidden>
+    <svg class="ico on" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9.4h3.7l4.8-4v13.2l-4.8-4H3z"/><path class="line" d="M14.7 9a4.3 4.3 0 0 1 0 6"/><path class="line" d="M17.3 6.3a8 8 0 0 1 0 11.4"/></svg>
+    <svg class="ico off" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9.4h3.7l4.8-4v13.2l-4.8-4H3z"/><path class="line" d="M15.2 9.2l5.6 5.6M20.8 9.2l-5.6 5.6"/></svg>
+  </button>
+</div>
+
+<script type="module" src="./js/finish.js"></script>
+<script type="module" src="./js/main.js" onerror="window.__canopyFallback()"></script>
+</body>
+</html>
