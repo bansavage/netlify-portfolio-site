@@ -49,44 +49,46 @@
  * t - 1.27 once the names are uncovered. Every number in TL, INK_AT, js/scene.js and js/compose.js that
  * is not part of PRO is in s.
  *
- * TIMELINE (seconds, on the phone it was designed on). The prologue is the 6.15 s before t = 0, and "+"
+ * TIMELINE (seconds, on the phone it was designed on). The prologue is the 6.35 s before t = 0, and "+"
  * below is seconds after the tap on Open. The bars of the music begin at about +3.95, +7.92 and +11.89.
  *
  *   (on load   Bare linen until the doors, the wallpaper behind them and the typefaces are all ready; then
  *              the whole picture comes up out of the cloth at once, in 0.6 s: THE VEIL in canopy.css.
  *              The music is fetched meanwhile; the Open button waits for it, four seconds at most.)
- *   -6.15  +0     The doors, shut, and the Open button. The clock waits here until the tap. The tap
+ *   -6.35  +0     The doors, shut, and the Open button. The clock waits here until the tap. The tap
  *                 starts the music.
- *   -6.09  +0.06  The two leaves swing back on their hinges at the edges of the screen (1.15 s), the
+ *   -6.29  +0.06  The two leaves swing back on their hinges at the edges of the screen (1.15 s), the
  *                 right one a moment after the left, and knock back a little off their stops.
- *   -5.75  +0.4   THE PUSH BEGINS, while the doors are still parting. It is at its full pace, 2.2 world
+ *   -5.95  +0.4   THE PUSH BEGINS, while the doors are still parting. It is at its full pace, 2.2 world
  *                 units a second, by +1.2, and holds it without a pause until the reveal takes over. The
  *                 camera travels in between the open doors (they stand still and slide out past the edges
- *                 of the screen, gone by about +1.8) and into the wallpaper. It set out 13.5 units further
- *                 back than version 6's camera, and the four nearest shells of leaves (the opening picture)
- *                 stand in its path. Everything grows as it comes, and the nearer a leaf the faster.
- *   -5.65  +0.5   THE NEAR LEAVES GIVE WAY. From here to +4.05 the leaves of those four shells are pushed
- *                 out of the camera's way, the nearest shell first, a leaf about every 0.17 s. Each one goes
+ *                 of the screen, gone by about +1.8) and into the wallpaper. It set out 14 units further
+ *                 back than version 6's camera, and the five nearest shells of leaves stand in its path.
+ *                 Everything grows as it comes, and the nearer a leaf the faster.
+ *   -5.85  +0.5   THE NEAR LEAVES GIVE WAY. From here to +4.25 the leaves of those five shells are pushed
+ *                 out of the camera's way, the nearest shell first, a leaf about every 0.13 s. Each one goes
  *                 SLOWLY: about three seconds from being touched to having swung out of the picture (it is
  *                 seen to move from about a second after it is touched), three times its printed size by
- *                 then. Behind them are more leaves, coming up.
- *   -5.0   +1.15  "COMING NEXT YEAR" comes up out of a blur (1.05 s), in front of the leaves, while the
+ *                 then. First the four shells of the opening picture; then, touched from +3.5 and seen to
+ *                 go from about +4.5 (after the title card, before the monkey swings in), the first shell
+ *                 of the big leaves behind it. Behind them are more leaves, coming up.
+ *   -5.2   +1.15  "COMING NEXT YEAR" comes up out of a blur (1.05 s), in front of the leaves, while the
  *                 open doors are sliding out of the picture …
- *   -3.95  +2.2   … is fully there and stays 2.05 s, drifting nearer (the second bar falls in it) …
- *   -1.9   +4.25  … and goes into a blur again (0.7 s).
- *   -0.95  +5.2   A quarter of a second after it has gone, the monkey swings across on a liana, left to
- *                 right (2.4 s; in the picture from about +5.7 to +7.1).
- *    0     +6.15  THE REST OF THE LEAVES, A LITTLE FASTER. Version 6's reveal from here: its camera move
- *                 takes over from the push without a join (PRO.handoff), the six shells still in the way
+ *   -4.15  +2.2   … is fully there and stays 2.25 s, drifting nearer (the second bar falls in it) …
+ *   -1.9   +4.45  … and goes into a blur again (0.7 s).
+ *   -0.95  +5.4   A quarter of a second after it has gone, the monkey swings across on a liana, left to
+ *                 right (2.4 s; in the picture from about +5.9 to +7.3).
+ *    0     +6.35  THE REST OF THE LEAVES, A LITTLE FASTER. Version 6's reveal from here: its camera move
+ *                 takes over from the push without a join (PRO.handoff), the five shells still in the way
  *                 part, and the last curtain opens, all at 0.62 of the speed it was made at until the names
- *                 are uncovered (PRO.slow). In the list below, which is in version 6's own time: its 0.53
- *                 (the first of those six shells is touched) is +6.8 here; 1.0 (the curtain begins to
- *                 open) is +7.6; 1.27 (the first gold) is +8.0, on the third bar; 1.5 (the names begin to
- *                 set in) is +8.4; 2.25 (the names clear) is +9.6; 2.9 (the camera lands) is +10.3. From
- *                 3.0 on it is at full speed again, 1.27 s behind: the flags from +10.9, the flowers from
- *                 +11.5 (the fourth bar falls as they open), Replay at +13.9.
+ *                 are uncovered (PRO.slow). In the list below, which is in version 6's own time: its 0.58
+ *                 (the first of those five shells is touched) is +7.1 here; 1.0 (the curtain begins to
+ *                 open) is +7.8, just before the third bar; 1.27 (the first gold) is +8.2; 1.5 (the names
+ *                 begin to set in) is +8.6; 2.25 (the names clear) is +9.8; 2.9 (the camera lands) is
+ *                 +10.5. From 3.0 on it is at full speed again, 1.27 s behind: the flags from +11.1, the
+ *                 flowers from +11.7 (the fourth bar falls as they open), Replay at +14.1.
  *
- * VERSION 6'S REVEAL, in its own time (s). In version 7 the four nearest shells have gone before it starts,
+ * VERSION 6'S REVEAL, in its own time (s). In version 7 the five nearest shells have gone before it starts,
  * the leaves that are left are nearly twice their printed size at s = 0, and nothing is held: the push is
  * already under way.
  *
@@ -157,7 +159,7 @@
  *
  * URL SWITCHES (for looking at the work)
  *   ?t=3.5      draw exactly that moment and hold it        ?copy=off   artwork without the text
- *   ?t=-6.15    the doors, shut (?t=-5.5 half open; ?t=-3 the title card; ?t=0.2 the monkey; ?t=2 the first gold)
+ *   ?t=-6.35    the doors, shut (?t=-5.7 half open; ?t=-3 the title card; ?t=0.2 the monkey; ?t=2 the first gold)
  *   ?slits=cream / ?slit=0.1   the gaps between the slats of the doors, closed / wider
  *   ?finish=1.5 try another strength of the linen finish (0 – 2)
  *   ?only=pass4 draw just that layer of foliage over the ground and the copy (a list: pass0 … pass9 are
@@ -188,14 +190,14 @@ export const TL = {
 /* THE PROLOGUE (version 7): everything between the tap on Open and t = 0, where the timeline above takes
  * over exactly as it was. The page waits, doors shut, at t = -PRO.len. The times in here are seconds
  * AFTER THE TAP, which is also when the music starts: its bars begin at about 3.95, 7.92 and 11.89 s.
- * As it stands the card is up across the second bar, the first gold shows on the third, and the birds of
- * paradise are opening on the fourth. */
+ * As it stands the card is up across the second bar, the last curtain opens on the third (the first gold a
+ * quarter of a second after it), and the birds of paradise open on the fourth. */
 export const PRO = {
-  len: 6.15,                   // seconds from the tap to t = 0. (Kyle's notes on the title card moved it: a second sooner, then 0.75 s longer on screen;
+  len: 6.35,                   // seconds from the tap to t = 0. (Kyle's notes on the title card moved it: a second sooner, then 0.75 s and 0.2 s longer on screen;
                                // the monkey and everything after it keep their places after the card, so they moved with it)
   push: [0.4, 0.8],            // THE PUSH THROUGH THE LEAVES: the camera starts in this long after the tap (the doors are just parting), and takes this long to reach its pace
-  pace: 2.2,                   // how fast it travels, in world units a second: STEADILY, AND NOT SLOWLY. It sets out 13.5 units further back than version 6's
-                               // camera and goes through the four nearest shells of leaves on the way (js/scene.js). On screen the far leaves grow 9% a second
+  pace: 2.2,                   // how fast it travels, in world units a second: STEADILY, AND NOT SLOWLY. It sets out 14 units further back than version 6's
+                               // camera and goes through the five nearest shells of leaves on the way (js/scene.js). On screen the far leaves grow 9% a second
                                // at first and 16% by t = 0 (nearly twice as big by then), the nearest 19% to 56% (three times as big as they give way).
                                // (It was 0.24 at first, then 0.36, then 0.72: each time Kyle asked for faster. Slower = smaller.)
   handoff: [0.3, 1.0],         // after t = 0 it carries on at its pace for this long, then lets go over this long, as the camera move proper picks up: the camera never slows
@@ -208,15 +210,16 @@ export const PRO = {
   card: {                      // THE TITLE CARD ("Coming next year": the words are in index.html)
     in: [1.15, 1.05],          // it starts to come up out of its blur this long after the tap (the doors are just open, and on their way out of the picture), and takes this long
                                // (it was 2.65, then 2.15: Kyle asked for it sooner twice, half a second and then a whole one)
-    hold: 2.05,                // it stays, fully there, this long (it was 1.3: Kyle asked for 750 ms more)
+    hold: 2.25,                // it stays, fully there, this long (it was 1.3: Kyle asked for 750 ms more, and then 200 ms more)
     out: 0.7,                  // and takes this long to go
     blur: 14,                  // how blurred it starts and ends (px)
     grow: 0.07,                // it drifts this much nearer (bigger) while it is on screen: it is pushed into like everything else
   },
   near: {                      // THE NEAR LEAVES GIVE WAY: the camera goes through the leaves of the opening picture, and each is pushed out of its way, SLOWLY (js/compose.js)
-    shells: 4,                 // the four nearest shells of the wallpaper (the opening picture: about twenty plants and the two bunches of bananas)
-    from: -5.65,               // the first leaf is touched at this t (0.5 s after the tap; it is seen to move from about a second later) …
-    to: -2.1,                  // … and the last at this one (4.05 s after the tap): the nearest shell first, a leaf about every 0.17 s
+    shells: 5,                 // the five nearest shells of the wallpaper: the opening picture (four shells, about twenty plants and the two bunches of
+                               // bananas) and the first shell of big leaves behind it, which go last, after the title card and before the monkey swings in
+    from: -5.85,               // the first leaf is touched at this t (0.5 s after the tap; it is seen to move from about a second later) …
+    to: -2.1,                  // … and the last at this one (4.25 s after the tap): the nearest shell first, a leaf about every 0.13 s
     clear: 3.0,                // from being touched to having gone takes a leaf about this long (most of the movement is in the middle second and a half) …
     tempo: [0.22, 0.28],       // … which is this share of the speed of version 6's parting: a long heavy leaf … a short light one. SLOWER LEAVES = smaller numbers (and a longer `clear`)
     tipLag: [0.45, 0.7],       // how far the tip trails behind the stalk (s): a limp blade, bending as it goes
@@ -272,7 +275,7 @@ const html = document.documentElement;
 const late = !html.classList.contains('js');
 clearTimeout(window.__canopyTimer);
 const params = new URLSearchParams(location.search);
-const frozenT = params.has('t') ? Math.max(-PRO.len, parseFloat(params.get('t')) || 0) : null;   // (?t=-6.15 is the doors, shut)
+const frozenT = params.has('t') ? Math.max(-PRO.len, parseFloat(params.get('t')) || 0) : null;   // (?t=-6.35 is the doors, shut)
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const live = frozenT === null && !reduced;                    // free-running playback?
 const useDoors = !reduced && !late;                           // the doors are part of the intro: none without it
@@ -595,7 +598,8 @@ function setSound(on) {
   else if (soundBegun && !document.hidden) resumeSound();
 }
 
-const BACKING_UNTIL = 0.5;                                     // scene time: the deep shells are first touched just after this
+const BACKING_UNTIL = 1.0;                                     // scene time. Measured on twelve shapes of screen: until about 1.14 nothing shows between the leaves but specks at
+                                                               // the edges (a quarter of a per cent of the picture at most), and the real opening begins there. So the shade stays until 1.0
 /** what the scene is told about the push through the leaves at real time t: how far back the camera still is, how far it has come */
 const preAt = (t) => { const crept = CREEP.moved(t); return { back: CREEP.total - crept, crept }; };
 function draw(t) {

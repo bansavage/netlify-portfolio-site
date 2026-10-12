@@ -21,7 +21,7 @@
  *   lays five broad leaves right across the middle, from different edges, and fills in round them:
  *   each covers the middle of the sheet BY ITSELF, which is the thickness. The camera comes
  *   toward all of these (it never reaches one: scene.js, PASS_DIST). Once the whole sheet is composed,
- *   (version 7: the leaves of the four nearest shells are pushed aside early and slowly, during the push through them that comes first: THE NEAR LEAVES GIVE WAY)
+ *   (version 7: the leaves of the five nearest shells, these four and the first of the six behind, are pushed aside early and slowly, during the push through them that comes first: THE NEAR LEAVES GIVE WAY)
  *   each leaf is given THE SWING that takes it out: about its own root, away from the line of travel
  *   (whichever way round is shorter: left-rooted leaves end up along the left edge, hanging ones swing
  *   up, and so on), far enough to be clear of the picture, at a time of its own: shell after shell, and
