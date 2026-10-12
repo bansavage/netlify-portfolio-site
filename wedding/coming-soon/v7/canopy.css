@@ -108,17 +108,27 @@ html.late #scene, html.late .ground{animation:canopy-late 1.4s ease-out both}
   font-family:'Space Mono',ui-monospace,Menlo,monospace;text-transform:uppercase;
   font-size:18px;font-weight:700;letter-spacing:.26em;text-indent:.26em;line-height:1;
   cursor:pointer;-webkit-tap-highlight-color:transparent;
-  animation:open-float 2.8s ease-in-out infinite alternate;
+  animation:open-in .4s ease-out backwards,open-float 2.8s ease-in-out infinite alternate;   /* it comes up where the Loading tag was, and then floats */
 }
 .open::after{                                           /* a ring that widens and thins out: "here" */
   content:'';position:absolute;top:-1.5px;right:-1.5px;bottom:-1.5px;left:-1.5px;border-radius:50%;
   border:1.5px solid var(--hueso);pointer-events:none;
   animation:open-ring 2.8s ease-out infinite;
 }
+/* under the disc, clear of its widening ring: "turn your sound on", with the same speaker as the sound control. Cream on the wood. */
+.open .hint{
+  position:absolute;left:50%;top:100%;margin-top:calc(var(--d) * .3 + 6px);transform:translateX(-50%);
+  display:flex;align-items:center;gap:.65em;white-space:nowrap;
+  font-size:max(11.5px,1.5vmin);letter-spacing:.2em;text-indent:0;line-height:1;color:var(--hueso);
+  text-shadow:0 1px 2px rgba(18,10,4,.75),0 0 8px rgba(18,10,4,.6);
+}
+.open .hint .ico{display:block;flex:none;width:15px;height:15px;fill:currentColor}     /* (no CSS filter on it: iOS would draw it soft) */
+.open .hint .ico .line{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round}
 html.gate .open{display:grid}
 .open:hover{background:#FFFDF6}
 .open:focus-visible{outline:2px solid var(--hueso);outline-offset:5px}
 html.opening .open{display:grid;pointer-events:none;animation:open-go .24s ease-in forwards}
+@keyframes open-in{from{opacity:0}}
 @keyframes open-float{from{transform:translateY(-5px)}to{transform:translateY(5px)}}
 @keyframes open-ring{0%{transform:scale(1);opacity:.75}70%,100%{transform:scale(1.55);opacity:0}}
 @keyframes open-go{to{transform:scale(.6);opacity:0}}
@@ -169,6 +179,26 @@ html:not(.js) .card,html.late .card,html:not(.js) .swing,html.late .swing{displa
 html.ready .veil{opacity:0}
 html.frozen .veil{transition:none}                     /* ?t= : a held frame is simply there */
 html:not(.js) .veil,html.late .veil{display:none}
+/* "LOADING...": a paper tag where the Open button is about to be, so that nobody takes the bare cloth, or a pair of
+   shut doors with nothing on them, for a page that has stuck. It is there from the first paint (it needs no script),
+   over the veil and then over the doors, and goes when the button can take its place (main.js: `loaded`).
+   In the phone's own monospace: the page's typefaces have not arrived when it is first seen, and a face that changed
+   halfway would flicker. Its dots come one by one. */
+.loading{
+  position:absolute;left:50%;top:54%;margin:0;transform:translate(-50%,-50%);
+  padding:.8em .75em .75em 1.05em;                           /* (.3em more on the left: the tracking leaves that much after the last dot) */
+  font:700 13px/1 ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:.3em;text-transform:uppercase;white-space:nowrap;
+  color:var(--tinta);background:var(--hueso);border:1.5px solid var(--tinta);
+  box-shadow:0 8px 16px rgba(18,10,4,.28),0 2px 4px rgba(18,10,4,.22);
+  pointer-events:none;transition:opacity .25s ease;
+}
+.loading i{font-style:normal;animation:loading-dot 1.4s steps(1,end) infinite}
+.loading i:nth-child(2){animation-delay:.25s}
+.loading i:nth-child(3){animation-delay:.5s}
+@keyframes loading-dot{0%{opacity:0}25%,100%{opacity:1}}
+html.loaded .loading{opacity:0}
+html:not(.js) .loading,html.late .loading{display:none}
+@media (prefers-reduced-motion: reduce){.loading i{animation:none}}
 @media (prefers-reduced-motion: reduce){.doors,.open{display:none}}   /* no doors, no intro: the finished picture */
 
 /* ---- the finish: one sheet of woven linen over everything, artwork and type (js/finish.js) ---- */
@@ -244,15 +274,26 @@ html.copy-off .block{visibility:hidden}                /* ?copy=off — look at 
 }
 .place{font-weight:700;color:var(--tinta)}
 .date{font-weight:700;color:var(--tinta);margin-top:clamp(6px,1vmin,10px)}
-.note{                                                       /* "Details to follow": a label. The same type as the place and the date … */
+.note{                                                       /* the last line: it was a label ("Details to follow") and is now a button. The same type as the place and the date … */
   font-family:'Space Mono',ui-monospace,Menlo,monospace;font-weight:700;text-transform:uppercase;
   font-size:max(clamp(13px,3.6vw,16px),1.15vmin);letter-spacing:.2em;text-indent:0;line-height:1;white-space:nowrap;
-  margin-top:clamp(9px,1.7vmin,18px);
+  margin-top:clamp(13px,2.3vmin,22px);
 }
-.note .ink{                                                  /* … in cream, on a strip of the foliage's own green */
-  background:var(--hoja);color:var(--hueso);
-  padding:.34em .34em .3em .54em;                            /* (.2em more on the left than on the right: the tracking leaves that much after the last letter) */
+.note .ink{                                                  /* … in cream, on a strip of the foliage's own green. IT IS A BUTTON (a link to the form: index.html): */
+  background:var(--hoja);color:var(--hueso);text-decoration:none;
+  display:inline-flex;align-items:center;min-height:44px;    /* a comfortable thing to tap: 44px high on any phone */
+  padding:0 1.05em 0 1.25em;                                 /* (.2em more on the left than on the right: the tracking leaves that much after the last letter) */
+  cursor:pointer;-webkit-tap-highlight-color:transparent;
+  transition:background-color .15s ease;
+  animation:note-breathe 2.6s ease-in-out infinite;          /* IT BREATHES, so that nobody misses it: a little bigger, back, a little bigger again */
 }
+@keyframes note-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}   /* how much bigger: 8%. How slowly: the 2.6s above */
+@media (prefers-reduced-motion: reduce){.note .ink{animation:none}}
+.note .ink .go{font-size:1.25em;line-height:0;letter-spacing:0;margin-left:.45em;transition:transform .15s ease}   /* the arrow */
+.note .ink:hover{background:#4B5A33}
+.note .ink:hover .go{transform:translateX(3px)}
+.note .ink:active{background:#2E391E}
+.note .ink:focus-visible{outline:2px solid var(--tinta);outline-offset:3px}
 
 /* tall screens (phones, portrait tablets): stack the names and let them go big */
 @media (max-aspect-ratio: 3/4){

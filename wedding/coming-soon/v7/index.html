@@ -41,7 +41,9 @@
       <div class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <p class="place"><span class="ink">Quintana Roo, México</span></p>
       <p class="date"><span class="ink">November 2027</span></p>
-      <p class="note"><span class="ink">Details to follow</span></p>
+      <!-- THE BUTTON: opens the form where a guest leaves a name, an email, an address and a phone number, so that an invitation can be sent.
+           The words on it and the form it opens are both right here. (It opens in a new tab: the form is Google's own page.) -->
+      <p class="note"><a class="ink" href="https://forms.gle/B6YAsgDBqTWuhPFTA" target="_blank" rel="noopener">Get your invite <span class="go" aria-hidden="true">&rarr;</span></a></p>
     </div>
   </main>
 
@@ -55,7 +57,8 @@
   <!-- THE DOORS: a pair of slatted wooden doors, painted like the wallpaper (js/doors.js). The page opens
        on them, shut; Open (or a tap anywhere on them) swings them back and the camera goes through. -->
   <div class="doors" aria-hidden="true"><canvas class="door l"></canvas><canvas class="door r"></canvas></div>
-  <button class="open" type="button" aria-label="Open the doors">Open</button>
+  <!-- (under the button: a word about the music, so that it is neither missed nor a surprise. It is part of the button: it comes and goes with it, and a tap on it opens the doors too.) -->
+  <button class="open" type="button" aria-label="Open the doors. Music plays: turn your sound on.">Open<span class="hint" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" focusable="false"><path d="M3 9.4h3.7l4.8-4v13.2l-4.8-4H3z"/><path class="line" d="M14.7 9a4.3 4.3 0 0 1 0 6"/><path class="line" d="M17.3 6.3a8 8 0 0 1 0 11.4"/></svg>Turn your sound on</span></button>
 
   <!-- THE PROLOGUE (version 7; js/main.js: PRO). After the doors, while the camera pushes in through the leaves:
        the title card comes up out of a blur in front of the wallpaper, stays a moment and goes … -->
@@ -65,6 +68,9 @@
   <!-- bare linen over all of the above until the doors and the wallpaper behind them are painted and ready:
        then it lifts once, so the picture arrives whole instead of piece by piece -->
   <div class="veil" aria-hidden="true"></div>
+  <!-- "Loading...": a paper tag where the Open button is about to be, there from the first moment the page is seen.
+       It stays, on the bare linen and then on the doors, until the button can take its place (the words are right here). -->
+  <p class="loading" aria-hidden="true">Loading<i>.</i><i>.</i><i>.</i></p>
 
   <!-- (d) The wallpaper finish: woven linen and the soft light of the wall, over the artwork AND the type. -->
   <canvas class="finish" aria-hidden="true"></canvas>

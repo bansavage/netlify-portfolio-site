@@ -36,11 +36,11 @@
  * doors open as before, and as they open the camera is already on its way in: steadily and NOT slowly,
  * between the doors and THROUGH THE LEAVES of the opening picture, which are pushed out of its way one
  * after another, each taking its time over it. While it travels, a title card, "COMING NEXT YEAR", comes
- * up out of a blur in front of the leaves, stays a little over a second and goes; a quarter of a second
- * later the monkey from the end of the piece swings across the screen on a liana (js/swing.js); and as it
+ * up out of a blur in front of the leaves, stays two and a half seconds and goes; just as it has gone
+ * the monkey from the end of the piece swings across the screen on a liana (js/swing.js); and as it
  * leaves, the leaves that are left part, a little faster, and uncover the copy. From t = 0 on that is
  * version 6's reveal, played a little slower than it was made (PRO.slow), with the last line of the copy
- * reading "Details to follow". The camera never stops and never slows between the doors and the names.
+ * a button that opens the form for a guest's address (index.html). The camera never stops and never slows between the doors and the names.
  * The music (SOUND, below) starts with the tap on Open.
  *
  * TWO CLOCKS. t, the number in ?t= and in __timeline, is real seconds, and t = 0 is where the prologue
@@ -54,7 +54,9 @@
  *
  *   (on load   Bare linen until the doors, the wallpaper behind them and the typefaces are all ready; then
  *              the whole picture comes up out of the cloth at once, in 0.6 s: THE VEIL in canopy.css.
- *              The music is fetched meanwhile; the Open button waits for it, four seconds at most.)
+ *              The music is fetched meanwhile; the Open button waits for it, four seconds at most. All that
+ *              while, on the linen and then on the doors, a paper tag says "Loading..." where the button
+ *              will be, and the button comes up in its place.)
  *   -6.35  +0     The doors, shut, and the Open button. The clock waits here until the tap. The tap
  *                 starts the music.
  *   -6.29  +0.06  The two leaves swing back on their hinges at the edges of the screen (1.15 s), the
@@ -74,10 +76,11 @@
  *                 of the big leaves behind it. Behind them are more leaves, coming up.
  *   -5.2   +1.15  "COMING NEXT YEAR" comes up out of a blur (1.05 s), in front of the leaves, while the
  *                 open doors are sliding out of the picture …
- *   -4.15  +2.2   … is fully there and stays 2.25 s, drifting nearer (the second bar falls in it) …
- *   -1.9   +4.45  … and goes into a blur again (0.7 s).
- *   -0.95  +5.4   A quarter of a second after it has gone, the monkey swings across on a liana, left to
- *                 right (2.4 s; in the picture from about +5.9 to +7.3).
+ *   -4.15  +2.2   … is fully there and stays 2.45 s, drifting nearer (the second bar falls in it) …
+ *   -1.7   +4.65  … and goes into a blur again (0.7 s: it has gone at +5.35).
+ *   -0.95  +5.4   Just as it has gone, the monkey sets off across on a liana, left to right (2.4 s). It
+ *                 starts out of the picture: it is seen from about +5.9, half a second after the card
+ *                 has gone, to +7.3.
  *    0     +6.35  THE REST OF THE LEAVES, A LITTLE FASTER. Version 6's reveal from here: its camera move
  *                 takes over from the push without a join (PRO.handoff), the five shells still in the way
  *                 part, and the last curtain opens, all at 0.62 of the speed it was made at until the names
@@ -210,7 +213,8 @@ export const PRO = {
   card: {                      // THE TITLE CARD ("Coming next year": the words are in index.html)
     in: [1.15, 1.05],          // it starts to come up out of its blur this long after the tap (the doors are just open, and on their way out of the picture), and takes this long
                                // (it was 2.65, then 2.15: Kyle asked for it sooner twice, half a second and then a whole one)
-    hold: 2.25,                // it stays, fully there, this long (it was 1.3: Kyle asked for 750 ms more, and then 200 ms more)
+    hold: 2.45,                // it stays, fully there, this long (it was 1.3: Kyle asked for 750 ms more, then 200 ms more, twice. The second 200 ms
+                               // came out of the gap before the monkey, below, so that the card fades just before the monkey comes: nothing after it moved)
     out: 0.7,                  // and takes this long to go
     blur: 14,                  // how blurred it starts and ends (px)
     grow: 0.07,                // it drifts this much nearer (bigger) while it is on screen: it is pushed into like everything else
@@ -227,7 +231,8 @@ export const PRO = {
     mag: 3.0,                  // how many times its printed size a leaf has grown to by the time it has gone: this is what sets how near the camera's path the near shells stand
   },
   monkey: {                    // THE MONKEY that swings across (js/swing.js)
-    gap: 0.25,                 // it sets off this long after the card has gone
+    gap: 0.05,                 // it sets off this long after the card has gone (it was 0.25). It starts out of the picture, and is first seen about
+                               // half a second after the card has gone
     len: 2.4,                  // one swing across takes this long. It is in the picture for three fifths of that: about 1.45 s
                                // (it was 2.0, about 1.2 s in the picture; Kyle asked for a quarter of a second slower)
     angle: 40,                 // how far the liana swings each way (degrees)
@@ -304,7 +309,7 @@ let refocusReplay = false;                                    // Replay was used
 /* The copy sits under the foliage and sets in piece by piece as the leaves clear from in front of it
  * (INK_AT, INK). Also changing on the page per frame: the Replay control,
  * the slow breathing of the gold, and THE SHEET COMING NEARER (below): the camera's own move. */
-const INK_AT = [1.5, 1.68, 1.82, 2.25, 2.42, 2.47, 2.52, 2.57, 2.62, 2.67, 2.8, 2.93, 3.1];   // when each piece of el.ink starts: Kyle, &, Daina, the italic line, six swatches, place, date, "Details to follow"
+const INK_AT = [1.5, 1.68, 1.82, 2.25, 2.42, 2.47, 2.52, 2.57, 2.62, 2.67, 2.8, 2.93, 3.1];   // when each piece of el.ink starts: Kyle, &, Daina, the italic line, six swatches, place, date, the button
 const INK = { dur: 0.95, rise: 0.42, blur: 7 };               // seconds to set; how far it rises (in em); how soft it starts (px)
 const inkWas = [];
 function applyCopy(t) {
@@ -320,7 +325,8 @@ function applyCopy(t) {
     const p = reduced ? 1 : easeOutCubic(prog(t, INK_AT[i] ?? 3, INK.dur)), k = p >= 1 ? 'set' : p <= 0 ? 'hidden' : p.toFixed(3);
     if (inkWas[i] === k) return;
     inkWas[i] = k;
-    if (p >= 1) { n.style.opacity = n.style.translate = n.style.filter = n.style.willChange = ''; return; }
+    if (p >= 1) { n.style.opacity = n.style.translate = n.style.filter = n.style.willChange = n.style.pointerEvents = ''; return; }
+    n.style.pointerEvents = 'none';                           // (one of them is the button: it cannot be tapped before it can be seen, through the leaves)
     if (p <= 0) { n.style.opacity = '0'; n.style.translate = n.style.filter = n.style.willChange = ''; return; }
     const blur = (1 - p) * INK.blur;
     n.style.willChange = 'opacity, filter';
@@ -357,7 +363,7 @@ function breathe(t) {
 /** put the page back to plain, readable HTML (used if anything in here fails) */
 function bail() {
   pause();
-  html.classList.remove('js', 'ready', 'late', 'gate', 'opening');
+  html.classList.remove('js', 'ready', 'late', 'gate', 'opening', 'loaded');
   el.doors.hidden = el.card.hidden = el.swing.hidden = el.backing.hidden = true;
   el.sound.hidden = true;
   for (const a of Object.values(sound)) a.pause();
@@ -713,16 +719,20 @@ function start() {
   fitDoors();
   if (frozenT !== null) {                                     // ?t= : this frame, held
     if (doors && frozenT <= T0 + 0.001) html.classList.add('gate');
+    html.classList.add('loaded');
     draw(frozenT); return;
   }
-  if (reduced) { draw(TL.rest); return; }                     // reduced motion: the finished picture, still
+  if (reduced) { html.classList.add('loaded'); draw(TL.rest); return; }   // reduced motion: the finished picture, still
   if (late) { wantPlay = true; seek(TL.end + 1.5); play(); return; }   // arrived late: the copy is already being read, so skip to the settled scene
   // THE DOORS, SHUT. The clock waits here for the tap: Open, or anywhere on the doors (openDoors below).
   seek(T0);
-  // The Open button comes with them as soon as the music has arrived, so that the tap starts both together
-  // (four seconds at most: after that the button is there anyway, and the music starts as soon as it can).
+  // The Open button comes as soon as the music has arrived too, so that the tap starts both together. Until then the
+  // "Loading..." tag stays where the button will be (canopy.css), over the doors: `loaded` takes it away as the button
+  // comes up in its place. Four seconds at most: after that the button is there anyway, and the music starts as soon
+  // as it can.
   Promise.race([soundReady, new Promise((r) => setTimeout(r, 4000))]).then(() => {
     if (html.classList.contains('ready') && !wantPlay) html.classList.add('gate');
+    html.classList.add('loaded');
   });
 }
 /** the tap that opens the doors. It is also the gesture a browser needs before it will play sound. */
