@@ -134,7 +134,7 @@ html:not(.js) .doors,html.late .doors,html:not(.js) .open,html.late .open{displa
   font-family:'Trajan Pro','Cinzel','Times New Roman',serif;font-weight:700;text-transform:uppercase;
   font-size:clamp(28px,4.6vw,78px);line-height:1.2;letter-spacing:.19em;text-indent:.19em;white-space:nowrap;text-align:center;
   color:var(--hueso);
-  text-shadow:0 0 .55em rgba(10,20,13,.62),0 0 .14em rgba(10,20,13,.55),0 .04em .06em rgba(10,20,13,.5);
+  text-shadow:0 .05em .05em rgba(5,10,7,.95),0 .1em .2em rgba(5,10,7,.85),0 0 .5em rgba(5,10,7,.7),0 0 1em rgba(5,10,7,.5);   /* A DARK SHADOW under the letters: a hard edge, the drop, and a dark halo round them */
   pointer-events:none;will-change:opacity,filter,transform;
 }
 .card::before{
@@ -184,7 +184,7 @@ html:not(.linen) .finish{
     repeating-linear-gradient(90deg, rgba(44,34,14,.16) 0 1px, rgba(44,34,14,0) 1px 2.75px);
 }
 
-/* ---- (b) copy: printed, not set on top. Matte ink, no shadows, the faintest softness of edge.
+/* ---- (b) copy: printed, not set on top. Matte ink, no shadows, and no filter on it at rest (the linen finish over it is what softens it).
    It is on the page from the first frame, under the foliage: the leaves uncover it, nothing inks it in. ---- */
 .copy{
   position:absolute;top:0;right:0;bottom:0;left:0;
@@ -212,7 +212,7 @@ html.copy-off .block{visibility:hidden}                /* ?copy=off — look at 
 }
 .names .line{display:inline-block;white-space:nowrap}
 .ink{display:inline-block}                                  /* a line of copy as one piece of ink: main.js sets it in (applyCopy) */
-.names .word{display:inline-block;filter:blur(.32px)}       /* ink sinks into cloth: big letters keep the faintest soft edge */
+.names .word{display:inline-block}                          /* (no filter here, however faint: iOS draws filtered text at a third of the screen's sharpness. See applyCopy in js/main.js) */
 .names .amp{font-style:italic;color:var(--cobalto);padding:0 .02em 0 .03em}   /* the bird of paradise's own blue: 4.5:1 or better on the gold */
 .sub{
   font-family:'Instrument Serif',Georgia,serif;font-style:italic;
@@ -258,7 +258,12 @@ html.copy-off .block{visibility:hidden}                /* ?copy=off — look at 
 @media (max-aspect-ratio: 3/4){
   .names{font-size:min(24.6vw,13.6vh);line-height:.89}      /* as wide as the opening in the foliage comfortably allows */
   .names{min-width:2.64em}                                  /* "Kyle &" over "Daina" is narrower than "Kyle" over "& Daina" was (2.64 em): the opening in the leaves keeps that width */
-  .names .line{display:block}
+  .names .line{display:block;position:relative}
+  /* "Kyle" centred on a line of its own, and a smaller ampersand tucked under its right-hand end, in the corner between the
+     two names. This is Kyle's own layout: he set the ampersand at 5rem and 22px below the line, beside names of 96.7px.
+     These are the same proportions in em, so it holds on every phone. It is out of the flow (that is what lets "Kyle"
+     centre by itself) and starts where it would have stood: straight after the "e". */
+  .names .amp{position:absolute;bottom:-.275em;font-size:.827em;padding:0}
   .sub{font-size:clamp(21px,min(6.6vw,3.6vh),52px);margin-top:clamp(8px,1.4vh,18px)}
   .block{--lift:-.05}                                       /* up into the glow: the thicket and its flowers have the bottom quarter */
 }

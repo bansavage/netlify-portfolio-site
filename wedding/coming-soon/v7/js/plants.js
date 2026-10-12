@@ -1181,7 +1181,8 @@ function finger(ctx, R, x, y, ang, len, bend, tone) {
  *   v.hands   how many;  v.from … v.to = where along the length they sit;  v.finger = finger length ÷ length
  *   v.spread  half-angle of one hand's fan, degrees;  v.turn = how far each hand is turned off the stalk (radians)
  * Returns `tail`: where the stalk ends, hidden among the last fingers. To carry it on down to a
- * banana blossom, plant the blossom's pivot there and draw the blossom BEHIND the bunch. */
+ * banana blossom, plant the blossom's pivot there and draw the blossom BEHIND the bunch.
+ * And `low`: where its lowest banana is (two points along it), for something that hangs from the bunch by a hand. */
 function bananaBunch(ctx, R, v) {
   const L = v.len, SL = L * (v.to + v.finger * 0.45), sp = makeSpine(SL, 60, (s) => v.lean * s + v.curl * s * s), at0 = (s) => sp.at(s), at = (s) => sp.at(s * L / SL);   // (the stalk stops out of sight among the last fingers)
   const w0 = L * 0.024, w1 = L * 0.016, fl = L * v.finger, G = RAMP.olive;
@@ -1189,6 +1190,7 @@ function bananaBunch(ctx, R, v) {
   ctx.beginPath();                                                                      // the scars of the leaf sheaths it grew through
   for (let i = 0; i < 4; i++) { const s = v.from * (0.2 + 0.2 * i) + R.range(-0.01, 0.01), p = at(s), w = lerp(w0, w1, s) * 1.05; dab(ctx, R, quadPts([p.x - p.nx * w, p.y - p.ny * w], [p.x + p.tx * w * 0.7, p.y + p.ty * w * 0.7], [p.x + p.nx * w, p.y + p.ny * w], 6), 1.4, 0, 0.3, 0.2); }
   ctx.fillStyle = G[0]; ctx.fill();
+  const fingers = [];                                                                   // every banana of it (for `low`, below)
   for (let j = v.hands - 1; j >= 0; j--) {                                              // the far hand first
     const k = j / (v.hands - 1), s = lerp(v.from, v.to, k), p = at(s);
     const n = j === v.hands - 1 ? 4 : R.int(5, 6), lean = (j % 2 ? 1 : -1) * R.range(0.4, 1) * (v.turn ?? 0.3), size = fl * lerp(1, 0.84, k);
@@ -1200,12 +1202,18 @@ function bananaBunch(ctx, R, v) {
     }
     list.sort((a, b) => Math.abs(b.rel - lean) - Math.abs(a.rel - lean));                // the outer fingers first, the middle ones on top
     for (const f of list) finger(ctx, R, f.x, f.y, f.ang, f.len, f.bend, f.tone);
+    fingers.push(...list);
     // the cushion the fingers grow from
     ctx.beginPath(); ctx.ellipse(p.x, p.y, w0 * 1.7, w0 * 0.95, p.ang, 0, PI * 2); ctx.fillStyle = mix(G[2], BARK[2], 0.35); ctx.fill();
     ctx.beginPath(); dab(ctx, R, [[p.x - p.nx * w0 * 1.4, p.y - p.ny * w0 * 1.4 - 1], [p.x - p.tx * w0 * 0.5, p.y - p.ty * w0 * 0.5], [p.x + p.nx * w0 * 1.4, p.y + p.ny * w0 * 1.4 - 1]], w0 * 0.3, 0.3, 0.3, 0.2); ctx.fillStyle = G[0]; ctx.fill();
   }
   const end = sp.at(1), top = at(v.to), mid = at((v.from + v.to) / 2), wide = fl * Math.sin(v.spread * DEG) * 0.95;
-  return { len: L, tail: [end.x, -end.y],
+  // THE LOWEST BANANA: the one whose tip is furthest from the pivot (so the lowest, once the bunch hangs). Two points on
+  // it: 70% of the way along, and its tip. The monkey holds on between them (compose.js: MONKEY.grip).
+  let lowest = null;
+  for (const f of fingers) { const s = makeSpine(f.len, 14, (u) => f.ang + f.bend * u, f.x, f.y), e = s.at(1); if (!lowest || e.y < lowest.e.y) lowest = { s, e }; }
+  const l7 = lowest.s.at(0.7);
+  return { len: L, tail: [end.x, -end.y], low: [[l7.x, -l7.y], [lowest.e.x, -lowest.e.y]],
            hull: [[mid.x, -mid.y, wide], [top.x + top.tx * fl * 0.45, -(top.y + top.ty * fl * 0.45), wide * 0.9], [at(v.from).x, -at(v.from).y, wide * 0.8], ...[0.3, 0.7].map((q) => { const p = at(v.from * q); return [p.x, -p.y, w0 * 1.6]; })] };
 }
 
@@ -1651,6 +1659,7 @@ function normaliseExtras(extra, len) {
   if (extra.head) out.head = extra.head.map((v) => v / len);
   if (extra.crown) out.crown = extra.crown.map((v) => v / len);
   if (extra.tail) out.tail = extra.tail.map((v) => v / len);
+  if (extra.low) out.low = extra.low.map((p) => p.map((v) => v / len));
   if (extra.crownR) out.crownR = extra.crownR / len;
   if (extra.spathe) out.spathe = extra.spathe / len;
   return out;

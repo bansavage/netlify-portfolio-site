@@ -93,11 +93,14 @@ const HANG = { bunch: 'bananaBunch', blossom: 'bananaBlossom', ratio: 0.86 };
 /* THE MONKEY: one, hanging by a hand from the bottom of the upper-left bunch (plants.js paints it), and
  * swinging there slowly, like a weight on a string. It is a part of that plant: it rides on the bunch,
  * so it also moves with it. Where it hangs, the bunch has no blossom below it (it would be behind it).
- *   size    its length (hand to the bottom of its tail) ÷ the length of the bunch
- *   grip    how far down the bunch its hand is (1 = the tips of the lowest bananas)
+ *   size    its length (hand to the bottom of its tail) ÷ the length of the bunch. (On a phone it used to come out at about 0.75,
+ *           made smaller until it cleared the flags; Kyle asked for it slightly bigger. Where it hangs now it is not in their way.)
+ *   grip    where on the LOWEST BANANA of the bunch its hand closes: 0 = 70% of the way along that banana, 1 = its very tip.
+ *           (plants.js says where that banana is: `low`. So the hand is ON a banana in every layout; it used to be put a set
+ *           distance down the bunch, which on a phone left it in the air a few pixels below the fruit.)
  *   swing   how far it swings each way (radians: 0.17 is about 10 degrees)
  *   swings  how many whole swings in the 600-second loop (a whole number, so there is no seam): 126 = one every 4.8 s */
-const MONKEY = { id: 'monkey', spot: 'upper left', size: 0.92, grip: 0.97, swing: 0.17, swings: 126 };
+const MONKEY = { id: 'monkey', spot: 'upper left', size: 0.88, grip: 0.55, swing: 0.17, swings: 126 };
 
 /* Tint per layer: a colour MULTIPLIER on the painted texture. The sprites are painted at their final
  * gouache values (plants.js), so these all sit close to 1: they only give each leaf its own shade
@@ -601,12 +604,14 @@ export function compose(F, sprites, TL, view, seed = 2027) {
     const keepOff = [...(F.tight && F.tight.length ? F.tight : lines), ...flagBand.slice(3, -3)];   // (the words themselves, and the middle of the string: they hang across its ends, and the blossom may hang beside the short name)
     [{ name: 'upper left', fx: 0.15, k: 1.0, lean: 0.05, flip: 1 }, { name: 'upper right', fx: 0.86, k: 0.8, lean: -0.07, flip: -1 }].forEach((sp) => {
       const top = -0.08 * S, want = Math.min(0.3 * S, (0.42 * H) / 1.67) * sp.k;
-      const h = hangPair(R, { x: sp.fx * W, y: top, len: want, lean: sp.lean, flip: sp.flip, rects: keepOff, avoid: 0.02 * S, min: want * 0.45, z: 0.9 });
+      const h = hangPair(R, { x: sp.fx * W, y: top, len: want, lean: sp.lean, flip: sp.flip, rects: keepOff, avoid: 0.02 * S, min: want * 0.45,
+                              z: sp.name === MONKEY.spot ? 1.06 : 0.9 });   // (the monkey's bunch hangs in FRONT of every leaf round it: the banana it holds must be in sight, on any screen)
       if (!h) return;
       const ms = sprites[MONKEY.id], bs = sprites[HANG.bunch];
       if (sp.name === MONKEY.spot && ms && bs.tail) {
         const bunch = h.parts[h.parts.length - 1], ca = Math.cos(bunch.a), sa = Math.sin(bunch.a);
-        const hx = bs.tail[0] * h.len, hy = MONKEY.grip * h.len, lx = hx * sp.flip;          // its hand, in the bunch's own frame (across, along)
+        const low = bs.low, g = MONKEY.grip;                                                    // its hand is on the lowest banana of the bunch …
+        const hx = (low ? lerp(low[0][0], low[1][0], g) : bs.tail[0]) * h.len, hy = (low ? lerp(low[0][1], low[1][1], g) : 0.97) * h.len, lx = hx * sp.flip;   // … which is here in the bunch's own frame (across, along)
         const gx = bunch.x + lx * ca + hy * sa, gy = bunch.y - (-lx * sa + hy * ca);            // … and on the page
         let ml = h.len * MONKEY.size, fits = false;                                              // kept off the words and the middle flags, like the bunch: smaller until it clears
         const clear = (len) => [-1, 0, 1].every((d) => !touches(ms, gx, gy, len, bunch.a + d * MONKEY.swing, sp.flip, keepOff, 0.012 * S));   // (at both ends of its swing too)
