@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Kyle &amp; Daina — Coming Soon</title>
+<meta name="theme-color" content="#0F2A1D">
+<meta property="og:title" content="Kyle &amp; Daina">
+<meta property="og:description" content="Coming soon">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../../assets/logo-b.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./poster.css">
+<script>
+/* Tell the stylesheet that the animated version is on its way. If the main
+   script never arrives, drop back to the plain (no-JS) poster after 4s. */
+document.documentElement.classList.add('js', 'booting');
+setTimeout(function () {
+  if (!window.__timeline) document.documentElement.classList.remove('js', 'booting');
+}, 4000);
+</script>
+</head>
+<body>
+
+<!-- Artwork behind the type: ground, sun, palms, foliage. Drawn by poster.js. -->
+<div class="stage" aria-hidden="true"><canvas id="art"></canvas></div>
+
+<!-- The copy. Real text, in reading order. To change names / place / date, edit here. -->
+<main class="copy">
+  <div class="block">
+    <h1 class="names">
+      <span class="line l1"><span class="mask"><span class="word" data-reveal="kyle">Kyle</span></span> <span class="mask"><em class="word amp" data-reveal="amp">&amp;</em></span></span>
+      <span class="line l2"><span class="mask"><span class="word" data-reveal="daina">Daina</span></span></span>
+    </h1>
+    <p class="lede"><span class="mask"><span class="word" data-reveal="lede">are getting married</span></span></p>
+    <div class="credits">
+      <p class="credit"><span data-type="place">Quintana Roo, México</span></p>
+      <p class="credit"><span data-type="date">November 2027</span></p>
+      <p class="soon"><span data-type="soon">Coming soon</span></p>
+    </div>
+  </div>
+</main>
+
+<!-- The six-colour bar: full-height panels in the intro, a thin stripe afterwards. -->
+<div class="bars" aria-hidden="true"><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span></div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<button class="replay" type="button" hidden>Replay</button>
+
+<script src="./plants.js" defer></script>
+<script src="./poster.js" defer></script>
+</body>
+</html>

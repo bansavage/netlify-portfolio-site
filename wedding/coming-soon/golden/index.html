@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0F2A1D">
+<title>Kyle &amp; Daina — Coming Soon</title>
+<meta name="description" content="Kyle &amp; Daina are getting married. Quintana Roo, México — November 2027. Details to follow.">
+<link rel="icon" href="../../../assets/logo-b.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./canopy.css">
+<script>
+  /* Until the animation takes over, hide the copy so it does not flash. If the script never
+     arrives (blocked CDN, old browser), give up after 4s and show the plain static page. */
+  document.documentElement.classList.add('js');
+  window.__canopyFallback = function () { document.documentElement.classList.remove('js'); };
+  window.__canopyTimer = setTimeout(window.__canopyFallback, 4000);
+</script>
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" crossorigin>
+</head>
+<body>
+
+<div class="stage">
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <!-- The copy. Change names, place and date right here: it is ordinary text. -->
+  <main class="copy">
+    <div class="block" id="block">
+      <p class="kicker">Coming soon</p>
+      <h1 class="names"><span class="line"><span class="mask"><span class="word">Kyle</span></span></span> <span class="line"><span class="mask"><em class="word amp">&amp;</em></span> <span class="mask"><span class="word">Daina</span></span></span></h1>
+      <p class="sub">are getting married</p>
+      <div class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="place"><span>Quintana Roo, México</span></p>
+      <p class="date"><span>November 2027</span></p>
+      <p class="note">Details to follow</p>
+    </div>
+  </main>
+
+  <button class="replay" type="button" hidden>Replay</button>
+</div>
+
+<script type="module" src="./js/main.js" onerror="window.__canopyFallback()"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Kyle & Daina — Coming Soon · "Wallpaper"
+   Layout and type for the HTML copy: dark ink, printed in the pale-gold middle of a piece of tropical
+   wallpaper. Designed on a 390 × 844 phone first; everything else follows from it.
+   THE PAGE IS LAYERED, bottom to top (the order of the elements in index.html):
+     (a) .ground   the sheet itself: cream linen, the gold field in the middle (js/ground.js)
+     (b) .copy     the text, printed on the gold: real, selectable HTML
+     (c) #scene    the foliage (WebGL), see-through wherever there is no leaf: leaves pass IN FRONT of the letters
+         .doors    the slatted wooden doors the page opens on, and .open, the button that opens them
+     (d) .finish   woven linen over all of it (js/finish.js)
+     (e) .replay
+   TYPE: the faces of wedding/art-direction.html, in their roles: Display = Instrument Serif (the names, the
+   italic line), Utility = Space Mono (place, date, the buttons). One exception, at Kyle's request: the last
+   line, "Coming soon", is set in Trajan Pro Bold (.note). No script faces, ever. */
+
+/* Trajan Pro (only "Coming soon" uses it): compressed web copies in ./fonts (the same fonts, every glyph,
+   about a seventh of the size), with the files as he added them to wedding/ behind them. */
+@font-face{
+  font-family:'Trajan Pro';font-weight:400;font-style:normal;font-display:block;
+  src:url('./fonts/TrajanPro-Regular.woff2') format('woff2'),url('../../TrajanPro-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family:'Trajan Pro';font-weight:700;font-style:normal;font-display:block;
+  src:url('./fonts/TrajanPro-Bold.woff2') format('woff2'),url('../../TrajanPro-Bold.otf') format('opentype');
+}
+
+:root{
+  /* THE WALLPAPER FINISH — how strong the woven linen (and the soft light of the wall) is, over the
+     artwork and the type alike. 1 = the base strength · 0 = none · up to 2. This is the one number to turn.
+     (1.15: a little over the base, so the cloth still reads through the dark painted leaves at arm's length;
+     the small type stays above 11:1.) */
+  --finish:1.15;
+
+  --lima:#B8D430;        /* lime — the loudest one */
+  --cempasuchil:#F2A33C; /* marigold */
+  --buganvilia:#E0387E;  /* bougainvillea pink */
+  --cobalto:#2B4FC4;     /* cobalt */
+  --olivo:#6E7A3A;       /* olive */
+  --barro:#C4562F;       /* terracotta */
+  --hueso:#F6F1E4;       /* bone — the only neutral */
+  --tinta:#20241C;       /* near-black ink */
+  --sombra:#4A4F42;
+  --ground:#F4EDDA;      /* the linen the wallpaper is printed on: hueso, a touch warmer (LOOK.ground in js/scene.js) */
+  /* what you see with no JavaScript or no WebGL: the same sheet without its foliage. Cream linen,
+     pale gold where the copy is printed, a tinge of marigold at the edge of that. */
+  --still:
+    radial-gradient(ellipse 96% 50% at 50% 44%, #FBF1D2 0%, #F6E0A6 46%, rgba(243,196,116,.5) 72%, rgba(244,237,218,0) 100%),
+    var(--ground);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:var(--ground);overscroll-behavior:none}   /* no pull-to-refresh: it would replay the intro */
+body{
+  color:var(--tinta);
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+  font-size:16px;line-height:1.4;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+}
+
+/* ---- stage ---- */
+.stage{
+  position:relative;width:100%;
+  height:100%;height:100dvh;                            /* 100% = the visible area on browsers without dvh */
+  overflow:hidden;touch-action:manipulation;
+  background:var(--still);
+}
+html.js .stage{background:var(--ground)}                /* the cream linen; the gold on it is .ground, just below */
+html.no-gl .stage{background:var(--still)}
+/* (a) the ground: only the gold field, at the strength it has at each point (the cream is the stage behind it).
+   Bigger than the page all round, so that neither its slow breathing nor the camera's approach ever shows an edge. */
+.ground{
+  position:absolute;top:-11%;left:-11%;width:122%;height:122%;display:block;   /* (11% = BLEED in js/ground.js) */
+  pointer-events:none;
+}
+/* (c) the foliage: transparent where there is no leaf, and it never takes a tap or a text selection from the copy under it */
+#scene{position:absolute;top:0;left:0;width:100%;height:100%;display:block;pointer-events:none}
+html:not(.js) #scene, html.no-gl #scene, html:not(.js) .ground, html.no-gl .ground{display:none}
+/* the script arrived after the plain page had already been shown (slow connection): keep the
+   still and let the settled scene come up over it, round copy that never goes away */
+html.late .stage{background:var(--still)}
+html.late #scene, html.late .ground{animation:canopy-late 1.4s ease-out both}
+@keyframes canopy-late{from{opacity:0}to{opacity:1}}
+
+/* ---- THE DOORS the page opens on (js/doors.js paints them; main.js swings them: DOOR) and the Open button.
+   Two leaves, hinged at the left and right edges of the screen, seen in perspective when they swing. ---- */
+.doors{
+  position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;
+  perspective:1000px;perspective-origin:50% 48%;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;
+}
+.doors[hidden]{display:none}
+.door{position:absolute;top:0;width:50%;height:100%;display:block;will-change:transform}
+.door.l{left:0;transform-origin:0 50%}
+.door.r{right:0;transform-origin:100% 50%}
+/* Open: a paper disc floating in front of the doors. It is there only while the page waits for the tap. */
+.open{
+  --d:clamp(86px,25vw,124px);
+  position:absolute;left:50%;top:54%;width:var(--d);height:var(--d);margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);
+  display:none;place-items:center;
+  border-radius:50%;border:1.5px solid var(--tinta);
+  background:var(--hueso);color:var(--tinta);
+  box-shadow:inset 0 0 0 5px var(--hueso),inset 0 0 0 6px rgba(32,36,28,.38),0 14px 24px rgba(18,10,4,.42),0 3px 6px rgba(18,10,4,.32);
+  font-family:'Space Mono',ui-monospace,Menlo,monospace;text-transform:uppercase;
+  font-size:clamp(12px,3.4vw,15px);font-weight:700;letter-spacing:.26em;text-indent:.26em;line-height:1;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;
+  animation:open-float 2.8s ease-in-out infinite alternate;
+}
+.open::after{                                           /* a ring that widens and thins out: "here" */
+  content:'';position:absolute;top:-1.5px;right:-1.5px;bottom:-1.5px;left:-1.5px;border-radius:50%;
+  border:1.5px solid var(--hueso);pointer-events:none;
+  animation:open-ring 2.8s ease-out infinite;
+}
+html.gate .open{display:grid}
+.open:hover{background:#FFFDF6}
+.open:focus-visible{outline:2px solid var(--hueso);outline-offset:5px}
+html.opening .open{display:grid;pointer-events:none;animation:open-go .24s ease-in forwards}
+@keyframes open-float{from{transform:translateY(-5px)}to{transform:translateY(5px)}}
+@keyframes open-ring{0%{transform:scale(1);opacity:.75}70%,100%{transform:scale(1.55);opacity:0}}
+@keyframes open-go{to{transform:scale(.6);opacity:0}}
+html:not(.js) .doors,html.late .doors,html:not(.js) .open,html.late .open{display:none}
+/* THE VEIL: bare linen over the doors, the foliage seen through their gaps and the Open button while they
+   are being painted (the plants take a moment, and the typefaces have to arrive). When everything is in
+   place it lifts, once, and the whole picture comes up together out of the cloth: nothing pops in. */
+.veil{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:var(--ground);pointer-events:none;
+  opacity:1;transition:opacity .6s ease-out;
+}
+html.ready .veil{opacity:0}
+html.frozen .veil{transition:none}                     /* ?t= : a held frame is simply there */
+html:not(.js) .veil,html.late .veil{display:none}
+@media (prefers-reduced-motion: reduce){.doors,.open{display:none}}   /* no doors, no intro: the finished picture */
+
+/* ---- the finish: one sheet of woven linen over everything, artwork and type (js/finish.js) ---- */
+.finish{
+  position:absolute;top:0;left:0;width:100%;height:100%;display:block;
+  pointer-events:none;
+  opacity:calc(var(--finish) * .5);                     /* (it is painted at twice the designed strength, so 2 is the ceiling) */
+}
+/* until finish.js has woven the real cloth (or if there is no JavaScript): a plain two-way weave */
+html:not(.linen) .finish{
+  background:
+    repeating-linear-gradient(0deg, rgba(44,34,14,.2) 0 1px, rgba(44,34,14,0) 1px 2.75px),
+    repeating-linear-gradient(90deg, rgba(44,34,14,.16) 0 1px, rgba(44,34,14,0) 1px 2.75px);
+}
+
+/* ---- (b) copy: printed, not set on top. Matte ink, no shadows, the faintest softness of edge.
+   It is on the page from the first frame, under the foliage: the leaves uncover it, nothing inks it in. ---- */
+.copy{
+  position:absolute;top:0;right:0;bottom:0;left:0;
+  display:flex;align-items:center;justify-content:center;
+  padding:
+    max(18px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right))
+    max(18px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));
+  text-align:center;
+  pointer-events:none;
+}
+/* --lift: how far the copy sits from dead centre, as a fraction of the screen height (negative = up).
+   The script reads it and lands the block on a whole pixel. */
+.block{--lift:-.01;pointer-events:auto;display:flex;flex-direction:column;align-items:center;transform:translateY(calc(var(--lift) * 100vh))}
+html.js:not(.ready) .block{visibility:hidden}
+html.copy-off .block{visibility:hidden}                /* ?copy=off — look at the artwork alone */
+
+.place,.date,.replay{
+  font-family:'Space Mono',ui-monospace,Menlo,monospace;text-transform:uppercase;
+}
+.names{
+  font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-weight:400;
+  font-size:clamp(52px,min(12.4vw,25vh),420px);
+  line-height:.9;letter-spacing:-.02em;
+  color:var(--tinta);                                       /* ink on the pale gold: 11:1 or better */
+}
+.names .line{display:inline-block;white-space:nowrap}
+.ink{display:inline-block}                                  /* a line of copy as one piece of ink: main.js sets it in (applyCopy) */
+.names .word{display:inline-block;filter:blur(.32px)}       /* ink sinks into cloth: big letters keep the faintest soft edge */
+.names .amp{font-style:italic;color:var(--cobalto);padding:0 .02em 0 .03em}   /* the bird of paradise's own blue: 4.5:1 or better on the gold */
+.sub{
+  font-family:'Instrument Serif',Georgia,serif;font-style:italic;
+  font-size:clamp(20px,min(3.3vw,6.4vh),100px);line-height:1.1;
+  margin-top:clamp(4px,1.1vmin,14px);
+  color:var(--tinta);
+}
+/* the six house colours as six swatches of paint: brushed on, none quite square, none quite level */
+.bar{display:flex;align-items:center;gap:max(clamp(5px,1.3vmin,9px),.6vmin);margin:clamp(15px,3vmin,30px) 0 clamp(14px,2.7vmin,26px)}
+.bar span{
+  display:block;width:max(clamp(21px,5.8vmin,38px),2.8vmin);height:max(clamp(11px,3vmin,18px),1.4vmin);
+  background-image:linear-gradient(96deg,rgba(255,252,240,.2) 0%,rgba(255,252,240,0) 34%,rgba(32,36,28,0) 62%,rgba(32,36,28,.14) 100%);   /* the brush leaves the paint a little thin where it lands and thick where it lifts */
+  -webkit-clip-path:polygon(3% 12%,22% 3%,47% 8%,71% 2%,97% 9%,100% 46%,96% 91%,74% 98%,49% 92%,25% 99%,2% 90%,0% 50%);
+          clip-path:polygon(3% 12%,22% 3%,47% 8%,71% 2%,97% 9%,100% 46%,96% 91%,74% 98%,49% 92%,25% 99%,2% 90%,0% 50%);
+}
+.bar span:nth-child(even){
+  -webkit-clip-path:polygon(1% 7%,26% 10%,52% 2%,78% 9%,99% 4%,97% 52%,100% 93%,73% 90%,50% 99%,24% 91%,4% 97%,2% 48%);
+          clip-path:polygon(1% 7%,26% 10%,52% 2%,78% 9%,99% 4%,97% 52%,100% 93%,73% 90%,50% 99%,24% 91%,4% 97%,2% 48%);
+}
+.bar span:nth-child(1){background-color:var(--lima);transform:rotate(-3deg)}
+.bar span:nth-child(2){background-color:var(--cempasuchil);transform:rotate(2deg) translateY(1px)}
+.bar span:nth-child(3){background-color:var(--barro);transform:rotate(-1.5deg) scaleX(1.08)}
+.bar span:nth-child(4){background-color:var(--buganvilia);transform:rotate(3deg) translateY(-1px)}
+.bar span:nth-child(5){background-color:var(--cobalto);transform:rotate(-2deg) translateY(1px) scaleX(.94)}
+.bar span:nth-child(6){background-color:var(--olivo);transform:rotate(1.5deg)}
+.place,.date{
+  font-size:max(clamp(13px,3.6vw,16px),1.15vmin);letter-spacing:.2em;text-indent:.2em;line-height:1.25;   /* where and when: the facts */
+  white-space:nowrap;
+}
+.place{font-weight:700;color:var(--tinta)}
+.date{font-weight:700;color:var(--tinta);margin-top:clamp(6px,1vmin,10px)}
+.note{                                                       /* "Coming soon": the one line in Trajan Pro */
+  font-family:'Trajan Pro','Cinzel','Times New Roman',serif;font-weight:700;text-transform:uppercase;
+  font-size:max(clamp(11.5px,1.05vmin + 7px,15px),1.05vmin);letter-spacing:.3em;text-indent:.3em;white-space:nowrap;
+  color:var(--tinta);
+  margin-top:clamp(12px,2.6vmin,24px);
+}
+
+/* tall screens (phones, portrait tablets): stack the names and let them go big */
+@media (max-aspect-ratio: 3/4){
+  .names{font-size:min(24.6vw,13.6vh);line-height:.89}      /* as wide as the opening in the foliage comfortably allows */
+  .names{min-width:2.64em}                                  /* "Kyle &" over "Daina" is narrower than "Kyle" over "& Daina" was (2.64 em): the opening in the leaves keeps that width */
+  .names .line{display:block}
+  .sub{font-size:clamp(21px,min(6.6vw,3.6vh),52px);margin-top:clamp(8px,1.4vh,18px)}
+  .block{--lift:-.05}                                       /* up into the glow: the thicket and its flowers have the bottom quarter */
+}
+/* short portrait phones: tighten the stack a little, so the canopy and the flags keep their room */
+@media (max-aspect-ratio: 3/4) and (max-height: 700px){
+  .bar{margin:12px 0 11px}
+  .note{margin-top:10px}
+  .block{--lift:-.03}
+}
+/* short screens (a phone on its side): tighten the stack */
+@media (max-height: 480px){
+  .bar{margin:11px 0 10px}
+  .note{margin-top:6px}
+  .block{--lift:.02}
+}
+
+/* ---- replay: a small printed label tucked into the foliage ---- */
+.replay{
+  position:absolute;
+  right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-indent:.18em;line-height:1;
+  color:var(--tinta);
+  padding:9px 11px 8px;border-radius:2px;
+  border:1px solid rgba(32,36,28,.5);
+  background:rgba(246,241,228,.9);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background-color .18s ease,border-color .18s ease;
+}
+.replay::after{content:'';position:absolute;top:-9px;right:-7px;bottom:-9px;left:-7px}   /* a finger-sized target around the small label */
+.replay:hover{background:var(--hueso);border-color:var(--tinta)}
+.replay:focus-visible{outline:2px solid var(--cobalto);outline-offset:3px}
+.replay[hidden]{display:none}
+/* ---- sound on / off: a speaker on the same small paper label, bottom left; crossed out when the sound is off.
+   It is there once the doors have been opened. ---- */
+.sound{
+  position:absolute;
+  left:max(14px,env(safe-area-inset-left));bottom:max(14px,env(safe-area-inset-bottom));
+  line-height:0;
+  color:var(--tinta);
+  padding:5px 9px;border-radius:2px;
+  border:1px solid rgba(32,36,28,.5);
+  background:rgba(246,241,228,.9);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background-color .18s ease,border-color .18s ease;
+  animation:sound-in .5s ease-out both;
+}
+.sound::after{content:'';position:absolute;top:-9px;right:-7px;bottom:-9px;left:-7px}
+.sound:hover{background:var(--hueso);border-color:var(--tinta)}
+.sound:focus-visible{outline:2px solid var(--cobalto);outline-offset:3px}
+.sound .ico{display:block;width:20px;height:20px;fill:currentColor}
+.sound .ico .line{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round}
+.sound .ico.off,.sound[aria-pressed="false"] .ico.on{display:none}
+.sound[aria-pressed="false"] .ico.off{display:block}
+.sound[aria-pressed="false"]{background:rgba(246,241,228,.7);color:rgba(32,36,28,.72)}
+.sound[hidden]{display:none}
+@keyframes sound-in{from{opacity:0}to{opacity:1}}
+html:not(.js) .sound{display:none}
+
+::selection{background:var(--cempasuchil);color:var(--tinta)}

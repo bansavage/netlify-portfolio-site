@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Kyle &amp; Daina — Coming Soon</title>
+<meta name="description" content="Kyle &amp; Daina are getting married. Quintana Roo, México, November 2027. Details to follow.">
+<meta property="og:title" content="Kyle &amp; Daina — Coming Soon">
+<meta property="og:description" content="Quintana Roo, México · November 2027. Details to follow.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#17402A">
+<link rel="icon" href="../../../assets/logo-b.png">
+
+<!-- "js" switches the copy from its static (no-script) state to the animated one.
+     If the scripts have not arrived after 5 s, the class is taken off again so the copy
+     shows anyway; scripts that turn up later leave it showing and skip the intro. -->
+<script>
+  document.documentElement.className += ' js';
+  setTimeout(function () {
+    if (!window.__timeline) document.documentElement.className =
+      document.documentElement.className.replace(/\bjs\b/, '');
+  }, 5000);
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./paper.css">
+
+<script defer src="./plants.js"></script>
+<script defer src="./paper.js"></script>
+</head>
+<body>
+
+<main class="stage" id="stage">
+
+  <!-- The whole jungle is drawn here by paper.js. Decorative only. -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <!-- ============================================================
+       THE COPY. Change names / place / date right here, in plain text.
+       The artwork measures these elements and grows around them.
+       ============================================================ -->
+  <div class="copy" id="copy">
+    <h1 class="names">
+      <span class="ln"><span class="ln-in">Kyle</span></span>
+      <span class="ln amp"><span class="ln-in"><em>&amp;</em></span></span>
+      <span class="ln"><span class="ln-in">Daina</span></span>
+    </h1>
+    <p class="sub">are getting married</p>
+    <div class="bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="meta">Quintana Roo, México</p>
+    <p class="meta">November 2027</p>
+    <p class="tag"><span>Coming soon</span></p>
+  </div>
+
+  <button class="replay" id="replay" type="button">Replay</button>
+
+</main>
+
+</body>
+</html>

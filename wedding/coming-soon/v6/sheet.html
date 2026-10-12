@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Plant sheet — every sprite in plants.js</title>
+<style>
+  /* A plain inspection page for the paintings in js/plants.js. Not part of the site.
+   *   sheet.html                 every sprite at 1:1 on cream linen / pale gold / deep olive
+   *   sheet.html?id=bananaA      one sprite at 2x (add &z=3 for 3x)
+   *   sheet.html?ids=fanA,fanB   a few sprites (add &z=0.5 to shrink)
+   *   sheet.html?all=1           the whole set once each on the cream ground, shrunk to fit one screen (&z=0.3)
+   *   sheet.html?swatch=1        a phone-sized (390x844) panel of wallpaper: the sprites overlapped on the
+   *                              cream ground under a woven-linen finish. THE test: hold it next to the
+   *                              White Lotus frame. (&weave=0 takes the linen off, &seed=2 another layout)
+   *   sheet.html?parts=1         a bird of paradise put together and in flower (2x), and a banana bunch hung
+   *                              with its blossom below it (the two things that are built from several sprites)
+   *   sheet.html?paper=1         the papel picado sheets, dyed the six house colours
+   *   sheet.html?atlas=1         the packed atlases with their cell boxes (checks the packing)
+   *   &hull=1                    overlay the keep-out circles and the pivot
+   *   sheet.html?time=1          how long each sprite takes to paint (ms, best of 5) and how much
+   *                              empty margin it leaves inside its cell (left / right / top, px:
+   *                              keep at least ~30 so the blurred copy does not bleed next door)  */
+  html { background: #1b1d19; color: #F6F1E4; font: 600 13px/1.3 ui-monospace, Menlo, monospace; }
+  body { margin: 0; padding: 12px; }
+  body.bare { padding: 0; background: #EFE7D3; }
+  body.bare #info { display: none; }
+  #info { margin: 0 0 10px; opacity: .8; white-space: pre-wrap; }
+  #sheet { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+  figure { margin: 0; }
+  figure canvas { display: block; }
+  figcaption { padding: 4px 0 0; }
+  .new { color: #F2A33C; }
+</style>
+</head>
+<body>
+<p id="info">painting…</p>
+<div id="sheet"></div>
+<script type="module">
+import { buildAtlases, buildPaper, SPRITES, ATLAS_SIZE, PAPER } from './js/plants.js';
+import { rng, PALETTE } from './js/kit.js';
+
+const q = new URLSearchParams(location.search);
+const LINEN = '#EFE7D3', GOLD = '#F3D9A0', OLIVE = '#2F4A2C';
+const BACKDROPS = [LINEN, GOLD, OLIVE];          // the wallpaper ground (the one that matters), inside the glow, in front of other leaves
+const one = q.get('id');
+const some = one ? [one] : (q.get('ids') || '').split(',').filter(Boolean);
+const zoom = Number(q.get('z')) || (one ? 2 : 1);
+const showHull = q.has('hull');
+const NEW = new Set(['bananaBunch', 'bananaBlossom', 'bambooA']);
+
+const t0 = performance.now();
+const { canvases, sprites } = buildAtlases(1);
+const ms = performance.now() - t0;
+const sheet = document.getElementById('sheet');
+const mp = Object.values(ATLAS_SIZE).reduce((a, [w, h]) => a + w * h, 0) / 1e6;
+document.getElementById('info').textContent =
+  `${SPRITES.length} sprites · painted in ${ms.toFixed(0)} ms · ` +
+  Object.entries(ATLAS_SIZE).map(([n, [w, h]]) => `${n} ${w}×${h}`).join(' · ') + ` · ${mp.toFixed(1)} MP`;
+const byId = Object.fromEntries(SPRITES.map((s) => [s.id, s]));
+
+/** draw one sprite out of its atlas: (px, py) = where its pivot goes, len = its nominal length in px,
+ *  rot = heading in degrees (0 = growing up, 180 = hanging), flip = mirrored */
+function place(x, id, px, py, len, rot = 0, flip = false) {
+  const s = byId[id], sp = sprites[id];
+  if (!s) return;
+  const pad = s.pad ?? 36, k = len / (sp.len * s.h);
+  x.save(); x.translate(px, py); x.rotate(rot * Math.PI / 180); x.scale(flip ? -k : k, k);
+  x.drawImage(canvases[s.atlas], s.x, s.y, s.w, s.h, -s.w * s.pu, -(s.h - pad), s.w, s.h);
+  x.restore();
+}
+
+/** the bird of paradise, put together the way the scene does it: sepals fanned up out of the spathe,
+ *  the cobalt petal among them, the stalk and its beak drawn last. (px, py) = foot of the stalk. */
+function bop(x, px, py, len, rot = 0, flip = false) {
+  const st = sprites.bopStalk, f = flip ? -1 : 1, a = rot * Math.PI / 180, sp = st.spathe * len, beak = st.beak * 180 / Math.PI;
+  const at = (lx, ly) => [px + f * lx * Math.cos(a) + ly * Math.sin(a), py + f * lx * Math.sin(a) - ly * Math.cos(a)];
+  const fan = [['bopSepalA', 104, 0.98, 0.2], ['bopSepalB', 86, 1.12, 0.25], ['bopSepalA', 70, 1.04, 0.31], ['bopSepalB', 54, 0.9, 0.37], ['bopPetal', 36, 1.0, 0.42], ['bopSepalA', 20, 0.7, 0.47]];
+  for (const [id, off, l, along] of fan) {
+    const [hx, hy] = at(st.head[0] * len + Math.sin(st.beak) * sp * along, st.head[1] * len + Math.cos(st.beak) * sp * along);
+    place(x, id, hx, hy, sp * l, rot + f * (beak - off), flip);
+  }
+  place(x, 'bopStalk', px, py, len, rot, flip);
+}
+
+/** a banana bunch with its blossom hanging below it on the same stalk: the blossom's pivot goes on
+ *  the bunch's `tail` (where its stalk ends, hidden among the last fingers) and is drawn first, behind. */
+function hang(x, px, py, len, rot, flip, blossomLen, blossomRot) {
+  const b = sprites.bananaBunch, f = flip ? -1 : 1, a = rot * Math.PI / 180, lx = b.tail[0] * len, ly = b.tail[1] * len;
+  if (blossomLen) place(x, 'bananaBlossom', px + f * lx * Math.cos(a) + ly * Math.sin(a), py + f * lx * Math.sin(a) - ly * Math.cos(a), blossomLen, blossomRot ?? rot, flip);
+  place(x, 'bananaBunch', px, py, len, rot, flip);
+}
+
+/** a simple woven-linen finish: warp and weft threads of uneven weight (each one thickens and
+ *  thins along its length), the odd slub, and a soft uneven wash of light. Multiplied over
+ *  everything, so paint and ground share one surface. */
+function linen(x, W, H, dpr, seed = 7) {
+  const R = rng(seed), c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d'), img = g.createImageData(W, H), d = img.data;
+  const pitch = 1.5 * dpr;                                           // one thread, in device px
+  const nx = Math.ceil(W / pitch) + 2, ny = Math.ceil(H / pitch) + 2, N = nx + ny;
+  const tone = Float32Array.from({ length: N }, () => R.range(-1, 1));            // each thread: its own shade …
+  const f1 = Float32Array.from({ length: N }, () => R.range(0.012, 0.05)), p1 = Float32Array.from({ length: N }, () => R.range(0, 6.3));   // … and how it thickens and thins along its length
+  const f2 = Float32Array.from({ length: N }, () => R.range(0.07, 0.19)), p2 = Float32Array.from({ length: N }, () => R.range(0, 6.3));
+  const slub = Float32Array.from({ length: N }, () => (R.chance(0.05) ? R.range(0.5, 1) : 0)), slubAt = Float32Array.from({ length: N }, () => R.range(0, 1)), slubLen = Float32Array.from({ length: N }, () => R.range(0.012, 0.05));
+  for (let y = 0; y < H; y++) for (let xx = 0; xx < W; xx++) {
+    const tx = xx / pitch, ty = y / pitch, ix = tx | 0, iy = ty | 0, fx = tx - ix, fy = ty - iy;
+    const over = (ix + iy) & 1, k = over ? ix : nx + iy, along = over ? ty : tx, across = over ? fx : fy;     // plain weave: which thread is on top here
+    const fat = 0.6 * Math.sin(along * f1[k] * 6.3 + p1[k]) + 0.4 * Math.sin(along * f2[k] * 6.3 + p2[k]);
+    const s = slub[k] * Math.max(0, 1 - Math.abs((over ? y / H : xx / W) - slubAt[k]) / slubLen[k]);
+    const round = Math.pow(Math.sin(across * Math.PI), 0.7 - 0.25 * fat - 0.35 * s);                       // a thread is round: light on its crown, dark in the gaps
+    const v = 0.76 + 0.21 * round + 0.03 * tone[k] + 0.045 * fat + 0.09 * s;
+    const o = (y * W + xx) * 4, b = Math.max(0, Math.min(1, v)) * 255;
+    d[o] = b; d[o + 1] = b * 0.99; d[o + 2] = b * 0.965; d[o + 3] = 255;
+  }
+  g.putImageData(img, 0, 0);
+  x.save();
+  x.globalCompositeOperation = 'multiply'; x.globalAlpha = Number(q.get('weave') ?? 1) * 0.6; x.drawImage(c, 0, 0);
+  x.globalAlpha = 1;
+  const wash = x.createLinearGradient(0, 0, W * 0.9, H);             // a lit wall, not a flat fill
+  wash.addColorStop(0, 'rgba(255,250,235,1)'); wash.addColorStop(0.55, 'rgba(244,236,214,1)'); wash.addColorStop(1, 'rgba(214,202,174,1)');
+  x.fillStyle = wash; x.fillRect(0, 0, W, H);
+  x.restore();
+}
+
+if (q.has('swatch')) {
+  /* ---- the wallpaper swatch: 390 x 844 CSS px, drawn at 2x ---------------------------------- */
+  document.body.className = 'bare';
+  const dpr = Number(q.get('dpr')) || 2, W = 390 * dpr, H = 844 * dpr;
+  const c = document.createElement('canvas'); c.width = W; c.height = H; c.style.width = '390px'; c.style.height = '844px';
+  const x = c.getContext('2d');
+  x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high';
+  x.fillStyle = LINEN; x.fillRect(0, 0, W, H);
+  // [id, x, y (CSS px, of the pivot), length (CSS px), heading° (0 = up, 180 = hanging), flipped]  — back to front
+  // ('bop' = a whole bird of paradise: x, y of the foot of its stalk)
+  const LAYOUTS = {
+    1: [
+      // far: the pale and the deep, to fill the gaps
+      ['fanA', 300, 650, 320, 18, false], ['fanB', 56, 560, 270, -30, false], ['frondB', -40, 440, 380, 60, false], ['frondA', 440, 330, 380, -70, false],
+      ['bambooA', 366, 900, 600, 2, false], ['frondC', 440, 670, 340, -38, true], ['frondD', 214, -50, 330, 186, false], ['cycadA', -30, 262, 290, 104, false], ['lianaA', 372, -30, 300, 176, false],
+      // the canopy: banana leaves hanging in from the top, the fruit among them
+      ['bananaB', 70, -60, 380, 152, false], ['bananaA', 330, -70, 360, 205, false], ['bananaC', 440, 150, 340, -108, false], ['bananaD', -40, 96, 320, 94, false],
+      ['hang', 112, -76, 300, 177, false, 270, 172], ['hang', 296, -84, 262, 187, true, 230, 178],
+      // the sides
+      ['monsteraB', -46, 552, 290, 66, false], ['bopLeafB', -14, 640, 300, 48, false],
+      ['bananaA', 432, 520, 380, -80, true], ['calatheaA', 424, 350, 240, -94, false], ['alocasiaB', 440, 680, 320, -60, false],
+      // the thicket at the bottom
+      ['bananaC', 340, 900, 380, 24, true], ['bananaD', -20, 880, 400, 6, false], ['monsteraA', 226, 934, 340, -4, false], ['bopLeafA', 66, 900, 320, -12, false],
+      ['alocasiaA', 372, 904, 290, 14, false], ['bananaB', 186, 940, 290, -30, false], ['bananaFurl', 318, 900, 240, 10, false], ['heliconia', 24, 880, 290, 14, false],
+      ['bop', 116, 880, 330, -3, false], ['bop', 300, 886, 290, 5, true], ['calatheaB', 208, 900, 180, 16, true],
+    ],
+  };
+  const lay = LAYOUTS[q.get('swatch')] || LAYOUTS[1];
+  for (const [id, px, py, len, rot, flip] of lay) {
+    x.shadowColor = 'rgba(52,40,18,0.30)'; x.shadowBlur = 9 * dpr; x.shadowOffsetX = 2 * dpr; x.shadowOffsetY = 4 * dpr;   // a soft paper shadow on whatever is behind
+    const [, , , , , , l2, r2] = lay.find((q2) => q2[0] === id && q2[1] === px && q2[2] === py);
+    if (id === 'bop') bop(x, px * dpr, py * dpr, len * dpr, rot, flip);
+    else if (id === 'hang') hang(x, px * dpr, py * dpr, len * dpr, rot, flip, l2 * dpr, r2);
+    else place(x, id, px * dpr, py * dpr, len * dpr, rot, flip);
+  }
+  x.shadowColor = 'transparent';
+  linen(x, W, H, dpr);
+  sheet.append(c);
+} else if (q.has('parts')) {
+  /* ---- the assembled things: a bird of paradise in flower, a bunch of bananas hung with its blossom ---- */
+  const k = Number(q.get('z')) || 1, pw = 620 * k, ph = 600 * k, hh = 1250 * k;
+  const c = document.createElement('canvas'); c.width = pw * 3; c.height = ph + hh;
+  const x = c.getContext('2d'); x.imageSmoothingQuality = 'high';
+  BACKDROPS.forEach((bg, i) => {
+    x.save(); x.beginPath(); x.rect(i * pw, 0, pw, ph + hh); x.clip();
+    x.fillStyle = bg; x.fillRect(i * pw, 0, pw, ph + hh);
+    const len = 2000 * k;                                            // the flower head at about 2x atlas scale
+    x.save(); x.beginPath(); x.rect(i * pw, 0, pw, ph); x.clip();
+    bop(x, i * pw + 150 * k, 150 * k + sprites.bopStalk.head[1] * len + 250 * k, len, 0, false);
+    x.restore();
+    hang(x, i * pw + 310 * k, ph + 6 * k, 740 * k, 178, false, 590 * k, 184);
+    x.restore();
+  });
+  sheet.append(c);
+} else if (q.has('all')) {
+  /* ---- the whole set once, on the cream ground ------------------------------------------------ */
+  const k = Number(q.get('z')) || 0.3, gap = 6;
+  const rows = [[]]; let rw = 0; const maxW = Number(q.get('w')) || 2300;
+  for (const s of SPRITES) { if (rw + s.w * k > maxW) { rows.push([]); rw = 0; } rows[rows.length - 1].push(s); rw += s.w * k + gap; }
+  for (const row of rows) {
+    const h = Math.max(...row.map((s) => s.h)) * k, w = row.reduce((a, s) => a + s.w * k + gap, 0);
+    const c = document.createElement('canvas'); c.width = Math.ceil(w); c.height = Math.ceil(h + 16);
+    const x = c.getContext('2d'); x.imageSmoothingQuality = 'high';
+    x.fillStyle = q.get('bg') === 'olive' ? OLIVE : q.get('bg') === 'gold' ? GOLD : LINEN; x.fillRect(0, 0, c.width, c.height);
+    let px = 0;
+    x.font = '600 11px ui-monospace, Menlo, monospace';
+    for (const s of row) {
+      x.drawImage(canvases[s.atlas], s.x, s.y, s.w, s.h, px, h - s.h * k, s.w * k, s.h * k);
+      x.fillStyle = NEW.has(s.id) ? '#B5451F' : (q.get('bg') === 'olive' ? '#EFE7D3' : '#4A4F42'); x.fillText(s.id, px + 3, h + 12);
+      px += s.w * k + gap;
+    }
+    const f = document.createElement('figure'); f.style.flexBasis = '100%'; f.append(c); sheet.append(f);
+  }
+} else if (q.has('paper')) {
+  /* ---- papel picado, dyed (the scene multiplies the white sheet by a house colour) ------------- */
+  const pc = buildPaper(1), [cw, ch] = PAPER.cell, k = Number(q.get('z')) || 1;
+  const cols = ['lima', 'cempasuchil', 'buganvilia', 'cobalto', 'olivo', 'barro'].map((n) => PALETTE[n]);
+  const c = document.createElement('canvas'); c.width = cw * 6 * k; c.height = ch * 2 * k + 20;
+  const x = c.getContext('2d');
+  x.fillStyle = LINEN; x.fillRect(0, 0, c.width, ch * k + 10); x.fillStyle = OLIVE; x.fillRect(0, ch * k + 10, c.width, ch * k + 10);
+  const tmp = document.createElement('canvas'); tmp.width = cw; tmp.height = ch; const tx = tmp.getContext('2d');
+  cols.forEach((col, i) => {
+    tx.globalCompositeOperation = 'source-over'; tx.clearRect(0, 0, cw, ch);
+    tx.drawImage(pc, (i % PAPER.count) * cw, 0, cw, ch, 0, 0, cw, ch);
+    tx.globalCompositeOperation = 'multiply'; tx.fillStyle = col; tx.fillRect(0, 0, cw, ch);
+    tx.globalCompositeOperation = 'destination-in'; tx.drawImage(pc, (i % PAPER.count) * cw, 0, cw, ch, 0, 0, cw, ch);
+    for (const row of [0, 1]) x.drawImage(tmp, i * cw * k, row * (ch * k + 10) + 5, cw * k, ch * k);
+  });
+  if (q.get('weave') !== '0') linen(x, c.width, c.height, 1);
+  sheet.append(c);
+} else if (q.has('time')) {
+  const cv = document.createElement('canvas'), cx = cv.getContext('2d'), rows = [];
+  for (const s of SPRITES) {
+    let best = 1e9;
+    for (let n = 0; n < 5; n++) {
+      cv.width = s.w; cv.height = s.h;
+      const pad = s.pad ?? 36, px = s.w * s.pu;
+      cx.setTransform(1, 0, 0, 1, px, s.h - pad);
+      const a = performance.now();
+      s.draw(cx, rng(s.seed), { up: s.h - pad * 2, left: px - pad, right: s.w - px - pad });
+      cx.getImageData(0, 0, 1, 1);                                  // make sure the drawing has really happened
+      best = Math.min(best, performance.now() - a);
+    }
+    cx.setTransform(1, 0, 0, 1, 0, 0);
+    const d = cx.getImageData(0, 0, s.w, s.h).data;
+    let l = s.w, r = -1, t = s.h;
+    for (let y = 0; y < s.h; y++) for (let x = 0; x < s.w; x++) if (d[(y * s.w + x) * 4 + 3] > 6) { if (x < l) l = x; if (x > r) r = x; if (y < t) t = y; }
+    rows.push([s.id, best, l, s.w - 1 - r, t]);
+  }
+  rows.sort((a, b) => b[1] - a[1]);
+  const pre = document.createElement('pre');
+  const cols = Number(q.get('cols')) || 2, per = Math.ceil(rows.length / cols);
+  const line = ([id, ms, l, r, t]) => id.padEnd(14) + ms.toFixed(1).padStart(6) + ' ms' + String(l).padStart(6) + String(r).padStart(5) + String(t).padStart(5);
+  const head = 'sprite          paint    L    R  top';
+  let txt = Array.from({ length: cols }, () => head.padEnd(44)).join('') + '\n';
+  for (let i = 0; i < per; i++) txt += Array.from({ length: cols }, (_, c) => (rows[c * per + i] ? line(rows[c * per + i]) : '').padEnd(44)).join('') + '\n';
+  pre.textContent = txt + 'total'.padEnd(14) + rows.reduce((a, r) => a + r[1], 0).toFixed(1).padStart(6) + ' ms (sprites only, best of 5)   buildAtlases(1): ' + ms.toFixed(0) + ' ms';
+  pre.style.font = '600 14px/1.5 ui-monospace, Menlo, monospace';
+  sheet.append(pre);
+} else if (q.has('atlas')) {
+  for (const [name, cv] of Object.entries(canvases)) {
+    const k = Number(q.get('z')) || 0.5;
+    const c = document.createElement('canvas'); c.width = cv.width * k; c.height = cv.height * k;
+    const x = c.getContext('2d');
+    x.fillStyle = LINEN; x.fillRect(0, 0, c.width, c.height);
+    x.drawImage(cv, 0, 0, c.width, c.height);
+    x.strokeStyle = '#C4562F'; x.fillStyle = '#20241C'; x.font = '600 12px ui-monospace, Menlo, monospace';
+    for (const s of SPRITES) if (s.atlas === name) { x.strokeRect(s.x * k + .5, s.y * k + .5, s.w * k - 1, s.h * k - 1); x.fillText(s.id, s.x * k + 4, s.y * k + 14); }
+    const f = document.createElement('figure'); f.append(c);
+    const cap = document.createElement('figcaption'); cap.textContent = `${name} atlas ${cv.width}×${cv.height} at ${k}×`; f.append(cap);
+    sheet.append(f);
+  }
+} else {
+  for (const s of SPRITES) {
+    if (some.length && !some.includes(s.id)) continue;
+    const src = canvases[s.atlas], w = Math.round(s.w * zoom), h = Math.round(s.h * zoom);
+    const c = document.createElement('canvas'); c.width = w * BACKDROPS.length; c.height = h;
+    const x = c.getContext('2d');
+    x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high';
+    BACKDROPS.forEach((bg, i) => {
+      x.fillStyle = bg; x.fillRect(i * w, 0, w, h);
+      x.drawImage(src, s.x, s.y, s.w, s.h, i * w, 0, w, h);
+      if (showHull) {
+        const sp = sprites[s.id], L = sp.len * s.h * zoom, px = i * w + sp.pivot[0] * w, py = h - sp.pivot[1] * h;
+        x.strokeStyle = 'rgba(224,56,126,.8)'; x.lineWidth = 1.5;
+        for (const [hx, hy, hr] of sp.hull) { x.beginPath(); x.arc(px + hx * L, py - hy * L, hr * L, 0, Math.PI * 2); x.stroke(); }
+        x.fillStyle = '#E0387E'; x.fillRect(px - 5, py - 1, 10, 2); x.fillRect(px - 1, py - 5, 2, 10);
+        for (const key of ['head', 'tail', 'crown']) if (sp[key]) { x.fillStyle = '#2B4FC4'; x.beginPath(); x.arc(px + sp[key][0] * L, py - sp[key][1] * L, 5, 0, Math.PI * 2); x.fill(); }
+      }
+    });
+    const f = document.createElement('figure'); f.append(c);
+    const cap = document.createElement('figcaption');
+    cap.textContent = `${s.id} · ${s.atlas} · ${s.w}×${s.h}${zoom !== 1 ? ` · ${zoom}×` : ''}${NEW.has(s.id) ? ' · NEW' : ''}`;
+    if (NEW.has(s.id)) cap.className = 'new';
+    f.append(cap); sheet.append(f);
+  }
+}
+document.documentElement.dataset.ready = '1';
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F4EDDA">
+<title>Kyle &amp; Daina — Coming Soon</title>
+<!-- "Wallpaper": a sheet of tropical wallpaper that turns out to be thick jungle; the leaves part before the camera and uncover the copy, printed in the golden middle of it. -->
+<meta name="description" content="Kyle &amp; Daina are getting married. Quintana Roo, México — November 2027. Details to follow.">
+<link rel="icon" href="../../../assets/logo-b.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./canopy.css">
+<script>
+  /* Until the animation takes over, hide the copy so it does not flash. If the script never
+     arrives (blocked CDN, old browser), give up after 4s and show the plain static page. */
+  document.documentElement.classList.add('js');
+  window.__canopyFallback = function () { document.documentElement.classList.remove('js'); };
+  window.__canopyTimer = setTimeout(window.__canopyFallback, 4000);
+</script>
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js" crossorigin>
+</head>
+<body>
+
+<div class="stage">
+  <!-- The page is layered, bottom to top: (a) the ground, (b) the copy, (c) the foliage, (d) the linen finish, (e) Replay. -->
+
+  <!-- (a) THE GROUND: cream linen with the pale-gold field in the middle of it (js/ground.js paints it). -->
+  <canvas class="ground" aria-hidden="true"></canvas>
+
+  <!-- (b) THE COPY, printed on the gold. Change names, place and date right here: it is ordinary text. -->
+  <main class="copy">
+    <div class="block" id="block">
+      <p class="kicker">Coming soon</p>
+      <h1 class="names"><span class="line"><span class="word">Kyle</span></span> <span class="line"><em class="word amp">&amp;</em> <span class="word">Daina</span></span></h1>
+      <p class="sub">are getting married</p>
+      <div class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="place">Quintana Roo, México</p>
+      <p class="date">November 2027</p>
+      <p class="note">Details to follow</p>
+    </div>
+  </main>
+
+  <!-- (c) THE FOLIAGE (WebGL), see-through wherever there is no leaf: the leaves are IN FRONT of the copy,
+       and the only way the names are seen is for the leaves to move out of the way. -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <!-- (d) The wallpaper finish: woven linen and the soft light of the wall, over the artwork AND the type. -->
+  <canvas class="finish" aria-hidden="true"></canvas>
+
+  <!-- (e) -->
+  <button class="replay" type="button" hidden>Replay</button>
+</div>
+
+<script type="module" src="./js/finish.js"></script>
+<script type="module" src="./js/main.js" onerror="window.__canopyFallback()"></script>
+</body>
+</html>

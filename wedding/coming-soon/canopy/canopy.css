@@ -1,0 +1,154 @@
+/* Kyle & Daina — Coming Soon · "Golden Hour Canopy"
+   Layout and type for the HTML copy that sits over the WebGL scene.
+   Type roles are fixed by wedding/art-direction.html: Display = Instrument Serif,
+   Body = Bricolage Grotesque, Utility = Space Mono. No script faces, ever. */
+
+:root{
+  --lima:#B8D430;        /* lime — the loudest one */
+  --cempasuchil:#F2A33C; /* marigold */
+  --buganvilia:#E0387E;  /* bougainvillea pink */
+  --cobalto:#2B4FC4;     /* cobalt */
+  --olivo:#6E7A3A;       /* olive */
+  --barro:#C4562F;       /* terracotta */
+  --hueso:#F6F1E4;       /* bone — the only neutral */
+  --tinta:#20241C;       /* near-black ink */
+  --sombra:#4A4F42;
+  --selva:#0F2A1D;       /* deepest foliage green (start of the green family used in the scene) */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:var(--selva);overscroll-behavior:none}   /* no pull-to-refresh: it would replay the intro */
+body{
+  color:var(--hueso);
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+  font-size:16px;line-height:1.4;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+}
+
+/* ---- stage ---- */
+.stage{
+  position:relative;width:100%;
+  height:100%;height:100dvh;                            /* 100% = the visible area on browsers without dvh */
+  overflow:hidden;touch-action:manipulation;
+  /* what you see with no JavaScript or no WebGL: jungle greens with golden light from the top left */
+  background:
+    radial-gradient(120% 62% at 8% -6%, rgba(242,163,60,.62), rgba(242,163,60,0) 62%),
+    linear-gradient(180deg,#2E7D46 0%,#1F5A36 26%,#17402A 58%,#0F2A1D 100%);
+}
+html.js .stage{background:var(--selva)}                 /* the scene fades up from this */
+html.no-gl .stage{background:
+    radial-gradient(120% 62% at 8% -6%, rgba(242,163,60,.62), rgba(242,163,60,0) 62%),
+    linear-gradient(180deg,#2E7D46 0%,#1F5A36 26%,#17402A 58%,#0F2A1D 100%)}
+#scene{position:absolute;top:0;left:0;width:100%;height:100%;display:block}
+html:not(.js) #scene, html.no-gl #scene{display:none}
+/* the script arrived after the plain page had already been shown (slow connection): keep the
+   gradient and let the scene come up over it, behind copy that never goes away */
+html.late .stage{background:
+    radial-gradient(120% 62% at 8% -6%, rgba(242,163,60,.62), rgba(242,163,60,0) 62%),
+    linear-gradient(180deg,#2E7D46 0%,#1F5A36 26%,#17402A 58%,#0F2A1D 100%)}
+html.late #scene{animation:canopy-late 1.4s ease-out both}
+@keyframes canopy-late{from{opacity:0}to{opacity:1}}
+
+/* ---- copy ---- */
+.copy{
+  position:absolute;top:0;right:0;bottom:0;left:0;
+  display:flex;align-items:center;justify-content:center;
+  padding:
+    max(18px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right))
+    max(18px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));
+  text-align:center;
+  pointer-events:none;
+}
+/* --lift: how far the copy sits from dead centre, as a fraction of the screen height (negative = up).
+   The script reads it and lands the block on a whole pixel. */
+.block{--lift:.012;pointer-events:auto;display:flex;flex-direction:column;align-items:center;transform:translateY(calc(var(--lift) * 100vh))}
+html.js:not(.ready) .block{visibility:hidden}
+html.copy-off .block{visibility:hidden}                /* ?copy=off — look at the artwork alone */
+
+.kicker,.place,.date,.replay{
+  font-family:'Space Mono',ui-monospace,Menlo,monospace;text-transform:uppercase;
+}
+.kicker{
+  font-weight:700;font-size:max(clamp(11.5px,1.05vmin + 7px,15px),1.05vmin);
+  letter-spacing:.34em;text-indent:.34em;white-space:nowrap;
+  color:var(--lima);
+  margin-bottom:clamp(10px,2.4vmin,26px);
+}
+.names{
+  font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-weight:400;
+  font-size:clamp(52px,min(12.4vw,25vh),420px);
+  line-height:.9;letter-spacing:-.02em;
+  color:var(--hueso);
+}
+.names .line{display:inline-block;white-space:nowrap}
+.names .mask{
+  display:inline-block;overflow:hidden;vertical-align:top;
+  padding:.14em .09em .2em;margin:-.14em -.09em -.2em;      /* room for ascenders, descenders and the italic & */
+}
+.names .word{display:inline-block;transform-origin:50% 100%}
+.names .amp{font-style:italic;color:var(--cempasuchil);padding:0 .02em}
+.sub{
+  font-family:'Instrument Serif',Georgia,serif;font-style:italic;
+  font-size:clamp(20px,min(3.3vw,6.4vh),100px);line-height:1.1;
+  margin-top:clamp(4px,1.1vmin,14px);
+  color:var(--hueso);
+}
+.bar{display:flex;width:clamp(150px,42vmin,max(300px,18vmin));height:max(clamp(7px,1vmin,10px),.6vmin);margin:clamp(15px,3vmin,30px) 0 clamp(14px,2.7vmin,26px)}
+.bar span{flex:1;transform-origin:0 50%}
+.bar span:nth-child(1){background:var(--lima)}
+.bar span:nth-child(2){background:var(--cempasuchil)}
+.bar span:nth-child(3){background:var(--barro)}
+.bar span:nth-child(4){background:var(--buganvilia)}
+.bar span:nth-child(5){background:var(--cobalto)}
+.bar span:nth-child(6){background:var(--olivo)}
+.place,.date{
+  font-size:max(clamp(13px,3.6vw,16px),1.15vmin);letter-spacing:.2em;text-indent:.2em;line-height:1.25;   /* where and when: the facts, so a size up from the kicker */
+  overflow:hidden;white-space:nowrap;
+}
+.place{font-weight:700;color:var(--hueso)}
+.date{font-weight:700;color:var(--cempasuchil);margin-top:clamp(6px,1vmin,10px)}
+.place span,.date span{display:inline-block}
+.note{
+  font-size:max(clamp(13px,1vmin + 8px,16px),1.1vmin);font-weight:400;letter-spacing:.01em;
+  color:rgba(246,241,228,.82);
+  margin-top:clamp(12px,2.6vmin,24px);
+}
+
+/* tall screens (phones, portrait tablets): stack the names and let them go big */
+@media (max-aspect-ratio: 3/4){
+  .names{font-size:min(26.5vw,17vh);line-height:.89}
+  .names .line{display:block}
+  .sub{font-size:clamp(21px,min(6.6vw,3.6vh),52px);margin-top:clamp(8px,1.4vh,18px)}
+  .block{--lift:-.012}
+}
+/* short screens (a phone on its side): tighten the stack */
+@media (max-height: 480px){
+  .kicker{margin-bottom:8px}
+  .bar{margin:11px 0 10px}
+  .note{display:none}
+  .block{--lift:.02}
+}
+
+/* ---- replay ---- */
+.replay{
+  position:absolute;
+  right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-indent:.18em;line-height:1;
+  color:var(--hueso);
+  padding:10px 13px 9px;border-radius:999px;
+  border:1px solid rgba(246,241,228,.3);
+  background:rgba(12,37,24,.7);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease;
+}
+.replay::after{content:'';position:absolute;top:-8px;right:-6px;bottom:-8px;left:-6px}   /* a finger-sized target around the small pill */
+.replay:hover{background:rgba(12,37,24,.88);border-color:var(--lima);color:var(--lima)}
+.replay:focus-visible{outline:2px solid var(--lima);outline-offset:3px}
+.replay[hidden]{display:none}
+/* on a phone it sits among the leaves by the flower: quieter, no outline */
+@media (max-width: 520px), (max-height: 480px){
+  .replay{border-color:transparent;background:rgba(12,37,24,.52);padding:10px 11px 9px}
+}
+
+::selection{background:var(--cempasuchil);color:var(--tinta)}
