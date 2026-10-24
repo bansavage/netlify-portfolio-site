@@ -1,7 +1,7 @@
 // Boot: load the data, wire the header, tabs and hash routes, and keep every view in
 // step with the store.
 
-import { S, commit, subscribe, exportState, importState, wipeAll } from "./store.js";
+import { S, commit, subscribe, exportState, importState, wipeAll, venueState } from "./store.js";
 import { app, recompute, filterList, nav } from "./app.js";
 import { ICON, esc, norm, toast } from "./util.js";
 import { overview } from "./views/overview.js";
@@ -160,15 +160,18 @@ async function boot() {
   headerTabs();
   menu();
   applyTheme();
-  const [atlas, geo, vend, photos, links] = await Promise.all([
+  const [atlas, geo, vend, photos, links, inbox, added] = await Promise.all([
     loadJSON("data/atlas.json"),
     loadJSON("data/geo.json"),
     loadJSON("data/vendors.json").catch(() => ({ vendors: [], benchmarks: [] })),
     loadJSON("data/photos.json").catch(() => ({})),
     loadJSON("data/links.json").catch(() => ({})),
+    loadJSON("data/inbox.json").catch(() => ({})),
+    loadJSON("data/added.json").catch(() => ({ venues: [] })),
   ]);
   app.meta = atlas.meta;
-  app.venues = atlas.venues;
+  // venues suggested after the atlas was built ride along with it
+  app.venues = [...atlas.venues, ...(added.venues || []).filter((x) => !atlas.venues.some((v) => v.key === x.key))];
   for (const v of app.venues) {
     v._hay = norm([v.name, v.short, v.place, v.state, v.town, v.groupLabel].join(" "));
     const ph = photos[v.key];
@@ -176,6 +179,19 @@ async function boot() {
     // web links found later for venues the atlas only knew from an emailed quote or a PDF
     const ln = links[v.key];
     if (ln && ln.length) { v.src = [...new Set([...ln, ...(v.src || [])])]; if (!v.photos_url) v.photos_url = ln[0]; }
+    // what the venues told us by email, found after the atlas was built
+    const ib = inbox[v.key];
+    if (ib) {
+      v.inbox = ib;
+      if (ib.status && !v.rows) { v.status = ib.status; v.reason = ib.reason || ib.quote; }
+      // start the stage where the emails left it, once; after that it's the couple's to change
+      const st = S.venues[v.key];
+      if (ib.stage && !(st && st.inboxSeeded)) {
+        const vs = venueState(v.key);
+        if (vs.stage === "none") vs.stage = ib.stage;
+        vs.inboxSeeded = true;
+      }
+    }
     app.byKey.set(v.key, v);
   }
   app.geo = geo;

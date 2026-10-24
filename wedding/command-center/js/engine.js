@@ -116,6 +116,9 @@ export function evaluate(venues, cfg, store = {}) {
     }
     if (v.status === "out" || v.custom === "out") {
       res.status = "out";
+    } else if (!v.rows && v.status === "over") {
+      res.status = "over"; // priced by email, not in the atlas tables
+      res.why = v.reason || "";
     } else if (!v.rows) {
       res.status = "wild";
       res.why = v.reason || "Not priced yet. Ask for a quote.";

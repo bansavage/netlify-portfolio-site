@@ -1,0 +1,56 @@
+{
+  "sancristobal_ts": {
+    "status": "over",
+    "stage": "passed",
+    "usd": 55000,
+    "date": "2026-08-26",
+    "quote": "Full buyout for November 2027: 3-night minimum and a US$55,000 food-and-drink minimum plus taxes and fees, met by hosted events and what guests charge to their rooms. Rooms are on top, paid by guests at 30% off. Low season (June to October) is 2 nights and US$40,000. Without a buyout: up to 15 rooms and events of up to 50 in the chapel, Playita, Mirador, Benno Bar or Cosecha, each with a site fee.",
+    "note": "The hotel said the minimum might come down slightly for 40 to 60 guests. We passed on Sep 29, 2026.",
+    "reason": "The emailed buyout minimum is US$55,000 for food and drink alone, before taxes and rooms: well over your ceiling."
+  },
+  "labor": {
+    "stage": "quoted",
+    "date": "2026-09-28",
+    "quote": "Their reply: only Saturday Nov 13 is open, with a 2-night lodging minimum (a holiday weekend in Mexico). The attached proposal covers the venue and lodging, with up to 8 hours in up to 3 spaces; each extra hour is MXN 12,000, and with every room booked there's no limit on extra hours. Furniture and lighting are quoted separately. Outside vendors are welcome with no fee; a planner is recommended. 21 rooms plus 3 lofts. 30% to hold the date, the rest monthly, paid off a month before.",
+    "note": "We replied Oct 8 that we're reviewing options."
+  },
+  "sacchich": {
+    "stage": "quoted",
+    "date": "2026-09-27",
+    "quote": "Matches the app: 3-night minimum at US$2,420 a night (high season, Oct to Apr) plus a US$4,900 venue fee for up to 100 guests, then 10% service and taxes on top. Sleeps 21 in 8 bedrooms. Events end at 2 a.m.; later costs an extra fee that goes to the village school. A planner is required. US$1,000 refundable damage deposit.",
+    "note": "We replied Oct 8 that we're reviewing options."
+  },
+  "ochil": {
+    "stage": "quoted",
+    "date": "2026-09-28",
+    "quote": "Available Saturday Nov 6, 2027 (not the 13th). No rooms at Ochil; Catherwood suggests Hacienda Itzincab for close family: 14 rooms, up to 28 people, and it can host the welcome dinner and Sunday brunch. Space and lodging only; music, food, furniture and lighting come from outside vendors. A planner is required. Payments: 30% to book, 40% midway, the rest 6 weeks before. Prices are on Catherwood's 2027-28 rate card (a Drive link).",
+    "note": "We replied Oct 8 that we're reviewing options."
+  },
+  "tamchen": {
+    "stage": "quoted",
+    "date": "2026-09-28",
+    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required."
+  },
+  "palomeque": {
+    "stage": "quoted",
+    "date": "2026-09-28",
+    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required."
+  },
+  "magdalena": {
+    "stage": "quoted",
+    "date": "2026-09-28",
+    "quote": "They replied with their Petite package PDF and offered a Zoom call; no Saturday price for our group in the email itself, so the app's price still comes from the listing.",
+    "note": "We replied Oct 8 that we're reviewing options."
+  },
+  "xcanatun": {
+    "stage": "quoted",
+    "date": "2026-10-23",
+    "quote": "The app's price is their Sept 29 group proposal (resent Oct 8). On Oct 9 we said it's over budget; they asked what to adjust. On Oct 23 we asked for a wedding-day-only proposal of US$20,000 to 25,000 for 60 to 80 guests: symbolic ceremony, cocktail hour with mariachi, Mexican buffet with a live taquero, live band then DJ, and drinks.",
+    "note": "Waiting on their reply to the US$20-25k ask."
+  },
+  "santalucia": {
+    "stage": "asked",
+    "date": "2026-09-27",
+    "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet."
+  }
+}

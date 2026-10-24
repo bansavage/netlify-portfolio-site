@@ -8,6 +8,7 @@ import { photosOf, photoSrc, photoTag, photoHost } from "./photos.js";
 import { gmapsURL, esc, k, kMXN, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
 import { STAGES, QUESTIONS_EN } from "./defaults.js";
 import { SCORE_KEYS } from "./engine.js";
+const fmtShort = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 import { candidateDates, phraseES, phraseEN } from "./dates.js";
 
 let openKey = null;
@@ -106,6 +107,7 @@ function bodyHTML(v, r) {
       <div style="margin-top:12px">${budgetBar(r.low.usd, r.high.usd)}<div class="bbar-legend"><span>$0</span><span>${k(S.cfg.budget.target)} target</span><span>${k(c)} ceiling</span></div></div></div>`;
     if (g.plan < g.low || g.plan > g.high) h += `<p class="muted" style="margin:-8px 0 0;font-size:12px">Pricing for ${g.plan} guests, outside your ${g.low}–${g.high} range.</p>`;
   }
+  if (v.inbox) h += `<div class="catch"><b>From our emails${v.inbox.date ? " · " + esc(fmtShort(v.inbox.date)) : ""}</b>${esc(v.inbox.quote)}${v.inbox.note ? `<br><span class="muted">${esc(v.inbox.note)}</span>` : ""}</div>`;
   if (v.catch) h += `<div class="catch"><b>The catch</b>${esc(v.catch)}</div>`;
   if (r.why && (r.status === "out" || r.status === "over" || r.status === "wild")) h += `<div class="catch ${r.status === "out" ? "bad" : ""}"><b>${r.status === "wild" ? "Why it's a wildcard" : r.status === "over" ? "Why it's over" : r.soft ? "Fails one of your must-haves" : "Why it's ruled out"}</b>${esc(r.why)}</div>`;
   const facts = [];
