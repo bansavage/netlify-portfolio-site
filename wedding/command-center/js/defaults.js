@@ -115,7 +115,7 @@ export const STAGES = [
 
 // The couple's own first email to every venue (Oct 23, 2026), and its questions in English
 export const EMAIL_ES = {
-  subject: "Boda simbólica en 2027, unas 60 personas",
+  subject: "Boda simbólica en 2027",
   intro: "Hola,\n\nSomos Kyle y Daina. Estamos planeando una boda simbólica para unas 60 personas en 2027 y nos encantaría celebrarla con ustedes. Tenemos algunas preguntas para empezar:",
   outro: "¡Muchas gracias!\nKyle y Daina",
 };
