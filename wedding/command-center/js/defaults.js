@@ -113,12 +113,27 @@ export const STAGES = [
   ["passed", "Passed"],
 ];
 
+// The couple's own first email to every venue (Oct 23, 2026), and its questions in English
+export const EMAIL_ES = {
+  subject: "Boda simbólica en 2027, unas 60 personas",
+  intro: "Hola,\n\nSomos Kyle y Daina. Estamos planeando una boda simbólica para unas 60 personas en 2027 y nos encantaría celebrarla con ustedes. Tenemos algunas preguntas para empezar:",
+  outro: "¡Muchas gracias!\nKyle y Daina",
+};
+export const QUESTIONS_ES = [
+  "¿Hasta qué hora se permite la música? ¿Es posible extenderla y, si sí, cuánto cuesta cada hora extra?",
+  "¿A qué hora tendría que terminar la recepción?",
+  "¿Podemos llevar un taquero externo y ofrecer una taquiza y un buffet para la recepción? ¿Hay algún cargo por usar la cocina, por descorche o por llevar proveedores externos? ¿O ustedes cuentan con algún proveedor que nos recomienden?",
+  "¿Cuántas habitaciones y camas tienen disponibles? ¿Cuáles son las tarifas y el mínimo de noches? ¿Es obligatorio reservar todas las habitaciones?",
+  "¿Hay un mínimo de invitados? ¿Se cobra algo si no llegamos a ese número?",
+  "¿Pueden asistir invitados de 13 y 16 años sin restricciones?",
+  "¿Nuestra boda sería el único evento ese día? ¿Tienen algún espacio techado por si llueve?",
+];
 export const QUESTIONS_EN = [
-  "Until what time can amplified music play, in writing, and what does each extra hour cost?",
-  "Can we bring outside taqueros with a trompo and open flame, and is there a kitchen, corkage or outside-vendor fee?",
-  "Does the price for Saturday Nov 6 or Nov 13, 2027 include IVA, furniture, a generator, security and cleaning?",
-  "How many rooms and beds are there, at what rate and minimum nights, and do we have to book them all?",
-  "Is there a guest minimum, or a charge for falling short of it?",
-  "Are guests aged 13 and 16 accepted without restriction?",
-  "Is ours the only event that day, what covered space is there if it rains, and are heaters allowed?",
+  "Until what time is music allowed? Can it run later, and if so, what does each extra hour cost?",
+  "What time would the reception have to end?",
+  "Can we bring an outside taquero and serve a taquiza and a buffet at the reception? Is there a fee for the kitchen, corkage or outside vendors? Or do you have a vendor you'd recommend?",
+  "How many rooms and beds are available? What are the rates and the minimum nights? Do we have to book every room?",
+  "Is there a guest minimum? Is there a charge if we fall short of it?",
+  "Can guests aged 13 and 16 attend without restrictions?",
+  "Would ours be the only event that day? Do you have a covered space in case it rains?",
 ];

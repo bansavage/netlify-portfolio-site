@@ -146,7 +146,7 @@ function datesHTML() {
     <div class="field" style="margin-top:12px"><span>Other dates we'd consider</span>
       <div class="chips" data-out="altdates">${altDatesHTML()}</div>
       <div class="date-row"><input class="inp" type="date" id="altDateIn" aria-label="Another date"><button class="btn sm" type="button" id="altDateAdd">${ICON.plus} Add date</button></div>
-      <small>Every date here goes into the quote emails and the seven questions. Tap one to make it the wedding date.</small></div>`;
+      <small>Dates you'd also consider. Tap one to make it the wedding date.</small></div>`;
 }
 function refreshDates() {
   if (!root) return;

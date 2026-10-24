@@ -6,10 +6,9 @@ import { app, res, nav, STATUS, statusBadge, shortEnd } from "./app.js";
 import { illo } from "./illo.js";
 import { photosOf, photoSrc, photoTag, photoHost } from "./photos.js";
 import { gmapsURL, esc, k, kMXN, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
-import { STAGES, QUESTIONS_EN } from "./defaults.js";
+import { STAGES, QUESTIONS_EN, QUESTIONS_ES, EMAIL_ES } from "./defaults.js";
 import { SCORE_KEYS } from "./engine.js";
 const fmtShort = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-import { candidateDates, phraseES, phraseEN } from "./dates.js";
 
 let openKey = null;
 let costN = "plan";
@@ -72,15 +71,13 @@ function scoreRows(r) {
   }).join("")}</div>`;
 }
 
-function datesES() { return phraseES(candidateDates(S.cfg)); }
-// the atlas wrote its third question for Nov 6 or 13; ask about the couple's own dates
-function questionsES() { const ph = datesES(); return app.meta.questions.map((q) => q.replace(/s[áa]bado 6 o 13 de noviembre de 2027/, ph)); }
-function questionsEN() { const ph = phraseEN(candidateDates(S.cfg)); return QUESTIONS_EN.map((q) => q.replace("Saturday Nov 6 or Nov 13, 2027", ph)); }
+// the couple's own template (defaults.js) replaced the atlas's seven questions
+const questionsES = () => QUESTIONS_ES;
+const questionsEN = () => QUESTIONS_EN;
 
-function emailES(v) {
-  const g = S.cfg.guests;
+function emailES() {
   const qs = questionsES().map((q, i) => `${i + 1}. ${q}`).join("\n");
-  return `Asunto: Boda simbólica, ${datesES()}, ${g.low}–${g.high} invitados\n\nHola, buen día:\n\nSomos Kyle y Daina. Estamos organizando una boda simbólica para unas ${g.low}–${g.high} personas el ${datesES()} y nos encantaría celebrarla en ${v.short}. ¿Nos podrían compartir disponibilidad y una cotización por escrito?\n\nEn particular nos gustaría saber:\n${qs}\n\n¡Muchas gracias!\nKyle y Daina`;
+  return `Asunto: ${EMAIL_ES.subject}\n\n${EMAIL_ES.intro}\n\n${qs}\n\n\n${EMAIL_ES.outro}`;
 }
 
 function bodyHTML(v, r) {
@@ -130,7 +127,7 @@ function bodyHTML(v, r) {
   if (r.status !== "out" || r.soft) {
     const en = questionsEN();
     const qs = questionsES().map((q, i) => `<li>${esc(q)}<br><small class="muted">${esc(en[i] || "")}</small></li>`).join("");
-    h += `<section class="dsec"><h3>Get in writing</h3>${v.nextstep ? `<p><b>${v.quote_order ? "Quote #" + v.quote_order + ": " : ""}</b>${esc(v.nextstep)}</p>` : ""}<p class="muted">The seven questions to ask every venue, in Spanish:</p><ol>${qs}</ol>
+    h += `<section class="dsec"><h3>Get in writing</h3>${v.nextstep ? `<p><b>${v.quote_order ? "Quote #" + v.quote_order + ": " : ""}</b>${esc(v.nextstep)}</p>` : ""}<p class="muted">Our seven questions for every venue, in Spanish:</p><ol>${qs}</ol>
       <div class="chips"><button class="btn sm" type="button" data-copyq>${ICON.copy} Copy the questions</button><button class="btn sm" type="button" data-copymail>${ICON.copy} Copy an email in Spanish</button></div></section>`;
   }
   if (r.scores && r.status !== "out") h += `<section class="dsec"><h3>How it scores</h3>${scoreRows(r)}</section>`;
@@ -207,11 +204,11 @@ export const drawer = {
       if (e.target.closest("[data-star]")) { const st = venueState(v.key); st.star = !st.star; commit("venue"); toast(st.star ? `${v.short} is on your shortlist` : `Removed ${v.short} from your shortlist`); return; }
       if (e.target.closest("[data-onmap]")) { nav.showOnMap(v.key); return; }
       if (e.target.closest("[data-copyq]")) {
-        const text = `${v.short} — ${datesES()}, ${S.cfg.guests.low}–${S.cfg.guests.high} invitados\n` + questionsES().map((q, i) => `${i + 1}. ${q}`).join("\n");
+        const text = `${v.short}\n` + questionsES().map((q, i) => `${i + 1}. ${q}`).join("\n");
         copyText(text).then(() => toast("Questions copied"), () => toast("Couldn't copy; select the text instead"));
         return;
       }
-      if (e.target.closest("[data-copymail]")) copyText(emailES(v)).then(() => toast("Email copied, ready to paste"), () => toast("Couldn't copy"));
+      if (e.target.closest("[data-copymail]")) copyText(emailES()).then(() => toast("Email copied, ready to paste"), () => toast("Couldn't copy"));
     });
     el.body.addEventListener("change", (e) => {
       const v = app.byKey.get(openKey);
