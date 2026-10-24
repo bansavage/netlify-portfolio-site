@@ -77,7 +77,7 @@ const questionsEN = () => QUESTIONS_EN;
 
 function emailES() {
   const qs = questionsES().map((q, i) => `${i + 1}. ${q}`).join("\n");
-  return `Asunto: ${EMAIL_ES.subject}\n\n${EMAIL_ES.intro}\n\n${qs}\n\n\n${EMAIL_ES.outro}`;
+  return `${EMAIL_ES.intro}\n\n${qs}\n\n\n${EMAIL_ES.outro}`;
 }
 
 function bodyHTML(v, r) {
@@ -128,7 +128,8 @@ function bodyHTML(v, r) {
     const en = questionsEN();
     const qs = questionsES().map((q, i) => `<li>${esc(q)}<br><small class="muted">${esc(en[i] || "")}</small></li>`).join("");
     h += `<section class="dsec"><h3>Get in writing</h3>${v.nextstep ? `<p><b>${v.quote_order ? "Quote #" + v.quote_order + ": " : ""}</b>${esc(v.nextstep)}</p>` : ""}<p class="muted">Our seven questions for every venue, in Spanish:</p><ol>${qs}</ol>
-      <div class="chips"><button class="btn sm" type="button" data-copyq>${ICON.copy} Copy the questions</button><button class="btn sm" type="button" data-copymail>${ICON.copy} Copy an email in Spanish</button></div></section>`;
+      <p><b>Subject:</b> ${esc(EMAIL_ES.subject)}</p>
+      <div class="chips"><button class="btn sm" type="button" data-copysubj>${ICON.copy} Copy the subject</button><button class="btn sm" type="button" data-copymail>${ICON.copy} Copy the body</button><button class="btn sm" type="button" data-copyq>${ICON.copy} Copy the questions</button></div></section>`;
   }
   if (r.scores && r.status !== "out") h += `<section class="dsec"><h3>How it scores</h3>${scoreRows(r)}</section>`;
   if (r.plan) {
@@ -208,7 +209,8 @@ export const drawer = {
         copyText(text).then(() => toast("Questions copied"), () => toast("Couldn't copy; select the text instead"));
         return;
       }
-      if (e.target.closest("[data-copymail]")) copyText(emailES()).then(() => toast("Email copied, ready to paste"), () => toast("Couldn't copy"));
+      if (e.target.closest("[data-copysubj]")) copyText(EMAIL_ES.subject).then(() => toast("Subject copied"), () => toast("Couldn't copy"));
+      if (e.target.closest("[data-copymail]")) copyText(emailES()).then(() => toast("Body copied"), () => toast("Couldn't copy"));
     });
     el.body.addEventListener("change", (e) => {
       const v = app.byKey.get(openKey);
