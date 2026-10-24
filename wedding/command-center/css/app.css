@@ -664,6 +664,12 @@ body.drawer-open .map-attr { right: calc(var(--drawer-w) + 8px); }
 .prices .plan { background: color-mix(in srgb, var(--accent) 6%, var(--surface)); }
 .catch { border-left: 3px solid var(--cempa); background: color-mix(in srgb, var(--cempa) 11%, var(--surface)); padding: 10px 12px; border-radius: 0 10px 10px 0; font-size: 13.5px; }
 .catch.bad { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, var(--surface)); }
+.catch.reach { border-left-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--surface)); }
+.catch.reach p { margin: 0 0 7px; }
+.catch.reach dl { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 13px; }
+.catch.reach dt { color: var(--ink-3); font-weight: 600; font-size: 12px; }
+.catch.reach dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.catch.reach a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .catch b { display: block; font: 600 9.5px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 5px; }
 .facts { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 8px 14px; margin: 0; }
 .facts dt { color: var(--ink-3); font-size: 12.5px; font-weight: 600; }

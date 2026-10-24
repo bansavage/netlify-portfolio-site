@@ -12,7 +12,13 @@
     "stage": "quoted",
     "date": "2026-09-28",
     "quote": "Their reply: only Saturday Nov 13 is open, with a 2-night lodging minimum (a holiday weekend in Mexico). The attached proposal covers the venue and lodging, with up to 8 hours in up to 3 spaces; each extra hour is MXN 12,000, and with every room booked there's no limit on extra hours. Furniture and lighting are quoted separately. Outside vendors are welcome with no fee; a planner is recommended. 21 rooms plus 3 lofts. 30% to hold the date, the rest monthly, paid off a month before.",
-    "note": "We replied Oct 8 that we're reviewing options."
+    "note": "We replied Oct 8 that we're reviewing options.",
+    "contact": {
+      "channel": "email",
+      "email": "info@haciendalalabor.com",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27; they sent a proposal Sep 28. Not re-contacted Oct 24."
+    }
   },
   "sacchich": {
     "stage": "quoted",
@@ -52,5 +58,199 @@
     "stage": "asked",
     "date": "2026-09-27",
     "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet."
+  },
+  "susula": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "haciendasusula@gmail.com",
+      "phone": "+52 999 551 1641",
+      "status": "Emailed Oct 24. No reply yet."
+    }
+  },
+  "cocoyoc": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "info@hcocoyoc.com",
+      "whatsapp": "+52 735 356 2211",
+      "phone": "+52 735 356 2211",
+      "status": "Emailed Oct 24. No reply yet."
+    }
+  },
+  "soltepec": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "info@haciendasoltepec.com",
+      "status": "Emailed Oct 24. No reply yet."
+    }
+  },
+  "lossantos": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "jamie@haciendadelossantos.com.mx",
+      "status": "Emailed the wedding director's address from their site on Oct 24. No reply yet."
+    }
+  },
+  "jobito": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "ventas@mesondejobito.com",
+      "email2": "grupos@mesondejobito.com",
+      "status": "Emailed sales on Oct 24 (groups address also listed). No reply yet."
+    }
+  },
+  "santacruz_casco": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "campsantacruz@gmail.com",
+      "phone": "+52 777 102 2924",
+      "status": "Emailed Oct 24 at an address from a directory, since the venue's own site is down. No reply yet."
+    }
+  },
+  "sanmiguelregla": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "reservaciones@sanmiguelregla.com",
+      "status": "Emailed reservations on Oct 24. No reply yet."
+    }
+  },
+  "antigua_ldm": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "info@haciendaantigua.com",
+      "status": "Emailed Oct 24. No reply yet."
+    }
+  },
+  "galindo": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "bodasfahg@posadas.com",
+      "status": "Emailed the weddings address on Oct 24. No reply yet."
+    }
+  },
+  "laspalmas_hux": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+1 909 241 2324",
+      "status": "Replied on WhatsApp in English and asked for our email; we sent it Oct 24. Their details should arrive by email."
+    }
+  },
+  "lacapilla_sma": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "lacapillasl@gmail.com",
+      "status": "Emailed Oct 24. No reply yet."
+    }
+  },
+  "santodomingo_slp": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+52 444 142 5633",
+      "status": "Messaged Oct 24. An automatic reply asked for event type, date and guest count, so we resent the message with those."
+    }
+  },
+  "cielitolindo": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+52 762 688 4476",
+      "whatsapp_old": "+52 762 622 1001",
+      "status": "The first number sent us to the restaurant's WhatsApp (Jardín Cielito Lindo). They asked for our date since some 2027 dates are booked, and whether it's a holiday weekend; we said Nov 13, 2027, flexible (Nov 6 also works). They sent wedding photos and a video."
+    }
+  },
+  "lashadas": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "banquetes.hadas@brisas.com.mx",
+      "status": "Emailed banquets and weddings on Oct 24. No reply yet."
+    }
+  },
+  "xalostoc": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email+whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+52 246 208 3548",
+      "phone": "+52 246 466 8583",
+      "bounced": [
+        "info@haciendaxalostoc.com"
+      ],
+      "status": "The email bounced (domain gone). On WhatsApp, a shared office with México Viejo and Olé Tours asked which month; we said November, flexible. The landline isn't on WhatsApp. Also emailed México Viejo (info@mexicoviejotours.com) Oct 24.",
+      "email": "info@mexicoviejotours.com"
+    }
+  },
+  "mia_bac": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email+whatsapp",
+      "sent": "2026-10-24",
+      "email": "reservaciones1@hotelesmia.com",
+      "whatsapp": "+52 998 151 7891",
+      "bounced": [
+        "reservaciones@miabacalar.com"
+      ],
+      "status": "The first address blocked our email; resent Oct 24 to the group's reservations address. Events WhatsApp on file. No reply yet."
+    }
+  },
+  "santacruz_pal": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email+whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+52 999 611 9233",
+      "bounced": [
+        "contacto@haciendasantacruz.com.mx"
+      ],
+      "status": "The first email bounced; resent Oct 24 to the manager's address from their Facebook page. On WhatsApp, reception shared their sales manager's number (+52 999 647 8911).",
+      "email": "gerencia@haciendasantacruz.com",
+      "phone": "+52 999 647 8911"
+    }
+  },
+  "laluz_tetecala": {
+    "stage": "quoted",
+    "date": "2026-10-24",
+    "quote": "Their WhatsApp reply: the 2027–2028 brochure (PDF), photos and a video. Outside vendors are fine for a taquiza or buffet, and the kitchen can be rented. The event space (the \"auditorio\") is 10 hours; each extra hour is MXN 5,000. Brochure 2027–2028: venue package MXN 117,000 (the app's existing rental line already uses this, plus 16% IVA). It includes 10 hours of the open-air auditorium salon for the banquet, 1 hour of space for the welcome cocktail, the consecrated chapel, valet parking for overnight guests, a semi-equipped kitchen for the caterer, a giant LED screen, cleaning staff for the salon and restrooms, and a generator covering the whole hacienda. Extra hours MXN 5,000 each. Rooms: bridal suite 1, Andromeda suite 1, family rooms for 4 (5), family rooms for 5 (2), doubles king or 2 beds (17), shared rooms with 6 bunks for 12 (10); total capacity 196 guests. Also a heated pool, temazcal for 20–25, restaurant for 150. The brochure gives no room rates, and doesn't say whether IVA is included.",
+    "contact": {
+      "channel": "whatsapp",
+      "sent": "2026-10-24",
+      "whatsapp": "+52 55 1399 5479",
+      "status": "Messaged Oct 24. They replied the same day with their 2027–2028 brochure, photos and a video.",
+      "phone": "+52 55 4021 7542"
+    }
+  },
+  "ferreria": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "sent": "2026-10-24",
+      "email": "tureserva.rhf@gmail.com",
+      "status": "Emailed the address on their booking page on Oct 24. No reply yet."
+    }
   }
 }

@@ -80,6 +80,19 @@ function emailES() {
   return `${EMAIL_ES.intro}\n\n${qs}\n\n\n${EMAIL_ES.outro}`;
 }
 
+// how we reached a venue: channel, addresses and numbers, and where the thread stands
+const CHANNEL = { email: "Email", whatsapp: "WhatsApp", "email+whatsapp": "Email and WhatsApp" };
+const waLink = (n) => `<a href="https://wa.me/${String(n).replace(/\D/g, "")}" target="_blank" rel="noopener">${esc(n)}</a>`;
+const mailLink = (m) => `<a href="mailto:${esc(m)}">${esc(m)}</a>`;
+function contactHTML(c) {
+  const rows = [];
+  if (c.email) rows.push(["Email", mailLink(c.email) + (c.email2 ? ` · ${mailLink(c.email2)}` : "")]);
+  if (c.whatsapp) rows.push(["WhatsApp", waLink(c.whatsapp) + (c.whatsapp_old ? ` <span class="muted">(was ${esc(c.whatsapp_old)})</span>` : "")]);
+  if (c.phone && c.phone !== c.whatsapp) rows.push(["Phone", `<a href="tel:${esc(c.phone.replace(/[^\d+]/g, ""))}">${esc(c.phone)}</a>`]);
+  if (c.bounced && c.bounced.length) rows.push(["Bounced", c.bounced.map((m) => `<s class="muted">${esc(m)}</s>`).join(" · ")]);
+  return `<div class="catch reach"><b>How we reached them · ${esc(CHANNEL[c.channel] || c.channel || "")}${c.sent ? " · " + esc(fmtShort(c.sent)) : ""}</b>${c.status ? `<p>${esc(c.status)}</p>` : ""}${rows.length ? `<dl>${rows.map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join("")}</dl>` : ""}</div>`;
+}
+
 function bodyHTML(v, r) {
   const st = venueState(v.key);
   const badges = [statusBadge(r)];
@@ -104,7 +117,8 @@ function bodyHTML(v, r) {
       <div style="margin-top:12px">${budgetBar(r.low.usd, r.high.usd)}<div class="bbar-legend"><span>$0</span><span>${k(S.cfg.budget.target)} target</span><span>${k(c)} ceiling</span></div></div></div>`;
     if (g.plan < g.low || g.plan > g.high) h += `<p class="muted" style="margin:-8px 0 0;font-size:12px">Pricing for ${g.plan} guests, outside your ${g.low}–${g.high} range.</p>`;
   }
-  if (v.inbox) h += `<div class="catch"><b>From our emails${v.inbox.date ? " · " + esc(fmtShort(v.inbox.date)) : ""}</b>${esc(v.inbox.quote)}${v.inbox.note ? `<br><span class="muted">${esc(v.inbox.note)}</span>` : ""}</div>`;
+  if (v.inbox && v.inbox.quote) h += `<div class="catch"><b>From our messages${v.inbox.date ? " · " + esc(fmtShort(v.inbox.date)) : ""}</b>${esc(v.inbox.quote)}${v.inbox.note ? `<br><span class="muted">${esc(v.inbox.note)}</span>` : ""}</div>`;
+  if (v.inbox && v.inbox.contact) h += contactHTML(v.inbox.contact);
   if (v.catch) h += `<div class="catch"><b>The catch</b>${esc(v.catch)}</div>`;
   if (r.why && (r.status === "out" || r.status === "over" || r.status === "wild")) h += `<div class="catch ${r.status === "out" ? "bad" : ""}"><b>${r.status === "wild" ? "Why it's a wildcard" : r.status === "over" ? "Why it's over" : r.soft ? "Fails one of your must-haves" : "Why it's ruled out"}</b>${esc(r.why)}</div>`;
   const facts = [];
@@ -222,7 +236,7 @@ export const drawer = {
       if (!id.startsWith("q:")) return;
       const st = venueState(id.slice(2));
       st.quote = val > 0 ? val : 0;
-      if (st.quote && st.stage === "none") st.stage = "quoted";
+      if (st.quote && (st.stage === "none" || st.stage === "asked")) st.stage = "quoted";
       commit("venue");
     });
     el.body.addEventListener("input", (e) => {
