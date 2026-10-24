@@ -44,7 +44,11 @@ function chipsHTML() {
   const counts = {};
   for (const r of app.ev.results.values()) counts[r.status] = (counts[r.status] || 0) + 1;
   const nStar = Object.values(S.venues).filter((s) => s.star).length;
-  const st = ["top", "fit", "wild", "over", "out"].map((s) => `<button class="fchip" type="button" data-show="${s}" aria-pressed="${!!f.show[s] && !f.star}" style="--c:${STATUS[s].color}"><span class="dot${s === "wild" ? " dia" : ""}"></span>${STATUS[s].label} <span class="n">${counts[s] || 0}</span></button>`).join("");
+  const ST = ["top", "fit", "wild", "over", "out"];
+  const allOn = !f.star && ST.every((s) => f.show[s]);
+  const total = ST.reduce((n, s) => n + (counts[s] || 0), 0);
+  // "All" shows every status; a status chip shows only that status
+  const st = `<button class="fchip" type="button" data-show="all" aria-pressed="${allOn}">All <span class="n">${total}</span></button>` + ST.map((s) => `<button class="fchip" type="button" data-show="${s}" aria-pressed="${!allOn && !!f.show[s] && !f.star}" style="--c:${STATUS[s].color}"><span class="dot${s === "wild" ? " dia" : ""}"></span>${STATUS[s].label} <span class="n">${counts[s] || 0}</span></button>`).join("");
   const q = QUICK.map(([id, l]) => `<button class="fchip" type="button" data-q="${id}" aria-pressed="${f.quick.includes(id)}">${l}</button>`).join("");
   return `${st}<button class="fchip" type="button" data-star aria-pressed="${!!f.star}">${ICON.star} Shortlist <span class="n">${nStar}</span></button><span style="width:10px"></span>${q}`;
 }
@@ -87,7 +91,7 @@ function tableHTML() {
 
 function cardHTML(r) {
   const v = r.v, st = S.venues[v.key] || {};
-  const badge = r.status === "top" ? `<span class="badge top">Top ten · #${r.top}</span>` : `<span class="badge ${r.status}">${esc(STATUS[r.status].label)}</span>`;
+  const badge = r.status === "top" ? `<span class="badge top">Top 20 · #${r.top}</span>` : `<span class="badge ${r.status}">${esc(STATUS[r.status].label)}</span>`;
   const money = r.plan ? `<div class="money"><b class="${r.high.usd > S.cfg.budget.ceiling ? "over" : ""}">${k(r.plan.usd)}</b><small>${kMXN(r.plan.mxn)} · wedding day · ${r.plan.n} guests</small></div>` : `<div class="money"><b>—</b><small>${r.status === "wild" ? "quote needed" : esc(r.why || "")}</small></div>`;
   const chips = [];
   if (v.end) chips.push(`<span class="chip">Ends ${esc(shortEnd(v))}</span>`);
@@ -129,7 +133,15 @@ export const venues = {
       if (star && star.dataset.star) { const st = venueState(star.dataset.star); st.star = !st.star; commit("venue"); return; }
       if (star) { f.star = !f.star; commit("filters"); return; }
       const sh = e.target.closest("[data-show]");
-      if (sh) { if (f.star) { f.star = false; } else f.show[sh.dataset.show] = !f.show[sh.dataset.show]; commit("filters"); return; }
+      if (sh) {
+        const ST = ["top", "fit", "wild", "over", "out"], want = sh.dataset.show;
+        const only = !f.star && ST.filter((s) => f.show[s]).length === 1 && f.show[want];
+        f.star = false;
+        // clicking the one status already shown goes back to All
+        ST.forEach((s) => { f.show[s] = want === "all" || only ? true : s === want; });
+        commit("filters");
+        return;
+      }
       const qq = e.target.closest("[data-q]");
       if (qq) { const id = qq.dataset.q; f.quick = f.quick.includes(id) ? f.quick.filter((x) => x !== id) : [...f.quick, id]; commit("filters"); return; }
       const so = e.target.closest("[data-sort]");

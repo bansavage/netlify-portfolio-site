@@ -8,7 +8,7 @@ import { S, commit } from "../store.js";
 import { app, res, nav, STATUS, pinHTML, passes, taqOK, lateOK } from "../app.js";
 import { illo } from "../illo.js";
 import { photosOf, photoSrc, photoTag, photoLabel } from "../photos.js";
-import { esc, k, kMXN, ICON, norm, debounce } from "../util.js";
+import { gmapsURL, esc, k, kMXN, ICON, norm, debounce } from "../util.js";
 
 const ML_JS = "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js";
 const ML_CSS = "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css";
@@ -169,7 +169,7 @@ function prewarm() {
   const t = theme, ids = [];
   for (let n = 2; n <= 90; n++) ids.push(`cl|${n}|${t}`);
   for (const s of ["fit", "wild", "over", "out"]) for (const st of [0, 1]) ids.push(`pin|${s}|0|${st}|${t}`);
-  for (let i = 1; i <= 10; i++) for (const st of [0, 1]) ids.push(`pin|top|${i}|${st}|${t}`);
+  for (let i = 1; i <= 20; i++) for (const st of [0, 1]) ids.push(`pin|top|${i}|${st}|${t}`);
   for (const l of app.geo.labels) for (const vnt of ["f9", "s9", "f10", "s10"]) ids.push(`st|${l.name}|${vnt}|${l.short}|${t}`);
   for (const c of app.geo.cities) ids.push(`ci|${c.tier}|${c.name}|${t}`);
   for (const a of app.geo.airports) ids.push(`ap|${a.iata}|${t}`);
@@ -342,6 +342,8 @@ function initMap() {
     applyLayers();
     syncActive();
     prewarm();
+    // opened straight from a link to one venue: fly there once the map exists
+    if (app.activeKey && S.ui.tab === "map") focusVenue(app.activeKey);
   });
   wireMap();
 }
@@ -401,13 +403,13 @@ function cardHTML(r, pinned) {
   const v = r.v, s = STATUS[r.status];
   return `<div class="card-img">${illo(v, 300, 140)}${photoTag(v, 640)}<span class="illo-tag">${photoLabel(v)}</span></div>
   <div class="card-body">
-    <div class="card-eyebrow eyebrow" style="--c:${s.color}"><span class="dot"></span>${r.status === "top" ? "Top ten · #" + r.top : esc(s.long)}${S.venues[v.key] && S.venues[v.key].star ? " · ★ shortlist" : ""}</div>
+    <div class="card-eyebrow eyebrow" style="--c:${s.color}"><span class="dot"></span>${r.status === "top" ? "Top 20 · #" + r.top : esc(s.long)}${S.venues[v.key] && S.venues[v.key].star ? " · ★ shortlist" : ""}</div>
     <h3 class="card-name">${esc(v.short)}</h3>
     <div class="card-place">${esc(v.place)}</div>
     ${v.description ? `<p class="card-desc">${esc(v.description)}</p>` : ""}
     ${priceLine(r)}
     <div class="chips">${chipsFor(v)}</div>
-    <div class="card-actions"><button class="btn btn-primary sm" type="button" data-more="${esc(v.key)}">More info</button>${pinned ? `<button class="btn sm" type="button" data-close>Close</button>` : ""}</div>
+    <div class="card-actions"><button class="btn btn-primary sm" type="button" data-more="${esc(v.key)}">More info</button><a class="btn sm" href="${esc(gmapsURL(v))}" target="_blank" rel="noopener">Google Maps</a>${pinned ? `<button class="btn sm" type="button" data-close>Close</button>` : ""}</div>
   </div>`;
 }
 const cardEl = () => document.getElementById("card");
@@ -552,7 +554,7 @@ function panelHTML() {
           ${[["lines", "State lines"], ["names", "State names"], ["cities", "Cities"], ["airports", "Airports"], ["vnames", "Venue names"]].map(([id, l]) => `<label class="tg"><input type="checkbox" data-layer="${id}" ${S.ui.layers[id] ? "checked" : ""}> ${l}</label>`).join("")}
         </div>
         <div class="lgrid" id="mpLegend" role="group" aria-label="Show venue types"></div>
-        <p class="mnote">Prices are live: the all-in estimate for a Saturday wedding day with your vision and guest count, at MXN ${S.cfg.fx} = US$1. Pins sit at each venue's town unless the details say otherwise; a lime ring marks your shortlist.</p>
+        <p class="mnote">Prices are live: the all-in estimate for a Saturday wedding day with your vision and guest count, at <span data-out="mapfx">MXN ${(+S.cfg.fx).toFixed(2)}</span> = US$1. Pins sit at each venue's town unless the details say otherwise; a lime ring marks your shortlist.</p>
       </div></details></div>`;
 }
 function legendHTML() {
@@ -581,6 +583,8 @@ function renderList() {
   document.getElementById("mpCount").textContent = `${app.list.length} of ${app.venues.length} venues`;
   document.getElementById("mpLegend").innerHTML = legendHTML();
   root.querySelector(".mp-head .eyebrow").textContent = `Live map · ${S.cfg.guests.plan} guests`;
+  const fxEl = root.querySelector('[data-out="mapfx"]');
+  if (fxEl) fxEl.textContent = `MXN ${(+S.cfg.fx).toFixed(2)}`;
 }
 function hoverRow(key, on) { if (!listEl) return; const r = listEl.querySelector(`[data-key="${CSS.escape(key)}"]`); if (r) r.classList.toggle("hov", on); }
 function markRow(key) {

@@ -1,4 +1,4 @@
-// Overview: the countdown, the live top ten, the shortlist, the pipeline, the quotes to
+// Overview: the countdown, the live top 20, the shortlist, the pipeline, the quotes to
 // chase and where the viable venues are.
 
 import { S, commit } from "../store.js";
@@ -44,7 +44,7 @@ function heroHTML() {
       <div class="hk accent"><span class="eyebrow">Fit the brief</span><b>${app.ev.viableCount}</b><small>of ${app.venues.length} venues · ${underTarget} under target</small></div>
       <div class="hk pink"><span class="eyebrow">Shortlist</span><b>${starred.length}</b><small>${starred.length ? "starred venues" : "star venues to build it"}</small></div>
       <div class="hk"><span class="eyebrow">Quotes in hand</span><b>${quoted}</b><small>${quoted ? "venues with a written number" : "none yet; start with #1 below"}</small></div>
-      <div class="hk"><span class="eyebrow">Best top-ten price</span><b>${cheapestTop ? k(cheapestTop.plan.usd) : "—"}</b><small>${cheapestTop ? kMXN(cheapestTop.plan.mxn) + " · " + esc(cheapestTop.v.short) + " · " + g.plan + " guests" : ""}</small></div>
+      <div class="hk"><span class="eyebrow">Best top-20 price</span><b>${cheapestTop ? k(cheapestTop.plan.usd) : "—"}</b><small>${cheapestTop ? kMXN(cheapestTop.plan.mxn) + " · " + esc(cheapestTop.v.short) + " · " + g.plan + " guests" : ""}</small></div>
     </div>
   </section>`;
 }
@@ -57,7 +57,7 @@ function topTenHTML() {
     const mv = !was ? `<span class="mv up">New</span>` : was > r.top ? `<span class="mv up">▲${was - r.top}</span>` : was < r.top ? `<span class="mv dn">▼${r.top - was}</span>` : "";
     return `<li data-key="${esc(v.key)}">${pinHTML(r)}<span class="nm"><b>${esc(v.short)} ${mv}</b><small>${esc(v.place)} · ends ${esc(endShort(v))} · sleeps ${esc(String(v.beds || "?"))}</small></span><span class="pr">${k(r.plan.usd)}<small>${kMXN(r.plan.mxn)}</small></span><span class="fit" title="Fit score">${r.fit.toFixed(1)}</span></li>`;
   }).join("");
-  return `<div class="card"><div class="panel-h"><div><span class="eyebrow">Live ranking · ${S.cfg.guests.plan} guests</span><h3>The top ten right now</h3></div><button class="btn sm" type="button" data-go="venues">All venues ${ICON.right}</button></div><ol class="toplist">${rows}</ol></div>`;
+  return `<div class="card"><div class="panel-h"><div><span class="eyebrow">Live ranking · ${S.cfg.guests.plan} guests</span><h3>The top 20 right now</h3></div><button class="btn sm" type="button" data-go="venues">All venues ${ICON.right}</button></div><ol class="toplist">${rows}</ol></div>`;
 }
 const endShort = (v) => { const e = v.end || ""; if (/^none|no limit/i.test(e)) return "no limit"; const m = e.match(/\b(\d{1,2}:\d{2})/); return m ? m[1] : e ? e.slice(0, 14) : "?"; };
 

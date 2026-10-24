@@ -33,7 +33,7 @@ function nearRegions() {
   // the Oaxaca groups share vendors
   if ([...regs].some((r) => r.startsWith("Oaxaca"))) ["Oaxaca", "Oaxaca valley", "Oaxaca coast"].forEach((r) => regs.add(r));
   if (regs.has("Inland Jalisco")) regs.add("Jalisco");
-  return { regs, basis: starred.length ? "your shortlist" : "the live top ten" };
+  return { regs, basis: starred.length ? "your shortlist" : "the live top 20" };
 }
 
 function regionSet() {

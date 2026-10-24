@@ -160,11 +160,12 @@ async function boot() {
   headerTabs();
   menu();
   applyTheme();
-  const [atlas, geo, vend, photos] = await Promise.all([
+  const [atlas, geo, vend, photos, links] = await Promise.all([
     loadJSON("data/atlas.json"),
     loadJSON("data/geo.json"),
     loadJSON("data/vendors.json").catch(() => ({ vendors: [], benchmarks: [] })),
     loadJSON("data/photos.json").catch(() => ({})),
+    loadJSON("data/links.json").catch(() => ({})),
   ]);
   app.meta = atlas.meta;
   app.venues = atlas.venues;
@@ -172,6 +173,9 @@ async function boot() {
     v._hay = norm([v.name, v.short, v.place, v.state, v.town, v.groupLabel].join(" "));
     const ph = photos[v.key];
     if (ph && ph.photos && ph.photos.length) { v.photos = ph.photos; v.photo_src = ph.src; }
+    // web links found later for venues the atlas only knew from an emailed quote or a PDF
+    const ln = links[v.key];
+    if (ln && ln.length) { v.src = [...new Set([...ln, ...(v.src || [])])]; if (!v.photos_url) v.photos_url = ln[0]; }
     app.byKey.set(v.key, v);
   }
   app.geo = geo;

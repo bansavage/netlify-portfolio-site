@@ -6,8 +6,18 @@ import { esc } from "./util.js";
 
 export const photosOf = (v) => (v && v.photos && v.photos.length ? v.photos : []);
 
-// bodas.com.mx (and its sister weddingwire.com) serve every gallery image at 320, 640, 960 and 1280 px wide
-export const photoSrc = (url, w) => url.replace(/(cdn\d?\.(?:bodas\.com\.mx|weddingwire\.com)\/vendor\/\d+\/\d+_\d+\/)\d+(\/)/, `$1${w}$2`);
+// Ask each host for a copy near the size it's shown at, where the host can resize.
+export function photoSrc(url, w) {
+  // bodas.com.mx and its sister weddingwire.com: 320, 640, 960 or 1280 px, as a path segment
+  if (/cdn\d?\.(?:bodas\.com\.mx|weddingwire\.com)\/vendor\//.test(url)) return url.replace(/(\/vendor\/\d+\/\d+_\d+\/)\d+(\/)/, `$1${w}$2`);
+  // Angsana stores camera originals; its own resizer serves 384, 640 and 1080 px
+  if (/^https:\/\/www\.angsana\.com\/assets\//.test(url)) return `https://www.angsana.com/_next/image?url=${encodeURIComponent(url)}&w=${w <= 384 ? 384 : w <= 640 ? 640 : 1080}&q=75`;
+  // Squarespace: ?format=500w / 750w / 1000w
+  if (/squarespace(?:-cdn)?\.com\//.test(url)) return url.split("?")[0] + `?format=${w <= 500 ? 500 : w <= 750 ? 750 : 1000}w`;
+  // Duda sites (cdn-website.com): -640w or -1920w before the extension
+  if (/cdn-website\.com\//.test(url)) return url.replace(/-\d+w\.(jpe?g|png|webp)$/i, `-${w <= 640 ? 640 : 1920}w.$1`);
+  return url;
+}
 
 export function photoHost(v) {
   try { return new URL(v.photo_src).hostname.replace(/^www\./, ""); } catch (e) { return ""; }

@@ -5,7 +5,7 @@ import { S, commit, venueState } from "./store.js";
 import { app, res, nav, STATUS, statusBadge, shortEnd } from "./app.js";
 import { illo } from "./illo.js";
 import { photosOf, photoSrc, photoTag, photoHost } from "./photos.js";
-import { esc, k, kMXN, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
+import { gmapsURL, esc, k, kMXN, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
 import { STAGES, QUESTIONS_EN } from "./defaults.js";
 import { SCORE_KEYS } from "./engine.js";
 import { candidateDates, phraseES, phraseEN } from "./dates.js";
@@ -64,7 +64,7 @@ function scoreRows(r) {
   if (!r.scores) return "";
   const W = S.cfg.weights;
   const tot = SCORE_KEYS.reduce((s, x) => s + (+W[x] || 0), 0) || 1;
-  const LBL = { setting: "Setting", end: "Party end time", taq: "Own taqueros", beds: "Beds on site", cost: "All-in cost", access: "Access" };
+  const LBL = { setting: "Setting", end: "Party end time", taq: "Own taqueros", beds: "Beds on site", cost: "All-in cost", access: "Airport proximity" };
   return `<div class="scores">${SCORE_KEYS.map((x) => {
     const s = r.scores[x] ?? 0;
     return `<div class="srow"><span class="sl">${LBL[x]} <small>${Math.round(((+W[x] || 0) / tot) * 100)}%</small></span><span class="sb"><i style="width:${Math.max(2, (s / 5) * 100)}%"></i></span><span class="sv">${(+s).toFixed(1)}</span></div>`;
@@ -88,14 +88,15 @@ function bodyHTML(v, r) {
   if (st.star) badges.push(`<span class="badge star">${ICON.star.replace("<svg", '<svg width="11" height="11" style="fill:currentColor;stroke:none"')} Shortlist</span>`);
   if (r.fit != null && r.status !== "out") badges.push(`<span class="badge">Fit ${r.fit.toFixed(2)} / 5</span>`);
   if (r.rank && r.status !== "top") badges.push(`<span class="badge">Rank ${r.rank} of ${app.ev.viableCount}</span>`);
-  if (v.rank && v.rank !== r.rank) badges.push(`<span class="badge">Atlas #${v.rank}</span>`);
+  if (v.rank && r.fitRank && v.rank !== r.fitRank) badges.push(`<span class="badge">Atlas #${v.rank}</span>`);
   let h = `<div class="dw-top"><div class="badges">${badges.join("")}</div><h2 class="dw-title" id="dwTitle" tabindex="-1">${esc(v.short)}</h2><p class="dw-place">${esc(v.place)} · ${esc(v.groupLabel)}</p></div>`;
   const ph = photosOf(v);
   if (ph.length > 1) h += `<div class="gallery" aria-label="Photos">${ph.slice(0, 12).map((p, i) => `<button type="button" data-ph="${i}" aria-label="Photo ${i + 1}" aria-current="${i === 0}"><img src="${esc(photoSrc(p, 320))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></button>`).join("")}</div>`;
   h += `<div class="dw-acts"><button class="btn sm star" type="button" data-star aria-pressed="${!!st.star}">${ICON.star} ${st.star ? "Shortlisted" : "Shortlist"}</button>
     <select class="stage-sel" data-stage aria-label="Where this venue stands">${STAGES.map(([id, label]) => `<option value="${id}" ${st.stage === id ? "selected" : ""}>${label}</option>`).join("")}</select>
     ${S.ui.tab !== "map" ? `<button class="btn sm" type="button" data-onmap>${ICON.pin} Map</button>` : ""}
-    ${v.photos_url ? `<a class="btn sm" href="${esc(v.photos_url)}" target="_blank" rel="noopener">${ICON.link} Photos</a>` : ""}</div>`;
+    ${v.photos_url ? `<a class="btn sm" href="${esc(v.photos_url)}" target="_blank" rel="noopener">${ICON.link} Photos</a>` : ""}
+    <a class="btn sm" href="${esc(gmapsURL(v))}" target="_blank" rel="noopener">${ICON.pin} Google Maps</a></div>`;
   if (v.description) h += `<p class="dw-desc">${esc(v.description)}</p>`;
   if (r.plan) {
     const g = S.cfg.guests, c = S.cfg.budget.ceiling;

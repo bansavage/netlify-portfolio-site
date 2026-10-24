@@ -4,11 +4,14 @@
 // (buffet, mariachi, DJ ...) are replaced by the matching vision line, so editing the vision
 // reprices every venue at once; venue rows (rental, house menus, required extras) are
 // interpolated between the 60- and 70-guest figures. With the default config this
-// reproduces the atlas's totals, ranks and top ten exactly.
+// reproduces the atlas's totals exactly (ranks now follow the couple's own weights).
 
 export const STD_KEYS = ["buffet", "taco", "bar", "mariachi", "band", "dj", "photo", "coord", "officiant", "decor", "extras", "tips"];
 export const RULE_KEYS = ["planner", "generator", "heaters", "tent", "shuttles"];
-export const SCORE_KEYS = ["setting", "end", "taq", "beds", "cost", "access"];
+// Taquero permission is not scored (Kyle, Oct 23 2026): it rests on bodas.com.mx catering fields
+// nobody can vouch for. It stays visible as information until venues answer in writing.
+export const TOP_N = 20;
+export const SCORE_KEYS = ["setting", "cost", "beds", "access"];
 
 export function cardAmount(card, n) {
   if (!card || !card.on || card.unit === "none") return 0;
@@ -141,8 +144,11 @@ export function evaluate(venues, cfg, store = {}) {
   viable.sort((a, b) => b.fit - a.fit || (a.v.rank || 999) - (b.v.rank || 999) || a.v.short.localeCompare(b.v.short));
   let top = 0;
   viable.forEach((r, i) => {
-    r.rank = i + 1;
-    if (top < 10 && (r.scores.setting || 0) >= 4) { top++; r.status = "top"; r.top = top; }
+    r.fitRank = i + 1;
+    if (top < TOP_N && (r.scores.setting || 0) >= 4) { top++; r.status = "top"; r.top = top; }
   });
+  // one sequence for display: the top 20 are 1-20, everyone else follows from 21 by fit
+  let next = top;
+  viable.forEach((r) => { r.rank = r.top || ++next; });
   return { results: out, viableCount: viable.length };
 }

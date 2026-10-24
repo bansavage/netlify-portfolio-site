@@ -35,6 +35,12 @@ function migrateDates(cfg, saved) {
   delete cfg.dates;
 }
 
+// earlier briefs also weighed taqueros and party end time; the couple now scores four things only
+function dropTaqWeight(cfg) {
+  if (!cfg || !cfg.weights) return;
+  if ("end" in cfg.weights || "taq" in cfg.weights) cfg.weights = clone(DEFAULT_CONFIG.weights);
+}
+
 function fresh() {
   return { cfg: clone(DEFAULT_CONFIG), venues: {}, vendors: {}, customVendors: [], customVenues: [], ui: clone(DEFAULT_UI), saved: null };
 }
@@ -47,6 +53,7 @@ function load() {
     const d = JSON.parse(raw);
     s.cfg = merge(s.cfg, d.cfg || {});
     migrateDates(s.cfg, d.cfg);
+    dropTaqWeight(s.cfg);
     if (!Array.isArray(s.cfg.vision) || !s.cfg.vision.length) s.cfg.vision = clone(DEFAULT_CONFIG.vision);
     s.venues = d.venues || {};
     s.vendors = d.vendors || {};
@@ -111,6 +118,7 @@ export function importState(text) {
   if (d.app !== "venue-hunt-command-center") throw new Error("That file isn't a Command Center export.");
   S.cfg = merge(clone(DEFAULT_CONFIG), d.cfg || {});
   migrateDates(S.cfg, d.cfg);
+  dropTaqWeight(S.cfg);
   if (!Array.isArray(S.cfg.vision) || !S.cfg.vision.length) S.cfg.vision = clone(DEFAULT_CONFIG.vision);
   S.venues = d.venues || {};
   S.vendors = d.vendors || {};

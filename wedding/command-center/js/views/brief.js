@@ -15,7 +15,7 @@ const commitSoon = debounce(() => commit("cfg"), 280);
 const both = (a) => `${mxn(a)} · ${usd(a / S.cfg.fx)}`;
 const DEFAULT_RATES = { caterer: ["guest", 750], taquero: ["guest", 150], bar: ["guest", 350], mariachi: ["hour", 6000], band: ["flat", 25000], dj: ["flat", 20000], photo: ["flat", 25000], video: ["flat", 0], planner: ["flat", 20000], officiant: ["flat", 8000], decor: ["flat", 10000], florals: ["flat", 0], rentals: ["flat", 8000], transport: ["flat", 0], beauty: ["flat", 0], tradition: ["flat", 0], other: ["flat", 0], principle: ["none", 0] };
 const CAT_COLOR = { caterer: "var(--cempa)", taquero: "var(--barro)", bar: "var(--olivo)", mariachi: "var(--buga)", band: "var(--cobalto)", dj: "var(--buga)", photo: "var(--ink-2)", video: "var(--ink-2)", planner: "var(--cobalto)", officiant: "var(--lima)", decor: "var(--lima)", florals: "var(--lima)", rentals: "var(--cempa)", transport: "var(--ink-3)", beauty: "var(--buga)", tradition: "var(--barro)", other: "var(--ink-3)", principle: "var(--olivo)" };
-const WEIGHTS = [["setting", "Setting", "Landmark, hacienda or garden"], ["end", "Party end time", "2 a.m. or later, in writing"], ["taq", "Own taqueros", "Outside caterers allowed"], ["beds", "Beds on site", "Share of guests who sleep there"], ["cost", "All-in cost", "Full marks at or under target"], ["access", "Access", "Flights and the drive"]];
+const WEIGHTS = [["setting", "Setting", "Landmark, hacienda or garden"], ["cost", "All-in cost", "Full marks at or under target"], ["beds", "Beds on site", "Share of guests who sleep there"], ["access", "Airport proximity", "Flights and the drive"]];
 
 const get = (path) => path.split(".").reduce((o, p) => (o == null ? o : o[p]), S.cfg);
 function set(path, val) {
@@ -104,9 +104,9 @@ function html() {
           <div class="must-row"><div class="t"><b>Our own taqueros allowed</b><small>Only venues marked Yes or Likely.</small></div><label class="switch"><input type="checkbox" data-path="needTaq" ${c.needTaq ? "checked" : ""}><span class="tr"></span></label></div>
         </div>
         <div class="impact" data-out="impact">${impactHTML()}</div></section>
-      <section class="card pad"><h3>What matters most</h3><p class="lede">How the fit score weighs each test. The atlas used 30 / 22 / 18 / 13 / 11 / 6.</p>
+      <section class="card pad"><h3>What matters most</h3><p class="lede">How the fit score weighs each test: setting first, then cost, beds on site and the airport. Party end time and taqueros no longer score; end time stays a must-have below.</p>
         <div class="weights" data-out="weights">${weightsHTML()}</div>
-        <div style="margin-top:14px"><button class="btn sm" type="button" data-reset="weights">${ICON.reset} Atlas weights</button></div></section>
+        <div style="margin-top:14px"><button class="btn sm" type="button" data-reset="weights">${ICON.reset} Our weights</button></div></section>
 
       <section class="card pad wide"><div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap"><div><h3>The vision</h3><p class="lede">Write it the way you'd say it. Each line picks up a category and a price and lands in every venue's budget; the atlas's base stack is already here. Principles cost nothing but stay on the page.</p></div>
         <button class="btn sm" type="button" data-reset="vision">${ICON.reset} Atlas vision</button></div>
@@ -261,7 +261,7 @@ export const brief = {
       const r = e.target.closest("[data-reset]");
       if (r) {
         const what = r.dataset.reset;
-        const msg = { all: "Put the whole brief back to the atlas's (guests, money, must-haves, weights, weekend and vision)?", vision: "Put the vision back to the atlas's base stack? Lines you added will go.", weights: "Put the weights back to the atlas's 30 / 22 / 18 / 13 / 11 / 6?" }[what];
+        const msg = { all: "Put the whole brief back to the atlas's (guests, money, must-haves, weights, weekend and vision)?", vision: "Put the vision back to the atlas's base stack? Lines you added will go.", weights: "Put the weights back to 40 / 30 / 20 / 10?" }[what];
         if (confirm(msg)) { resetConfig(what === "all" ? undefined : what); paint(); toast("Done"); }
         return;
       }

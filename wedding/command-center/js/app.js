@@ -19,7 +19,7 @@ export const app = {
 };
 
 export const STATUS = {
-  top: { label: "Top ten", long: "Top ten", color: "var(--top)" },
+  top: { label: "Top 20", long: "Top 20", color: "var(--top)" },
   fit: { label: "Fits the brief", long: "Fits the brief", color: "var(--fit)" },
   wild: { label: "Wildcard", long: "Wildcard, not priced yet", color: "var(--wild)" },
   over: { label: "Over ceiling", long: "Over your ceiling", color: "var(--over)" },
@@ -93,7 +93,7 @@ export function pinHTML(r, extra = "") {
 
 export function statusBadge(r) {
   const s = STATUS[r.status];
-  if (r.status === "top") return `<span class="badge top">Top ten · #${r.top}</span>`;
+  if (r.status === "top") return `<span class="badge top">Top 20 · #${r.top}</span>`;
   return `<span class="badge ${r.status}">${esc(s.long)}</span>`;
 }
 

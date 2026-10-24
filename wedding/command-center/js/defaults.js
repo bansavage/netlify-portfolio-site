@@ -92,7 +92,7 @@ export const DEFAULT_CONFIG = {
   minEnd: 1, // a.m. — the atlas rule: a listed end of 1 a.m. or later, or none stated
   minBeds: 0,
   needTaq: false,
-  weights: { setting: 30, end: 22, taq: 18, beds: 13, cost: 11, access: 6 },
+  weights: { setting: 40, cost: 30, beds: 20, access: 10 }, // the couple's four tests, in their order (Oct 23)
   weekend: {
     welcome: { on: true, pp: 700 },
     brunch: { on: true, pp: 350 },

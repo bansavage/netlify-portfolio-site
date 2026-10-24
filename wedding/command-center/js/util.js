@@ -9,6 +9,9 @@ export const num = (n) => Math.round(n).toLocaleString("en-US");
 export const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 export const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 
+// Google Maps search for the venue by name and town (pins in the data sit at town level)
+export const gmapsURL = (v) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${v.name.replace(/\s*\(.*\)\s*$/, "")}, ${v.town || ""}, ${v.state || ""}, México`);
+
 export function debounce(fn, ms) {
   let t = null;
   return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
