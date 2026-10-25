@@ -6,7 +6,13 @@
     "date": "2026-08-26",
     "quote": "Full buyout for November 2027: 3-night minimum and a US$55,000 food-and-drink minimum plus taxes and fees, met by hosted events and what guests charge to their rooms. Rooms are on top, paid by guests at 30% off. Low season (June to October) is 2 nights and US$40,000. Without a buyout: up to 15 rooms and events of up to 50 in the chapel, Playita, Mirador, Benno Bar or Cosecha, each with a site fee.",
     "note": "The hotel said the minimum might come down slightly for 40 to 60 guests. We passed on Sep 29, 2026.",
-    "reason": "The emailed buyout minimum is US$55,000 for food and drink alone, before taxes and rooms: well over your ceiling."
+    "reason": "The emailed buyout minimum is US$55,000 for food and drink alone, before taxes and rooms: well over your ceiling.",
+    "contact": {
+      "channel": "email",
+      "email": "reservation@sancristobalbaja.com",
+      "sent": "2026-08-20",
+      "status": "Emailed Aug 20; the hotel's sales team replied with buyout terms. We passed on Sep 29."
+    }
   },
   "labor": {
     "stage": "quoted",
@@ -24,40 +30,86 @@
     "stage": "quoted",
     "date": "2026-09-27",
     "quote": "Matches the app: 3-night minimum at US$2,420 a night (high season, Oct to Apr) plus a US$4,900 venue fee for up to 100 guests, then 10% service and taxes on top. Sleeps 21 in 8 bedrooms. Events end at 2 a.m.; later costs an extra fee that goes to the village school. A planner is required. US$1,000 refundable damage deposit.",
-    "note": "We replied Oct 8 that we're reviewing options."
+    "note": "We replied Oct 8 that we're reviewing options.",
+    "contact": {
+      "channel": "email",
+      "email": "info@haciendasacchich.com",
+      "phone": "+52 999 278 1178",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options."
+    }
   },
   "ochil": {
     "stage": "quoted",
     "date": "2026-09-28",
     "quote": "Available Saturday Nov 6, 2027 (not the 13th). No rooms at Ochil; Catherwood suggests Hacienda Itzincab for close family: 14 rooms, up to 28 people, and it can host the welcome dinner and Sunday brunch. Space and lodging only; music, food, furniture and lighting come from outside vendors. A planner is required. Payments: 30% to book, 40% midway, the rest 6 weeks before. Prices are on Catherwood's 2027-28 rate card (a Drive link).",
-    "note": "We replied Oct 8 that we're reviewing options."
+    "note": "We replied Oct 8 that we're reviewing options.",
+    "contact": {
+      "channel": "email",
+      "email": "reservations@catherwood.mx",
+      "whatsapp": "+52 999 183 8478",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27 (reservations@catherwood.mx); Catherwood replied Sep 28 with their 2027–28 rate card and Nov 6 availability. We said Oct 8 we're reviewing options."
+    }
   },
   "tamchen": {
     "stage": "quoted",
     "date": "2026-09-28",
-    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required."
+    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required.",
+    "contact": {
+      "channel": "email",
+      "email": "reservations@catherwood.mx",
+      "whatsapp": "+52 999 183 8478",
+      "sent": "2026-09-27",
+      "status": "Covered by the Catherwood rate card sent Sep 28 (asked about San Pedro Ochil). Not contacted separately."
+    }
   },
   "palomeque": {
     "stage": "quoted",
     "date": "2026-09-28",
-    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required."
+    "quote": "Priced from the same Catherwood 2027-28 rate card sent for San Pedro Ochil. Space only; outside vendors and a planner required.",
+    "contact": {
+      "channel": "email",
+      "email": "reservations@catherwood.mx",
+      "whatsapp": "+52 999 183 8478",
+      "sent": "2026-09-27",
+      "status": "Covered by the Catherwood rate card sent Sep 28 (asked about San Pedro Ochil). Not contacted separately."
+    }
   },
   "magdalena": {
     "stage": "quoted",
     "date": "2026-09-28",
     "quote": "They replied with their Petite package PDF and offered a Zoom call; no Saturday price for our group in the email itself, so the app's price still comes from the listing.",
-    "note": "We replied Oct 8 that we're reviewing options."
+    "note": "We replied Oct 8 that we're reviewing options.",
+    "contact": {
+      "channel": "email",
+      "email": "ventas@haciendalamagdalena.com",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27 (eventos@, cc ventas@); they replied Sep 28 with their Petite package PDF and offered a Zoom. We said Oct 8 we're reviewing options."
+    }
   },
   "xcanatun": {
     "stage": "quoted",
     "date": "2026-10-23",
     "quote": "The app's price is their Sept 29 group proposal (resent Oct 8). On Oct 9 we said it's over budget; they asked what to adjust. On Oct 23 we asked for a wedding-day-only proposal of US$20,000 to 25,000 for 60 to 80 guests: symbolic ceremony, cocktail hour with mariachi, Mexican buffet with a live taquero, live band then DJ, and drinks.",
-    "note": "Waiting on their reply to the US$20-25k ask."
+    "note": "Waiting on their reply to the US$20-25k ask.",
+    "contact": {
+      "channel": "email",
+      "phone": "+52 999 930 2154",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Waiting on their reply."
+    }
   },
   "santalucia": {
     "stage": "asked",
     "date": "2026-09-27",
-    "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet."
+    "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet.",
+    "contact": {
+      "channel": "email",
+      "email": "contacto@haciendasantalucia.com.mx",
+      "sent": "2026-09-27",
+      "status": "Emailed Sep 27. No reply."
+    }
   },
   "susula": {
     "stage": "asked",
@@ -90,13 +142,105 @@
     }
   },
   "lossantos": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "jamie@haciendadelossantos.com.mx",
-      "status": "Emailed the wedding director's address from their site on Oct 24. No reply yet."
-    }
+      "status": "Replied Oct 24 with a general info email and a per-person price range; none of our seven questions answered. They want a meeting first. Food appears to be in-house."
+    },
+    "quote": "Email reply Oct 24 (from their reservations team): general info only. Packages for 2027 run MXN 1,400–3,000 per person plus IVA, with dinner and drinks for six hours, tables, linens, candles, waiters and bartenders, coordination, security and a tasting for four. 32 rooms and suites with group rates. No 2028 dates. Prices, availability, menus and vendor questions are handled only in a meeting with the events coordinator (book via sofia@haciendadelossantos.com.mx, Mon–Sun 10 a.m.–2 p.m.).",
+    "date": "2026-10-24",
+    "rows": [
+      [
+        "Wedding package incl. dinner + drinks 6 h, MXN 1,400–3,000 pp + 16% IVA (midpoint 2,200 + IVA = 2,552 pp)",
+        153120,
+        178640,
+        0,
+        "Their emailed 2027 range; exact price only in a meeting",
+        "venue"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "In-house food; outside taquero not confirmed",
+        "taco"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   },
   "jobito": {
     "stage": "asked",
@@ -146,22 +290,101 @@
     }
   },
   "laspalmas_hux": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
-      "channel": "whatsapp",
+      "channel": "whatsapp+email",
       "sent": "2026-10-24",
       "whatsapp": "+1 909 241 2324",
-      "status": "Replied on WhatsApp in English and asked for our email; we sent it Oct 24. Their details should arrive by email."
-    }
+      "status": "Emailed full details Oct 24. Nov 13, 2027 is NOT open (free Oct 24–Nov 6 and from Nov 20). Whole-property rate Nov–Apr US$4,160 + tax (US$4,950) a night or US$31,570 a week; venue included; sleeps 36–50 in 18 bedrooms; no closing time; one wedding at a time; MXN 3,000 cleaning fee."
+    },
+    "date": "2026-10-24",
+    "quote": "Email Oct 24: whole property US$4,160 + tax (US$4,950) a night or US$31,570 a week in November–April; venue included; 18 bedrooms for 36–50; no closing time; one wedding at a time; MXN 3,000 cleaning fee; Nov 13, 2027 not open (free Oct 24–Nov 6 and from Nov 20). Their sample Paradise Wedding Package (2023 prices, will rise): MXN 3,500 / US$195 per person incl. tax, minimum 50 guests. It includes coordination, setup, a floral arch, bouquet, lighting or papel picado, candles, 5 centerpieces, chairs and tables, welcome cocktail, 5 hours of 3-course catering, glassware and linens, mixers and ice, a tasting for two, cake, 45 minutes of mariachi and 5 hours of DJ. Alcohol not included.",
+    "rows": [
+      [
+        "Whole property, 3 nights incl. venue (US$4,950/night with tax, Nov–Apr; 3 nights assumed, their minimum not stated yet)",
+        273982,
+        273982,
+        1,
+        "Quoted in US$; converted at 18.45",
+        "venue"
+      ],
+      [
+        "Paradise Wedding Package, MXN 3,500 pp incl. tax: 3-course catering, coordinator, mariachi 45 min, DJ 5 h, papel picado or lighting, flowers, cake",
+        210000,
+        245000,
+        0,
+        "2023 prices; they say these will rise",
+        "venue"
+      ],
+      [
+        "Post-event cleaning fee",
+        3000,
+        3000,
+        1,
+        "",
+        "venue"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "Asked whether an outside taquero is allowed",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "Alcohol not in the package",
+        "bar"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Nov 13, 2027 not open (free Oct 24–Nov 6 and from Nov 20); the package food is a 3-course meal, not a taquiza"
   },
   "lacapilla_sma": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "lacapillasl@gmail.com",
-      "status": "Emailed Oct 24. No reply yet."
-    }
+      "status": "Answered all seven by email Oct 24. Still missing actual prices for the package or venue-only rental, room rates and minimum nights."
+    },
+    "quote": "Email reply Oct 24: music until 2 a.m.; more time costs MXN 10,000 an hour. The contract is 8 hours ending by 2 a.m. Any caterer and vendors welcome (no fees mentioned; they can also organize vendors). Two options: a Friday–Sunday package or the venue alone; sleeps up to 88. No guest minimum. Teens fine. The venue is exclusive when rented; a tent is recommended for rain and there's a covered terrace. They offered a video call and asked where we're from.",
+    "date": "2026-10-24"
   },
   "santodomingo_slp": {
     "stage": "asked",
@@ -179,17 +402,19 @@
       "sent": "2026-10-24",
       "whatsapp": "+52 762 688 4476",
       "whatsapp_old": "+52 762 622 1001",
-      "status": "The first number sent us to the restaurant's WhatsApp (Jardín Cielito Lindo). They asked for our date since some 2027 dates are booked, and whether it's a holiday weekend; we said Nov 13, 2027, flexible (Nov 6 also works). They sent wedding photos and a video."
+      "status": "Answered all seven questions on WhatsApp Oct 24: no music cutoff (events priced for 6, 8 or 10 hours; extra-hour cost depends on services); in-house kitchen only (no outside caterer); the whole hotel's 18 rooms must be booked (about 56 people), check-in 3 pm, check-out noon; packages priced for 100 but they'll quote for our count; all ages welcome; one private event per day. Sent a room list (no prices yet). Follow-up Oct 24: they confirmed covered space or a tent in the quote, but said the rest was already answered and didn't give a yes or no on the taquiza. Asked yes/no on a taquiza: YES, their kitchen can do a live taquero and buffet. They asked for our guest count and needs, and will send a list of what they offer."
     }
   },
   "lashadas": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "banquetes.hadas@brisas.com.mx",
-      "status": "Emailed banquets and weddings on Oct 24. No reply yet."
-    }
+      "status": "Answered all seven by email Oct 24. 1 a.m. hard stop; in-house food only (taquiza offered in the package); 25 rooms x 2 nights required for the package; minimum 50 guests."
+    },
+    "quote": "Email reply Oct 24: music until 1 a.m. and it can't run later (the wedding package is a 5-hour event; it can start 7 p.m. with an extra hour 12–1 a.m. for at least 60 guests, MXN 5,400 an extra hour). The package needs at least 25 rooms for 2 nights and then includes dinner (3-course or taquiza). Outside food isn't allowed (a candy bar is); outside music pays a MXN 4,500 vendor fee; they have a vendor catalog. Minimum 50 guests, with a contract penalty if short. Guests 13 and up count as adults (7–12 free). Covered space for rain: yes. Availability needs our dates.",
+    "date": "2026-10-24"
   },
   "xalostoc": {
     "stage": "asked",
