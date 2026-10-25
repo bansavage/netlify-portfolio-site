@@ -20,11 +20,26 @@
       "type": "beach",
       "description": "A private beachfront villa in Mediterranean style on the Riviera Maya, with ceremonies on the sand, in the garden or on the pool terrace.",
       "reason": "A friend's suggestion. No prices, room count, end time or rules are published; ask for a quote.",
-      "facts": ["Weddings of 175–200 guests (Wezoree, Junebug)", "Private venue: no resort restrictions, outside vendors allowed", "A 3-bedroom condo for rent about 600 ft away", "5.0 from 9 reviews on Wezoree, the newest Jan 2026"],
-      "callouts": ["Ceremony on the sand, in the garden or poolside", "Tents offered for the reception", "On the Caribbean coast, where sargassum season runs roughly April to October"],
+      "facts": [
+        "Weddings of 175–200 guests (Wezoree, Junebug)",
+        "Private venue: no resort restrictions, outside vendors allowed",
+        "A 3-bedroom condo for rent about 600 ft away",
+        "5.0 from 9 reviews on Wezoree, the newest Jan 2026"
+      ],
+      "callouts": [
+        "Ceremony on the sand, in the garden or poolside",
+        "Tents offered for the reception",
+        "On the Caribbean coast, where sargassum season runs roughly April to October"
+      ],
       "nextstep": "Price for 60–65 guests on a November Saturday; how many guests sleep in the villa; music end time; outside taqueros",
       "photos_url": "https://wezoree.com/mx/vendors/profile/12668-villa-la-joya/",
-      "src": ["https://www.villalajoya.com/", "https://wezoree.com/mx/vendors/profile/12668-villa-la-joya/", "https://junebugweddings.com/wedding-blog/chic-white-gold-villa-la-joya-wedding/", "https://caratsandcake.com/venue/villa-la-joya", "https://www.villalajoya.com/villa-la-joya-condo-rental"]
+      "src": [
+        "https://www.villalajoya.com/",
+        "https://wezoree.com/mx/vendors/profile/12668-villa-la-joya/",
+        "https://junebugweddings.com/wedding-blog/chic-white-gold-villa-la-joya-wedding/",
+        "https://caratsandcake.com/venue/villa-la-joya",
+        "https://www.villalajoya.com/villa-la-joya-condo-rental"
+      ]
     },
     {
       "key": "yaxche",
@@ -45,11 +60,58 @@
       "type": "garden_estate",
       "description": "A family-run private event garden at the start of the Riviera Maya: a ceremony spot under a cedar tree, tropical gardens and an all-white draped salon.",
       "reason": "A friend's suggestion. No prices, capacity, end time or rules are published; ask for a quote.",
-      "facts": ["About 10 minutes from Cancún airport", "The draped salon is the rain plan at no extra cost", "A 2-bedroom casita to get ready in, held for the whole event", "No guest rooms on site"],
-      "callouts": ["Family-run (Gaby and Aldo)", "Ceremony under a cedar tree or in the gardens"],
+      "facts": [
+        "About 10 minutes from Cancún airport",
+        "The draped salon is the rain plan at no extra cost",
+        "A 2-bedroom casita to get ready in, held for the whole event",
+        "No guest rooms on site"
+      ],
+      "callouts": [
+        "Family-run (Gaby and Aldo)",
+        "Ceremony under a cedar tree or in the gardens"
+      ],
       "nextstep": "Price for 60–65 guests on a November Saturday; capacity; music end time; outside caterer and taqueros; nearby hotels",
       "photos_url": "https://www.weddingwire.com/biz/quinta-real-yaxche/4149331c60569896.html",
-      "src": ["https://www.weddingwire.com/biz/quinta-real-yaxche/4149331c60569896.html"]
+      "src": [
+        "https://www.weddingwire.com/biz/quinta-real-yaxche/4149331c60569896.html"
+      ]
+    },
+    {
+      "key": "elcarmen_ahualulco",
+      "name": "Hacienda El Carmen Hotel & Spa",
+      "short": "Hacienda El Carmen",
+      "status": "wild",
+      "groupLabel": "Inland Jalisco",
+      "state": "Jalisco",
+      "town": "Ahualulco de Mercado",
+      "place": "El Carmen de Ordaz, Ahualulco de Mercado, Jalisco",
+      "place_hint": "About 1 h 15 min from GDL",
+      "lat": 20.6925,
+      "lng": -103.942,
+      "loc_precision": "town",
+      "loc_note": "Pin placed at El Carmen de Ordaz, the hacienda's village (Ramón Díaz Ordaz #2-1).",
+      "ap": "GDL",
+      "drive": 75,
+      "type": "hacienda",
+      "description": "A 1573 hacienda turned hotel and spa in the Tequila valley, with views of the Tequila and Ameca volcanoes, a pool and 32 rooms.",
+      "reason": "A friend's suggestion, added Oct 25, 2026. They replied but haven't priced it yet; prices come once we give them a month.",
+      "facts": [
+        "Music until 2 a.m., no extension",
+        "In-house food only, but they offer a taquiza",
+        "Outside vendors only for photo, video, hair and makeup",
+        "32 rooms for about 74 guests; full buyout possible",
+        "About 60 guests is fine"
+      ],
+      "callouts": [
+        "Historic Hotels of America member",
+        "Several 2027 dates already booked"
+      ],
+      "nextstep": "Give them a month and day or evening; ask for the taquiza menu price for 65 and room rates",
+      "photos_url": "https://www.haciendaelcarmen.mx/",
+      "src": [
+        "https://www.haciendaelcarmen.mx/",
+        "https://historichotels.org/hotels-resorts/hacienda-el-carmen-hotel-and-spa/location.php"
+      ]
     }
   ]
 }
