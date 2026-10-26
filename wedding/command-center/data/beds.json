@@ -1,0 +1,29 @@
+{
+  "note": "The atlas capped on-site beds at its old 65-guest plan. These are fuller capacities (rooms x 2 unless the venue gave a number), so the beds score still works when the guest count goes above 65.",
+  "beds": {
+    "sanmiguelregla": [180, "90 rooms"],
+    "laconcepcion_tep": [86, "43 rooms"],
+    "laluz_tetecala": [90, "180 in doubles to 12-bed shared rooms, counted at half"],
+    "santacruz_casco": [80, "25 rooms for about 80"],
+    "laspalmas_hux": [50, "3 villas and 5 casitas sleep 36–50 (their email, Oct 24)"],
+    "lacapilla_sma": [88, "Sleeps up to 88 (their email, Oct 24)"],
+    "santodomingo_slp": [70, "16 rooms for 60–70; their WhatsApp says 7–8 rooms plus 5 cabins (total asked)"],
+    "villasteo": [80, "About 40 rooms"],
+    "cocoyoc": [568, "284 rooms"],
+    "picachos": [104, "52 rooms"],
+    "soltepec": [268, "134 rooms"],
+    "nututun": [144, "72 rooms"],
+    "jobito": [104, "52 suites"],
+    "galindo": [300, "169 rooms for 300+ (their email, Oct 24)"],
+    "xcanatun": [108, "54 suites"],
+    "jurica": [200, "Full hotel"],
+    "montetaxco": [312, "156 rooms"],
+    "villasanjose_mor": [86, "43 rooms"],
+    "cortes": [108, "54 rooms"],
+    "gobernador_dgo": [198, "99 rooms"],
+    "fa_sanantonio": [296, "148 rooms"],
+    "horsepower": [102, "51 rooms sleeping 2–16 each"],
+    "lashadas": [462, "231 rooms"],
+    "elcarmen_ahualulco": [74, "32 rooms for about 74 (their email, Oct 25)"]
+  }
+}

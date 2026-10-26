@@ -160,7 +160,7 @@ async function boot() {
   headerTabs();
   menu();
   applyTheme();
-  const [atlas, geo, vend, photos, links, inbox, added] = await Promise.all([
+  const [atlas, geo, vend, photos, links, inbox, added, beds] = await Promise.all([
     loadJSON("data/atlas.json"),
     loadJSON("data/geo.json"),
     loadJSON("data/vendors.json").catch(() => ({ vendors: [], benchmarks: [] })),
@@ -168,6 +168,7 @@ async function boot() {
     loadJSON("data/links.json").catch(() => ({})),
     loadJSON("data/inbox.json").catch(() => ({})),
     loadJSON("data/added.json").catch(() => ({ venues: [] })),
+    loadJSON("data/beds.json").catch(() => ({ beds: {} })),
   ]);
   app.meta = atlas.meta;
   // venues suggested after the atlas was built ride along with it
@@ -194,6 +195,9 @@ async function boot() {
         vs.inboxSeeded = true;
       }
     }
+    // the atlas capped beds at its old 65-guest plan; fuller capacities keep the beds score honest
+    const bd = (beds.beds || {})[v.key];
+    if (bd) v.beds = bd[0];
     app.byKey.set(v.key, v);
   }
   app.geo = geo;

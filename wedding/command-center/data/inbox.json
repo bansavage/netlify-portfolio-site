@@ -129,10 +129,101 @@
       "email": "info@hcocoyoc.com",
       "whatsapp": "+52 735 356 2211",
       "phone": "+52 735 105 3630",
-      "status": "Answered all seven by email Oct 25. Poor fit: Saturday minimum 120 guests, up to 3 weddings a day, in-house food only."
+      "status": "Oct 25: taquiza with a live taquero is a no (tacos only as a late-night snack). Sent their 2027 price list, Mexican menu and hotel rates (all in Drive). Priced in the app for a Sunday: salon, Mexican menu, house bar, late-night pastor tacos."
     },
     "date": "2026-10-25",
-    "quote": "Email reply Oct 25: in the Trapiche salon music to 2 a.m. only if guests book at least 12 rooms (otherwise 11 p.m.); DJ or band allowed (no banda sinaloense); the Parador space ends at 9 p.m. with acoustic music only and no dancing. 7 hours of party plus 2 for ceremony and cocktail; up to 2 extra hours (the salon hour is free, you pay the bar or corkage). No outside caterers or bars; outside vendors only for sweets, cake, flowers, music, photo and video. 284 rooms. Saturday weddings need at least 120 guests in Trapiche (150 in Monasterio); fewer is possible on a Friday or Sunday, or May–September. Guests 11+ pay the drinks rate. Up to 3 weddings the same day. Weddings are indoors in a salon; the cocktail is in the garden with a rain alternative. Sent 2 PDFs (their wedding packages and 2027 hotel info)."
+    "quote": "Email reply Oct 25: in the Trapiche salon music to 2 a.m. only if guests book at least 12 rooms (otherwise 11 p.m.); DJ or band allowed (no banda sinaloense); the Parador space ends at 9 p.m. with acoustic music only and no dancing. 7 hours of party plus 2 for ceremony and cocktail; up to 2 extra hours (the salon hour is free, you pay the bar or corkage). No outside caterers or bars; outside vendors only for sweets, cake, flowers, music, photo and video. 284 rooms. Saturday weddings need at least 120 guests in Trapiche (150 in Monasterio); fewer is possible on a Friday or Sunday, or May–September. Guests 11+ pay the drinks rate. Up to 3 weddings the same day. Weddings are indoors in a salon; the cocktail is in the garden with a rain alternative. Sent 2 PDFs (their wedding packages and 2027 hotel info). Oct 25 follow-up: no live-taquero taquiza (\"como tal no\"); they offer late-night tacos (pastor MXN 185 pp, bistec 250 pp) and a Mexican menu. 2027 price list (Drive, taxes and tips included): Trapiche salon MXN 38,500 on a Friday or Sunday under 120 guests (55,000 Saturday, 120+), 7 hours; menus MXN 645–765 pp (Mexican menu 665 pp, 3-course plated: soup or salad, a ranchero plate with two proteins, dessert); bar per person for 5 h: corkage 330, Barra Cocoyoc 485, Paraíso 585, Hacienda 720 (extra hour 72–120 pp); chapel MXN 3,200; outside vendors only for sweets, cake, flowers, music, photo and video. Includes coordinator, waiters, tables, chairs, linens, valet, security, a stage and dance floor, a suite for 3 nights for the couple and 2 standard rooms. Rooms MXN 3,255–5,500 a night incl. taxes; 15–20% off for 2 nights. Prices rise 10–15% for 2028.",
+    "catch": "Friday or Sunday only at our size (Saturday needs 120+); up to 3 weddings a day; plated Mexican menu, tacos only as a late-night snack; 2 a.m. only with 12+ rooms booked",
+    "rows": [
+      [
+        "Trapiche salon, Friday or Sunday under 120 guests, 7 h (taxes incl.)",
+        38500,
+        38500,
+        1,
+        "Saturday needs 120+ guests",
+        "venue"
+      ],
+      [
+        "Mexican menu, 3-course plated, MXN 665 pp (taxes incl.)",
+        39900,
+        46550,
+        1,
+        "Includes coordinator, waiters, tables, chairs, linens",
+        "venue"
+      ],
+      [
+        "Barra libre Cocoyoc, 5 h, MXN 485 pp (outside bars not allowed)",
+        29100,
+        33950,
+        1,
+        "Corkage instead: MXN 330 pp, bring your own alcohol",
+        "venue"
+      ],
+      [
+        "Late-night tacos al pastor (tornaboda), MXN 185 pp",
+        11100,
+        12950,
+        1,
+        "No live-taquero taquiza for dinner",
+        "venue"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "2 a.m. only if guests book 12+ rooms",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   },
   "soltepec": {
     "stage": "asked",
@@ -149,7 +240,7 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "jamie@haciendadelossantos.com.mx",
-      "status": "Replied Oct 24 with a general info email and a per-person price range; none of our seven questions answered. They want a meeting first. Food appears to be in-house."
+      "status": "Replied Oct 24 with a general info email and a per-person price range; none of our seven questions answered. They want a meeting first. Food appears to be in-house. Oct 25: we asked for a video call with the events coordinator and a taquiza yes/no first."
     },
     "quote": "Email reply Oct 24 (from their reservations team): general info only. Packages for 2027 run MXN 1,400–3,000 per person plus IVA, with dinner and drinks for six hours, tables, linens, candles, waiters and bartenders, coordination, security and a tasting for four. 32 rooms and suites with group rates. No 2028 dates. Prices, availability, menus and vendor questions are handled only in a meeting with the events coordinator (book via sofia@haciendadelossantos.com.mx, Mon–Sun 10 a.m.–2 p.m.).",
     "date": "2026-10-24",
@@ -288,7 +379,7 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "bodasfahg@posadas.com",
-      "status": "Replied Oct 24 with general answers; in-house food only; no prices yet. They want our date and guest count."
+      "status": "Replied Oct 24 with general answers; in-house food only; no prices yet. They want our date and guest count. Oct 25: we sent 65 guests, Sep–Nov 2027, asked about the no-curfew spaces, a taquiza yes/no, and the package with prices."
     },
     "date": "2026-10-25",
     "quote": "Email reply Oct 24: more than 10 spaces with different curfews, some with no time limit; the wedding package is 8 hours (more can be quoted). All food and drink must come from the hotel (plated, buffet, family style). 169 rooms for 300+ people; a group rate needs at least 10 rooms. Guest minimums depend on the space and service. Teens fine. Closed, open and terrace spaces for rain. They asked for our tentative date, guest count and whether we know the hacienda, and offered a call."
@@ -396,7 +487,7 @@
       "channel": "whatsapp",
       "sent": "2026-10-24",
       "whatsapp": "+52 444 142 5633",
-      "status": "Answered all seven on WhatsApp and sent their 2026 package PDF, room photos and lodging rates. Priced in the app with the Anillo de Matrimonio package (MXN 1,095 pp incl. buffet and corkage)."
+      "status": "Answered all seven on WhatsApp and sent their 2026 package PDF, room photos and lodging rates. Priced in the app with the Anillo de Matrimonio package (MXN 1,095 pp incl. buffet and corkage). Oct 25: we asked whether package prices apply to 65 and include IVA, the extra-hour cost, total sleeping capacity and open dates Sep–Nov 2027."
     },
     "date": "2026-10-25",
     "quote": "WhatsApp Oct 24–25: music can run later (extra hours quoted); the reception ends when you plan it to; you CAN bring your own food and taqueros (kitchen use quoted separately) or they can cater; 7–8 rooms plus 5 cabins, lodging MXN 12,600 a night for 14 people plus MXN 900 per extra person, minimum 14; no guest minimum, they charge only for the guests you have; teens welcome; yours is the only event that day; covered space in the main house and a pergola. 2026 package PDF (per person, listed for 100–500 guests; IVA not stated): Anillo de Compromiso MXN 995 (colonial Mexican buffet, corkage, ice and soft drinks 5 h, linens, kitchen and waiters, hacienda, coordination); Anillo de Matrimonio MXN 1,095 (4-course or traditional Mexican buffet, adds stemware); Ilusión MXN 1,395 (6 h, crossback chairs and wood tables, centerpieces, 1 h mariachi); Boda de tus Sueños MXN 1,995 (adds luxury tents and DJ).",
@@ -523,7 +614,7 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "banquetes.hadas@brisas.com.mx",
-      "status": "Answered all seven Oct 24 and sent the wedding weekend package Oct 25 (saved in Drive). Quoted for Nov 19–21, 2027."
+      "status": "Answered all seven Oct 24 and sent the wedding weekend package Oct 25 (saved in Drive). Quoted for Nov 19–21, 2027. Oct 25: we asked yes/no on a live-taquero taquiza instead of the plated menu, and whether any space runs past 1 a.m."
     },
     "quote": "Email reply Oct 24: music until 1 a.m. and it can't run later (the wedding package is a 5-hour event; it can start 7 p.m. with an extra hour 12–1 a.m. for at least 60 guests, MXN 5,400 an extra hour). The package needs at least 25 rooms for 2 nights and then includes dinner (3-course or taquiza). Outside food isn't allowed (a candy bar is); outside music pays a MXN 4,500 vendor fee; they have a vendor catalog. Minimum 50 guests, with a contract penalty if short. Guests 13 and up count as adults (7–12 free). Covered space for rain: yes. Availability needs our dates. Package PDF (Oct 25, saved in Drive): quoted for Nov 19–21, 2027, all-inclusive per person per night incl. 16% IVA and 15% service: MXN 5,077 single, 3,722 double, 3,512 triple, 1,465 for ages 7–12. Requires at least 25 double rooms for 2 nights. Covers rooms, all meals, house open bar 11 a.m.–1 a.m., and the wedding banquet: beach setup, 3-course plated dinner, 5 h national open bar (ends 1 a.m. on the beach, 11 p.m. in Plaza Albina), coordinator, tables, Tiffany chairs, linens, paper-lantern decor, lit dance floor, natural-flower centerpieces, lit letters, a tasting for 2, 2 free nights and a suite upgrade for the couple, bride's hair and makeup. Day passes for non-staying guests MXN 1,900 (13+) and 950 (4–12), max 10 each. Civil ceremony set MXN 19,300. No candles, sparklers or fireworks.",
     "date": "2026-10-24",
@@ -670,7 +761,7 @@
     "date": "2026-10-25",
     "quote": "Email reply Oct 25: music until 2 a.m., no extension. In-house food only (no outside caterers, taqueros or buffets) but they'll build a menu that includes a taquiza. No outside vendors except photo, video, hair and makeup (no fee). 32 rooms for about 74 guests; booking all rooms isn't required, a full buyout is possible; rates and minimum nights once they know the dates. About 60 guests is fine. Teens welcome. Exclusive use of our event spaces; covered alternatives for rain. They asked for our month in 2027 and day or evening; several 2027 dates are already booked.",
     "contact": {
-      "status": "Answered all seven by email Oct 25. They can do a taquiza in-house; prices once we give a month.",
+      "status": "Answered all seven by email Oct 25. They can do a taquiza in-house; prices once we give a month. Oct 25: we said Sep–Nov 2027, evening, 65 guests; asked yes/no on a live taquero and for prices, room rates and the buyout price.",
       "channel": "email",
       "email": "hotel@hdaelcarmen.com",
       "sent": "2026-10-24"

@@ -41,6 +41,13 @@ function dropTaqWeight(cfg) {
   if ("end" in cfg.weights || "taq" in cfg.weights) cfg.weights = clone(DEFAULT_CONFIG.weights);
 }
 
+// the first brief planned for 91 invited (57 expected, 60-70, plan 65); on Oct 25, 2026 the list
+// grew to 125. Briefs still on those old numbers move to the new ones; edited ones are left alone.
+function bumpGuests(cfg) {
+  const g = cfg && cfg.guests;
+  if (g && g.invited === 91 && g.expected === 57 && g.low === 60 && g.high === 70 && g.plan === 65) cfg.guests = { ...clone(DEFAULT_CONFIG.guests), teens: g.teens };
+}
+
 function fresh() {
   return { cfg: clone(DEFAULT_CONFIG), venues: {}, vendors: {}, customVendors: [], customVenues: [], ui: clone(DEFAULT_UI), saved: null };
 }
@@ -54,6 +61,7 @@ function load() {
     s.cfg = merge(s.cfg, d.cfg || {});
     migrateDates(s.cfg, d.cfg);
     dropTaqWeight(s.cfg);
+    bumpGuests(s.cfg);
     if (!Array.isArray(s.cfg.vision) || !s.cfg.vision.length) s.cfg.vision = clone(DEFAULT_CONFIG.vision);
     s.venues = d.venues || {};
     s.vendors = d.vendors || {};

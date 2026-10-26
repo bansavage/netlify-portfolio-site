@@ -82,7 +82,7 @@ export const DEFAULT_CONFIG = {
   couple: "Kyle & Daina",
   altDates: ["2027-11-06"], // other dates we would consider; any day can be the wedding date
   date: "2027-11-13",
-  guests: { invited: 91, expected: 57, low: 60, high: 70, plan: 65, teens: "16 and 13" },
+  guests: { invited: 125, expected: 70, low: 60, high: 80, plan: 75, teens: "16 and 13" }, // Oct 25, 2026: 125 invited, about half to two-thirds expected
   budget: { target: 20000, ceiling: 30000 },
   fx: 18.45, // the rate in use; set from fxMode at boot
   fxMode: "live", // live | atlas | manual
