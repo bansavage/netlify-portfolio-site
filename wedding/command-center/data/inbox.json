@@ -1031,5 +1031,130 @@
       "email": "hotel@hdaelcarmen.com",
       "sent": "2026-10-24"
     }
+  },
+  "montecielo": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email+whatsapp",
+      "email": "montecielomx@gmail.com",
+      "whatsapp": "+52 844 586 3361",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). By email and WhatsApp; their WhatsApp auto-reply answered.",
+      "sent": "2026-10-27"
+    }
+  },
+  "hacienda_los_olivos": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "email": "hola@losolivos.com.mx",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "perote": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). The email bounced; alternates found: haciendaelperote@gmail.com, reserva@hotelesenparras.com; phone 842 422 1698. Resent Oct 27 to both alternates; no bounce.",
+      "sent": "2026-10-27",
+      "bounced": [
+        "reservaciones@hotelantiguahaciendadeperote.com"
+      ],
+      "email": "haciendaelperote@gmail.com",
+      "email2": "reserva@hotelesenparras.com"
+    }
+  },
+  "santamartha_nl": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "email": "haciendasantamarthanl@gmail.com",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "hacienda_florida": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "phone": "+52 844 432 2512",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). The email bounced; reach them by phone (844 432 2512) or the wine-route numbers 844 527 1527 / 844 218 3940. 844 432 2512 isn't on WhatsApp; still not reached.",
+      "sent": "2026-10-27",
+      "bounced": [
+        "info@haciendaflorida.com.mx"
+      ]
+    }
+  },
+  "bodega_los_cedros": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "email": "info@bodegaloscedros.com",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "hacienda_el_mimbre": {
+    "stage": "asked",
+    "contact": {
+      "channel": "email",
+      "email": "eventos@haciendaelmimbre.com",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "hacienda_el_secreto": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 179 5944",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "los_membrillos": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 359 3720",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date.",
+      "sent": "2026-10-27"
+    }
+  },
+  "huerta_mil_amores": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 239 8559",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "la_mora_ramos": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 102 8017",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date.",
+      "sent": "2026-10-27"
+    }
+  },
+  "rancho_la_soledad": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 869 0839",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "sent": "2026-10-27"
+    }
+  },
+  "bodegas_del_viento": {
+    "stage": "asked",
+    "contact": {
+      "channel": "whatsapp",
+      "status": "Oct 27: the WhatsApp number from our research (+52 844 362 6028) belongs to Quinta LunAzul, not this winery, and the template went there by mistake. Still need the winery's real contact (phone 844 183 5967). Then sent the template to the winery's own number, 844 183 5967, on WhatsApp.",
+      "sent": "2026-10-27",
+      "whatsapp": "+52 844 183 5967"
+    }
   }
 }
