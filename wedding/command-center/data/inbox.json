@@ -238,7 +238,7 @@
       "channel": "email+whatsapp",
       "sent": "2026-10-24",
       "email": "info@haciendasoltepec.com",
-      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza.",
+      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza. Their email desk also asked for names and a phone; Daina replied with our numbers.",
       "whatsapp": "+52 241 179 0080"
     },
     "quote": "WhatsApp Oct 27 (the hacienda's wedding planner, replying to our nudge): 7-hour base service counted from the start of the banquet (the ceremony doesn't use it up); no rigid end time, extra hours available. Banquet is in-house only, but flexible: from relaxed Mexican buffets and barbacoa tacos to 6-course dinners. 130+ rooms; no minimum and booking them isn't required. No guest minimum (weddings from 16 guests). No age limits; pets welcome. Gardens and salons for 20–300. One event per weekend. No prices yet: they invite us to visit (Saturday or Sunday) for a personalized quote."
@@ -351,8 +351,9 @@
       "sent": "2026-10-24",
       "email": "ventas@mesondejobito.com",
       "email2": "grupos@mesondejobito.com",
-      "status": "Emailed sales on Oct 24 (groups address also listed). No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices."
-    }
+      "status": "Emailed sales on Oct 24 (groups address also listed). No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: answered all seven by email. In-house food only. Oct 27: re-explained the food vision, asked yes/no on a live-taquero taquiza, the full price for 70–80 and November availability."
+    },
+    "quote": "Email Oct 27 (sales and banquets): 5-hour events. In the salon until 2 a.m. (no tamborazo or banda after 9 p.m.); in the patio until 9 p.m. Extra hour MXN 5,000 (space only). No outside food except desserts, cake or snacks; the banquet is theirs. Banquet-only service MXN 170 a guest with unlimited soft drinks, ice and corkage for 5 hours (wedding package otherwise). 51 rooms plus a presidential suite: standard MXN 1,547 a night, master suite MXN 1,785. Using the patio past 9 p.m. requires renting 50 rooms. No guest minimum but a guaranteed count is charged. Teens fine. Rain cover in the enclosed salons, not the patio."
   },
   "santacruz_casco": {
     "stage": "asked",
@@ -1143,7 +1144,7 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "tureserva.rhf@gmail.com",
-      "status": "Emailed the address on their booking page on Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices."
+      "status": "Emailed the address on their booking page on Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: they replied wanting to send prices and packages by WhatsApp; Daina sent our numbers."
     }
   },
   "elcarmen_ahualulco": {
@@ -1233,27 +1234,136 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 179 5944",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee.",
       "sent": "2026-10-27"
-    }
+    },
+    "quote": "WhatsApp Oct 27: rental is 7 hours, 7 p.m. to 2 a.m., with a free extra hour for photos. No exclusive vendors, so any caterer or taquero. Free corkage. No rooms. Minors welcome. One event per day. A giant tent (black, camel, white or olive) without lighting. Prices are by guest bracket (0–200, 200–300 ...) but no figure given yet."
   },
   "los_membrillos": {
     "stage": "asked",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 359 3720",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date. 6:15 PM: told them a symbolic wedding for 100–120 in November 2027 (flexible) and asked for answers and prices.",
       "sent": "2026-10-27"
     }
   },
   "huerta_mil_amores": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 239 8559",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Answered all seven and sent three package price sheets the same day. 6:14 PM: explained the taquiza-and-buffet vision and asked to rent the venue with furniture, waiters and tent but without their banquet, and the price for 100–120.",
       "sent": "2026-10-27"
-    }
+    },
+    "rows": [
+      [
+        "Clásico package, MXN 745 a guest + IVA at 100 guests (665 at 150): venue 5 h, plated 2-course banquet, waiters, soft drinks and ice, free corkage, furniture, giant tent",
+        51840,
+        60480,
+        1,
+        "Plus and Todo Incluido packages run MXN 935 and 1,895 a guest; their kitchen only reheats",
+        "venue"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "quote": "WhatsApp Oct 27: music until 1:30 a.m., reception ends 2 a.m., extra hour MXN 2,000. Outside taquero, taquiza and buffet allowed, no corkage or outside-vendor fee (kitchen is only for reheating and plating). No rooms. Minimum 50 guests. Teens fine. Only event that day; a large covered area. Packages per guest, + IVA: Clásico MXN 745 (100 guests) / 665 (150) / 625 (200+); Plus 935 / 825 / 785 (4-course, decor and flowers); Todo Incluido 1,895 / 1,525 / 1,335 (adds band, DJ setup, photo and video, coordination).",
+    "catch": "Packages include a plated banquet; our taquero comes on top"
   },
   "la_mora_ramos": {
     "stage": "asked",
