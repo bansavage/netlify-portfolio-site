@@ -50,6 +50,7 @@ export function passes(r, f = S.ui.filters) {
   if (q.includes("late") && !lateOK(v)) return false;
   if (q.includes("beds") && !(v.beds >= 40)) return false;
   if (q.includes("taq") && !taqOK(v)) return false;
+  if (q.includes("ver") && !v.verified) return false;
   return true;
 }
 

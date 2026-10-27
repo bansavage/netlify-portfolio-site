@@ -10,7 +10,7 @@ import { STAGES } from "../defaults.js";
 import { budgetBar } from "../drawer.js";
 
 let root = null;
-const QUICK = [["u20", "Under target"], ["late", "Party 2 a.m.+"], ["beds", "Sleeps 40+"], ["taq", "Own taqueros"]];
+const QUICK = [["u20", "Under target"], ["late", "Party 2 a.m.+"], ["beds", "Sleeps 40+"], ["taq", "Own taqueros"], ["ver", "Verified price"]];
 const STAGE_COLOR = { none: "var(--surface-3)", asked: "var(--cobalto)", quoted: "var(--cempa)", visit: "var(--lima)", visited: "var(--olivo)", booked: "var(--buga)", passed: "var(--out)" };
 const COLS = [
   ["star", "", null], ["rank", "#", "rank"], ["venue", "Venue", "name"], ["setting", "Setting", "rank"],

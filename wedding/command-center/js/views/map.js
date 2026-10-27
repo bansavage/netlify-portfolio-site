@@ -534,7 +534,7 @@ function focusVenue(key) {
 }
 
 /* ---------- panel ---------- */
-const QUICK = [["u20", "Under target"], ["late", "Party 2 a.m.+"], ["beds", "Sleeps 40+"], ["taq", "Own taqueros"]];
+const QUICK = [["u20", "Under target"], ["late", "Party 2 a.m.+"], ["beds", "Sleeps 40+"], ["taq", "Own taqueros"], ["ver", "Verified price"]];
 function panelHTML() {
   const f = S.ui.filters;
   return `<header class="mp-head" id="mpHead"><span class="grab" aria-hidden="true"></span>
