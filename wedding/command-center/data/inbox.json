@@ -12,7 +12,8 @@
       "email": "reservation@sancristobalbaja.com",
       "sent": "2026-08-20",
       "status": "Emailed Aug 20; the hotel's sales team replied with buyout terms. We passed on Sep 29."
-    }
+    },
+    "verified": true
   },
   "labor": {
     "stage": "quoted",
@@ -24,7 +25,8 @@
       "email": "info@haciendalalabor.com",
       "sent": "2026-09-27",
       "status": "Emailed Sep 27; they sent a proposal Sep 28. Not re-contacted Oct 24."
-    }
+    },
+    "verified": true
   },
   "sacchich": {
     "stage": "quoted",
@@ -37,7 +39,8 @@
       "phone": "+52 999 278 1178",
       "sent": "2026-09-27",
       "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options."
-    }
+    },
+    "verified": true
   },
   "ochil": {
     "stage": "quoted",
@@ -50,7 +53,8 @@
       "whatsapp": "+52 999 183 8478",
       "sent": "2026-09-27",
       "status": "Emailed Sep 27 (reservations@catherwood.mx); Catherwood replied Sep 28 with their 2027–28 rate card and Nov 6 availability. We said Oct 8 we're reviewing options."
-    }
+    },
+    "verified": true
   },
   "tamchen": {
     "stage": "quoted",
@@ -62,7 +66,8 @@
       "whatsapp": "+52 999 183 8478",
       "sent": "2026-09-27",
       "status": "Covered by the Catherwood rate card sent Sep 28 (asked about San Pedro Ochil). Not contacted separately."
-    }
+    },
+    "verified": true
   },
   "palomeque": {
     "stage": "quoted",
@@ -74,7 +79,8 @@
       "whatsapp": "+52 999 183 8478",
       "sent": "2026-09-27",
       "status": "Covered by the Catherwood rate card sent Sep 28 (asked about San Pedro Ochil). Not contacted separately."
-    }
+    },
+    "verified": true
   },
   "magdalena": {
     "stage": "quoted",
@@ -98,7 +104,8 @@
       "phone": "+52 999 930 2154",
       "sent": "2026-09-27",
       "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Waiting on their reply."
-    }
+    },
+    "verified": true
   },
   "santalucia": {
     "stage": "asked",
@@ -605,7 +612,7 @@
       "sent": "2026-10-24",
       "whatsapp": "+52 762 688 4476",
       "whatsapp_old": "+52 762 622 1001",
-      "status": "Answered all seven questions on WhatsApp Oct 24: no music cutoff (events priced for 6, 8 or 10 hours; extra-hour cost depends on services); in-house kitchen only (no outside caterer); the whole hotel's 18 rooms must be booked (about 56 people), check-in 3 pm, check-out noon; packages priced for 100 but they'll quote for our count; all ages welcome; one private event per day. Sent a room list (no prices yet). Follow-up Oct 24: they confirmed covered space or a tent in the quote, but said the rest was already answered and didn't give a yes or no on the taquiza. Asked yes/no on a taquiza: YES, their kitchen can do a live taquero and buffet. They asked for our guest count and needs, and will send a list of what they offer. Oct 24 evening: they said they'd send the price list the next day (they were working a wedding)."
+      "status": "Answered all seven questions on WhatsApp Oct 24: no music cutoff (events priced for 6, 8 or 10 hours; extra-hour cost depends on services); in-house kitchen only (no outside caterer); the whole hotel's 18 rooms must be booked (about 56 people), check-in 3 pm, check-out noon; packages priced for 100 but they'll quote for our count; all ages welcome; one private event per day. Sent a room list (no prices yet). Follow-up Oct 24: they confirmed covered space or a tent in the quote, but said the rest was already answered and didn't give a yes or no on the taquiza. Asked yes/no on a taquiza: YES, their kitchen can do a live taquero and buffet. They asked for our guest count and needs, and will send a list of what they offer. Oct 24 evening: they said they'd send the price list the next day (they were working a wedding). Oct 26: no price list yet; nudged on WhatsApp and updated the count to 70–80 guests."
     }
   },
   "lashadas": {
@@ -878,7 +885,8 @@
       "whatsapp": "+52 55 1399 5479",
       "status": "Messaged Oct 24. They replied the same day with their 2027–2028 brochure, photos and a video.",
       "phone": "+52 55 4021 7542"
-    }
+    },
+    "verified": true
   },
   "ferreria": {
     "stage": "asked",

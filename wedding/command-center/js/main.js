@@ -185,6 +185,8 @@ async function boot() {
     if (ib) {
       v.inbox = ib;
       if (ib.status && !v.rows) { v.status = ib.status; v.reason = ib.reason || ib.quote; }
+      // their own figures already priced it in the atlas
+      if (ib.verified) v.verified = true;
       // a venue's own quote replaces the listing-based lines the atlas priced it with
       if (ib.rows) { v.rows = ib.rows; v.conf = "quote"; v.verified = true; if (ib.catch) v.catch = ib.catch; }
       // start the stage where the emails left it, once; after that it's the couple's to change
