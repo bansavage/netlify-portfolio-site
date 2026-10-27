@@ -2,6 +2,8 @@
 
 export const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 export const k = (usd) => "$" + (usd / 1000).toFixed(1) + "k";
+// Blue check beside prices built from a venue's own reply and figures (inbox rows).
+export const vbadge = (v) => (v && v.verified ? `<span class="vbadge" title="Verified: priced from the venue's own reply" aria-label="Verified price"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8"/><path d="M4.6 8.3l2.2 2.2 4.6-4.8"/></svg></span>` : "");
 export const kMXN = (n) => "MXN " + (n >= 1e6 ? (n / 1e6).toFixed(2) + "M" : n >= 1e5 ? Math.round(n / 1000) + "k" : (n / 1000).toFixed(1) + "k");
 export const usd = (n) => "$" + Math.round(n).toLocaleString("en-US");
 export const mxn = (n) => "MXN " + Math.round(n).toLocaleString("en-US");

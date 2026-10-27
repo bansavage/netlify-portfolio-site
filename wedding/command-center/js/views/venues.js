@@ -5,7 +5,7 @@ import { S, commit, venueState } from "../store.js";
 import { app, nav, STATUS, pinHTML, regionsList, shortEnd, shortBeds } from "../app.js";
 import { illo } from "../illo.js";
 import { photoTag } from "../photos.js";
-import { esc, k, kMXN, ICON, debounce } from "../util.js";
+import { esc, k, kMXN, vbadge, ICON, debounce } from "../util.js";
 import { STAGES } from "../defaults.js";
 import { budgetBar } from "../drawer.js";
 
@@ -58,8 +58,8 @@ function dots(n) { let s = ""; for (let i = 1; i <= 5; i++) s += `<i class="${n 
 function rowHTML(r) {
   const v = r.v, st = S.venues[v.key] || {};
   const c = S.cfg.budget.ceiling;
-  const day = r.plan ? `<div class="money${r.high.usd > c ? " over" : ""}" title="${r.low.n}–${r.high.n} guests: ${k(r.low.usd)}–${k(r.high.usd)} · ${kMXN(r.low.mxn)}–${kMXN(r.high.mxn)}"><b>${k(r.plan.usd)}</b><small>${kMXN(r.plan.mxn)}</small></div>` : `<span class="muted">${r.status === "wild" ? "Quote needed" : "—"}</span>`;
-  const wk = r.plan ? `<div class="money${r.plan.weekendUsd > c ? " over" : ""}"><b>${k(r.plan.weekendUsd)}</b><small>${kMXN(r.plan.weekendMxn)}</small></div>` : "";
+  const day = r.plan ? `<div class="money${r.high.usd > c ? " over" : ""}" title="${r.low.n}–${r.high.n} guests: ${k(r.low.usd)}–${k(r.high.usd)} · ${kMXN(r.low.mxn)}–${kMXN(r.high.mxn)}"><b>${k(r.plan.usd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.mxn)}</small></div>` : `<span class="muted">${r.status === "wild" ? "Quote needed" : "—"}</span>`;
+  const wk = r.plan ? `<div class="money${r.plan.weekendUsd > c ? " over" : ""}"><b>${k(r.plan.weekendUsd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.weekendMxn)}</small></div>` : "";
   const rk = r.status === "top" ? pinHTML(r) : r.rank ? `<span class="num muted">${r.rank}</span>` : pinHTML(r);
   const stage = st.stage || "none";
   return `<tr data-key="${esc(v.key)}" class="${app.activeKey === v.key ? "is-active" : ""}${r.status === "out" ? " dim" : ""}">
@@ -92,7 +92,7 @@ function tableHTML() {
 function cardHTML(r) {
   const v = r.v, st = S.venues[v.key] || {};
   const badge = r.status === "top" ? `<span class="badge top">Top 20 · #${r.top}</span>` : `<span class="badge ${r.status}">${esc(STATUS[r.status].label)}</span>`;
-  const money = r.plan ? `<div class="money"><b class="${r.high.usd > S.cfg.budget.ceiling ? "over" : ""}">${k(r.plan.usd)}</b><small>${kMXN(r.plan.mxn)} · wedding day · ${r.plan.n} guests</small></div>` : `<div class="money"><b>—</b><small>${r.status === "wild" ? "quote needed" : esc(r.why || "")}</small></div>`;
+  const money = r.plan ? `<div class="money"><b class="${r.high.usd > S.cfg.budget.ceiling ? "over" : ""}">${k(r.plan.usd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.mxn)} · wedding day · ${r.plan.n} guests</small></div>` : `<div class="money"><b>—</b><small>${r.status === "wild" ? "quote needed" : esc(r.why || "")}</small></div>`;
   const chips = [];
   if (v.end) chips.push(`<span class="chip">Ends ${esc(shortEnd(v))}</span>`);
   if (v.beds_txt) chips.push(`<span class="chip">Sleeps ${esc(shortBeds(v))}</span>`);

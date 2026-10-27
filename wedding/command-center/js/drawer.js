@@ -5,7 +5,7 @@ import { S, commit, venueState } from "./store.js";
 import { app, res, nav, STATUS, statusBadge, shortEnd } from "./app.js";
 import { illo } from "./illo.js";
 import { photosOf, photoSrc, photoTag, photoHost } from "./photos.js";
-import { gmapsURL, esc, k, kMXN, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
+import { gmapsURL, esc, k, kMXN, vbadge, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
 import { STAGES, QUESTIONS_EN, QUESTIONS_ES, EMAIL_ES } from "./defaults.js";
 import { SCORE_KEYS } from "./engine.js";
 const fmtShort = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
@@ -111,8 +111,8 @@ function bodyHTML(v, r) {
   if (v.description) h += `<p class="dw-desc">${esc(v.description)}</p>`;
   if (r.plan) {
     const g = S.cfg.guests, c = S.cfg.budget.ceiling;
-    const cell = (P, lab, plan) => `<div class="${P.usd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">${lab}</span><b>${k(P.usd)}</b><small class="mx">${kMXN(P.mxn)}</small><small>${P.n} guests</small></div>`;
-    const wk = (P, plan) => `<div class="${P.weekendUsd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">Weekend</span><b>${k(P.weekendUsd)}</b><small class="mx">${kMXN(P.weekendMxn)}</small><small>${P.n} guests</small></div>`;
+    const cell = (P, lab, plan) => `<div class="${P.usd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">${lab}</span><b>${k(P.usd)}${vbadge(r.v)}</b><small class="mx">${kMXN(P.mxn)}</small><small>${P.n} guests</small></div>`;
+    const wk = (P, plan) => `<div class="${P.weekendUsd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">Weekend</span><b>${k(P.weekendUsd)}${vbadge(r.v)}</b><small class="mx">${kMXN(P.weekendMxn)}</small><small>${P.n} guests</small></div>`;
     h += `<div><div class="prices">${cell(r.low, "Wedding day", false)}${cell(r.plan, "Wedding day", true)}${cell(r.high, "Wedding day", false)}${wk(r.low)}${wk(r.plan, true)}${wk(r.high)}</div>
       <div style="margin-top:12px">${budgetBar(r.low.usd, r.high.usd)}<div class="bbar-legend"><span>$0</span><span>${k(S.cfg.budget.target)} target</span><span>${k(c)} ceiling</span></div></div></div>`;
     if (g.plan < g.low || g.plan > g.high) h += `<p class="muted" style="margin:-8px 0 0;font-size:12px">Pricing for ${g.plan} guests, outside your ${g.low}–${g.high} range.</p>`;

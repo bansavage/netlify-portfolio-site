@@ -5,7 +5,7 @@ import { S, commit } from "../store.js";
 import { app, nav, STATUS, pinHTML, res } from "../app.js";
 import { illo } from "../illo.js";
 import { photoTag } from "../photos.js";
-import { esc, k, kMXN, usd, mxn, ICON, picado } from "../util.js";
+import { esc, k, kMXN, vbadge, usd, mxn, ICON, picado } from "../util.js";
 import { STAGES, DEFAULT_VISION } from "../defaults.js";
 import { cardAmount } from "../engine.js";
 
@@ -55,7 +55,7 @@ function topTenHTML() {
     const v = r.v;
     const was = v.headline_rank || null;
     const mv = !was ? `<span class="mv up">New</span>` : was > r.top ? `<span class="mv up">▲${was - r.top}</span>` : was < r.top ? `<span class="mv dn">▼${r.top - was}</span>` : "";
-    return `<li data-key="${esc(v.key)}">${pinHTML(r)}<span class="nm"><b>${esc(v.short)} ${mv}</b><small>${esc(v.place)} · ends ${esc(endShort(v))} · sleeps ${esc(String(v.beds || "?"))}</small></span><span class="pr">${k(r.plan.usd)}<small>${kMXN(r.plan.mxn)}</small></span><span class="fit" title="Fit score">${r.fit.toFixed(1)}</span></li>`;
+    return `<li data-key="${esc(v.key)}">${pinHTML(r)}<span class="nm"><b>${esc(v.short)} ${mv}</b><small>${esc(v.place)} · ends ${esc(endShort(v))} · sleeps ${esc(String(v.beds || "?"))}</small></span><span class="pr">${k(r.plan.usd)}${vbadge(v)}<small>${kMXN(r.plan.mxn)}</small></span><span class="fit" title="Fit score">${r.fit.toFixed(1)}</span></li>`;
   }).join("");
   return `<div class="card"><div class="panel-h"><div><span class="eyebrow">Live ranking · ${S.cfg.guests.plan} guests</span><h3>The top 20 right now</h3></div><button class="btn sm" type="button" data-go="venues">All venues ${ICON.right}</button></div><ol class="toplist">${rows}</ol></div>`;
 }
@@ -64,7 +64,7 @@ const endShort = (v) => { const e = v.end || ""; if (/^none|no limit/i.test(e)) 
 function shortlistHTML() {
   const starred = [...app.ev.results.values()].filter((r) => S.venues[r.v.key] && S.venues[r.v.key].star).sort((a, b) => (a.plan ? a.plan.usd : 9e9) - (b.plan ? b.plan.usd : 9e9));
   const body = starred.length
-    ? `<div class="shortlist">${starred.map((r) => { const st = S.venues[r.v.key]; const stage = STAGES.find((s) => s[0] === st.stage); return `<article class="sl-card" data-key="${esc(r.v.key)}"><div class="im">${illo(r.v, 280, 110)}${photoTag(r.v, 640)}</div><div class="bd"><b>${esc(r.v.short)}</b><small>${esc(r.v.place)}</small><div class="ln"><span>${r.plan ? `${k(r.plan.usd)} <small class="muted">${kMXN(r.plan.mxn)}</small>` : "Quote"}</span><small>${esc(stage ? stage[1] : "")}</small></div></div></article>`; }).join("")}</div>`
+    ? `<div class="shortlist">${starred.map((r) => { const st = S.venues[r.v.key]; const stage = STAGES.find((s) => s[0] === st.stage); return `<article class="sl-card" data-key="${esc(r.v.key)}"><div class="im">${illo(r.v, 280, 110)}${photoTag(r.v, 640)}</div><div class="bd"><b>${esc(r.v.short)}</b><small>${esc(r.v.place)}</small><div class="ln"><span>${r.plan ? `${k(r.plan.usd)}${vbadge(r.v)} <small class="muted">${kMXN(r.plan.mxn)}</small>` : "Quote"}</span><small>${esc(stage ? stage[1] : "")}</small></div></div></article>`; }).join("")}</div>`
     : `<div style="padding:0 18px 18px"><div class="empty"><b>Nothing starred yet.</b>Tap the star on any venue, in the table, the map or its details, and it lands here with its live price.</div></div>`;
   return `<div class="card"><div class="panel-h"><div><span class="eyebrow">Yours</span><h3>The shortlist</h3></div>${starred.length ? `<button class="btn sm" type="button" data-shortlist>On the map ${ICON.right}</button>` : ""}</div>${body}</div>`;
 }

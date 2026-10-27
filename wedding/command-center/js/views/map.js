@@ -8,7 +8,7 @@ import { S, commit } from "../store.js";
 import { app, res, nav, STATUS, pinHTML, passes, taqOK, lateOK } from "../app.js";
 import { illo } from "../illo.js";
 import { photosOf, photoSrc, photoTag, photoLabel } from "../photos.js";
-import { gmapsURL, esc, k, kMXN, ICON, norm, debounce } from "../util.js";
+import { gmapsURL, esc, k, kMXN, vbadge, ICON, norm, debounce } from "../util.js";
 
 const ML_JS = "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js";
 const ML_CSS = "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css";
@@ -386,7 +386,7 @@ export function themeChangedImpl() {
 
 /* ---------- hover card ---------- */
 function priceLine(r) {
-  if (r.plan) { const over = r.high.usd > S.cfg.budget.ceiling; return `<div class="price-line${over ? " over" : ""}"><span class="lab">Est. all-in · wedding day</span><span><b>${k(r.low.usd)}</b><small>${kMXN(r.low.mxn)} · ${r.low.n} guests</small></span><span><b>${k(r.high.usd)}</b><small>${kMXN(r.high.mxn)} · ${r.high.n} guests</small></span></div>`; }
+  if (r.plan) { const over = r.high.usd > S.cfg.budget.ceiling; return `<div class="price-line${over ? " over" : ""}"><span class="lab">Est. all-in · wedding day${vbadge(r.v)}</span><span><b>${k(r.low.usd)}</b><small>${kMXN(r.low.mxn)} · ${r.low.n} guests</small></span><span><b>${k(r.high.usd)}</b><small>${kMXN(r.high.mxn)} · ${r.high.n} guests</small></span></div>`; }
   if (r.status === "wild") return `<div class="price-line"><span class="lab">Est. all-in</span><span class="na">Not priced yet. Ask for a quote.</span></div>`;
   return `<div class="price-line"><span class="lab">Ruled out</span><span class="na">${esc(r.why || "")}</span></div>`;
 }
@@ -565,7 +565,7 @@ function legendHTML() {
 }
 function rowHTML(r) {
   const v = r.v;
-  const pr = r.plan ? `<span class="pr${r.high.usd > S.cfg.budget.ceiling ? " over" : ""}">${k(r.plan.usd)}<small>${kMXN(r.plan.mxn)}</small></span>` : `<span class="pr na">${r.status === "wild" ? "Quote" : "—"}</span>`;
+  const pr = r.plan ? `<span class="pr${r.high.usd > S.cfg.budget.ceiling ? " over" : ""}">${k(r.plan.usd)}${vbadge(r.v)}<small>${kMXN(r.plan.mxn)}</small></span>` : `<span class="pr na">${r.status === "wild" ? "Quote" : "—"}</span>`;
   const th = photosOf(v).length ? `<img src="${esc(photoSrc(v.photos[0], 320))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
   return `<button class="row${app.activeKey === v.key ? " is-active" : ""}" type="button" data-key="${esc(v.key)}"><span class="mk">${pinHTML(r)}</span><span class="th">${th}</span><span class="nm"><b>${esc(v.short)}</b><small>${esc(v.place)}</small></span>${pr}</button>`;
 }
