@@ -238,10 +238,10 @@
       "channel": "email+whatsapp",
       "sent": "2026-10-24",
       "email": "info@haciendasoltepec.com",
-      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza. Their email desk also asked for names and a phone; Daina replied with our numbers.",
+      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza. Their email desk also asked for names and a phone; Daina replied with our numbers. 7:02 PM: yes to the Mexican buffet; asked for a video call to present prices. 7:27 PM: asked for the written proposal for 70–80 with room rates before any video call, and a clear yes/no on a live taquero.",
       "whatsapp": "+52 241 179 0080"
     },
-    "quote": "WhatsApp Oct 27 (the hacienda's wedding planner, replying to our nudge): 7-hour base service counted from the start of the banquet (the ceremony doesn't use it up); no rigid end time, extra hours available. Banquet is in-house only, but flexible: from relaxed Mexican buffets and barbacoa tacos to 6-course dinners. 130+ rooms; no minimum and booking them isn't required. No guest minimum (weddings from 16 guests). No age limits; pets welcome. Gardens and salons for 20–300. One event per weekend. No prices yet: they invite us to visit (Saturday or Sunday) for a personalized quote."
+    "quote": "WhatsApp Oct 27 (the hacienda's wedding planner, replying to our nudge): 7-hour base service counted from the start of the banquet (the ceremony doesn't use it up); no rigid end time, extra hours available. Banquet is in-house only, but flexible: from relaxed Mexican buffets and barbacoa tacos to 6-course dinners. 130+ rooms; no minimum and booking them isn't required. No guest minimum (weddings from 16 guests). No age limits; pets welcome. Gardens and salons for 20–300. One event per weekend. No prices yet: they invite us to visit (Saturday or Sunday) for a personalized quote. Oct 27, 7:02 PM: YES, their kitchen can do a fully Mexican-style buffet as we described. They proposed a video call (suggested tomorrow at 12 p.m.) for a virtual tour, room rates and a proposal for 70–80 guests."
   },
   "lossantos": {
     "stage": "quoted",
@@ -1366,14 +1366,128 @@
     "catch": "Packages include a plated banquet; our taquero comes on top"
   },
   "la_mora_ramos": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 102 8017",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date. Answered all seven the same day; wants guest count and date for a quote. 5:31 PM: asked for the quote for 100–120 guests, November 2027, flexible.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date. Answered all seven the same day; wants guest count and date for a quote. 5:31 PM: asked for the quote for 100–120 guests, November 2027, flexible. 6:58–7:00 PM: sent the quote, photos of past events and payment terms.",
       "sent": "2026-10-27"
     },
-    "quote": "WhatsApp Oct 27: parties end at 2 a.m. any day except Sunday (11 p.m.). 7 hours included; extra hours MXN 2,000 each, but only to start earlier, not to end later. Their partner caterer can do a taquiza, or bring any outside vendor with no kitchen or corkage fee. No rooms (hotels nearby). No guest minimum. Kids welcome. Ours would be the only event that day. Covered esplanade. They'll quote once they have our guest count and date."
+    "quote": "WhatsApp Oct 27: parties end at 2 a.m. any day except Sunday (11 p.m.). 7 hours included; extra hours MXN 2,000 each, but only to start earlier, not to end later. Their partner caterer can do a taquiza, or bring any outside vendor with no kitchen or corkage fee. No rooms (hotels nearby). No guest minimum. Kids welcome. Ours would be the only event that day. Covered esplanade. They'll quote once they have our guest count and date. Quote Oct 27: garden for 120 guests in 2027, everything described included: MXN 89,200 Friday or Saturday, MXN 62,400 Sunday to Thursday. Optional banquet MXN 360 a guest (3 courses, waiters for 5 hours at one per two tables, linens, tableware, glassware, unlimited ice and soft drinks, no corkage). Entrance tunnel decorated with jute, lights and jasmine. MXN 10,000 holds the date; the rest in monthly payments, paid off two months before.",
+    "rows": [
+      [
+        "Garden rental, Friday or Saturday, 120 guests, 2027: MXN 89,200 (Sunday–Thursday MXN 62,400)",
+        89200,
+        89200,
+        1,
+        "Optional 3-course banquet MXN 360 a guest; IVA not stated",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   },
   "rancho_la_soledad": {
     "stage": "asked",
@@ -1401,7 +1515,7 @@
       "email": "info@terraserena.mx",
       "whatsapp": "+52 81 1997 4969",
       "sent": "2026-10-27",
-      "status": "Oct 27: sent the Saltillo template by email and WhatsApp; the WhatsApp line answered at once with their wedding PDF and a note that vendors are exclusive. The same WhatsApp number is listed for Bodega Los Cedros. Outdoor season runs March to October, which fits a September or October date. Read the PDF Oct 27: its midnight finish and exclusive plated catering put it outside the brief."
+      "status": "Oct 27: sent the Saltillo template by email and WhatsApp; the WhatsApp line answered at once with their wedding PDF and a note that vendors are exclusive. The same WhatsApp number is listed for Bodega Los Cedros. Outdoor season runs March to October, which fits a September or October date. Read the PDF Oct 27: its midnight finish and exclusive plated catering put it outside the brief. 7:02 PM: thanked them on WhatsApp and said we'd review it."
     },
     "catch": "Ends at midnight; exclusive plated banquet; about $29k before music"
   }
