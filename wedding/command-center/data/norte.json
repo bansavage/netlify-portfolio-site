@@ -1,5 +1,5 @@
 {
-  "note": "Saltillo & Monterrey track (Oct 27, 2026): venues a drive from Daina's family, ranked on the venue, not rooms.",
+  "note": "Saltillo & Monterrey track (Oct 27, 2026): venues a drive from Daina's family, ranked on the venue, not rooms. Oct 27: for Saltillo the date can move to September or October 2027, so venues closed only in winter count again.",
   "atlas": [
     "santamartha_nl",
     "qsm",
@@ -2745,5 +2745,8 @@
         ]
       ]
     }
+  ],
+  "unrule": [
+    "terraserena"
   ]
 }

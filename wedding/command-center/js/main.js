@@ -211,7 +211,9 @@ async function boot() {
     if (bd) v.beds = bd[0];
     app.byKey.set(v.key, v);
   }
-  app.norte = [...norteOnly, ...(norteData.atlas || []).map((k) => app.byKey.get(k)).filter(Boolean)];
+  // a Saltillo wedding can move to September or October, so winter-only closures don't rule a venue out there
+  const unrule = new Set(norteData.unrule || []);
+  app.norte = [...norteOnly, ...(norteData.atlas || []).map((k) => app.byKey.get(k)).filter(Boolean).map((v) => (unrule.has(v.key) ? { ...v, status: "wild", reason: "Outdoor season runs March to October; fine for a September or October date. Not priced yet." } : v))];
   app.geo = geo;
   app.vendors = vend.vendors || [];
   app.benchmarks = vend.benchmarks || [];
