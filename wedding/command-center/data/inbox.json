@@ -1517,6 +1517,120 @@
       "sent": "2026-10-27",
       "status": "Oct 27: sent the Saltillo template by email and WhatsApp; the WhatsApp line answered at once with their wedding PDF and a note that vendors are exclusive. The same WhatsApp number is listed for Bodega Los Cedros. Outdoor season runs March to October, which fits a September or October date. Read the PDF Oct 27: its midnight finish and exclusive plated catering put it outside the brief. 7:02 PM: thanked them on WhatsApp and said we'd review it."
     },
-    "catch": "Ends at midnight; exclusive plated banquet; about $29k before music"
+    "catch": "Ends at midnight; exclusive plated banquet; about $29k before music",
+    "rows": [
+      [
+        "Venue, 150–600 guests, 8 hours, IVA included (their 2026–27 PDF)",
+        210000,
+        210000,
+        1,
+        "Party must end at midnight",
+        "venue"
+      ],
+      [
+        "Exclusive tent, 25×24 m for 420 guests: MXN 132,000 + IVA",
+        153120,
+        153120,
+        1,
+        "Required supplier",
+        "tent"
+      ],
+      [
+        "Exclusive Villa Ferré banquet, Esencial 3 courses: MXN 1,350 a guest + IVA",
+        93960,
+        109620,
+        1,
+        "No outside caterer, so no taquero",
+        "buffet"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   }
 }
