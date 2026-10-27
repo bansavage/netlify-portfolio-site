@@ -235,11 +235,13 @@
   "soltepec": {
     "stage": "asked",
     "contact": {
-      "channel": "email",
+      "channel": "email+whatsapp",
       "sent": "2026-10-24",
       "email": "info@haciendasoltepec.com",
-      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices."
-    }
+      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza.",
+      "whatsapp": "+52 241 179 0080"
+    },
+    "quote": "WhatsApp Oct 27 (the hacienda's wedding planner, replying to our nudge): 7-hour base service counted from the start of the banquet (the ceremony doesn't use it up); no rigid end time, extra hours available. Banquet is in-house only, but flexible: from relaxed Mexican buffets and barbacoa tacos to 6-course dinners. 130+ rooms; no minimum and booking them isn't required. No guest minimum (weddings from 16 guests). No age limits; pets welcome. Gardens and salons for 20–300. One event per weekend. No prices yet: they invite us to visit (Saturday or Sunday) for a personalized quote."
   },
   "lossantos": {
     "stage": "quoted",
@@ -483,10 +485,133 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "lacapillasl@gmail.com",
-      "status": "Answered all seven by email Oct 24. Still missing actual prices for the package or venue-only rental, room rates and minimum nights. Oct 27: Erika asked for a WhatsApp number to send all the information; we emailed Kyle's number."
+      "status": "Answered all seven by email Oct 24. Still missing actual prices for the package or venue-only rental, room rates and minimum nights. Oct 27: Erika asked for a WhatsApp number to send all the information; we emailed Kyle's number. Oct 27: moved to a WhatsApp group with Daina; quoted the 52-guest package (MXN 200,000, our share MXN 60,000) and confirmed a live taquero is fine."
     },
-    "quote": "Email reply Oct 24: music until 2 a.m.; more time costs MXN 10,000 an hour. The contract is 8 hours ending by 2 a.m. Any caterer and vendors welcome (no fees mentioned; they can also organize vendors). Two options: a Friday–Sunday package or the venue alone; sleeps up to 88. No guest minimum. Teens fine. The venue is exclusive when rented; a tent is recommended for rain and there's a covered terrace. They offered a video call and asked where we're from.",
-    "date": "2026-10-24"
+    "quote": "Email reply Oct 24: music until 2 a.m.; more time costs MXN 10,000 an hour. The contract is 8 hours ending by 2 a.m. Any caterer and vendors welcome (no fees mentioned; they can also organize vendors). Two options: a Friday–Sunday package or the venue alone; sleeps up to 88. No guest minimum. Teens fine. The venue is exclusive when rented; a tent is recommended for rain and there's a covered terrace. They offered a video call and asked where we're from. WhatsApp group with Daina, Oct 27: the venue works as a weekend buyout. Total MXN 200,000 for the 52-guest package (21 rooms of 2 and 4); we pay 30% (MXN 60,000) and guests pay about MXN 7,000 a room for 20 rooms, covering 2 nights, buffet breakfast both days and 2 p.m. late checkout. A few extra rooms are possible. An 88-guest package also exists. Production (banquet, DJ and so on) is separate, with a planner they can recommend. Outside vendors welcome on the wedding day, including a live taquero. Sent a 7-page PDF and two voice notes (not yet read).",
+    "date": "2026-10-24",
+    "rows": [
+      [
+        "Venue, 52-guest package: our 30% share of MXN 200,000 (guests pay about MXN 7,000 a room for the other 20 rooms, 2 nights with buffet breakfast)",
+        60000,
+        60000,
+        1,
+        "IVA not stated; an 88-guest package is also offered",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Patio heaters (Nov lows <=57F/14C)",
+        12000,
+        12000,
+        0,
+        "",
+        "heaters"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Guests pay for their rooms (about MXN 7,000 each for 2 nights); production is separate"
   },
   "santodomingo_slp": {
     "stage": "quoted",
@@ -1108,7 +1233,7 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 179 5944",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests).",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions.",
       "sent": "2026-10-27"
     }
   },
@@ -1135,9 +1260,10 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 102 8017",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date. Answered all seven the same day; wants guest count and date for a quote. 5:31 PM: asked for the quote for 100–120 guests, November 2027, flexible.",
       "sent": "2026-10-27"
-    }
+    },
+    "quote": "WhatsApp Oct 27: parties end at 2 a.m. any day except Sunday (11 p.m.). 7 hours included; extra hours MXN 2,000 each, but only to start earlier, not to end later. Their partner caterer can do a taquiza, or bring any outside vendor with no kitchen or corkage fee. No rooms (hotels nearby). No guest minimum. Kids welcome. Ours would be the only event that day. Covered esplanade. They'll quote once they have our guest count and date."
   },
   "rancho_la_soledad": {
     "stage": "asked",
@@ -1152,7 +1278,7 @@
     "stage": "asked",
     "contact": {
       "channel": "whatsapp",
-      "status": "Oct 27: the WhatsApp number from our research (+52 844 362 6028) belongs to Quinta LunAzul, not this winery, and the template went there by mistake. Still need the winery's real contact (phone 844 183 5967). Then sent the template to the winery's own number, 844 183 5967, on WhatsApp.",
+      "status": "Oct 27: the WhatsApp number from our research (+52 844 362 6028) belongs to Quinta LunAzul, not this winery, and the template went there by mistake. Still need the winery's real contact (phone 844 183 5967). Then sent the template to the winery's own number, 844 183 5967, on WhatsApp. Only an automatic greeting so far (links to book brunch, lunch and tours).",
       "sent": "2026-10-27",
       "whatsapp": "+52 844 183 5967"
     }
