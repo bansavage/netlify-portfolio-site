@@ -483,7 +483,7 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "lacapillasl@gmail.com",
-      "status": "Answered all seven by email Oct 24. Still missing actual prices for the package or venue-only rental, room rates and minimum nights."
+      "status": "Answered all seven by email Oct 24. Still missing actual prices for the package or venue-only rental, room rates and minimum nights. Oct 27: Erika asked for a WhatsApp number to send all the information; we emailed Kyle's number."
     },
     "quote": "Email reply Oct 24: music until 2 a.m.; more time costs MXN 10,000 an hour. The contract is 8 hours ending by 2 a.m. Any caterer and vendors welcome (no fees mentioned; they can also organize vendors). Two options: a Friday–Sunday package or the venue alone; sleeps up to 88. No guest minimum. Teens fine. The venue is exclusive when rented; a tent is recommended for rain and there's a covered terrace. They offered a video call and asked where we're from.",
     "date": "2026-10-24"
@@ -862,7 +862,7 @@
     }
   },
   "santacruz_pal": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email+whatsapp",
       "sent": "2026-10-24",
@@ -870,10 +870,134 @@
       "bounced": [
         "contacto@haciendasantacruz.com.mx"
       ],
-      "status": "The first email bounced; resent Oct 24 to the manager's address from their Facebook page. On WhatsApp, reception shared their sales manager's number (+52 999 647 8911).",
+      "status": "The first email bounced; resent Oct 24 to the manager's address from their Facebook page. On WhatsApp, reception shared their sales manager's number (+52 999 647 8911). Oct 27: sent the template to the sales manager on WhatsApp. Same day, Guillermo replied with the 2027 space rate sheet and brochure.",
       "email": "gerencia@haciendasantacruz.com",
       "phone": "+52 999 647 8911"
-    }
+    },
+    "rows": [
+      [
+        "Casco Antiguo rental, 8 h, up to 120 guests; MXN 102,568 with IVA (their 2027 rate sheet). No furniture, kitchen, stage or tents included",
+        102568,
+        102568,
+        1,
+        "Extra hour: 10% of the rental (about MXN 10,257)",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Space rental only, 8 hours; furniture, kitchen and stage are on you. 25 rooms for 60 people, room rates depend on the date",
+    "quote": "WhatsApp Oct 27 (Guillermo, sales): 25 rooms sleeping 60; one event a day; they rent spaces only (bring your own vendors); room rates depend on the date. 2027 space rates, 8 hours, IVA included, extra hour 10% of the rental: Explanada 1–800 guests MXN 176,842 (includes the kitchen); Casco Antiguo 1–120 MXN 102,568 (no furniture, kitchen, stage or tents); Adoquines 1–150 MXN 100,890; Parque del Cenote, palapas and pergolas 1–150 MXN 91,822; Corredor Spa 1–100 MXN 79,352; Palapas y Pérgolas 1–80 MXN 63,371; Parque de los Confidentes 1–60 MXN 51,692; Chan Santa Cruz 1–120 MXN 50,496; chapel 1 hour MXN 4,950. 5% damage deposit, returned after. Set-up allowed the day before, 7 a.m.–7 p.m. Still unanswered: music end time, reception end, kitchen or outside-vendor fees, room rates, guest minimum, teens, rain cover."
   },
   "laluz_tetecala": {
     "stage": "quoted",
