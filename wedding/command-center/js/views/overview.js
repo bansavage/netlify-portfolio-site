@@ -2,7 +2,7 @@
 // chase and where the viable venues are.
 
 import { S, commit } from "../store.js";
-import { app, nav, STATUS, pinHTML, res } from "../app.js";
+import { app, nav, STATUS, pinHTML, mainRes as res } from "../app.js";
 import { illo } from "../illo.js";
 import { photoTag } from "../photos.js";
 import { esc, k, kMXN, vbadge, usd, mxn, ICON, picado } from "../util.js";

@@ -728,7 +728,7 @@ body.drawer-open .map-attr { right: calc(var(--drawer-w) + 8px); }
   .guests button { width: 28px; }
   .icon-btn { width: 34px; height: 34px; }
   #themeBtn { display: none; }
-  .bottombar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; height: var(--bottom-h); display: grid; grid-template-columns: repeat(6, 1fr); padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--surface); border-top: 1px solid var(--line); }
+  .bottombar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; height: var(--bottom-h); display: grid; grid-template-columns: repeat(7, 1fr); padding-bottom: env(safe-area-inset-bottom, 0px); background: var(--surface); border-top: 1px solid var(--line); }
   .bottombar button { border: 0; background: none; display: grid; justify-items: center; align-content: center; gap: 3px; color: var(--ink-3); font: 600 10px/1 var(--f-ui); padding: 0; }
   .bottombar svg { width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linejoin: round; stroke-linecap: round; }
   .bottombar button[aria-selected="true"] { color: var(--ink); }

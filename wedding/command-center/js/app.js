@@ -2,7 +2,7 @@
 // and small cross-view helpers. Views import this; main.js fills it in at boot.
 
 import { S } from "./store.js";
-import { evaluate } from "./engine.js";
+import { evaluate, evaluateNorte } from "./engine.js";
 import { norm, esc } from "./util.js";
 
 export const app = {
@@ -14,6 +14,9 @@ export const app = {
   benchmarks: [],
   ev: null,
   list: [], // the venues passing the shared filters, in the shared sort order
+  norte: [], // Saltillo & Monterrey: researched venues plus the atlas's northern ones
+  nev: null,
+  nlist: [],
   views: {},
   activeKey: null,
 };
@@ -30,10 +33,27 @@ export const STATUS_ORDER = { top: 0, fit: 1, wild: 2, over: 3, out: 4 };
 export function recompute() {
   app.ev = evaluate(app.venues, S.cfg, S.venues);
   app.list = filterList();
+  app.nev = evaluateNorte(app.norte, S.cfg, S.venues);
+  app.nlist = norteList();
   return app.ev;
 }
 
-export const res = (key) => app.ev && app.ev.results.get(key);
+// on the Saltillo tab a venue is judged by that tab's own ranking
+export const inNorte = () => S.ui.tab === "norte";
+export const res = (key) => (inNorte() && app.nev && app.nev.results.get(key)) || (app.ev && app.ev.results.get(key));
+// the destination ranking, whatever tab is showing (map, budget and overview read this)
+export const mainRes = (key) => app.ev && app.ev.results.get(key);
+export const drawerList = () => (inNorte() ? app.nlist : app.list);
+
+export function norteList() {
+  if (!app.nev) return [];
+  const f = S.ui.norte;
+  const out = [...app.nev.results.values()].filter((r) => (f.out || r.status !== "out") && (!f.q || r.v._hay.includes(norm(f.q))));
+  const price = (r) => (r.plan ? r.plan.usd : 9e9);
+  const base = (a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || (a.rank || 999) - (b.rank || 999) || (b.scores.setting || 0) - (a.scores.setting || 0) || a.v.short.localeCompare(b.v.short);
+  const by = { price: (a, b) => price(a) - price(b) || base(a, b), setting: (a, b) => (b.scores.setting || 0) - (a.scores.setting || 0) || base(a, b), near: (a, b) => (a.drive ?? 999) - (b.drive ?? 999) || base(a, b) };
+  return out.sort(by[f.sort] || base);
+}
 
 export const lateOK = (v) => v.end_h != null && (v.end_h === 99 || (v.end_h >= 2 && v.end_h <= 11));
 export const taqOK = (v) => v.taq_label === "Yes" || v.taq_label === "Likely" || v.taq_label === "House taquiza";

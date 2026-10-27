@@ -2,7 +2,7 @@
 // step with the store.
 
 import { S, commit, subscribe, exportState, importState, wipeAll, venueState } from "./store.js";
-import { app, recompute, filterList, nav } from "./app.js";
+import { app, recompute, filterList, norteList, nav } from "./app.js";
 import { ICON, esc, norm, toast } from "./util.js";
 import { overview } from "./views/overview.js";
 import { brief } from "./views/brief.js";
@@ -10,6 +10,7 @@ import { venues } from "./views/venues.js";
 import { mapView } from "./views/map.js";
 import { vendors } from "./views/vendors.js";
 import { budget } from "./views/budget.js";
+import { norte } from "./views/norte.js";
 import { drawer } from "./drawer.js";
 import { effectiveFx, fetchLiveFx, liveIsStale } from "./fx.js";
 
@@ -18,6 +19,7 @@ const TABS = [
   ["brief", "Brief", brief],
   ["venues", "Venues", venues],
   ["map", "Map", mapView],
+  ["norte", "Saltillo", norte],
   ["vendors", "Vendors", vendors],
   ["budget", "Budget", budget],
 ];
@@ -56,6 +58,7 @@ function show(tab) {
   else if (dirty.has(tab)) { v.update("cfg"); dirty.delete(tab); }
   if (v.onShow) v.onShow();
   document.body.dataset.tab = tab;
+  document.getElementById("gNum").textContent = (tab === "norte" ? S.cfg.norte.guests : S.cfg.guests).plan;
 }
 
 function parseHash() {
@@ -79,9 +82,11 @@ export function go(tab, key) {
 
 function guestsCtl() {
   const num = document.getElementById("gNum");
-  const sync = () => { num.textContent = S.cfg.guests.plan; };
+  // on the Saltillo tab the header steps that tab's own guest count
+  const g = () => (S.ui.tab === "norte" ? S.cfg.norte.guests : S.cfg.guests);
+  const sync = () => { num.textContent = g().plan; };
   const step = (d) => {
-    S.cfg.guests.plan = Math.max(10, Math.min(400, S.cfg.guests.plan + d));
+    g().plan = Math.max(10, Math.min(600, g().plan + d));
     sync();
     commit("cfg");
   };
@@ -160,7 +165,7 @@ async function boot() {
   headerTabs();
   menu();
   applyTheme();
-  const [atlas, geo, vend, photos, links, inbox, added, beds] = await Promise.all([
+  const [atlas, geo, vend, photos, links, inbox, added, beds, norteData] = await Promise.all([
     loadJSON("data/atlas.json"),
     loadJSON("data/geo.json"),
     loadJSON("data/vendors.json").catch(() => ({ vendors: [], benchmarks: [] })),
@@ -169,11 +174,15 @@ async function boot() {
     loadJSON("data/inbox.json").catch(() => ({})),
     loadJSON("data/added.json").catch(() => ({ venues: [] })),
     loadJSON("data/beds.json").catch(() => ({ beds: {} })),
+    loadJSON("data/norte.json").catch(() => ({ venues: [], atlas: [] })),
   ]);
   app.meta = atlas.meta;
   // venues suggested after the atlas was built ride along with it
   app.venues = [...atlas.venues, ...(added.venues || []).filter((x) => !atlas.venues.some((v) => v.key === x.key))];
-  for (const v of app.venues) {
+  // the Saltillo tab's own venues open in the drawer too, but stay out of the destination ranking
+  const norteOnly = (norteData.venues || []).filter((x) => !app.venues.some((v) => v.key === x.key));
+  for (const v of norteOnly) v.norteOnly = true;
+  for (const v of [...app.venues, ...norteOnly]) {
     v._hay = norm([v.name, v.short, v.place, v.state, v.town, v.groupLabel].join(" "));
     const ph = photos[v.key];
     if (ph && ph.photos && ph.photos.length) { v.photos = ph.photos; v.photo_src = ph.src; }
@@ -202,6 +211,7 @@ async function boot() {
     if (bd) v.beds = bd[0];
     app.byKey.set(v.key, v);
   }
+  app.norte = [...norteOnly, ...(norteData.atlas || []).map((k) => app.byKey.get(k)).filter(Boolean)];
   app.geo = geo;
   app.vendors = vend.vendors || [];
   app.benchmarks = vend.benchmarks || [];
@@ -223,7 +233,7 @@ async function boot() {
 
   subscribe((reason) => {
     if (reason === "cfg" || reason === "venue") recompute();
-    else if (reason === "filters") app.list = filterList();
+    else if (reason === "filters") { app.list = filterList(); app.nlist = norteList(); }
     if (reason === "cfg") brandLine();
     for (const [id, v] of Object.entries(VIEWS)) {
       if (!rendered.has(id)) continue;

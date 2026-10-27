@@ -93,6 +93,11 @@ export const DEFAULT_CONFIG = {
   minBeds: 0,
   needTaq: false,
   weights: { setting: 40, cost: 30, beds: 20, access: 10 }, // the couple's four tests, in their order (Oct 23)
+  // Saltillo & Monterrey: a wedding near Daina's family, ranked on the venue itself, never rooms (Oct 27)
+  norte: {
+    guests: { low: 90, plan: 110, high: 130 }, // more of the Saltillo family comes when it's a drive away
+    weights: { setting: 60, cost: 30, near: 10 },
+  },
   weekend: {
     welcome: { on: true, pp: 700 },
     brunch: { on: true, pp: 350 },

@@ -2,12 +2,12 @@
 // the atlas's facts, the seven questions in Spanish and the full cost breakdown.
 
 import { S, commit, venueState } from "./store.js";
-import { app, res, nav, STATUS, statusBadge, shortEnd } from "./app.js";
+import { app, res, nav, STATUS, statusBadge, shortEnd, drawerList } from "./app.js";
 import { illo } from "./illo.js";
 import { photosOf, photoSrc, photoTag, photoHost } from "./photos.js";
 import { gmapsURL, esc, k, kMXN, vbadge, usd, mxn, num, driveTxt, copyText, toast, ICON, moneyPair, wireMoneyPairs } from "./util.js";
 import { STAGES, QUESTIONS_EN, QUESTIONS_ES, EMAIL_ES } from "./defaults.js";
-import { SCORE_KEYS } from "./engine.js";
+import { SCORE_KEYS, NORTE_KEYS } from "./engine.js";
 const fmtShort = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
 let openKey = null;
@@ -62,10 +62,11 @@ export function costTable(r, which) {
 
 function scoreRows(r) {
   if (!r.scores) return "";
-  const W = S.cfg.weights;
-  const tot = SCORE_KEYS.reduce((s, x) => s + (+W[x] || 0), 0) || 1;
-  const LBL = { setting: "Setting", end: "Party end time", taq: "Own taqueros", beds: "Beds on site", cost: "All-in cost", access: "Airport proximity" };
-  return `<div class="scores">${SCORE_KEYS.map((x) => {
+  const W = r.norte ? S.cfg.norte.weights : S.cfg.weights;
+  const KEYS = r.norte ? NORTE_KEYS : SCORE_KEYS;
+  const tot = KEYS.reduce((s, x) => s + (+W[x] || 0), 0) || 1;
+  const LBL = { setting: "Setting", end: "Party end time", taq: "Own taqueros", beds: "Beds on site", cost: "All-in cost", access: "Airport proximity", near: "Drive from Saltillo" };
+  return `<div class="scores">${KEYS.map((x) => {
     const s = r.scores[x] ?? 0;
     return `<div class="srow"><span class="sl">${LBL[x]} <small>${Math.round(((+W[x] || 0) / tot) * 100)}%</small></span><span class="sb"><i style="width:${Math.max(2, (s / 5) * 100)}%"></i></span><span class="sv">${(+s).toFixed(1)}</span></div>`;
   }).join("")}</div>`;
@@ -95,22 +96,23 @@ function contactHTML(c) {
 
 function bodyHTML(v, r) {
   const st = venueState(v.key);
-  const badges = [statusBadge(r)];
+  const badges = [r.norte && r.status === "top" ? `<span class="badge top">Saltillo top 10 · #${r.top}</span>` : statusBadge(r)];
   if (st.star) badges.push(`<span class="badge star">${ICON.star.replace("<svg", '<svg width="11" height="11" style="fill:currentColor;stroke:none"')} Shortlist</span>`);
   if (r.fit != null && r.status !== "out") badges.push(`<span class="badge">Fit ${r.fit.toFixed(2)} / 5</span>`);
-  if (r.rank && r.status !== "top") badges.push(`<span class="badge">Rank ${r.rank} of ${app.ev.viableCount}</span>`);
-  if (v.rank && r.fitRank && v.rank !== r.fitRank) badges.push(`<span class="badge">Atlas #${v.rank}</span>`);
+  if (r.rank && r.status !== "top") badges.push(`<span class="badge">Rank ${r.rank} of ${(r.norte ? app.nev : app.ev).viableCount}</span>`);
+  if (!r.norte && v.rank && r.fitRank && v.rank !== r.fitRank) badges.push(`<span class="badge">Atlas #${v.rank}</span>`);
   let h = `<div class="dw-top"><div class="badges">${badges.join("")}</div><h2 class="dw-title" id="dwTitle" tabindex="-1">${esc(v.short)}</h2><p class="dw-place">${esc(v.place)} · ${esc(v.groupLabel)}</p></div>`;
   const ph = photosOf(v);
   if (ph.length > 1) h += `<div class="gallery" aria-label="Photos">${ph.slice(0, 12).map((p, i) => `<button type="button" data-ph="${i}" aria-label="Photo ${i + 1}" aria-current="${i === 0}"><img src="${esc(photoSrc(p, 320))}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></button>`).join("")}</div>`;
   h += `<div class="dw-acts"><button class="btn sm star" type="button" data-star aria-pressed="${!!st.star}">${ICON.star} ${st.star ? "Shortlisted" : "Shortlist"}</button>
     <select class="stage-sel" data-stage aria-label="Where this venue stands">${STAGES.map(([id, label]) => `<option value="${id}" ${st.stage === id ? "selected" : ""}>${label}</option>`).join("")}</select>
-    ${S.ui.tab !== "map" ? `<button class="btn sm" type="button" data-onmap>${ICON.pin} Map</button>` : ""}
+    ${S.ui.tab !== "map" && !v.norteOnly ? `<button class="btn sm" type="button" data-onmap>${ICON.pin} Map</button>` : ""}
     ${v.photos_url ? `<a class="btn sm" href="${esc(v.photos_url)}" target="_blank" rel="noopener">${ICON.link} Photos</a>` : ""}
     <a class="btn sm" href="${esc(gmapsURL(v))}" target="_blank" rel="noopener">${ICON.pin} Google Maps</a></div>`;
   if (v.description) h += `<p class="dw-desc">${esc(v.description)}</p>`;
+  if (v.setting_why || (v.facts_list && v.facts_list.length)) h += `<div class="catch"><b>What we found</b>${v.setting_why ? `<p>Setting ${esc(String(v.scores.setting))} of 5: ${esc(v.setting_why)}</p>` : ""}${v.facts_list && v.facts_list.length ? `<ul>${v.facts_list.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>`;
   if (r.plan) {
-    const g = S.cfg.guests, c = S.cfg.budget.ceiling;
+    const g = r.norte ? S.cfg.norte.guests : S.cfg.guests, c = S.cfg.budget.ceiling;
     const cell = (P, lab, plan) => `<div class="${P.usd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">${lab}</span><b>${k(P.usd)}${vbadge(r.v)}</b><small class="mx">${kMXN(P.mxn)}</small><small>${P.n} guests</small></div>`;
     const wk = (P, plan) => `<div class="${P.weekendUsd > c ? "over" : ""}${plan ? " plan" : ""}"><span class="lab">Weekend</span><b>${k(P.weekendUsd)}${vbadge(r.v)}</b><small class="mx">${kMXN(P.weekendMxn)}</small><small>${P.n} guests</small></div>`;
     h += `<div><div class="prices">${cell(r.low, "Wedding day", false)}${cell(r.plan, "Wedding day", true)}${cell(r.high, "Wedding day", false)}${wk(r.low)}${wk(r.plan, true)}${wk(r.high)}</div>
@@ -124,7 +126,11 @@ function bodyHTML(v, r) {
   const facts = [];
   if (v.end) facts.push(["Party ends", esc(v.end) + srcTag(v.end_src)]);
   if (v.taq_label) { const tt = String(v.taq_txt || "").replace(/^(yes|likely|house only|house taquiza|unclear|no)\s*[:·.-]\s*/i, ""); facts.push(["Outside taqueros", `<b>${esc(v.taq_label)}</b>${tt ? " · " + esc(tt) : ""}`]); }
-  if (v.beds_txt) facts.push(["Sleeps on site", esc(v.beds_txt)]);
+  if (v.cap_min || v.cap_max) facts.push(["Capacity", esc(v.cap_min && v.cap_max ? `${v.cap_min}–${v.cap_max} guests` : v.cap_max ? `Up to ${v.cap_max} guests` : `From ${v.cap_min} guests`)]);
+  if (r.norte && r.drive != null) facts.push(["From Saltillo", `About ${driveTxt(r.drive)} drive${v.drive_mty_min != null ? ` · ${driveTxt(v.drive_mty_min)} from Monterrey` : ""}`]);
+  if (v.covered) facts.push(["If it's cold or wet", esc(v.covered) + (v.winter_note ? " · " + esc(v.winter_note) : "")]);
+  if (v.price_note) facts.push(["Listed price", esc(v.price_note)]);
+  if (v.beds_txt && !r.norte) facts.push(["Sleeps on site", esc(v.beds_txt)]);
   if (v.ap) { const a = app.geo.airports.find((x) => x.iata === v.ap); facts.push(["Nearest airport", `${esc(v.ap)}${a ? " · " + esc(a.city) : ""}${v.drive ? " · about " + driveTxt(v.drive) + " drive" : ""}`]); }
   if (v.rev) facts.push(["Reviews", esc(v.rev)]);
   if (v.conf || (v.review_flags && v.review_flags.length)) facts.push(["Evidence", esc([v.conf, ...(v.review_flags || []).map((x) => (/review/i.test(x) ? x : x + " reviews"))].filter(Boolean).join(" · "))]);
@@ -160,10 +166,11 @@ function bodyHTML(v, r) {
 }
 
 function updateNav() {
-  const i = app.list.findIndex((r) => r.v.key === openKey);
-  el.pos.textContent = i >= 0 ? `${i + 1} of ${app.list.length}` : "";
+  const list = drawerList();
+  const i = list.findIndex((r) => r.v.key === openKey);
+  el.pos.textContent = i >= 0 ? `${i + 1} of ${list.length}` : "";
   el.prev.disabled = i <= 0;
-  el.next.disabled = i < 0 || i >= app.list.length - 1;
+  el.next.disabled = i < 0 || i >= list.length - 1;
 }
 
 function render(keepScroll) {
@@ -177,8 +184,9 @@ function render(keepScroll) {
 }
 
 function stepTo(d) {
-  const i = app.list.findIndex((r) => r.v.key === openKey);
-  const n = app.list[i + d];
+  const list = drawerList();
+  const i = list.findIndex((r) => r.v.key === openKey);
+  const n = list[i + d];
   if (n) nav.openVenue(n.v.key);
 }
 

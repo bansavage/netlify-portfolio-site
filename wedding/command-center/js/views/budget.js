@@ -2,7 +2,7 @@
 // place, plus where the money goes and a side-by-side comparison with up to three others.
 
 import { S, commit } from "../store.js";
-import { app, nav, res } from "../app.js";
+import { app, nav, mainRes as res } from "../app.js";
 import { esc, k, kMXN, usd, mxn, num, ICON, toast, moneyPair, wireMoneyPairs } from "../util.js";
 
 let root = null;

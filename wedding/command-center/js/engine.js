@@ -155,3 +155,83 @@ export function evaluate(venues, cfg, store = {}) {
   viable.forEach((r) => { r.rank = r.top || ++next; });
   return { results: out, viableCount: viable.length };
 }
+
+// ---- Saltillo & Monterrey -------------------------------------------------------------
+// A wedding a drive from Daina's family in Saltillo. Guests sleep at home or in town, so
+// rooms never count: the venue's setting leads, then the all-in cost, then the drive.
+
+export const NORTE_KEYS = ["setting", "cost", "near"];
+export const NORTE_TOP = 10;
+const SALTILLO = [25.4232, -101.0053];
+
+// minutes by road from central Saltillo: the researched figure, else straight-line km
+// stretched 1.3× for roads at about 75 km/h
+export function driveSaltillo(v) {
+  if (v.drive_saltillo_min != null) return v.drive_saltillo_min;
+  if (v.lat == null) return null;
+  const R = 6371, rad = Math.PI / 180;
+  const dLat = (v.lat - SALTILLO[0]) * rad, dLng = (v.lng - SALTILLO[1]) * rad;
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(SALTILLO[0] * rad) * Math.cos(v.lat * rad) * Math.sin(dLng / 2) ** 2;
+  const km = 2 * R * Math.asin(Math.sqrt(a));
+  return Math.round(((km * 1.3) / 75) * 60);
+}
+
+// 5 within 20 minutes, falling to 0 at two and a half hours
+export function nearScore(min) {
+  if (min == null) return 2.5;
+  return Math.max(0, Math.min(5, 5 - (min - 20) / 26));
+}
+
+export function evaluateNorte(venues, cfg, store = {}) {
+  const N = cfg.norte, G = N.guests, W = N.weights;
+  // rooms never count here, so the weekend total leaves covered rooms out
+  const ncfg = { ...cfg, guests: { ...cfg.guests, ...G }, weekend: { ...cfg.weekend, rooms: { ...cfg.weekend.rooms, on: false } } };
+  const wsum = NORTE_KEYS.reduce((s, k) => s + (+W[k] || 0), 0) || 1;
+  const out = new Map();
+  const viable = [];
+  for (const v of venues) {
+    const st = store[v.key] || {};
+    const res = { v, st, norte: true, status: v.status, why: v.reason || "", drive: driveSaltillo(v) };
+    const s = { setting: (v.scores && v.scores.setting) || 0, near: r2(nearScore(res.drive)) };
+    if (v.rows) {
+      res.plan = priceVenue(v, ncfg, G.plan, st);
+      res.low = priceVenue(v, ncfg, G.low, st);
+      res.high = priceVenue(v, ncfg, G.high, st);
+      s.cost = r2(costScore(res.plan.usd, cfg.budget.target, cfg.budget.ceiling));
+      res.fit = NORTE_KEYS.reduce((acc, k) => acc + (s[k] || 0) * (+W[k] || 0), 0) / wsum;
+    }
+    res.scores = s;
+    if (v.status === "out") {
+      res.status = "out";
+    } else if (v.cap_max && v.cap_max < G.plan) {
+      res.status = "out";
+      res.soft = true;
+      res.why = `Holds up to ${v.cap_max} guests; you're planning for ${G.plan}.`;
+    } else if (v.cap_min && v.cap_min > G.high) {
+      res.status = "out";
+      res.soft = true;
+      res.why = `Needs at least ${v.cap_min} guests; your high end is ${G.high}.`;
+    } else if (cfg.minEnd > 1 && v.end_h != null && v.end_h !== 99 && v.end_h < cfg.minEnd) {
+      res.status = "out";
+      res.soft = true;
+      res.why = `The party has to end at ${endLabel(v.end_h)}, before your ${cfg.minEnd} a.m. minimum.`;
+    } else if (!v.rows) {
+      res.status = "wild";
+      res.why = v.reason || "No price published. Ask for a quote.";
+    } else if (res.high.usd > cfg.budget.ceiling) {
+      res.status = "over";
+      res.why = `Wedding day at ${G.high} guests comes to $${(res.high.usd / 1000).toFixed(1)}k, over your $${Math.round(cfg.budget.ceiling / 1000)}k ceiling.`;
+    } else {
+      res.status = "fit";
+      viable.push(res);
+    }
+    out.set(v.key, res);
+  }
+  viable.sort((a, b) => b.fit - a.fit || a.v.short.localeCompare(b.v.short));
+  // setting already carries most of the weight, so the top 10 is simply the ten best fits
+  viable.forEach((r, i) => {
+    r.fitRank = r.rank = i + 1;
+    if (i < NORTE_TOP) { r.status = "top"; r.top = i + 1; }
+  });
+  return { results: out, viableCount: viable.length };
+}

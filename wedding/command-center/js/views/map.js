@@ -5,7 +5,7 @@
 // light/dark just swaps ids and the missing ones are drawn on demand.
 
 import { S, commit } from "../store.js";
-import { app, res, nav, STATUS, pinHTML, passes, taqOK, lateOK } from "../app.js";
+import { app, mainRes as res, nav, STATUS, pinHTML, passes, taqOK, lateOK } from "../app.js";
 import { illo } from "../illo.js";
 import { photosOf, photoSrc, photoTag, photoLabel } from "../photos.js";
 import { gmapsURL, esc, k, kMXN, vbadge, ICON, norm, debounce } from "../util.js";

@@ -56,6 +56,7 @@ export const ICON = {
   venues: svg('<path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/>'),
   map: svg('<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>'),
   vendors: svg('<circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.4 2.8-5.5 5.5-5.5s4.9 2.1 5.5 5.5"/><path d="M16 5.2a3 3 0 0 1 0 5.6M17.5 14.8c1.7.7 2.8 2.5 3 5.2"/>'),
+  norte: svg('<path d="M2 19h20L15 7l-3.5 5L9 9z"/><path d="M13.2 9.6 15 7l2 3.2"/>'),
   budget: svg('<path d="M4 7h16v12H4z"/><path d="M4 11h16M8 15h3"/>'),
   search: svg('<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>'),
   close: svg('<path d="M6 6l12 12M18 6L6 18"/>'),

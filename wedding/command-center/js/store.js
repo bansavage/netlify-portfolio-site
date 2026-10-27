@@ -15,6 +15,7 @@ const DEFAULT_UI = {
   costN: "plan",
   budget: { venue: null, compare: [] },
   vendorFilters: { cat: "all", region: "auto", q: "", sort: "fit", star: false },
+  norte: { q: "", sort: "rank", out: false },
 };
 
 function clone(x) { return JSON.parse(JSON.stringify(x)); }
