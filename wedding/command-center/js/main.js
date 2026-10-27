@@ -211,9 +211,10 @@ async function boot() {
     if (bd) v.beds = bd[0];
     app.byKey.set(v.key, v);
   }
-  // a Saltillo wedding can move to September or October, so winter-only closures don't rule a venue out there
-  const unrule = new Set(norteData.unrule || []);
-  app.norte = [...norteOnly, ...(norteData.atlas || []).map((k) => app.byKey.get(k)).filter(Boolean).map((v) => (unrule.has(v.key) ? { ...v, status: "wild", reason: "Outdoor season runs March to October; fine for a September or October date. Not priced yet." } : v))];
+  // the Saltillo track can carry its own verdict on an atlas venue (it can move to September or
+  // October, so a winter-only closure doesn't rule a venue out there, but its own terms might)
+  const over = norteData.override || {};
+  app.norte = [...norteOnly, ...(norteData.atlas || []).map((k) => app.byKey.get(k)).filter(Boolean).map((v) => (over[v.key] ? { ...v, ...over[v.key] } : v))];
   app.geo = geo;
   app.vendors = vend.vendors || [];
   app.benchmarks = vend.benchmarks || [];

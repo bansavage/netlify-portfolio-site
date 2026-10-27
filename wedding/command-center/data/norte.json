@@ -2746,7 +2746,10 @@
       ]
     }
   ],
-  "unrule": [
-    "terraserena"
-  ]
+  "override": {
+    "terraserena": {
+      "status": "out",
+      "reason": "Its own 2026–27 wedding PDF: the party has to end at midnight, banquet is exclusive to Villa Ferré (plated 3 courses, MXN 1,350–1,600 a guest + IVA), and the venue alone is MXN 210,000 plus a required tent (MXN 99,000–165,000 + IVA). Roughly MXN 535k (about $29k) at 110 guests before music, photo or bar."
+    }
+  }
 }
