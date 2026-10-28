@@ -40,7 +40,7 @@ function loadCSS(href) {
   if (document.querySelector(`link[href="${href}"]`)) return;
   const l = document.createElement("link"); l.rel = "stylesheet"; l.href = href; document.head.appendChild(l);
 }
-async function libs() {
+export async function libs() {
   loadCSS(ML_CSS);
   await Promise.all([loadScript(ML_JS, () => window.maplibregl), loadScript(TOPO_JS, () => window.topojson)]);
   const fonts = ['600 11px "GT Standard"', '600 12px "GT Standard"', '500 11px "GT Standard"', '500 13px "GT Standard"', '600 11.5px "GT Standard"'];

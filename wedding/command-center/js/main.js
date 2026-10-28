@@ -110,6 +110,7 @@ function applyTheme() {
   const mt = document.querySelector('#menu [data-act="theme"]');
   if (mt) mt.innerHTML = `${t === "dark" ? ICON.sun : ICON.moon} ${t === "dark" ? "Paper (light)" : "Candlelight (dark)"}`;
   if (VIEWS.map.themeChanged) VIEWS.map.themeChanged();
+  if (VIEWS.norte.themeChanged) VIEWS.norte.themeChanged();
 }
 function toggleTheme() {
   S.ui.theme = resolvedTheme() === "dark" ? "light" : "dark";

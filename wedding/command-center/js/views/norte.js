@@ -7,6 +7,7 @@ import { esc, k, kMXN, vbadge, ICON, debounce, driveTxt } from "../util.js";
 import { STAGES } from "../defaults.js";
 import { NORTE_KEYS, NORTE_TOP } from "../engine.js";
 import { budgetBar } from "../drawer.js";
+import { norteMap } from "./norte-map.js";
 
 let root = null;
 const STAGE_COLOR = { none: "var(--surface-3)", asked: "var(--cobalto)", quoted: "var(--cempa)", visit: "var(--lima)", visited: "var(--olivo)", booked: "var(--buga)", passed: "var(--out)" };
@@ -72,6 +73,16 @@ function renderBody() {
   root.querySelector("#nCount").textContent = `${app.nlist.length} of ${app.norte.length} · priced for ${S.cfg.norte.guests.plan} guests`;
 }
 
+function setView(view) {
+  const f = S.ui.norte;
+  f.view = view;
+  root.querySelectorAll("[data-nv]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.nv === view)));
+  root.querySelector("#nMap").hidden = view !== "map";
+  root.querySelector("#nBody").hidden = view === "map";
+  if (view === "map") { if (!norteMap.mounted) norteMap.mount(root.querySelector("#nMap")); else { norteMap.resize(); norteMap.refresh(); } }
+  commit("ui");
+}
+
 export const norte = {
   render(el) {
     root = el;
@@ -88,10 +99,13 @@ export const norte = {
         <select class="sel" id="nSort" style="width:auto" aria-label="Sort">${SORTS.map(([v, l]) => `<option value="${v}" ${f.sort === v ? "selected" : ""}>Sort: ${l}</option>`).join("")}</select>
         <button class="fchip" type="button" id="nOut" aria-pressed="${!!f.out}">Show ruled out</button>
         <span class="grow"></span><span class="count" id="nCount"></span>
+        <div class="seg" role="group" aria-label="Layout"><button type="button" data-nv="table" aria-pressed="${f.view !== "map"}">${ICON.table} Table</button><button type="button" data-nv="map" aria-pressed="${f.view === "map"}">${ICON.map} Map</button></div>
       </div></div>
-      <div id="nBody"></div>
+      <div class="nmap" id="nMap"${f.view === "map" ? "" : " hidden"}></div>
+      <div id="nBody"${f.view === "map" ? " hidden" : ""}></div>
     </div>`;
     renderBody();
+    if (f.view === "map") norteMap.mount(el.querySelector("#nMap"));
     const q = el.querySelector("#nQ");
     q.addEventListener("input", debounce(() => { f.q = q.value.trim(); commit("filters"); }, 140));
     el.querySelector("#nSort").addEventListener("change", (e) => { f.sort = e.target.value; commit("filters"); });
@@ -106,6 +120,8 @@ export const norte = {
       if (s) { const st = venueState(s.dataset.stage); st.stage = s.value; st.updated = new Date().toISOString(); commit("venue"); }
     });
     el.addEventListener("click", (e) => {
+      const nv = e.target.closest("[data-nv]");
+      if (nv) { setView(nv.dataset.nv); return; }
       if (e.target.closest("#nOut")) { f.out = !f.out; e.target.closest("#nOut").setAttribute("aria-pressed", String(f.out)); commit("filters"); return; }
       const star = e.target.closest("[data-star]");
       if (star) { const st = venueState(star.dataset.star); st.star = !st.star; commit("venue"); return; }
@@ -117,10 +133,13 @@ export const norte = {
   update(reason) {
     if (!root || reason === "note" || reason === "ui") return;
     renderBody();
+    if (S.ui.norte.view === "map") norteMap.refresh();
     root.querySelectorAll("[data-ng]").forEach((i) => { if (document.activeElement !== i) i.value = S.cfg.norte.guests[i.dataset.ng]; });
     const tot = NORTE_KEYS.reduce((s, x) => s + (+S.cfg.norte.weights[x] || 0), 0) || 1;
     root.querySelectorAll("#nWeights output").forEach((o, i) => { o.textContent = Math.round(((+S.cfg.norte.weights[WEIGHTS[i][0]] || 0) / tot) * 100) + "%"; });
   },
+  onShow() { if (S.ui.norte.view === "map") norteMap.resize(); },
+  themeChanged() { norteMap.themeChanged(); },
   onActive(key) {
     if (!root) return;
     root.querySelectorAll("tr.is-active").forEach((r) => r.classList.remove("is-active"));

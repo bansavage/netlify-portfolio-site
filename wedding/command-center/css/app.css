@@ -810,3 +810,22 @@ em { font-style: normal; }
 .vbadge svg { width: 100%; height: 100%; display: block; }
 .vbadge circle { fill: #1D9BF0; }
 .vbadge path { fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Saltillo tab map */
+.nmap { position: relative; height: min(68vh, 640px); min-height: 420px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--land); box-shadow: var(--shadow-sm); }
+.nmap .nm-canvas { position: absolute; inset: 0; }
+.nmap .maplibregl-ctrl-top-right { top: 10px; right: 10px; }
+.nm-legend { position: absolute; left: 10px; bottom: 10px; z-index: 2; display: flex; flex-wrap: wrap; gap: 4px 12px; max-width: calc(100% - 20px); padding: 7px 10px; border-radius: 10px; background: color-mix(in srgb, var(--surface) 88%, transparent); border: 1px solid var(--line); font: 500 11.5px/1.2 var(--f-ui); color: var(--ink-2); }
+.nm-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.nm-legend i { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+.nm-legend i.dia { border-radius: 2px; transform: rotate(45deg); width: 8px; height: 8px; }
+.nmap .map-attr { right: 8px; bottom: 6px; }
+.nm-tip { position: absolute; left: 0; top: 0; z-index: 3; width: 250px; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); pointer-events: none; display: grid; gap: 3px; }
+.nm-tip[hidden] { display: none; }
+.nm-tip-eb { display: flex; align-items: center; gap: 6px; font: 600 9.5px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.nm-tip-eb .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.nm-tip-name { font: 600 14.5px/1.2 var(--f-ui); color: var(--ink); }
+.nm-tip-place, .nm-tip-bits { color: var(--ink-3); font-size: 12px; }
+.nm-tip-price b { font-weight: 600; }
+.nm-tip-price small { color: var(--ink-3); }
+@media (max-width: 760px) { .nmap { height: 62vh; min-height: 360px; border-radius: 12px; } .nm-legend { font-size: 10.5px; gap: 3px 9px; } .nmap .map-attr { bottom: auto; top: 8px; left: 8px; right: auto; } }
