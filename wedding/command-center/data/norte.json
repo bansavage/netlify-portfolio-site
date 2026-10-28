@@ -2597,7 +2597,7 @@
       "town": "Ramos Arizpe (Ejido Cañada Ancha)",
       "place": "Ramos Arizpe (Ejido Cañada Ancha), Coahuila",
       "lat": 25.62,
-      "lng": -101.0,
+      "lng": -101,
       "loc_precision": "town",
       "type": "hacienda",
       "description": "Semi-desert hacienda off the old Monclova highway with big parking and all-in banquet packages.",
@@ -9610,7 +9610,7 @@
       "town": "Allende (Loma Prieta, Carretera Nacional km 220–221)",
       "place": "Allende (Loma Prieta, Carretera Nacional km 220–221), Nuevo León",
       "lat": 25.265,
-      "lng": -100.0,
+      "lng": -100,
       "loc_precision": "town",
       "type": "other",
       "description": "Golf-course resort on Carretera Nacional with lawns, a pergola, a pool and lake views, where tents go up for ceremonies and receptions; EcoVergel's boutique cabins sit on its 8th hole.",
@@ -11676,6 +11676,175 @@
           "tips"
         ]
       ]
+    },
+    {
+      "key": "hacienda_1800",
+      "name": "Hotel Hacienda 1800 (Cuatro Ciénegas)",
+      "short": "Hacienda 1800",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Cuatro Ciénegas",
+      "place": "Cuatro Ciénegas, Coahuila",
+      "lat": 26.9862,
+      "lng": -102.0634,
+      "loc_precision": "town",
+      "type": "other",
+      "description": "Boutique hotel group in the desert Pueblo Mágico of Cuatro Ciénegas, with wedding sites on the white gypsum dunes, in a travertine marble quarry, on the Río San Marcos, and in the hotel gardens.",
+      "scores": {
+        "setting": 5
+      },
+      "setting_why": "White gypsum dunes under the mountains at sunset are unlike anything else on the list; a marble quarry with video mapping is the alternative.",
+      "end": null,
+      "end_h": null,
+      "end_src": null,
+      "taq_label": "Unclear",
+      "taq_txt": "Brochure offers its own catering and plated menus plus corkage; whether an outside taquero is allowed is not stated.",
+      "cap_min": 50,
+      "cap_max": 500,
+      "covered": "none at the dunes (hotel and quarry spaces to confirm)",
+      "winter_note": "Open desert sites; November nights get cold.",
+      "drive_saltillo_min": 190,
+      "drive_mty_min": 220,
+      "ap": "MTY",
+      "rev": "",
+      "conf": "listed",
+      "photos_url": "https://www.hacienda1800.com/eventos",
+      "src": [
+        "https://irp.cdn-website.com/23022600/files/uploaded/Bodas+H1800+2027+Nuevo.pdf",
+        "https://www.hacienda1800.com/"
+      ],
+      "catch": "About 3+ hours from Saltillo; plated menus; end time not listed",
+      "facts_list": [
+        "Venues (6 h): Dunas de Yeso up to 300 guests, MXN 75,000 Sat / 55,000 Sun–Fri; Mina de Mármol up to 500, MXN 165,000 Sat / 110,000 Fri / 80,000 Sun–Thu (video mapping included 2 h); Río San Marcos up to 250, MXN 55,000; hotel gardens 51–150 guests MXN 15,000",
+        "Plated 3-course dinners MXN 1,100–1,560 a guest; corkage bar MXN 280 a guest (5 h); waiters MXN 650 each, 1 per 10 guests",
+        "36 rooms and a villa at Hacienda 1800, 16 more at sister Hotel Serenna; Sprinter and safari-truck guest transport",
+        "Deposit 20% of the venue price"
+      ],
+      "price_note": "Dunas de Yeso: MXN 75,000 Saturday, 55,000 Sunday–Friday, plus a per-person extra (brochure 2027)",
+      "loc_note": "Pin placed at the town.",
+      "rows": [
+        [
+          "Venue rental, Dunas de Yeso (gypsum dunes, 6 h): MXN 75,000 Saturday, 55,000 Sun–Fri; per-person extras on top (their 2027 brochure)",
+          75000,
+          75000,
+          0,
+          "Brochure price; ask what the base covers and the per-person extra",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ],
+      "_isnew": true
     }
   ],
   "override": {
