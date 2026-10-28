@@ -55,6 +55,13 @@ function bumpNorteWeights(cfg) {
   if (w && w.setting === 60 && w.cost === 30 && w.near === 10) cfg.norte.weights = clone(DEFAULT_CONFIG.norte.weights);
 }
 
+// the full open bar (MXN 350 a guest) became a partial one on Oct 27; an untouched card follows
+function partialBar(cfg) {
+  const c = cfg && Array.isArray(cfg.vision) && cfg.vision.find((x) => x.id === "v-bar");
+  const d = DEFAULT_CONFIG.vision.find((x) => x.id === "v-bar");
+  if (c && d && c.title === "Open bar" && +c.rate === 350) Object.assign(c, { title: d.title, text: d.text, rate: d.rate });
+}
+
 function fresh() {
   return { cfg: clone(DEFAULT_CONFIG), venues: {}, vendors: {}, customVendors: [], customVenues: [], ui: clone(DEFAULT_UI), saved: null };
 }
@@ -70,6 +77,7 @@ function load() {
     dropTaqWeight(s.cfg);
     bumpGuests(s.cfg);
     bumpNorteWeights(s.cfg);
+    partialBar(s.cfg);
     if (!Array.isArray(s.cfg.vision) || !s.cfg.vision.length) s.cfg.vision = clone(DEFAULT_CONFIG.vision);
     s.venues = d.venues || {};
     s.vendors = d.vendors || {};

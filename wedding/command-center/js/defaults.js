@@ -62,7 +62,7 @@ export function parseHours(text) {
 export const DEFAULT_VISION = [
   { id: "v-buffet", key: "buffet", cat: "caterer", title: "Mexican buffet", text: "Mexican food served buffet-style in clay cazuelas, with furniture and waiters. No plated service, no silver chafing dishes.", unit: "guest", rate: 750, qty: 1, on: true },
   { id: "v-taco", key: "taco", cat: "taquero", title: "Live taquero station", text: "Taqueros cooking to order in front of guests: al pastor on the trompo, arrachera and pollo.", unit: "guest", rate: 150, qty: 1, on: true },
-  { id: "v-bar", key: "bar", cat: "bar", title: "Open bar", text: "Open bar with our own alcohol and hired bartenders.", unit: "guest", rate: 350, qty: 1, on: true },
+  { id: "v-bar", key: "bar", cat: "bar", title: "Partial open bar", text: "Select wines, beers and a few signature cocktails, with our own alcohol and hired bartenders. No full spirits list.", unit: "guest", rate: 250, qty: 1, on: true }, // Kyle, Oct 27: partial bar; MXN 220–280 a guest for 7 hours
   { id: "v-mariachi", key: "mariachi", cat: "mariachi", title: "Mariachi", text: "Mariachi at the cocktail hour, 1 hour.", unit: "hour", rate: 6000, qty: 1, on: true },
   { id: "v-band", key: "band", cat: "band", title: "Live band", text: "Live band for the first part of the reception.", unit: "flat", rate: 25000, qty: 1, on: true },
   { id: "v-dj", key: "dj", cat: "dj", title: "Mexican DJ", text: "Mexican DJ with lights and a dance floor until about 2:30 a.m.: cumbia, banda, reggaetón, Bad Bunny, house and a short 70s disco block. No US Top 40, no MC games.", unit: "flat", rate: 20000, qty: 1, on: true },

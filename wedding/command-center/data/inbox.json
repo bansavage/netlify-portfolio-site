@@ -373,8 +373,11 @@
       "channel": "email",
       "sent": "2026-10-24",
       "email": "reservaciones@sanmiguelregla.com",
-      "status": "Emailed reservations on Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices."
-    }
+      "status": "Emailed reservations on Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 28: the events team replied by email with answers but no prices; they want a call to make a concrete proposal."
+    },
+    "quote": "Email reply Oct 28: music until 1 a.m., depending on the space (rooms surround the salons and gardens); a couple of extra hours are possible with volume control, cost depends on the space. Banquet service lasts 8 hours from guest arrival. Food must be served by the hotel, so no outside taquero; corkage is usually included in the cost. 100 rooms in several categories; the minimum to reserve is set once a space is chosen. Minimum 50 guests. No age restrictions. Usually one event per day; covered salons of various sizes. No prices yet: they want a call to make a concrete proposal.",
+    "taq_label": "No",
+    "taq_txt": "No: their email Oct 28 says food must be served by the hotel"
   },
   "antigua_ldm": {
     "stage": "quoted",
@@ -1288,29 +1291,244 @@
     }
   },
   "montecielo": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email+whatsapp",
       "email": "montecielomx@gmail.com",
       "whatsapp": "+52 844 586 3361",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). By email and WhatsApp; their WhatsApp auto-reply answered. 9:24–9:27 PM: answered all seven questions on WhatsApp; no price yet. 11:10 PM: asked for the rental price for 100–120 on a Saturday and on a Friday or Sunday, September–November 2027, flexible.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). By email and WhatsApp; their WhatsApp auto-reply answered. 9:24–9:27 PM: answered all seven questions on WhatsApp; no price yet. 11:10 PM: asked for the rental price for 100–120 on a Saturday and on a Friday or Sunday, September–November 2027, flexible. Oct 28: sent their written quote (PDF, Cotización Montecielo Renta 2027–2028): Saturday MXN 180,000, Friday 130,000, Sunday–Thursday 100,000, rental only.",
       "sent": "2026-10-27"
     },
-    "quote": "WhatsApp Oct 27, 9:27 PM: the party ends at 2 a.m. and can't run later (an extra hour is possible only before the event starts, MXN 15,000). Bring any food you like: no kitchen fee, no corkage, no fee for outside vendors, and they can recommend vendors for everything. No lodging. Minimum 100 guests, maximum 500, no charge if fewer than 100 come. Minors welcome. One event per day. The space is covered. No price yet.",
+    "quote": "WhatsApp Oct 27, 9:27 PM: the party ends at 2 a.m. and can't run later (an extra hour is possible only before the event starts, MXN 15,000). Bring any food you like: no kitchen fee, no corkage, no fee for outside vendors, and they can recommend vendors for everything. No lodging. Minimum 100 guests, maximum 500, no charge if fewer than 100 come. Minors welcome. One event per day. The space is covered. No price yet. Written quote Oct 28 (PDF, valid through December 2027): rental only of the Salón Montecielo \"Origin\" for 7 hours, flat (not per guest): Sunday–Thursday MXN 100,000, Friday 130,000, Saturday 180,000. Includes 2 security and support staff, cleaning staff, restroom staff and supplies, valet parking for 7 hours, a covered closed kitchen, a large dome over the reception area and luxury bathrooms with a bridal room. Extra hour MXN 15,000 (up to 2). MXN 10,000 to book, monthly payments, balance 30 days before; a refundable MXN 15,000 cash damage deposit 10 days before; plus IVA if an invoice is needed.",
     "end": "02:00 (hard stop)",
     "end_h": 2,
     "taq_label": "Yes",
-    "taq_txt": "Yes: any food you like, no kitchen fee, no corkage, no outside-vendor fee (their WhatsApp, Oct 27)"
+    "taq_txt": "Yes: any food you like, no kitchen fee, no corkage, no outside-vendor fee (their WhatsApp, Oct 27)",
+    "date": "2026-10-28",
+    "rows": [
+      [
+        "Rental only, Saturday, 7 h: MXN 180,000 flat (security and support staff, cleaning, restroom staff, valet, covered closed kitchen, dome over the reception area, bridal room)",
+        180000,
+        180000,
+        1,
+        "Their written quote Oct 28; Friday MXN 130,000, Sunday–Thursday 100,000; extra hour MXN 15,000 (max 2); plus IVA if invoiced",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Patio heaters (Nov nights near 5°C)",
+        12000,
+        12000,
+        0,
+        "",
+        "heaters"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Saturday rental alone is MXN 180,000 (Friday 130,000), before food; music ends at 2 a.m.",
+    "verified": true
   },
   "hacienda_los_olivos": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email+whatsapp",
       "email": "hola@losolivos.com.mx",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). 11:09 PM: also sent the template on WhatsApp (+52 81 1473 3156).",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). 11:09 PM: also sent the template on WhatsApp (+52 81 1473 3156). Oct 28, 12:13–12:48 AM: sent their 2026 menu (PDF, plated 3-course); told them we want a true taquiza, no courses. They offered cazuelas or a pure taquiza from our taco list (checking with the chef); no price yet. On WhatsApp they sent their written 2027 package (PDF \"Los Olivos 2027 ENGLISH\", dated Oct 27, valid 30 days): MXN 252,000 for 100 guests, 267,000 for 110, 282,000 for 120, 297,000 for 130.",
       "sent": "2026-10-27",
       "whatsapp": "+52 81 1473 3156"
-    }
+    },
+    "quote": "WhatsApp Oct 28, 12:13–12:48 AM: sent their 2026 menu (22-page PDF, plated 3-course). After we said we want a true taquiza, no courses, they offered a Mexican appetizer (e.g. panela asada, huarachitos), cazuelas with 4 guisos per table (northern and southern) plus rice, beans, tortillas and salsas, and a local dessert (pan de elote, buñuelo); or a pure taquiza: send them our taco list and they'll check with the chef. Food is in-house; no price for the taquiza yet. A mariachi of 7–8 is fine at the venue. Written package, PDF \"Los Olivos 2027 ENGLISH\" (WhatsApp, dated Oct 27, 2026; valid 30 days, for 2027 dates), all prices MXN by guest count: 100 guests 252,000; 110 guests 267,000; 120 guests 282,000; 130 guests 297,000 (MXN 102,000 plus 1,500 a guest). Included: 6 hours of continuous venue rental; reception furniture (rectangular, round and serpentine tables, chairs, linens, head table), a welcome area, ceremony furniture (chairs, loveseat, lectern, arch), string lights and table lamps; all event staff (head coordinator, hospitality, head server, waitstaff 1 per 20 guests, maintenance, housekeeping) and complimentary valet; a 3-course menu (International, Mexican or Italian) with all dinnerware and glassware (a pure taquiza is possible instead, chef to confirm); open bar with whisky, tequila, rum, mezcal, vodka, brandy, mixers, sodas, aguas and coffee; no corkage on spirits or wine; a sparkling toast for 30; DJ for 5 hours with a 3×2 m LED wall, lighting, sound and 4 cold-spark machines; a wooden dance floor. Not included: beer (from MXN 1,000 per 24 beers), flowers, a tent if it rains (quoted separately), officiant or civil ceremony MXN 9,000, ceremony music, on-site lodging (the house for the couple and family sleeps 15: MXN 20,000; getting ready only MXN 10,000). Hours: Friday and Saturday until 1:00 a.m.; Sundays until 11 p.m. No outside cover bands, large live ensembles (banda norteña or sinaloense) or outside DJs; mariachis and unplugged or acoustic acts are allowed. Payment: MXN 7,000 deposit holds the date, monthly payments of at least MXN 5,000, paid in full 30 days before.",
+    "date": "2026-10-28",
+    "end": "01:00 (Fri & Sat; Sun 11 p.m.)",
+    "end_h": 1,
+    "taq_label": "House taquiza",
+    "taq_txt": "House taquiza: possible in place of the 3-course menu (chef to confirm); food is in-house, so no outside taquero (their WhatsApp, Oct 28)",
+    "rows": [
+      [
+        "All-inclusive package, 110 guests: MXN 267,000 (MXN 102,000 + 1,500 a guest; 6 h rental, furniture, ceremony setup, string lights, all staff incl. head coordinator, valet, 3-course menu or house taquiza, open bar with spirits, DJ 5 h with LED wall and cold sparks, dance floor)",
+        192000,
+        207000,
+        1,
+        "Their written 2027 package (PDF, Oct 27; valid 30 days): 100 guests 252,000, 120 guests 282,000, 130 guests 297,000. No outside bands or DJs; mariachi and acoustic acts allowed",
+        "venue"
+      ],
+      [
+        "No live band: outside bands aren't allowed; their DJ (in the package) replaces it",
+        0,
+        0,
+        1,
+        "No cover bands, banda norteña/sinaloense or outside DJs (their 2027 PDF)",
+        "venue"
+      ],
+      [
+        "Beer, not in the package: MXN 1,000 per 24 beers (estimate, about 2 a guest)",
+        5000,
+        5833,
+        0,
+        "Their 2027 PDF; the open bar covers spirits, mixers, sodas, aguas and coffee, with no corkage on spirits or wine",
+        "venue"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "Allowed (their WhatsApp, Oct 28: a mariachi of 7–8 is fine)",
+        "mariachi"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "Not in the package; their officiant or civil ceremony is MXN 9,000",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "Flowers not included",
+        "decor"
+      ],
+      [
+        "Patio heaters (Nov nights near 5°C)",
+        12000,
+        12000,
+        0,
+        "Open-air; a tent if it rains is quoted separately",
+        "heaters"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "All-in package MXN 267,000 for 110 guests (food, open bar, DJ, staff); ends 1 a.m.; no outside bands; beer, flowers and a rain tent extra",
+    "verified": true
   },
   "perote": {
     "stage": "asked",
