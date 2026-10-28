@@ -7942,6 +7942,163 @@
       ],
       "price_note": "Listing shows 'Menú desde $55' per guest (implausible) and a fixed rental fee without the amount (bodas.com.mx)",
       "reason": "No price published yet. Listing shows 'Menú desde $55' per guest (implausible) and a fixed rental fee without the amount (bodas.com.mx)"
+    },
+    {
+      "key": "quinta_lunazul",
+      "name": "Quinta LunAzul",
+      "short": "Quinta LunAzul",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo area",
+      "place": "Saltillo area, Coahuila",
+      "lat": 25.4232,
+      "lng": -101.0053,
+      "loc_precision": "town",
+      "type": "quinta",
+      "description": "Event quinta in the Saltillo area with gardens, a pool and a covered area for 200; rented as an empty space.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Not researched: we only have its rate sheet; no photos or reviews checked yet.",
+      "end": "01:30",
+      "end_h": 1,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental with a kitchen (stove, fridge, sink, bar) and partner vendors; no banquet included.",
+      "cap_min": 100,
+      "cap_max": 200,
+      "covered": "covered terrace",
+      "winter_note": null,
+      "drive_saltillo_min": null,
+      "drive_mty_min": null,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": null,
+      "src": [],
+      "catch": "Party ends 1:30 a.m.; Saturday needs 100+ guests",
+      "facts_list": [
+        "Rate sheet sent on WhatsApp Oct 27 (2027 prices)",
+        "Friday or Sunday night: MXN 650 a guest, minimum 70",
+        "Extra hour MXN 8,000; 25% deposit",
+        "Covered area for 200; pool rents separately (MXN 3,500)"
+      ],
+      "price_note": "Saturday night: MXN 680 a guest, 7 hours 6:30 p.m.–1:30 a.m., minimum 100 guests (rental only: no furniture, banquet or decor)",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Saturday night: MXN 680 a guest, 7 hours 6:30 p.m.–1:30 a.m., minimum 100 guests (rental only: no furniture, banquet or decor)",
+          40800,
+          47600,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
     }
   ],
   "override": {

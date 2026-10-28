@@ -1230,14 +1230,145 @@
     }
   },
   "hacienda_el_secreto": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 179 5944",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee. 9:08 PM: quoted Saturday MXN 138,500 + tent MXN 59,300 and offered a Friday.",
       "sent": "2026-10-27"
     },
-    "quote": "WhatsApp Oct 27: rental is 7 hours, 7 p.m. to 2 a.m., with a free extra hour for photos. No exclusive vendors, so any caterer or taquero. Free corkage. No rooms. Minors welcome. One event per day. A giant tent (black, camel, white or olive) without lighting. Prices are by guest bracket (0–200, 200–300 ...) but no figure given yet."
+    "quote": "WhatsApp Oct 27: rental is 7 hours, 7 p.m. to 2 a.m., with a free extra hour for photos. No exclusive vendors, so any caterer or taquero. Free corkage. No rooms. Minors welcome. One event per day. A giant tent (black, camel, white or olive) without lighting. Prices are by guest bracket (0–200, 200–300 ...) but no figure given yet. Price Oct 27, 9:08 PM: Saturday for 0–200 guests is MXN 138,500 for the venue plus MXN 59,300 for the tent; they asked whether a Friday would interest us since our wedding is small.",
+    "rows": [
+      [
+        "Venue, Saturday, 0–200 guests: MXN 138,500",
+        138500,
+        138500,
+        1,
+        "Their quote Oct 27; IVA not stated. They suggested a Friday for a smaller wedding",
+        "venue"
+      ],
+      [
+        "Giant tent: MXN 59,300",
+        59300,
+        59300,
+        1,
+        "Quoted with the venue",
+        "tent"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Patio heaters (Nov lows 48–57°F)",
+        12000,
+        12000,
+        0,
+        "",
+        "heaters"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Saturday is MXN 197,800 with the tent; a Friday may be cheaper"
   },
   "los_membrillos": {
     "stage": "asked",
@@ -1632,5 +1763,130 @@
         "tips"
       ]
     ]
+  },
+  "quinta_lunazul": {
+    "stage": "quoted",
+    "quote": "WhatsApp Oct 27 (we reached them by mistake with a wrong number for Bodegas del Viento): 2027 rate sheet. Rental only, no furniture, banquet or decor. Night events 7 hours, 6:30 p.m.–1:30 a.m., night security included: Saturday MXN 680 a guest (minimum 100), Friday or Sunday MXN 650 (minimum 70); kids 4–11 MXN 350. Day events cheaper. Extra hour MXN 8,000. Vendors can enter 5 hours before. Covered area for 200, kitchen (stove, fridge, sink, bar), restroom staff, big parking, partner vendors at special prices, pool MXN 3,500 extra. 25% deposit. They asked which month.",
+    "rows": [
+      [
+        "Rental, Saturday night, MXN 680 a guest (minimum 100), 6:30 p.m.–1:30 a.m.; no furniture, banquet or decor",
+        40800,
+        47600,
+        1,
+        "Friday or Sunday MXN 650 a guest, minimum 70",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Ends 1:30 a.m.; Saturday needs 100+ guests",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 844 362 6028",
+      "sent": "2026-10-27",
+      "status": "Oct 27: received our Saltillo template by mistake (the number was listed for Bodegas del Viento). 9:18 PM: replied with their 2027 rate sheet and asked which month."
+    }
   }
 }
