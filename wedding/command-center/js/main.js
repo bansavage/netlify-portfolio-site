@@ -198,6 +198,9 @@ async function boot() {
       if (ib.verified) v.verified = true;
       // a venue's own quote replaces the listing-based lines the atlas priced it with
       if (ib.rows) { v.rows = ib.rows; v.conf = "quote"; v.verified = true; if (ib.catch) v.catch = ib.catch; }
+      // what they told us can override the listing's end time, or fail the brief outright
+      if (ib.end) { v.end = ib.end; v.end_h = ib.end_h; v.end_src = "written"; }
+      if (ib.ruleOut) { v.status = "out"; v.reason = ib.ruleOut; }
       // start the stage where the emails left it, once; after that it's the couple's to change
       const st = S.venues[v.key];
       if (ib.stage && !(st && st.inboxSeeded)) {

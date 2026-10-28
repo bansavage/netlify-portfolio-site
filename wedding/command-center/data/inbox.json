@@ -505,7 +505,10 @@
       ]
     ],
     "quote": "Email Oct 27: a private hacienda in a gated development with a big lawn and patio for ceremony and reception, a gourmet kitchen for caterers, indoor/outdoor sound, an upstairs cantina with a patio, and an outdoor kitchen/grill/bar palapa by the lawn. 4-night minimum; November nightly rate US$995–1,535 depending on suites (5–8 suites for 10–16 people); 20% surcharge Thanksgiving week. Three neighbouring villas sleep another 6–31. Event fee: up to 75 guests US$1,250; 76–125 US$1,500 (max 125). No curfew, but music must be turned down at 11 p.m. (HOA rule in the event agreement). Everything else comes in from outside (tables, chairs, dinnerware, catering, flowers); string lights US$275. Refundable damage deposit. They offered a list of planners they use.",
-    "catch": "Music must drop at 11 p.m. (HOA); everything rented in; 4-night villa minimum"
+    "catch": "Music must drop at 11 p.m. (HOA); everything rented in; 4-night villa minimum",
+    "end": "23:00 (music down, HOA rule)",
+    "end_h": 0,
+    "ruleOut": "Their email Oct 27: music must be turned down at 11 p.m. (an HOA rule written into the event agreement), so no band and DJ until 2–3 a.m."
   },
   "galindo": {
     "stage": "asked",
@@ -1358,7 +1361,7 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 179 5944",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee. 9:08 PM: quoted Saturday MXN 138,500 + tent MXN 59,300 and offered a Friday.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee. 9:08 PM: quoted Saturday MXN 138,500 + tent MXN 59,300 and offered a Friday. 9:41 PM: said yes to hearing the Friday price for 100–120 and asked again about the extra-hour cost and any kitchen fee.",
       "sent": "2026-10-27"
     },
     "quote": "WhatsApp Oct 27: rental is 7 hours, 7 p.m. to 2 a.m., with a free extra hour for photos. No exclusive vendors, so any caterer or taquero. Free corkage. No rooms. Minors welcome. One event per day. A giant tent (black, camel, white or olive) without lighting. Prices are by guest bracket (0–200, 200–300 ...) but no figure given yet. Price Oct 27, 9:08 PM: Saturday for 0–200 guests is MXN 138,500 for the venue plus MXN 59,300 for the tent; they asked whether a Friday would interest us since our wedding is small.",
