@@ -200,6 +200,7 @@ async function boot() {
       if (ib.rows) { v.rows = ib.rows; v.conf = "quote"; v.verified = true; if (ib.catch) v.catch = ib.catch; }
       // what they told us can override the listing's end time, or fail the brief outright
       if (ib.end) { v.end = ib.end; v.end_h = ib.end_h; v.end_src = "written"; }
+      if (ib.taq_label) { v.taq_label = ib.taq_label; v.taq_txt = ib.taq_txt || v.taq_txt; }
       if (ib.ruleOut) { v.status = "out"; v.reason = ib.ruleOut; }
       // start the stage where the emails left it, once; after that it's the couple's to change
       const st = S.venues[v.key];
