@@ -49,6 +49,12 @@ function bumpGuests(cfg) {
   if (g && g.invited === 91 && g.expected === 57 && g.low === 60 && g.high === 70 && g.plan === 65) cfg.guests = { ...clone(DEFAULT_CONFIG.guests), teens: g.teens };
 }
 
+// the first Saltillo weights (60 / 30 / 10) moved to 70 / 30 / 0 on Oct 27; untouched briefs follow
+function bumpNorteWeights(cfg) {
+  const w = cfg && cfg.norte && cfg.norte.weights;
+  if (w && w.setting === 60 && w.cost === 30 && w.near === 10) cfg.norte.weights = clone(DEFAULT_CONFIG.norte.weights);
+}
+
 function fresh() {
   return { cfg: clone(DEFAULT_CONFIG), venues: {}, vendors: {}, customVendors: [], customVenues: [], ui: clone(DEFAULT_UI), saved: null };
 }
@@ -63,6 +69,7 @@ function load() {
     migrateDates(s.cfg, d.cfg);
     dropTaqWeight(s.cfg);
     bumpGuests(s.cfg);
+    bumpNorteWeights(s.cfg);
     if (!Array.isArray(s.cfg.vision) || !s.cfg.vision.length) s.cfg.vision = clone(DEFAULT_CONFIG.vision);
     s.venues = d.venues || {};
     s.vendors = d.vendors || {};

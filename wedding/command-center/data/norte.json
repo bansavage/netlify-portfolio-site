@@ -1,5 +1,5 @@
 {
-  "note": "Saltillo & Monterrey track (Oct 27, 2026): venues a drive from Daina's family, ranked on the venue, not rooms. Oct 27: for Saltillo the date can move to September or October 2027, so venues closed only in winter count again.",
+  "note": "Saltillo & Monterrey track (Oct 27, 2026): venues a drive from Daina's family, ranked on the venue, not rooms. Oct 27: for Saltillo the date can move to September or October 2027, so venues closed only in winter count again. Oct 27 (evening): a second research sweep added 47 more venues around Saltillo, the Arteaga sierra, Parras, Galeana and the Monterrey side.",
   "atlas": [
     "santamartha_nl",
     "qsm",
@@ -2744,12 +2744,5218 @@
           "heaters"
         ]
       ]
+    },
+    {
+      "key": "san_juan_vaqueria",
+      "name": "Viñedo y Hacienda San Juan de la Vaquería",
+      "short": "San Juan de la Vaquería",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "San Juan de la Vaquería (Saltillo municipality, Derramadero canyon)",
+      "place": "San Juan de la Vaquería (Saltillo municipality, Derramadero canyon), Coahuila",
+      "lat": 25.25333,
+      "lng": -101.21833,
+      "loc_precision": "town",
+      "type": "hacienda",
+      "description": "Family-owned colonial hacienda beside the village church of San Juan de la Vaquería, southwest of Saltillo, now a small Cabernet vineyard and winery.",
+      "scores": {
+        "setting": 5
+      },
+      "setting_why": "Adobe-and-stone casa grande with buttresses, shaded patios and beamed ceilings, a tree-ringed spring, walnuts and vines next to a village church.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No event terms published; its website has a 'Tu evento en SJV' page that I could not open.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "High semi-desert valley (about 1,840 m); November nights are cold and no hall for 100+ guests is known, so plan on a heated tent.",
+      "drive_saltillo_min": 40,
+      "drive_mty_min": 110,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://escapadas.mexicodesconocido.com.mx/atractivos/san-juan-de-la-vaqueria/",
+      "src": [
+        "https://escapadas.mexicodesconocido.com.mx/atractivos/san-juan-de-la-vaqueria/",
+        "https://es.wikipedia.org/wiki/San_Juan_de_la_Vaquería",
+        "https://sanjuandelavaqueria.com/pages/visitas",
+        "https://sanjuandelavaqueria.com/products/descubre-san-juan-de-la-vaqueria",
+        "https://playersoflife.com/saltillo/vinedos-en-saltillo-y-alrededores-para-visitar-este-san-valentin/",
+        "https://vinosydinoscoahuila.gob.mx/"
+      ],
+      "catch": "Not confirmed that it hosts 100-guest weddings; public tours are capped at 15 to 30 people",
+      "facts_list": [
+        "Recorded as 'la Vaquería de San Juan' in 1629; the main house stands beside the village church",
+        "1.5 ha of Cabernet Sauvignon planted in 2008 beside walnut trees; the wine is made at Casa Madero",
+        "About 36 km southwest of Saltillo; described as the only vineyard inside Saltillo municipality",
+        "Its 2016 Cabernet Sauvignon won silver at the Concours Mondial de Bruxelles"
+      ],
+      "price_note": "Sin precio de eventos publicado; el recorrido con cata cuesta $850 MXN por adulto (mínimo 8, máximo 30 personas).",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Sin precio de eventos publicado; el recorrido con cata cuesta $850 MXN por adulto (mínimo 8, máximo 30 personas)."
+    },
+    {
+      "key": "museo_de_las_aves",
+      "name": "Museo de las Aves de México",
+      "short": "Museo de las Aves",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (Centro Histórico)",
+      "place": "Saltillo (Centro Histórico), Coahuila",
+      "lat": 25.4166,
+      "lng": -101.002,
+      "loc_precision": "exact",
+      "type": "other",
+      "description": "Bird museum in Saltillo's historic center that rents its former-chapel auditorium, lobby and garden, in 19th-century buildings of the Jesuit Colegio de San Juan, for weddings.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Historic Jesuit college buildings with an old chapel and a garden in the old center; real character, though it is still a working museum.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental with no menu, no in-house kitchen and no caterer exclusivity; ask whether a live grill or trompo is allowed in the garden.",
+      "cap_min": 150,
+      "cap_max": 300,
+      "covered": "enclosed salon",
+      "winter_note": "The reception can move into the former-chapel auditorium on a cold night.",
+      "drive_saltillo_min": 5,
+      "drive_mty_min": 80,
+      "ap": "SLW",
+      "rev": "4.8 from 17 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/salones-para-bodas/museo-de-las-aves--e85292",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/museo-de-las-aves--e85292",
+        "https://www.citiservi.com.mx/rubro/jardines-para-eventos-en-saltillo"
+      ],
+      "catch": "Drinks are capped per table (one review cites 1 liter of liquor per table), which clashes with an open bar",
+      "facts_list": [
+        "The auditorium was the old chapel and the lobby was the Colegio de San Juan's administration",
+        "Address: Hidalgo y Bolívar 151, Zona Centro",
+        "Events end at 02:00 and only one event is held per day",
+        "Reviews mention no sparklers, museum visitors until closing, and rain spoiling one garden ceremony"
+      ],
+      "price_note": "Alquiler desde $25,000; pago fijo por la renta del lugar $30,000.00.",
+      "rows": [
+        [
+          "Venue rental, listed: Alquiler desde $25,000; pago fijo por la renta del lugar $30,000.00.",
+          30000,
+          30000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "hotel_rancho_el_morillo",
+      "name": "Hotel Rancho El Morillo",
+      "short": "Rancho El Morillo",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (south edge)",
+      "place": "Saltillo (south edge), Coahuila",
+      "lat": 25.4232,
+      "lng": -101.0053,
+      "loc_precision": "town",
+      "type": "garden_estate",
+      "description": "Family-run hotel on an old adobe rancho at Saltillo's southern edge, billed as the city's oldest hotel, with tree-filled gardens and its own 1924 chapel.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Thick adobe buildings, a century-old adobe chapel with its original tiles and beams, and poplars, pines and magueys: genuine old-Saltillo character.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "The hotel sells event packages but publishes no catering rules.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "Has a conference salon of unknown size and a small chapel; a garden reception would need a heated tent.",
+      "drive_saltillo_min": 20,
+      "drive_mty_min": 90,
+      "ap": "SLW",
+      "rev": "9.2/10 from 508 reviews of hotel stays (hotelvillanueva.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/hotelranchoelmorillo/",
+      "src": [
+        "https://www.zocalo.com.mx/el-hotel-mas-antiguo-de-saltillo-se-aferra-el-morillo-al-paso-del-tiempo/",
+        "https://vanguardia.com.mx/coahuila/saltillo-cumple-100-anos-capilla-del-sagrado-corazon-de-jesus-en-rancho-el-morillo-OI13285821",
+        "https://ranchoelmorillo.com/htmls/eventos.html",
+        "https://reservas.events/contrata-el-servicio-de/hotel-rancho-el-morillo/",
+        "https://www.instagram.com/hotelranchoelmorillo/",
+        "https://hotelvillanueva.com.mx/hotel/hotel-rancho-el-morillo/"
+      ],
+      "catch": "Wedding capacity and rules are unpublished, and industrial growth now surrounds the area",
+      "facts_list": [
+        "Sagrado Corazón chapel (adobe with a brick façade) was consecrated on 19 Sep 1924 and is still open",
+        "Running for more than 90 years; the first adobe rooms were worker quarters and a dairy store, and there are 14 rooms now",
+        "The old irrigation pond became the pool",
+        "About 11 km from Saltillo cathedral; address Del Morillo 264, Rancho El Morillo",
+        "Listed event types include weddings, baptisms, first communions and posadas"
+      ],
+      "price_note": "Sitio oficial: 'llama para cotizar tu evento'; un anuncio en reservas.events muestra 'precio inicial $1,750' sin unidad y toldos desde $1,700.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Sitio oficial: 'llama para cotizar tu evento'; un anuncio en reservas.events muestra 'precio inicial $1,750' sin unidad y toldos desde $1,700."
+    },
+    {
+      "key": "huerta_el_nogal",
+      "name": "Huerta El Nogal",
+      "short": "Huerta El Nogal",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Arteaga (centro)",
+      "place": "Arteaga (centro), Coahuila",
+      "lat": 25.4456,
+      "lng": -100.8464,
+      "loc_precision": "town",
+      "type": "garden_estate",
+      "description": "Private event garden in central Arteaga under walnut trees that the owners describe as more than 200 years old.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "A canopy of very old walnuts in the Pueblo Mágico is the classic huerta look, but no recent photos confirm its upkeep.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No published rules; it is marketed as a garden you rent, which suggests outside vendors, but this is unconfirmed.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "open-air only",
+      "winter_note": "Open garden; a past event used two 15 x 30 m clear tents, so budget a heated tent for November.",
+      "drive_saltillo_min": 20,
+      "drive_mty_min": 75,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.toldosgigantes.com/huerta-el-nogal/",
+      "src": [
+        "https://www.facebook.com/huertaelnogalarteaga/photos/huerta-el-nogal-arteaga-coahuila-el-lugar-ideal-para-que-tu-evento-sea-memorable/1382101915164168/",
+        "https://www.facebook.com/huertaelnogalarteaga/",
+        "https://www.toldosgigantes.com/huerta-el-nogal/",
+        "https://twopos.mx/en/62456/5756",
+        "https://www.zankyou.com.mx/f/huerta-el-nogal-576220"
+      ],
+      "catch": "May no longer operate: the newest dated post is from 2017-18 and its website no longer resolves",
+      "facts_list": [
+        "Address: Benito Juárez 86, Zona Centro, Arteaga",
+        "Its Facebook pitch: a 'jardín privado' surrounded by walnuts 'con más de 200 años de antigüedad'",
+        "Tent company Toldos Gigantes shows a job there with two 15 x 30 m tents",
+        "Its old Zankyou profile now redirects to a generic bodas.com.mx list, so it looks delisted"
+      ],
+      "price_note": "Sin precios publicados.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Sin precios publicados."
+    },
+    {
+      "key": "hacienda_san_francisco_vinicola",
+      "name": "Vinícola Hacienda San Francisco",
+      "short": "Hacienda San Francisco",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (west, Torreón exit)",
+      "place": "Saltillo (west, Torreón exit), Coahuila",
+      "lat": 25.4232,
+      "lng": -101.0053,
+      "loc_precision": "town",
+      "type": "vineyard",
+      "description": "Family winery in an old hacienda (founded 1869, according to the winery) about 10 minutes from downtown Saltillo on the Torreón exit.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Local press describes old hacienda walls, arches and a patio that 'could be in any historic corner of Mexico'.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No public information on private events or catering.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "No public information on indoor space.",
+      "drive_saltillo_min": 12,
+      "drive_mty_min": 85,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/vinicolahaciendasanfrancisco/",
+      "src": [
+        "https://playersoflife.com/gourmet/hacienda-san-francisco-el-secreto-vitivinicola-mejor-guardado-de-saltillo/",
+        "https://playersoflife.com/saltillo/vinicola-hacienda-san-francisco-gana-medalla-de-oro-en-concours-mondial-de-bruxelles-2025/",
+        "https://vinosydinoscoahuila.gob.mx/",
+        "https://www.instagram.com/vinicolahaciendasanfrancisco/",
+        "https://www.facebook.com/p/Vin%C3%ADcola-Hacienda-San-Francisco-61561527761532/"
+      ],
+      "catch": "No evidence yet that it rents out for weddings",
+      "facts_list": [
+        "Its Instagram says 'Establecida en 1869' and calls it the home of Saltillo wine",
+        "Its 1/4 de Siglo 2022 Shiraz won gold at the Concours Mondial de Bruxelles 2025",
+        "Listed for Saltillo on Coahuila's official Vinos y Dinos wine route",
+        "PLAYERS places it about 10 minutes from Centro on the road out to Torreón"
+      ],
+      "price_note": "Sin información pública de eventos ni bodas.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Sin información pública de eventos ni bodas."
+    },
+    {
+      "key": "hacienda_san_fernando_arteaga",
+      "name": "Hacienda San Fernando",
+      "short": "Hacienda San Fernando",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Arteaga (El Refugio)",
+      "place": "Arteaga (El Refugio), Coahuila",
+      "lat": 25.4456,
+      "lng": -100.8464,
+      "loc_precision": "town",
+      "type": "quinta",
+      "description": "Small, recently opened social-events venue in El Refugio on Arteaga's urban edge that books weddings, XV años and posadas.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Recent posts show candlelit tables, chandeliers and an outdoor cabana, but nothing shows historic buildings, so treat it as an event garden until visited.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Nothing published on catering.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "Unknown whether there is an enclosed hall.",
+      "drive_saltillo_min": 20,
+      "drive_mty_min": 75,
+      "ap": "SLW",
+      "rev": "5.0 from 4 reviews (TuJardinDeEventos)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/hacienda.san.fernando/",
+      "src": [
+        "https://tujardindeventos.com/coahuila/arteaga/hacienda-san-fernando-jardin-de-eventos-en-arteaga/",
+        "https://tujardindeventos.com/coahuila/arteaga/",
+        "https://www.facebook.com/61558466254301/",
+        "https://www.instagram.com/hacienda.san.fernando/"
+      ],
+      "catch": "Almost no public detail: no prices, capacity or clear photos of the grounds",
+      "facts_list": [
+        "Listed at Sector 4, manzana 220, predio 008, El Refugio, 25350 Arteaga",
+        "Facebook lists XV años, bodas, fiestas, reuniones empresariales and posadas",
+        "Its Instagram (153 followers) posted events in Sept and Oct 2026",
+        "Not the Mexico City venue of the same name (haciendasanfernando.com.mx)"
+      ],
+      "price_note": "'Planes flexibles', sin cifras.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. 'Planes flexibles', sin cifras."
+    },
+    {
+      "key": "quinta_paloma_arteaga",
+      "name": "Quinta Paloma",
+      "short": "Quinta Paloma",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Arteaga",
+      "place": "Arteaga, Coahuila",
+      "lat": 25.4458,
+      "lng": -100.838,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "Garden quinta in Arteaga town with tree-shaded lawns, an acequia (irrigation channel) and a renovated salon for 130.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "The wooded garden and running acequia add some Arteaga charm, but it is a standard event quinta.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental and no caterer exclusivity are listed, and it has outdoor grills and a kitchen; confirm for a live taquero.",
+      "cap_min": 100,
+      "cap_max": 500,
+      "covered": "enclosed salon",
+      "winter_note": "The salon holds up to 130, so 100 to 120 guests could move inside on a cold night; toldos and torches are for rent.",
+      "drive_saltillo_min": 20,
+      "drive_mty_min": 75,
+      "ap": "SLW",
+      "rev": "4.9 from 4 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/quintas-para-bodas/quinta-paloma--e155041",
+      "src": [
+        "https://www.bodas.com.mx/quintas-para-bodas/quinta-paloma--e155041"
+      ],
+      "catch": "Generic quinta look, and the salon tops out at 130",
+      "facts_list": [
+        "Address: Pedro Moreno 540, Arteaga",
+        "Open bar and free corkage allowed",
+        "50% deposit, balance 15 days before the event; cash or transfer",
+        "Garden holds up to 400; one event per day"
+      ],
+      "price_note": "Renta del lugar $12,000 fijos (mínimo 100 personas); menú desde $240 por invitado (FAQ: $240 a $260).",
+      "rows": [
+        [
+          "Venue rental, listed: Renta del lugar $12,000 fijos (mínimo 100 personas); menú desde $240 por invitado (FAQ: $240 a $260).",
+          12000,
+          12000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "arreboleda_arteaga",
+      "name": "Arreboleda",
+      "short": "Arreboleda",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Arteaga (Camino de los Nogales)",
+      "place": "Arteaga (Camino de los Nogales), Coahuila",
+      "lat": 25.4462,
+      "lng": -100.864,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Countryside event venue on Camino de los Nogales at Arteaga's edge with a bright salon set in a large, quiet garden.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Described as airy and romantic, with a luminous salon in a calm garden, but there is no historic fabric.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "The listing allows space-only rental and has no caterer exclusivity; confirm for a live taquero.",
+      "cap_min": 50,
+      "cap_max": 200,
+      "covered": "enclosed salon",
+      "winter_note": "Has an indoor salon within the venue's 200-guest maximum.",
+      "drive_saltillo_min": 18,
+      "drive_mty_min": 72,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/salones-para-bodas/arreboleda--e196753",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/arreboleda--e196753",
+        "https://www.facebook.com/arreboleda/"
+      ],
+      "catch": "No prices or reviews, and the end time is not stated",
+      "facts_list": [
+        "Address: Camino de los Nogales, Lote 5, Arteaga",
+        "50 to 200 guests; space-only rental possible",
+        "No exclusivity with caterers, photographers or bands",
+        "One event per day; there is a time limit, but it is not stated"
+      ],
+      "price_note": "Pago fijo por la renta del lugar (monto no publicado).",
+      "reason": "No price published yet. Pago fijo por la renta del lugar (monto no publicado)."
+    },
+    {
+      "key": "casa_vieja_saltillo",
+      "name": "Casa Vieja",
+      "short": "Casa Vieja",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (Centro)",
+      "place": "Saltillo (Centro), Coahuila",
+      "lat": 25.4145,
+      "lng": -101.002,
+      "loc_precision": "exact",
+      "type": "other",
+      "description": "Restaurant and event space on General Cepeda Sur in downtown Saltillo, styled rustic with warm tones, vines and timber, and marketed for intimate weddings.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Cozy rustic garden and salon with vines and wood; charming, but small and not documented as historic.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "The package includes its own banquet; nothing says whether outside caterers are allowed.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "Has an indoor salon and a covered area, sized for small groups.",
+      "drive_saltillo_min": 5,
+      "drive_mty_min": 80,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/casaavieja/",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/casa-vieja--e361535",
+        "https://www.instagram.com/casaavieja/"
+      ],
+      "catch": "Pitched at intimate weddings, so it may not fit 100 to 120 guests",
+      "facts_list": [
+        "Address: General Cepeda Sur 765, Zona Centro",
+        "Package lists banquet, wooden furniture, flowers, torches and live ambient music",
+        "Spaces: garden, salon, and a covered area with kitchen",
+        "Its Instagram bills it as a venue for 'bodas íntimas'"
+      ],
+      "price_note": "Sin precios publicados.",
+      "reason": "No price published yet. Sin precios publicados."
+    },
+    {
+      "key": "xardin_saltillo",
+      "name": "Xardin",
+      "short": "Xardin",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (El Olmo)",
+      "place": "Saltillo (El Olmo), Coahuila",
+      "lat": 25.4349,
+      "lng": -100.974,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Bare-space event garden in Saltillo's El Olmo district with lawns and mature trees that are lit at night, for up to 400 guests.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "A leafy lawn with lit trees is a pleasant blank canvas, but there is no architecture.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Yes",
+      "taq_txt": "Outside banquet explicitly allowed; there is no kitchen, so you bring your own catering.",
+      "cap_min": null,
+      "cap_max": 400,
+      "covered": "open-air only",
+      "winter_note": "No salon; a carpa is listed, so confirm sides and heaters for November.",
+      "drive_saltillo_min": 12,
+      "drive_mty_min": 72,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/xardin--e400884",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/xardin--e400884"
+      ],
+      "catch": "Bare lawn: you supply the tent, furniture, catering and bar",
+      "facts_list": [
+        "Address: Blvd. Jesús Valdez Sánchez 1861, El Olmo",
+        "Rental covers the space and restroom cleaning only",
+        "No vendor exclusivity; the venue recommends suppliers",
+        "One event per day; no reviews yet"
+      ],
+      "price_note": "Renta desde $15,000 (pago fijo de $15,000 en la ficha; el FAQ menciona hasta $85,000).",
+      "rows": [
+        [
+          "Venue rental, listed: Renta desde $15,000 (pago fijo de $15,000 en la ficha; el FAQ menciona hasta $85,000).",
+          15000,
+          15000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "la_hacienda_de_villa",
+      "name": "La Hacienda de Villa",
+      "short": "Hacienda de Villa",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (Valle de Lourdes)",
+      "place": "Saltillo (Valle de Lourdes), Coahuila",
+      "lat": 25.3895,
+      "lng": -100.994,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "In-city 'hacienda' event venue in south Saltillo with a salon, terrace and leafy garden, rentable without catering and with no stated time limit.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Pitched as a hacienda with lush greenery, but it sits in a residential colonia and reads as a standard quinta.",
+      "end": "No limit",
+      "end_h": 99,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental is allowed and there is no caterer exclusivity; confirm for a live taquero.",
+      "cap_min": 100,
+      "cap_max": 300,
+      "covered": "enclosed salon",
+      "winter_note": "Has an event salon on site for cold nights.",
+      "drive_saltillo_min": 15,
+      "drive_mty_min": 85,
+      "ap": "SLW",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/haciendas-para-bodas/la-hacienda-de-villa--e128923",
+      "src": [
+        "https://www.bodas.com.mx/haciendas-para-bodas/la-hacienda-de-villa--e128923"
+      ],
+      "catch": "Only one review (2020); drinks are 'cantidad fija por mesa'",
+      "facts_list": [
+        "Address: Valle Grande 1518, Col. Valle de Lourdes",
+        "No time limit; one event per day",
+        "No exclusivity with caterers, photographers or bands",
+        "Cash payment"
+      ],
+      "price_note": "Alquiler desde $17,000.",
+      "rows": [
+        [
+          "Venue rental, listed: Alquiler desde $17,000.",
+          17000,
+          17000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "los_adobes_saltillo",
+      "name": "Los Adobes",
+      "short": "Los Adobes",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (west, road to Los González)",
+      "place": "Saltillo (west, road to Los González), Coahuila",
+      "lat": 25.4085,
+      "lng": -101.036,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Country event garden on the road to Los González west of Saltillo, with lawns surrounded by fields, palapas, a salon and a tent.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Open countryside feel and palapas, but a generic event-garden build.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental allowed and no caterer exclusivity; confirm for a live taquero.",
+      "cap_min": 80,
+      "cap_max": 600,
+      "covered": "enclosed salon",
+      "winter_note": "Indoor salon plus palapas and a tent.",
+      "drive_saltillo_min": 15,
+      "drive_mty_min": 85,
+      "ap": "SLW",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/salones-para-bodas/los-adobes--e110002",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/los-adobes--e110002"
+      ],
+      "catch": "Can book more than one event a day; little recent feedback",
+      "facts_list": [
+        "Address: Carretera a Los González km 4.7",
+        "Three-course menus; open bar with free corkage",
+        "20% to book, balance 15 days before",
+        "Has a time limit, but it is not stated"
+      ],
+      "price_note": "Menú desde $380 por invitado (FAQ: $380 a $500); además hay un pago fijo por renta (monto no publicado).",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menú desde $380 por invitado (FAQ: $380 a $500); además hay un pago fijo por renta (monto no publicado).",
+          22800,
+          26600,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_los_arcangeles",
+      "name": "Quinta Los Arcángeles",
+      "short": "Los Arcángeles",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (La Aurora)",
+      "place": "Saltillo (La Aurora), Coahuila",
+      "lat": 25.4441,
+      "lng": -100.931,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "European-style garden quinta in Saltillo's La Aurora area with cantera-column terraces, marble floors, bronze fountains and city views.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Polished and photogenic, but Italianate and formal rather than Mexican or rustic.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental possible and no caterer exclusivity; confirm for a live taquero.",
+      "cap_min": 150,
+      "cap_max": 800,
+      "covered": "unclear",
+      "winter_note": "The listing shows terraces and a garden but no enclosed salon, so confirm a covered option.",
+      "drive_saltillo_min": 15,
+      "drive_mty_min": 72,
+      "ap": "SLW",
+      "rev": "4.9 from 20 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/quintas-para-bodas/quinta-los-arcangeles--e136266",
+      "src": [
+        "https://www.bodas.com.mx/quintas-para-bodas/quinta-los-arcangeles--e136266"
+      ],
+      "catch": "150-guest minimum, and the look is Italianate, not hacienda",
+      "facts_list": [
+        "Address: Cedral 246, Col. San Luis",
+        "Packages include coordination, décor, waiters and bar staff",
+        "Couples bring their own wine with no corkage fee",
+        "Ends 02:00; one event per day"
+      ],
+      "price_note": "Menús desde $400 por persona (FAQ: $400 a $625); sin pago fijo de renta, pero se cobra renta si no se llega al mínimo.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $400 por persona (FAQ: $400 a $625); sin pago fijo de renta, pero se cobra renta si no se llega al mínimo.",
+          24000,
+          28000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "museo_del_desierto",
+      "name": "Museo del Desierto",
+      "short": "Museo del Desierto",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo",
+      "place": "Saltillo, Coahuila",
+      "lat": 25.4137,
+      "lng": -100.964,
+      "loc_precision": "exact",
+      "type": "other",
+      "description": "Saltillo's desert natural-history museum, which rents its patios, lookout salon and auditorium with city views for weddings.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "A distinctive desert-garden museum with city views, but modern and institutional.",
+      "end": "01:00",
+      "end_h": 1,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "The listing claims banquet exclusivity but also says space-only rental is possible; ask.",
+      "cap_min": 200,
+      "cap_max": 650,
+      "covered": "enclosed salon",
+      "winter_note": "Indoor salons and an auditorium are available.",
+      "drive_saltillo_min": 10,
+      "drive_mty_min": 75,
+      "ap": "SLW",
+      "rev": "4.8 from 4 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/salones-para-bodas/museo-del-desierto--e138990",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/museo-del-desierto--e138990",
+        "https://www.posta.com.mx/coahuila/3-museos-en-coahuila-donde-te-puedes-casar/vl2063590"
+      ],
+      "catch": "Ends at 1 a.m., has a 200-guest minimum and likely an exclusive banquet",
+      "facts_list": [
+        "Address: Blvd. Carlos Abedrop Dávila 3745",
+        "Spaces: Patio de Zacas, patio de lluvia, Salón Mirador and Auditorio Quimmco",
+        "Includes 5 hours, furniture, Tiffany chairs, A/C, security and cleaning",
+        "$100 per person surcharge below the minimum; no cash; $30 per person to serve your own cake",
+        "One review's event clashed with a concert on the shared esplanade"
+      ],
+      "price_note": "Menú desde $530 por persona (FAQ: $530 a $1,050) más pago fijo de $45,000.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menú desde $530 por persona (FAQ: $530 a $1,050) más pago fijo de $45,000.",
+          31800,
+          37100,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_los_pastores",
+      "name": "Quinta Los Pastores",
+      "short": "Quinta Los Pastores",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Saltillo (Hacienda de Torrecillas y Ramones)",
+      "place": "Saltillo (Hacienda de Torrecillas y Ramones), Coahuila",
+      "lat": 25.4232,
+      "lng": -101.0053,
+      "loc_precision": "town",
+      "type": "quinta",
+      "description": "Large garden-and-salon events quinta on Blvd. Los Pastores in the Hacienda de Torrecillas y Ramones area, the only working venue tied to the 'Torrecillas' name.",
+      "scores": {
+        "setting": 2
+      },
+      "setting_why": "Two salons, a palapa and a lawn: closer to a banquet complex than a hacienda.",
+      "end": "01:30",
+      "end_h": 1.5,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "It sells its own banquet menus; nothing says whether outside caterers are allowed.",
+      "cap_min": 150,
+      "cap_max": 600,
+      "covered": "enclosed salon",
+      "winter_note": "Two enclosed salons of 300 each.",
+      "drive_saltillo_min": 15,
+      "drive_mty_min": 72,
+      "ap": "SLW",
+      "rev": "4.7 from 491 reviews (Google, via especialevento.com)",
+      "conf": "listed",
+      "photos_url": "https://quintalospastores.com/",
+      "src": [
+        "https://quintalospastores.com/",
+        "https://especialevento.com/coahuila-de-zaragoza/saltillo/",
+        "https://buscosalon.com.mx/coahuila/saltillo/",
+        "https://www.zocalo.com.mx/los-tesoros-perdidos-de-saltillo/"
+      ],
+      "catch": "Banquet-hall feel, a 150-guest minimum, and the party ends at 1:30 a.m.",
+      "facts_list": [
+        "Address: Blvd. Los Pastores 3731, Hacienda de Torrecillas y Ramones, Saltillo",
+        "Each salon seats 300; contracts of 300 or more guests get both",
+        "Monday to Saturday events end at 1:30 a.m. with guests out by 2:00; Sundays end by 9:30 p.m.",
+        "15% deposit, then monthly payments of at least $2,500",
+        "The historic Las Torrecillas hacienda chapel (dated 1906) nearby is in litigation and used as a warehouse, not as a venue"
+      ],
+      "price_note": "Banquete $415 por persona (2 tiempos) o $460 (3 tiempos), más IVA, mínimo 150 personas; la misma web también dice 'desde $580 MXN'.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Banquete $415 por persona (2 tiempos) o $460 (3 tiempos), más IVA, mínimo 150 personas; la misma web también dice 'desde $580 MXN'.",
+          24900,
+          29050,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "parvada_parras",
+      "name": "Vinícola Parvada (Explanada / Hacienda Parvada)",
+      "short": "Parvada",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.442,
+      "lng": -102.16,
+      "loc_precision": "town",
+      "type": "vineyard",
+      "description": "Winery, 9-room boutique hotel and country estate under a mature walnut grove with a stream and lake, on the General Cepeda road just outside Parras.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Lake, walnut grove and Artigas-designed winery are striking, but it sits inside a new residential development.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Parvada runs its own food service (menu by quote); nothing published on outside caterers or a taquero.",
+      "cap_min": 100,
+      "cap_max": 750,
+      "covered": "unclear",
+      "winter_note": "The main Explanada is described as a large open structure facing the vineyard and lake; ask about enclosure and heaters. Parras (1,500 m) averages 13 °C lows in October and ~10 °C in November.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 165,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://vinosparvada.com/en/pages/events",
+      "src": [
+        "https://vinosparvada.com/en/pages/events",
+        "https://lugaresparaeventos.mx/lugar/coahuila/parras-de-la-fuente/vinicola-parvada",
+        "https://foodandwineespanol.com/parvada-un-oasis-enologico-en-parras-coahuila/",
+        "https://talentoempresarialmagazine.com/2021/01/07/donde-los-suenos-vuelan-parvada/",
+        "https://parvadacv.mx/en/about-us/",
+        "https://en.wikipedia.org/wiki/Parras_de_la_Fuente"
+      ],
+      "catch": "Main Explanada is built for 250–750; the smaller Hacienda Parvada space (100–200) needs confirming.",
+      "facts_list": [
+        "Official events page lists the Explanada for up to 750 guests and a 'Hacienda Parvada' space for 100–200 (the latter not confirmed elsewhere).",
+        "9-room boutique hotel (up to 30 guests) plus rentable townhouses and villas.",
+        "Site says it has hosted 100+ weddings since 2021.",
+        "Address: Carretera a General Cepeda km 1, Parras; winery rooftop seats 60 for private dinners."
+      ],
+      "price_note": "No prices published; quote by request (lugaresparaeventos.mx). Rental includes tables and chairs.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. No prices published; quote by request (lugaresparaeventos.mx). Rental includes tables and chairs."
+    },
+    {
+      "key": "las_pudencianas_parras",
+      "name": "Las Pudencianas (viñedo y casas)",
+      "short": "Las Pudencianas",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.4403,
+      "lng": -102.1792,
+      "loc_precision": "town",
+      "type": "vineyard",
+      "description": "Boutique winery with vineyard houses in Parras' Barrio Tacubaya that hosts weddings in event gardens under walnut trees facing the vines and mountains.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Walnut-shaded gardens looking over the vineyard to the sierra; photos not reviewed directly.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Events page could not be read; catering policy unknown.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "Event gardens are outdoors and no covered space was confirmed; Parras lows average ~10 °C in November.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 165,
+      "ap": "SLW",
+      "rev": "4.79 from 114 reviews (Airbnb, as lodging)",
+      "conf": "listed",
+      "photos_url": "https://laspudencianas.com/pages/eventos",
+      "src": [
+        "https://laspudencianas.com/pages/eventos",
+        "https://laspudencianas.com/pages/casas",
+        "https://www.posta.com.mx/coahuila/parras-de-la-fuente-coahuila-como-aprovechar-un-fin-de-semana-entre-bodegas-gastronomia-y-patrimonio/vl2235733",
+        "https://vanguardia.com.mx/dinero/hasta-12-mil-personas-han-asistido-a-las-vendimias-de-parras-de-la-fuente-OC23038897",
+        "https://amp.milenio.com/estilo/viajes/coahuila-ruta-vino-dinosaurios-guia-definitiva"
+      ],
+      "catch": "No published capacity, prices or catering rules.",
+      "facts_list": [
+        "Markets luxury events and weddings 'entre viñedos y nogales', with event gardens under walnut trees.",
+        "One event per date (exclusive use of the space).",
+        "Vineyard house sleeps up to 14; also suites with private pools.",
+        "On the Ruta Vinos & Dinos; its 2025 harvest festival drew about 800 people.",
+        "Listed address: Francisco I. Madero 302, Barrio Tacubaya, Parras."
+      ],
+      "price_note": "No prices found; the events page (laspudencianas.com/pages/eventos) gives no guest number or rates in what could be read.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. No prices found; the events page (laspudencianas.com/pages/eventos) gives no guest number or rates in what could be read."
+    },
+    {
+      "key": "don_perfecto_parras",
+      "name": "Viñedo Don Perfecto (Cordillera Real de Parras)",
+      "short": "Don Perfecto",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.443,
+      "lng": -102.145,
+      "loc_precision": "town",
+      "type": "vineyard",
+      "description": "Young high-altitude vineyard about 15 minutes from Parras on the General Cepeda road, with a wedding salon and a terrace among the vines.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Vines at 1,650 m ringed by sierra; facilities are new and photos not reviewed.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No catering policy published; event inquiries go to WhatsApp.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "Indoor salon plus an open terrace among the vines; Parras lows average ~10 °C in November.",
+      "drive_saltillo_min": 110,
+      "drive_mty_min": 170,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://vinosdonperfecto.com/galeria/",
+      "src": [
+        "https://vinosdonperfecto.com/",
+        "https://ciudadesyvinos.com/vinicolas/vinedo-don-perfecto",
+        "https://mexicowineacademy.mx/ruta-del-vino-de-coahuila/parras-de-la-fuente/don-perfecto/"
+      ],
+      "catch": "New estate; one wine guide says it isn't open to the public yet, so confirm the salon is operating.",
+      "facts_list": [
+        "Winery site lists 'Salón Viñedo Don Perfecto' for weddings and a terrace among the vines.",
+        "Carretera Parras–General Cepeda km 2.5, about 15 min from central Parras, at ~1,650 m.",
+        "Founded 2017; 5 ha producing and 12 ha more planted in 2022.",
+        "Events and tastings are booked by WhatsApp at 871 108 0711."
+      ],
+      "price_note": "Winery site lists no capacity or prices and directs event inquiries to WhatsApp.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Winery site lists no capacity or prices and directs event inquiries to WhatsApp."
+    },
+    {
+      "key": "rincon_del_montero",
+      "name": "Hotel Rincón del Montero",
+      "short": "Rincón del Montero",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.4402,
+      "lng": -102.165,
+      "loc_precision": "exact",
+      "type": "other",
+      "description": "Rustic country hotel with a golf course, pool, large gardens and indoor salons on the Parras–Paila road.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Pleasant green resort grounds, more country club than unique.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "In-house catering only (space-only rental not offered); ask whether a taquero can be added.",
+      "cap_min": 50,
+      "cap_max": 350,
+      "covered": "enclosed salon",
+      "winter_note": "Salons seat up to 260 indoors, a fallback for cool November nights (Parras lows ~10 °C).",
+      "drive_saltillo_min": 100,
+      "drive_mty_min": 160,
+      "ap": "SLW",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/hoteles-para-bodas/rincon-del-montero--e182147",
+      "src": [
+        "https://www.bodas.com.mx/hoteles-para-bodas/rincon-del-montero--e182147",
+        "https://www.expedia.com/Parras-Hotels-Rincon-Del-Montero.h119526797.Hotel-Information"
+      ],
+      "catch": "Must use the in-house menu; end time not published.",
+      "facts_list": [
+        "Carretera Parras–Paila km 3; guest rooms on site.",
+        "Gardens for ceremony and reception; salons seat up to 260.",
+        "Couples may bring their own cake; open corkage ('descorche libre').",
+        "Payment: 50% at 45 days and 50% at 15 days before the event."
+      ],
+      "price_note": "bodas.com.mx: menus from $457 per person (food only) with a per-guest minimum; garden or salon use is charged separately (covers venue, tables, chairs, plates), amount not published.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: bodas.com.mx: menus from $457 per person (food only) with a per-guest minimum; garden or salon use is charged separately (covers venue, tables, chairs, plates), amount not published.",
+          27420,
+          31990,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "villaloza_parras",
+      "name": "Villaloza",
+      "short": "Villaloza",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.4547,
+      "lng": -102.191,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Walnut-orchard garden on Calzada del Marqués at the edge of Parras, with a tent, pool and kitchen.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Shady nogal orchard has rustic charm; facilities look basic.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Space-only rental is allowed, but the listing also says it has an exclusive banquet provider.",
+      "cap_min": 50,
+      "cap_max": 250,
+      "covered": "unclear",
+      "winter_note": "A tent is the only cover listed, with no indoor hall; Parras lows average ~10 °C in November.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 165,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/villaloza--e209917",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/villaloza--e209917"
+      ],
+      "catch": "Tent is the only cover; minimum guest count not stated; no reviews.",
+      "facts_list": [
+        "50–250 guests; garden, tent, dance floor and pool.",
+        "Events end at 2:00 a.m.; one event per day.",
+        "Couples can bring their own cake.",
+        "Listing points guests to Hotel La Posada in Parras and offers transport to the venue."
+      ],
+      "price_note": "bodas.com.mx: rental from $3,500 (FAQ range up to $20,000); fixed venue fee $10,000; drinks by fixed amount per table or open bar.",
+      "rows": [
+        [
+          "Venue rental, listed: bodas.com.mx: rental from $3,500 (FAQ range up to $20,000); fixed venue fee $10,000; drinks by fixed amount per table or open bar.",
+          10000,
+          10000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_carlota_parras",
+      "name": "Quinta Carlota",
+      "short": "Quinta Carlota",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.4571,
+      "lng": -102.183,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "Walnut-orchard quinta on the north side of Parras with a 1,200 m² garden, terrace and tent.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Nogal orchard garden is pretty but small-scale and simple.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Own kitchen and an exclusive banquet provider, though space-only rental is offered; ask about a taquero.",
+      "cap_min": 50,
+      "cap_max": 500,
+      "covered": "unclear",
+      "winter_note": "No indoor salon listed (tent and terrace only); Parras lows average ~10 °C in November.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 165,
+      "ap": "SLW",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/quintas-para-bodas/quinta-carlota--e148542",
+      "src": [
+        "https://www.bodas.com.mx/quintas-para-bodas/quinta-carlota--e148542"
+      ],
+      "catch": "Bringing your own alcohol needs a municipal permit and an extra fee.",
+      "facts_list": [
+        "Prol. Cerrada Damasco 45, Parras.",
+        "3-course menus with vegetarian and vegan options; Tiffany chairs and waitstaff included.",
+        "Ends at 2:00 a.m.; one event per day.",
+        "Own cake allowed at no charge."
+      ],
+      "price_note": "bodas.com.mx: menus from $200 per guest (FAQ $200–$260); fixed venue fee $5,500 for 100 guests; $3,000 penalty if the guest minimum isn't met.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: bodas.com.mx: menus from $200 per guest (FAQ $200–$260); fixed venue fee $5,500 for 100 guests; $3,000 penalty if the guest minimum isn't met.",
+          12000,
+          14000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "huerta_el_recuerdo",
+      "name": "Huerta El Recuerdo",
+      "short": "Huerta El Recuerdo",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Parras de la Fuente",
+      "place": "Parras de la Fuente, Coahuila",
+      "lat": 25.4403,
+      "lng": -102.1792,
+      "loc_precision": "town",
+      "type": "garden_estate",
+      "description": "Open-air garden under tall old trees in central Parras, rented as a bare space.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Mature trees give it character, but it's an in-town garden with no views.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "No in-house kitchen or catering and no banquet exclusivity; space is rented bare, so you bring your own caterer.",
+      "cap_min": 40,
+      "cap_max": 400,
+      "covered": "open-air only",
+      "winter_note": "Garden only, no covered space listed; Parras lows average ~10 °C in November, so budget for a tent.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 165,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/huerta-el-recuerdo--e289119",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/huerta-el-recuerdo--e289119"
+      ],
+      "catch": "No cover, and the end-time limit isn't published.",
+      "facts_list": [
+        "Viesca 884, Zona Centro, Parras.",
+        "40–400 guests (description says up to 450).",
+        "No exclusive photographer, music or banquet requirements."
+      ],
+      "price_note": "bodas.com.mx: fixed rental fee that varies by event type and guest count; amount not published.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. bodas.com.mx: fixed rental fee that varies by event type and guest count; amount not published."
+    },
+    {
+      "key": "palapa_don_silvestre",
+      "name": "Palapa Don Silvestre (Rancho Martinillos)",
+      "short": "Don Silvestre",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "El Tunal (Arteaga)",
+      "place": "El Tunal (Arteaga), Coahuila",
+      "lat": 25.385,
+      "lng": -100.72,
+      "loc_precision": "town",
+      "type": "mountain",
+      "description": "Rustic ranch palapa and garden on the road to Los Lirios (El Tunal, km 11), about 40 minutes from Saltillo.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Real sierra-ranch surroundings, but the venue itself is a basic family-party palapa.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Listing doesn't address catering; grills on site.",
+      "cap_min": 10,
+      "cap_max": 120,
+      "covered": "covered terrace",
+      "winter_note": "Palapa terrace only, no enclosed room listed; sierra foothill nights get cold in November.",
+      "drive_saltillo_min": 40,
+      "drive_mty_min": 80,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/palapa-don-silvestre--e291653",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/palapa-don-silvestre--e291653"
+      ],
+      "catch": "Tops out around 100–120 and is geared to casual parties.",
+      "facts_list": [
+        "Rancho Martinillos, Carretera a Los Lirios, El Tunal km 11.",
+        "Big terrace holds 120; listing range is 10–100 guests.",
+        "Includes sound, tables, chairs, coolers and kids' games; grills and restrooms."
+      ],
+      "price_note": "bodas.com.mx: price not published.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. bodas.com.mx: price not published."
+    },
+    {
+      "key": "bosques_de_monterreal",
+      "name": "Bosques de Monterreal (resort, golf and ski)",
+      "short": "Monterreal",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Mesa de las Tablas (Arteaga)",
+      "place": "Mesa de las Tablas (Arteaga), Coahuila",
+      "lat": 25.2325,
+      "lng": -100.4345,
+      "loc_precision": "exact",
+      "type": "mountain",
+      "description": "High-sierra resort of Swiss-style cabins, golf course, ski slope and chapel in pine forest near Mesa de las Tablas.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Alpine pine-forest setting unique in northern Mexico; reviews suggest dated facilities.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Resort has a Casa Club restaurant; wedding and outside-vendor rules aren't published.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "At ~2,900 m this is the coldest option: expect very cold nights from October, and natural snow is possible December–February.",
+      "drive_saltillo_min": 55,
+      "drive_mty_min": 100,
+      "ap": "SLW",
+      "rev": "3.7 from 85 reviews (ZonaTurística)",
+      "conf": "listed",
+      "photos_url": "https://www.monterreal.com/",
+      "src": [
+        "https://www.monterreal.com/",
+        "https://monterreal.com/contacto.html",
+        "https://www.zonaturistica.com/hoteles-en/coahuila/arteaga/bosques-de-monterreal",
+        "https://en.wikipedia.org/wiki/Monterreal"
+      ],
+      "catch": "Doesn't advertise weddings; confirm it hosts outside events at all.",
+      "facts_list": [
+        "Chapel, meeting rooms and a Casa Club restaurant are listed among amenities; ZonaTurística lists event salons.",
+        "10 hotel rooms and 55 cabins on site.",
+        "Ski area base at 2,940 m; Wikipedia calls it Mexico's only commercial ski center.",
+        "Address: Carretera San Antonio de las Alazanas–Mesa de las Tablas km 32."
+      ],
+      "price_note": "No wedding packages or prices published.",
+      "reason": "No price published yet. No wedding packages or prices published."
+    },
+    {
+      "key": "vinos_dguadiana",
+      "name": "Vinos D'Guadiana (viñedo, Los Lirios)",
+      "short": "D'Guadiana",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Coahuila",
+      "town": "Los Lirios (Arteaga)",
+      "place": "Los Lirios (Arteaga), Coahuila",
+      "lat": 25.37,
+      "lng": -100.575,
+      "loc_precision": "town",
+      "type": "vineyard",
+      "description": "Mountain vineyard and winery in Los Lirios with an on-site food concept (Chalets Manzanares), newly on the Vinos & Dinos route.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "High-sierra vineyard location, but not seen in photos and not confirmed as an event venue.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No event or catering information published.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "Los Lirios is high sierra with cold autumn nights; venue facilities unknown.",
+      "drive_saltillo_min": 55,
+      "drive_mty_min": 95,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/vinosdguadiana/",
+      "src": [
+        "https://vanguardia.com.mx/coahuila/saltillo/vinos-d-guadiana-se-integra-a-la-ruta-vinos-dinos-con-un-nuevo-icono-turistico-en-arteaga-KE22040864",
+        "https://elcongresista.mx/vinos-dguadiana-destino-coahuila",
+        "https://www.instagram.com/vinosdguadiana/",
+        "https://amp.milenio.com/estilo/viajes/coahuila-ruta-vino-dinosaurios-guia-definitiva"
+      ],
+      "catch": "Not confirmed to host weddings; a lead to call, not yet a venue.",
+      "facts_list": [
+        "Located in Los Lirios, Arteaga; listed on the Ruta Vinos & Dinos.",
+        "Runs 'Chalets Manzanares', a food-and-wine concept (per El Congresista).",
+        "Instagram bio says it has been growing since 2012; about 1,600 followers.",
+        "A promotional article says its wines scored 91 points in Guía Peñín 2026."
+      ],
+      "price_note": "No event information published.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. No event information published."
+    },
+    {
+      "key": "posada_aguiram_galeana",
+      "name": "Posada AguiRam (Laguna de Labradores)",
+      "short": "Posada AguiRam",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Galeana",
+      "place": "Galeana, Nuevo León",
+      "lat": 24.833,
+      "lng": -100.067,
+      "loc_precision": "town",
+      "type": "other",
+      "description": "Small inn near Laguna de Labradores, with rooms around a central garden, that offers weddings by quote.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Turquoise mountain lake nearby, but the posada itself is modest.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Weddings offered by quote as an extra; no catering details.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "Galeana (1,655 m) averages lows of 9 °C in October and ~8 °C in November; winter can reach −9 °C.",
+      "drive_saltillo_min": 115,
+      "drive_mty_min": 190,
+      "ap": "SLW",
+      "rev": null,
+      "conf": "listed",
+      "photos_url": "https://www.airbnb.com/galeana-mexico/stays",
+      "src": [
+        "https://www.airbnb.com/galeana-mexico/stays",
+        "https://sk.airbnb.com/galeana-mexico/stays",
+        "https://en.wikipedia.org/wiki/Galeana,_Nuevo_Le%C3%B3n",
+        "https://www.posta.com.mx/nuevo-leon/semana-santa-2025-descubre-la-laguna-de-labradores/vl2016546"
+      ],
+      "catch": "Capacity and prices unknown; only an Airbnb listing found.",
+      "facts_list": [
+        "Airbnb listing offers weddings and XV años at extra cost, by quote.",
+        "Rooms face a central garden; social areas for barbecues, bonfires and camping.",
+        "Laguna de Labradores is about 4 km from Galeana's center, above 1,600 m."
+      ],
+      "price_note": "Airbnb listing: weddings and XV años available at additional cost, by quote.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. Airbnb listing: weddings and XV años available at additional cost, by quote."
+    },
+    {
+      "key": "cabanas_laguna_azul_galeana",
+      "name": "Cabañas & Hotel Laguna Azul",
+      "short": "Laguna Azul",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Galeana",
+      "place": "Galeana, Nuevo León",
+      "lat": 24.833,
+      "lng": -100.067,
+      "loc_precision": "town",
+      "type": "mountain",
+      "description": "Lakeshore cabins, hotel rooms and glamping on Laguna de Labradores among pines, with an event room overlooking the lake.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Right on a turquoise, pine-ringed mountain lake; lodge quality unverified.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No event or catering details published.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "Galeana lows average ~8–9 °C in October–November and can reach −9 °C in winter; the event room is the only indoor space mentioned.",
+      "drive_saltillo_min": 115,
+      "drive_mty_min": 190,
+      "ap": "SLW",
+      "rev": "1.0 from 1 review (Airbnb room listing)",
+      "conf": "listed",
+      "photos_url": "https://www.airbnb.com/rooms/884197227914454363",
+      "src": [
+        "https://www.airbnb.com/rooms/884197227914454363",
+        "https://www.yumping.com/es-MX/campamentos/cabanas-laguna-azul--e19744304"
+      ],
+      "catch": "Event-room capacity unknown and reviews are almost nonexistent.",
+      "facts_list": [
+        "On the shore of Laguna de Labradores, surrounded by pines and mountains.",
+        "Offers hotel rooms, cabins, glamping and camping.",
+        "Activities include kayaks, boats, horseback riding and tours to Pozo del Gavilán."
+      ],
+      "price_note": "No event pricing found.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. No event pricing found."
+    },
+    {
+      "key": "la_finca_de_santiago",
+      "name": "La Finca de Santiago",
+      "short": "La Finca de Santiago",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Comunidad San Francisco)",
+      "place": "Santiago (Comunidad San Francisco), Nuevo León",
+      "lat": 25.4093,
+      "lng": -100.1787,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Country garden venue on the Camino al Socavón above Santiago, billed as a unique-concept garden surrounded by nature with sweeping mountain views.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Reviewers say the mountain view is so strong it barely needs decoration; it is a modern garden, not a historic building.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No catering policy is published anywhere; ask whether an outside taquero can come in.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "Sold as an open-air garden; no enclosed salon confirmed, so budget for a heated tent on cold November nights. Reviews note the views depend on the weather.",
+      "drive_saltillo_min": 110,
+      "drive_mty_min": 45,
+      "ap": "MTY",
+      "rev": "About 4.5–4.6 from 100–146 reviews (Google; figures differ by source); 86% recommend from 11 reviews (Facebook)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/lafincadesantiago/",
+      "src": [
+        "https://www.instagram.com/lafincadesantiago/",
+        "https://www.facebook.com/fincadesantiago/",
+        "https://eventumcool.com/lugares/la-finca-de-santiago/",
+        "https://foursquare.com/v/la-finca-de-santiago/6394f89192e8400076f21763"
+      ],
+      "catch": "Almost nothing published on price, capacity, hours or catering",
+      "facts_list": [
+        "Address: Camino al Socavón, Comunidad San Francisco, Santiago, NL",
+        "Instagram bio: unique-concept garden surrounded by nature with a spectacular mountain view (7.4k followers)",
+        "Reviewers warn the ground is uneven, hard in heels or for guests with limited mobility",
+        "Runs open houses and posts autumn weddings ('Bodas de otoño' highlight)",
+        "Other numbers in listings: +52 81 3408 7685 (Google) and +52 81 1047 1762 (directory)"
+      ],
+      "price_note": "No price published on Instagram, Facebook or directories; the website listed on Facebook (lafincadesantiago.com) does not resolve.",
+      "reason": "No price published yet. No price published on Instagram, Facebook or directories; the website listed on Facebook (lafincadesantiago.com) does not resolve."
+    },
+    {
+      "key": "villa_los_faroles",
+      "name": "Villa Los Faroles",
+      "short": "Villa Los Faroles",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (centro)",
+      "place": "Santiago (centro), Nuevo León",
+      "lat": 25.424,
+      "lng": -100.1537,
+      "loc_precision": "exact",
+      "type": "hacienda",
+      "description": "Restored colonial casona in the old centre of the Santiago Pueblo Mágico, about 300 m from the Santiago Apóstol parish church, run for events by Marver Eventos.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Arches, stone walls, a central patio with a noria and lantern-lit gardens in the old town; sold as a 150-year-old hacienda, though that history is undocumented.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "The venue is run by caterer Marver Eventos, so their banquet is probably expected; a taquero would need their approval.",
+      "cap_min": 50,
+      "cap_max": 350,
+      "covered": "enclosed salon",
+      "winter_note": "Interior halls can take the reception if it turns cold or wet; one couple said planning outdoors was stressful given Monterrey's weather.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 40,
+      "ap": "MTY",
+      "rev": "4.5 from 414 reviews (Google, via SpotsMexico); 4.5 from 196 reviews (directory)",
+      "conf": "listed",
+      "photos_url": "https://atelierf48.com/boda-wedding-villa-los-faroles-bohemia-santiago-pueblo-magico/",
+      "src": [
+        "https://villalosfaroles.com/",
+        "https://spotsmexico.com/spots/villa-los-faroles/",
+        "https://eventumcool.com/lugares/villa-los-faroles/",
+        "https://reservas.events/contrata-el-servicio-de/villa-los-faroles/",
+        "https://www.bodas.com.mx/historias-boda/hugo-selene--rw4629",
+        "https://bodasmexico.com.mx/proveedor/marver-eventos/",
+        "https://atelierf48.com/boda-wedding-villa-los-faroles-bohemia-santiago-pueblo-magico/"
+      ],
+      "catch": "Google reviews mention noise limits that make a band and dancing hard",
+      "facts_list": [
+        "Address: Zaragoza 128, Centro, Santiago, NL",
+        "About 300 m from the Parroquia de Santiago Apóstol",
+        "Operated by Marver Eventos (catering, furniture and venue management); Marver did banquet, drinks and flowers at a 2016 wedding there",
+        "Reviews also flag poor ventilation, few restrooms and strict staff oversight",
+        "Capacity given as 50–350 (its website, via search) vs 250 max on a booking listing"
+      ],
+      "price_note": "Third-party booking listing (reservas.events): basic package for 250 guests from $159,750 MXN (≈$639/guest), 5 hours of service; the same listing also shows a contradictory $35,750 'todo incluido'. Unverified.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Third-party booking listing (reservas.events): basic package for 250 guests from $159,750 MXN (≈$639/guest), 5 hours of service; the same listing also shows a contradictory $35,750 'todo incluido'. Unverified.",
+          38340,
+          44730,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "la_casona_de_santa_lucia",
+      "name": "La Casona de Santa Lucía",
+      "short": "Casona Santa Lucía",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Monterrey (Barrio Antiguo / Santa Lucía)",
+      "place": "Monterrey (Barrio Antiguo / Santa Lucía), Nuevo León",
+      "lat": 25.6703,
+      "lng": -100.306,
+      "loc_precision": "exact",
+      "type": "other",
+      "description": "1871 neoclassical casona beside the Paseo Santa Lucía riverwalk in central Monterrey, now an event venue with two arched salons and a terrace.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "A genuine 19th-century casona listed as a national monument (and Pancho Villa's reputed headquarters), with arches and balconies; it is downtown, with no garden.",
+      "end": "No limit",
+      "end_h": 99,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "The house banquet is exclusive and the space can't be rented alone; ask whether they can add a taquero station.",
+      "cap_min": 80,
+      "cap_max": 550,
+      "covered": "enclosed salon",
+      "winter_note": "Fully indoor salons; a review says a rained-out civil ceremony was moved into the salon quickly.",
+      "drive_saltillo_min": 70,
+      "drive_mty_min": 5,
+      "ap": "MTY",
+      "rev": "5.0 from 34 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/lacasonadesantalucia/",
+      "src": [
+        "https://www.bodas.com.mx/salones-para-bodas/la-casona-de-santa-lucia--e188857",
+        "https://www.bodas.com.mx/salones-para-bodas/la-casona-de-santa-lucia--e188857/opiniones",
+        "https://lacasona.com.mx/",
+        "https://lacasona.com.mx/salones/salon-tenerias/",
+        "https://lacasona.com.mx/salones/salon-santa-lucia/",
+        "https://lacasona.com.mx/salones/terraza/",
+        "http://arquitecturamonterrey.blogspot.com/2012/11/la-casona-de-santa-lucia.html",
+        "https://www.instagram.com/lacasonadesantalucia/"
+      ],
+      "catch": "City-centre salons, not a garden; can book two events the same day",
+      "facts_list": [
+        "Built 1871 in the old Las Tenerías tanning quarter; restored in 1998 by owner Margara Garza Sada, a project that won an architecture award",
+        "Salón Tenerías seats 80–220 at a banquet; Salón Santa Lucía 250–600; terrace up to 60 for a civil ceremony",
+        "No time limit on events (bodas.com.mx FAQ)",
+        "No band exclusivity; couples can bring their own cake",
+        "Reviewers single out the food"
+      ],
+      "price_note": "Menús desde $1,200 por invitado; FAQ range $1,200–$1,400 (3-course menu); no space-only rental; $20,000 MXN surcharge if the guest minimum isn't met (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,200 por invitado; FAQ range $1,200–$1,400 (3-course menu); no space-only rental; $20,000 MXN surcharge if the guest minimum isn't met (bodas.com.mx)",
+          72000,
+          84000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_los_carmelitos",
+      "name": "Quinta Los Carmelitos",
+      "short": "Los Carmelitos",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "García (centro)",
+      "place": "García (centro), Nuevo León",
+      "lat": 25.8177,
+      "lng": -100.6,
+      "loc_precision": "exact",
+      "type": "hacienda",
+      "description": "Rural hacienda-style quinta in García with a one-hectare walnut garden, fountain, kiosk, pool and a covered reception area.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Reviewers call the building unusual and dreamy and the walnut garden suits papel picado, but photos weren't checked and it sits in town.",
+      "end": "No limit",
+      "end_h": 99,
+      "end_src": "listed",
+      "taq_label": "Yes",
+      "taq_txt": "Space-only rental is allowed and there is no banquet exclusivity, so an outside taquero should be fine.",
+      "cap_min": 100,
+      "cap_max": 400,
+      "covered": "covered terrace",
+      "winter_note": "Covered reception area, plus a climate-controlled room in the house for only 70–80 guests; a dinner for 100+ would need side panels or heaters in November.",
+      "drive_saltillo_min": 55,
+      "drive_mty_min": 40,
+      "ap": "MTY",
+      "rev": "4.8 from 5 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/quintas-para-bodas/quinta-los-carmelitos--e169259",
+      "src": [
+        "https://www.bodas.com.mx/quintas-para-bodas/quinta-los-carmelitos--e169259"
+      ],
+      "catch": "Few reviews, no direct contact listed, can book two events a day",
+      "facts_list": [
+        "Address: Callejón del Perro 210, Centro, García, NL",
+        "No exclusivity on banquet, band or photographer",
+        "Free corkage ('descorche libre')",
+        "One review says the banquet needs work, so an outside caterer may be the better route"
+      ],
+      "price_note": "Fixed venue rental $15,000; menús desde $600 por invitado (FAQ $600–$900) if you use theirs; free corkage (bodas.com.mx)",
+      "rows": [
+        [
+          "Venue rental, listed: Fixed venue rental $15,000; menús desde $600 por invitado (FAQ $600–$900) if you use theirs; free corkage (bodas.com.mx)",
+          15000,
+          15000,
+          0,
+          "Listed price; ask for the November 2027 quote",
+          "venue"
+        ],
+        [
+          "Mexican buffet (caterer, incl. furniture & waiters)",
+          45000,
+          52500,
+          0,
+          "",
+          "buffet"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "princess_wedding_gardens",
+      "name": "Princess Wedding Gardens",
+      "short": "Princess Gardens",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Los Rodríguez)",
+      "place": "Santiago (Los Rodríguez), Nuevo León",
+      "lat": 25.4725,
+      "lng": -100.169,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Established garden venue on the Monterrey side of Santiago with century-old trees, a lake and fountains, set up under six white tents.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Old trees and a lake give it some romance, but it is a tented, packaged garden in town.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "House catering is mandatory; a taquero would have to be arranged through them.",
+      "cap_min": 100,
+      "cap_max": 400,
+      "covered": "covered terrace",
+      "winter_note": "No salon; guests sit under six white tents, so cold nights need side walls and heaters.",
+      "drive_saltillo_min": 100,
+      "drive_mty_min": 35,
+      "ap": "MTY",
+      "rev": "4.5 from 61 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/princess-wedding-gardens--e72335",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/princess-wedding-gardens--e72335"
+      ],
+      "catch": "Tent-only garden; one couple disputed a $20,000 cancellation penalty",
+      "facts_list": [
+        "Address: Juárez 100, Los Rodríguez, Santiago, NL",
+        "Ends at 02:00; one event per day",
+        "No band or photographer exclusivity; own cake allowed at no charge",
+        "Preferential room rate at the Holiday Inn Eugenio Garza Sada"
+      ],
+      "price_note": "Menús desde $1,250 por persona; FAQ $1,250–$1,400 (4-course plated menu); no space-only rental; open bar or free corkage (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,250 por persona; FAQ $1,250–$1,400 (4-course plated menu); no space-only rental; open bar or free corkage (bodas.com.mx)",
+          75000,
+          87500,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "penelope_concepts",
+      "name": "Penélope Concepts (Jardín Muelle)",
+      "short": "Penélope Concepts",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Presa de la Boca)",
+      "place": "Santiago (Presa de la Boca), Nuevo León",
+      "lat": 25.4203,
+      "lng": -100.144,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "New wedding garden on the shore of the Presa de la Boca with a pier for ceremonies, a covered area and a salon, sold as all-in packages.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "A pier ceremony on the reservoir with the Sierra behind could be special, but it is brand new and unseen; a 4 if the photos deliver.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Banquet is exclusive and the space can't be rented alone; ask whether a taquero station can be added.",
+      "cap_min": 50,
+      "cap_max": 300,
+      "covered": "covered terrace",
+      "winter_note": "Listing shows a covered area and a salon besides the garden and pier; the salon's size and whether it closes in are unconfirmed.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 40,
+      "ap": "MTY",
+      "rev": "No reviews yet (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/penelope-concepts--e428678",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/penelope-concepts--e428678"
+      ],
+      "catch": "Brand-new venue with no reviews",
+      "facts_list": [
+        "On the Carretera Nacional side of the Presa de la Boca, Santiago",
+        "Ends at 02:00; one event per day",
+        "No band or photographer exclusivity; bringing your own cake carries a surcharge",
+        "Team claims 15+ years of wedding experience"
+      ],
+      "price_note": "Menús desde $800 por invitado (opening-period promo); packages reportedly include decor, DJ, national bar, soft drinks, waiters and banquet; surcharge below the guest minimum (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $800 por invitado (opening-period promo); packages reportedly include decor, DJ, national bar, soft drinks, waiters and banquet; surcharge below the guest minimum (bodas.com.mx)",
+          48000,
+          56000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "peninsula_eventos",
+      "name": "Península Eventos",
+      "short": "Península Eventos",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Las Cristalinas, Presa de la Boca)",
+      "place": "Santiago (Las Cristalinas, Presa de la Boca), Nuevo León",
+      "lat": 25.4247,
+      "lng": -100.1517,
+      "loc_precision": "town",
+      "type": "quinta",
+      "description": "Private lakeside property on the Presa de la Boca with an event garden for up to 200, pool, dock, a waterside cabin and rooms for about 30 people.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Panoramic reservoir and mountain views, but it is a pool-and-lawn rental compound rather than a designed venue.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Rented as a property with an equipped kitchen, which usually means you bring your own caterer; the policy isn't published.",
+      "cap_min": null,
+      "cap_max": 200,
+      "covered": "unclear",
+      "winter_note": "No covered event space is described; plan on a tent for a dinner of 100+.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 40,
+      "ap": "MTY",
+      "rev": "4.8–4.9 average visitor rating shown on its website (links to Google reviews)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/peninsula.eventos/",
+      "src": [
+        "https://www.peninsulaeventos.com/",
+        "https://www.peninsulaeventos.com/eventos/",
+        "https://www.peninsulaeventos.com/peninsula/",
+        "https://www.instagram.com/peninsula.eventos/",
+        "https://www.posta.com.mx/nuevo-leon/estas-son-las-5-quintas-que-puedes-contratar-en-santiago/vl2008996"
+      ],
+      "catch": "No published hours, rules or prices; late-night noise on a residential lakeshore unconfirmed",
+      "facts_list": [
+        "Address: Neptuno 316, Las Cristalinas, Santiago, NL",
+        "Garden holds events of up to 200 with pool and grill",
+        "Lodging: a 3-bedroom house for 18–20, a 3-room hostel and a waterside cabin for 4",
+        "Posted a Sept 2026 warning about impersonators; book only through its official numbers"
+      ],
+      "price_note": "No prices published on its website or Instagram.",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "reason": "No price published yet. No prices published on its website or Instagram."
+    },
+    {
+      "key": "hama_eventos",
+      "name": "Hama Eventos",
+      "short": "Hama",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Allende (Carretera Nacional km 230)",
+      "place": "Allende (Carretera Nacional km 230), Nuevo León",
+      "lat": 25.287,
+      "lng": -100.033,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Boutique weekend-wedding venue in Allende with gardens set among century-old encino oaks and guest lodging in 'Casa G'.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Gardens among century-old oaks sound lovely, but only one short listing exists and no photos were reviewed; could be a 4.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "No catering policy published.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "unclear",
+      "winter_note": "No covered or indoor space is described.",
+      "drive_saltillo_min": 120,
+      "drive_mty_min": 50,
+      "ap": "MTY",
+      "rev": "No reviews yet (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/hama-eventos--e433294",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/hama-eventos--e433294"
+      ],
+      "catch": "Almost no public information",
+      "facts_list": [
+        "Address: Carretera Nacional km 230, Allende, NL",
+        "Bills itself as an exclusive space for boutique weekend weddings",
+        "Civil ceremonies and photo sessions on site",
+        "Guest lodging in Casa G"
+      ],
+      "price_note": "No price published (bodas.com.mx listing only).",
+      "reason": "No price published yet. No price published (bodas.com.mx listing only)."
+    },
+    {
+      "key": "oakland_allende",
+      "name": "Oakland Eventos",
+      "short": "Oakland",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Allende (Loma Prieta)",
+      "place": "Allende (Loma Prieta), Nuevo León",
+      "lat": 25.2614,
+      "lng": -99.9975,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Nature-set wedding estate outside Allende with gardens, a lake, its own chapel and a climate-controlled tent, about 45 minutes from Monterrey.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Lake, chapel and mature gardens make a romantic country setting with a strong following (79k on Instagram); it leans 'luxury' rather than rustic.",
+      "end": null,
+      "end_h": null,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Sells all-inclusive packages; no policy on outside caterers is published.",
+      "cap_min": null,
+      "cap_max": null,
+      "covered": "enclosed salon",
+      "winter_note": "Climate-controlled tent ('toldo climatizado'), chapel and hall cover cold or wet nights.",
+      "drive_saltillo_min": 125,
+      "drive_mty_min": 50,
+      "ap": "MTY",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.instagram.com/oakland.mx/",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/oakland--e366861",
+        "https://www.instagram.com/oakland.mx/",
+        "https://www.tiktok.com/@oakland.mx/video/7634190916017851669",
+        "https://www.tiktok.com/@oakland.mx/video/7216430814005972229"
+      ],
+      "catch": "Pricey by reputation; capacity, hours and catering policy unpublished",
+      "facts_list": [
+        "Address: Col. Loma Prieta, Allende, NL",
+        "On-site chapel: Mass, civil ceremony and reception in one place",
+        "Markets itself as 45 minutes from Monterrey",
+        "Its map pin sits about 150 m from Quinta Campestre Venus; they may be neighbours or related"
+      ],
+      "price_note": "Older TikTok promo: all-inclusive garden wedding for 50 guests $66,000 MXN (≈$1,320/guest); the only bodas.com.mx review calls the price high. Current prices unknown.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Older TikTok promo: all-inclusive garden wedding for 50 guests $66,000 MXN (≈$1,320/guest); the only bodas.com.mx review calls the price high. Current prices unknown.",
+          79200,
+          92400,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "albore_villas_boutique",
+      "name": "Albore Villas Boutique",
+      "short": "Albore Villas",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (La Cieneguilla)",
+      "place": "Santiago (La Cieneguilla), Nuevo León",
+      "lat": 25.38,
+      "lng": -100.155,
+      "loc_precision": "town",
+      "type": "mountain",
+      "description": "Small mountain venue with guest villas in La Cieneguilla near Cola de Caballo, selling all-in packages for 50–150 guests.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Sierra Madre forest setting on the waterfall road, but no reviews or photos were checked, so held at 3.",
+      "end": "01:00",
+      "end_h": 1,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Packages offer a Mexican buffet, but the banquet is exclusive; a taquero would have to come through them.",
+      "cap_min": 50,
+      "cap_max": 150,
+      "covered": "enclosed salon",
+      "winter_note": "Has a salon and a chapel; mountain nights in November run colder than Monterrey.",
+      "drive_saltillo_min": 120,
+      "drive_mty_min": 55,
+      "ap": "MTY",
+      "rev": "No reviews yet (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/quintas-para-bodas/albore-villas-boutique--e413492",
+      "src": [
+        "https://www.bodas.com.mx/quintas-para-bodas/albore-villas-boutique--e413492"
+      ],
+      "catch": "Party ends at 01:00; new with no reviews",
+      "facts_list": [
+        "Address: Albore, La Cieneguilla, Santiago, NL",
+        "Package price includes villa lodging with next-day checkout",
+        "One event per day; no band or photographer exclusivity",
+        "Not wheelchair accessible"
+      ],
+      "price_note": "Menús desde $1,110 por invitado (minimum); packages include 3-course menu or Mexican buffet, national open bar, DJ with sound and lights, flowers, cake, parking and villa lodging (bodas.com.mx)",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,110 por invitado (minimum); packages include 3-course menu or Mexican buffet, national open bar, DJ with sound and lights, flowers, cake, parking and villa lodging (bodas.com.mx)",
+          66600,
+          77700,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "hotel_hacienda_cola_de_caballo",
+      "name": "Hotel Hacienda Cola de Caballo",
+      "short": "Hacienda Cola de Caballo",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Carretera a Cola de Caballo)",
+      "place": "Santiago (Carretera a Cola de Caballo), Nuevo León",
+      "lat": 25.3694,
+      "lng": -100.159,
+      "loc_precision": "exact",
+      "type": "mountain",
+      "description": "Hacienda-style mountain hotel a minute's walk from the Cola de Caballo waterfall, with gardens for ceremonies, a salon for up to 500 and 96 rooms.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Beautiful canyon and waterfall surroundings, but the event spaces are a hotel salon and lawns.",
+      "end": "00:00",
+      "end_h": 0,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental is offered, which suggests an outside taquero could work; confirm with the hotel.",
+      "cap_min": 20,
+      "cap_max": 1200,
+      "covered": "enclosed salon",
+      "winter_note": "Indoor salon for up to 500; the canyon is noticeably colder than Monterrey on November nights.",
+      "drive_saltillo_min": 120,
+      "drive_mty_min": 55,
+      "ap": "MTY",
+      "rev": "5.0 from 1 review (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/hoteles-para-bodas/hacienda-cola-de-caballo--e70907",
+      "src": [
+        "https://www.bodas.com.mx/hoteles-para-bodas/hacienda-cola-de-caballo--e70907",
+        "https://www.successfulmeetings.com/Meeting-Event-Venues/Santiago-Mexico/Convention-Hotel/Hotel-Hacienda-Cola-de-Caballo-p5382692"
+      ],
+      "catch": "Hard midnight finish",
+      "facts_list": [
+        "Address: Carretera Cola de Caballo 558 (km 6), La Cieneguilla, Santiago",
+        "96 rooms on site",
+        "One event per day; no band or photographer exclusivity",
+        "Directories list two numbers (+52 81 2285 0260 and +52 81 8369 6640); confirm before calling"
+      ],
+      "price_note": "Menús desde $590 por invitado (3-course lunch or dinner); space-only rental possible, no fixed rental fee (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $590 por invitado (3-course lunch or dinner); space-only rental possible, no fixed rental fee (bodas.com.mx)",
+          35400,
+          41300,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ],
+      "status": "out",
+      "reason": "The party has to end at midnight."
+    },
+    {
+      "key": "hotel_chipinque",
+      "name": "Hotel Chipinque",
+      "short": "Chipinque",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "San Pedro Garza García (Meseta de Chipinque)",
+      "place": "San Pedro Garza García (Meseta de Chipinque), Nuevo León",
+      "lat": 25.6083,
+      "lng": -100.356,
+      "loc_precision": "exact",
+      "type": "mountain",
+      "description": "60-room hotel inside the Chipinque ecological park, high on the Sierra Madre above San Pedro, with miradores, a chapel, terraces and salons.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Forest and cliff-top city views from the miradores are among the best in the metro; the salons themselves are hotel rooms.",
+      "end": "00:00",
+      "end_h": 0,
+      "end_src": "listed",
+      "taq_label": "No",
+      "taq_txt": "Outside catering isn't permitted and the banquet is exclusive.",
+      "cap_min": 50,
+      "cap_max": 400,
+      "covered": "enclosed salon",
+      "winter_note": "Salons for up to 350; one couple moved from the helipad into a salon when it rained.",
+      "drive_saltillo_min": 75,
+      "drive_mty_min": 30,
+      "ap": "MTY",
+      "rev": "4.5 from 20 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://hotelchipinque.com/eventos/",
+      "src": [
+        "https://www.bodas.com.mx/hoteles-para-bodas/hotel-chipinque--e86977",
+        "https://hotelchipinque.com/eventos/",
+        "https://bridebook.com/mx-en/wedding-venues/hotel-chipinque-monterrey-nuevo-le-n-mx6qYN0MXV"
+      ],
+      "catch": "Ends at midnight; in-house catering only",
+      "facts_list": [
+        "Address: Meseta de Chipinque 1000, San Pedro Garza García",
+        "Spaces include miradores for civil ceremonies, a chapel, a helipad (150) and the pool deck (400)",
+        "Reviews mention $500 corkage per bottle and extra charges appearing late",
+        "Offers '2027 wedding at 2026 prices' if contracted before 31 Dec 2026"
+      ],
+      "price_note": "Menús desde $1,300 por invitado (FAQ $1,300–$2,150), plus $8,500 minimum to rent one mirador for 4 hours; minimum of 50 guests charged (bodas.com.mx). Oct-2026 civil package from $39,000 for 30 (hotel site).",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,300 por invitado (FAQ $1,300–$2,150), plus $8,500 minimum to rent one mirador for 4 hours; minimum of 50 guests charged (bodas.com.mx). Oct-2026 civil package from $39,000 for 30 (hotel site).",
+          78000,
+          91000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ],
+      "status": "out",
+      "reason": "The party has to end at midnight."
+    },
+    {
+      "key": "ikaan_villa_spa",
+      "name": "Ikaan Villa Spa",
+      "short": "Ikaan",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Montemorelos / Allende (Congregación Canoas, km 218)",
+      "place": "Montemorelos / Allende (Congregación Canoas, km 218), Nuevo León",
+      "lat": 25.2447,
+      "lng": -99.9512,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Adults-only holistic hotel on 26 hectares of gardens, forest and a stream between Allende and Montemorelos, with a hacienda terrace for about 130 and a lawn for 600+.",
+      "scores": {
+        "setting": 4
+      },
+      "setting_why": "Big natural grounds with a creek, trails and a hacienda terrace sized right for 100–120; reviews fault the service, not the setting.",
+      "end": "No limit",
+      "end_h": 99,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental and no banquet exclusivity per bodas.com.mx, so a taquero should be possible; confirm.",
+      "cap_min": null,
+      "cap_max": 1000,
+      "covered": "covered terrace",
+      "winter_note": "Terraza de la Hacienda (up to 130) plus a salon and tent listed; whether the terrace closes in for cold nights is unconfirmed.",
+      "drive_saltillo_min": 130,
+      "drive_mty_min": 60,
+      "ap": "MTY",
+      "rev": "3.7 from 5 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.ikaan.com.mx/",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/ikaan--e171591",
+        "https://www.ikaan.com.mx/",
+        "https://escapadas.mexicodesconocido.com.mx/hoteles/hotel-ikaan-villa-spa/"
+      ],
+      "catch": "Weak reviews (surprise charges, inexperience with weddings); over 2 hours from Saltillo",
+      "facts_list": [
+        "Address: Carr. Montemorelos–Allende km 218, Congregación Canoas",
+        "19 rooms for up to 70 guests at an event rate with breakfast",
+        "No time limit; one event per day",
+        "$10,000 MXN holds the date; 30% at contract, 40% midway, 30% a month before"
+      ],
+      "price_note": "Menús desde $1,800 MXN por invitado (FAQ $1,800–$2,000): 5 h reception, 1 h civil ceremony, 3-course dinner, 5 h soft drinks, unlimited corkage, waiters, decor, furniture; space-only rental possible (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,800 MXN por invitado (FAQ $1,800–$2,000): 5 h reception, 1 h civil ceremony, 3-course dinner, 5 h soft drinks, unlimited corkage, waiters, decor, furniture; space-only rental possible (bodas.com.mx)",
+          108000,
+          126000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_campestre_venus",
+      "name": "Quinta Campestre Venus",
+      "short": "Campestre Venus",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Allende (Río Ramos, La Peñita)",
+      "place": "Allende (Río Ramos, La Peñita), Nuevo León",
+      "lat": 25.2602,
+      "lng": -99.9972,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "Country-club-style quinta on the Río Ramos outside Allende with palm-lined gardens, a lake house, pools, a palapa, an enclosed salon and cabins.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Lush riverside grounds, but pools, a waterslide and cabins give it a family-resort feel.",
+      "end": "04:00",
+      "end_h": 4,
+      "end_src": "listed",
+      "taq_label": "Likely",
+      "taq_txt": "Space-only rental is allowed and the listing says non-contracted services can be brought in at no cost.",
+      "cap_min": 50,
+      "cap_max": 400,
+      "covered": "enclosed salon",
+      "winter_note": "Has an enclosed event salon, so cold nights are covered.",
+      "drive_saltillo_min": 125,
+      "drive_mty_min": 55,
+      "ap": "MTY",
+      "rev": "No reviews yet (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/quinta-campestre-venus--e237691",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/quinta-campestre-venus--e237691"
+      ],
+      "catch": "No reviews; may be the same riverside property now marketed as Oakland",
+      "facts_list": [
+        "Parties can run until 04:00",
+        "No band or photographer exclusivity",
+        "Guest cabins with pools, waterslide and palapa",
+        "One event per day"
+      ],
+      "price_note": "Menús desde $850 por persona; fixed 'área club' rental shown as '$ 35,' (probably $35,000 MXN, unconfirmed) covering salon, garden, pergolas, lake house and pools; space-only rental allowed (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $850 por persona; fixed 'área club' rental shown as '$ 35,' (probably $35,000 MXN, unconfirmed) covering salon, garden, pergolas, lake house and pools; space-only rental allowed (bodas.com.mx)",
+          51000,
+          59500,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "campestre_la_fuente",
+      "name": "Campestre La Fuente",
+      "short": "Campestre La Fuente",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Monterrey (Campestre El Barro, Carretera Nacional)",
+      "place": "Monterrey (Campestre El Barro, Carretera Nacional), Nuevo León",
+      "lat": 25.5086,
+      "lng": -100.234,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Seven-hectare country estate off the Carretera Nacional with a vintage-lit garden, chapel, kiosk, palapa, pool, a climate-controlled salon and glamping.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Large grounds with a chapel and kiosk, but it reads as a polished event park, and there are no reviews yet.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Venue catering is required; ask whether a taquero station can be added through them.",
+      "cap_min": 80,
+      "cap_max": 400,
+      "covered": "enclosed salon",
+      "winter_note": "Climate-controlled indoor salon besides the garden and tent.",
+      "drive_saltillo_min": 100,
+      "drive_mty_min": 35,
+      "ap": "MTY",
+      "rev": "No reviews yet (bodas.com.mx; listing updated Jan 2026)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/campestre-la-fuente--e389196",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/campestre-la-fuente--e389196"
+      ],
+      "catch": "New listing with no reviews",
+      "facts_list": [
+        "Address: Paseo de los Nogales s/n, Campestre El Barro, Monterrey",
+        "Only one event per day; ends at 02:00",
+        "Glamping, bridal suite and family rooms on site",
+        "No exclusive music provider; offers DJ and 2–5 piece groups"
+      ],
+      "price_note": "Menús desde $700 por invitado; FAQ $700–$1,800; tasting for 4 included; drinks included or open bar; 5% discount for bodas.com.mx couples",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $700 por invitado; FAQ $700–$1,800; tasting for 4 included; drinks included or open bar; 5% discount for bodas.com.mx couples",
+          42000,
+          49000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_el_sabino",
+      "name": "Quinta El Sabino",
+      "short": "El Sabino",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Monterrey (Los Cristales, Carretera Nacional)",
+      "place": "Monterrey (Los Cristales, Carretera Nacional), Nuevo León",
+      "lat": 25.5378,
+      "lng": -100.215,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "Well-reviewed garden quinta on the old road to Santiago with a roofed garden, a palapa for 120 and all-inclusive packages.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Pretty, well-kept garden under a roof, but a standard Carretera Nacional quinta.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "Banquet is exclusive (a Mexican buffet costs extra); a taquero would need their OK.",
+      "cap_min": 100,
+      "cap_max": 300,
+      "covered": "covered terrace",
+      "winter_note": "Roofed garden and palapa kept guests dry in heavy rain, per a review; not enclosed against cold.",
+      "drive_saltillo_min": 95,
+      "drive_mty_min": 30,
+      "ap": "MTY",
+      "rev": "5.0 from 34 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/quinta-el-sabino--e177043",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/quinta-el-sabino--e177043"
+      ],
+      "catch": "Generic look; alcohol bought separately",
+      "facts_list": [
+        "Address: Antiguo Camino a Villa de Santiago 4130, Los Cristales, Monterrey",
+        "99% of couples recommend it on bodas.com.mx",
+        "No band or photographer exclusivity",
+        "One event per day; ends at 02:00"
+      ],
+      "price_note": "Menús desde $1,200 por persona; FAQ $1,200–$1,450; includes 3-course banquet, soft drinks, lighting, music, furniture; alcohol not included (couples buy it); Mexican buffet or fillet extra (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,200 por persona; FAQ $1,200–$1,450; includes 3-course banquet, soft drinks, lighting, music, furniture; alcohol not included (couples buy it); Mexican buffet or fillet extra (bodas.com.mx)",
+          72000,
+          84000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "quinta_terrazo",
+      "name": "Quinta Terrazo",
+      "short": "Terrazo",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Los Pingos, Carretera Nacional)",
+      "place": "Santiago (Los Pingos, Carretera Nacional), Nuevo León",
+      "lat": 25.5388,
+      "lng": -100.204,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Flower-focused garden venue on the Carretera Nacional with a terrace bar, stage, esplanade and a civil-ceremony area.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Lush, well-decorated garden but a conventional event quinta.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Yes",
+      "taq_txt": "Space-only rental is offered and there is no banquet exclusivity; they also offer a Mexican buffet.",
+      "cap_min": 50,
+      "cap_max": 250,
+      "covered": "unclear",
+      "winter_note": "A terrace and terrace bar are listed; no enclosed salon is mentioned.",
+      "drive_saltillo_min": 95,
+      "drive_mty_min": 30,
+      "ap": "MTY",
+      "rev": "4.9 from 24 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/quinta-terrazo--e198865",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/quinta-terrazo--e198865"
+      ],
+      "catch": "Conventional garden; one review found dinner lighting dim",
+      "facts_list": [
+        "Address: Los Pingos 102, Santiago (Carretera Nacional), NL",
+        "No exclusivity on banquet, band or photographer",
+        "Valet parking; one event per day; ends at 02:00",
+        "$5,000 holds the date"
+      ],
+      "price_note": "Menús desde $600 por invitado; FAQ $600–$1,000; space-only rental possible; drinks included, open bar or free corkage (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $600 por invitado; FAQ $600–$1,000; space-only rental possible; drinks included, open bar or free corkage (bodas.com.mx)",
+          36000,
+          42000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "jardin_los_agaves",
+      "name": "Jardín Los Agaves",
+      "short": "Los Agaves",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Carretera Nacional km 254)",
+      "place": "Santiago (Carretera Nacional km 254), Nuevo León",
+      "lat": 25.4702,
+      "lng": -100.175,
+      "loc_precision": "exact",
+      "type": "garden_estate",
+      "description": "Garden at the foot of the mountain on the Carretera Nacional with a waterfall garden, a dome and pergolas for ceremonies and a semi-open roofed reception area.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Mountain backdrop and waterfall garden are nice touches, but it is a packaged event garden.",
+      "end": "02:00",
+      "end_h": 2,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "House banquet is exclusive (Mexican cazuelas offered); a taquero only through them.",
+      "cap_min": 100,
+      "cap_max": 200,
+      "covered": "covered terrace",
+      "winter_note": "Reviews describe it as open but roofed, and a tent is listed; not enclosed.",
+      "drive_saltillo_min": 100,
+      "drive_mty_min": 35,
+      "ap": "MTY",
+      "rev": "4.8 from 11 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/jardin-los-agaves--e327409",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/jardin-los-agaves--e327409"
+      ],
+      "catch": "Can host two events a day; mixed food reviews",
+      "facts_list": [
+        "Address: Carretera Nacional km 254, Los Rodríguez, Santiago",
+        "Minimum 100 guests, maximum 200",
+        "No band or photographer exclusivity",
+        "Cash payments only"
+      ],
+      "price_note": "Menús desde $900 por persona; FAQ $900–$1,060 (3-course: poultry, Mexican cazuelas or Italian); no space-only rental; cash only (bodas.com.mx)",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $900 por persona; FAQ $900–$1,060 (3-course: poultry, Mexican cazuelas or Italian); no space-only rental; cash only (bodas.com.mx)",
+          54000,
+          63000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ]
+    },
+    {
+      "key": "los_olmos_santiago",
+      "name": "Los Olmos",
+      "short": "Los Olmos",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santiago (Las Cristalinas)",
+      "place": "Santiago (Las Cristalinas), Nuevo León",
+      "lat": 25.4247,
+      "lng": -100.1517,
+      "loc_precision": "town",
+      "type": "garden_estate",
+      "description": "Intimate garden and terrace in Las Cristalinas, Santiago, selling all-inclusive dinners with a premium open bar for up to 100 guests.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "Same leafy Las Cristalinas area as Hacienda Los Olivos, but a small garden, and photos weren't reviewed.",
+      "end": "00:00",
+      "end_h": 0,
+      "end_src": "listed",
+      "taq_label": "Unclear",
+      "taq_txt": "In-house menus only, with one banquet provider; ask about a taquero.",
+      "cap_min": 10,
+      "cap_max": 100,
+      "covered": "unclear",
+      "winter_note": "Only a garden and a terrace are listed; no indoor salon for cold or rain.",
+      "drive_saltillo_min": 105,
+      "drive_mty_min": 40,
+      "ap": "MTY",
+      "rev": "5.0 from 14 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/los-olmos--e409214",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/los-olmos--e409214"
+      ],
+      "catch": "Ends at midnight and caps at 100 guests",
+      "facts_list": [
+        "Address: Camino al Terrero 105, Las Cristalinas, Santiago",
+        "One event per day; no photographer or band exclusivity",
+        "Reviews praise home-style food and attentive staff; one says drinks were weak",
+        "No guest lodging"
+      ],
+      "price_note": "Menús desde $1,000 por invitado ($1,000–$1,800), including 4-course dinner, premium open bar, dessert wine and cheese, welcome cocktail and ambient DJ; no rental fee; no space-only rental (bodas.com.mx)",
+      "loc_note": "Pin placed at the town; the exact address isn't confirmed.",
+      "rows": [
+        [
+          "House menu or package per guest, listed: Menús desde $1,000 por invitado ($1,000–$1,800), including 4-course dinner, premium open bar, dessert wine and cheese, welcome cocktail and ambient DJ; no rental fee; no space-only rental (bodas.com.mx)",
+          60000,
+          70000,
+          0,
+          "Listed per-guest price; confirm what it includes",
+          "venue"
+        ],
+        [
+          "Live taquero station (pastor, arrachera, pollo)",
+          9000,
+          10500,
+          0,
+          "",
+          "taco"
+        ],
+        [
+          "Open bar — BYO alcohol + bartenders",
+          21000,
+          24500,
+          0,
+          "",
+          "bar"
+        ],
+        [
+          "Mariachi, cocktail hour (1 h)",
+          6000,
+          6000,
+          0,
+          "",
+          "mariachi"
+        ],
+        [
+          "Live band (first part of reception)",
+          25000,
+          25000,
+          0,
+          "",
+          "band"
+        ],
+        [
+          "DJ + lighting + dance floor to ~2:30 a.m.",
+          20000,
+          20000,
+          0,
+          "",
+          "dj"
+        ],
+        [
+          "Photographer (8–10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Coordinator (month-of)",
+          20000,
+          20000,
+          0,
+          "",
+          "coord"
+        ],
+        [
+          "Symbolic officiant",
+          8000,
+          8000,
+          0,
+          "",
+          "officiant"
+        ],
+        [
+          "Décor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Guest shuttles (round trip, late return)",
+          12000,
+          12000,
+          0,
+          "",
+          "shuttles"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ],
+        [
+          "Patio heaters (Nov nights near 5°C)",
+          12000,
+          12000,
+          0,
+          "",
+          "heaters"
+        ]
+      ],
+      "status": "out",
+      "reason": "The party has to end at midnight."
+    },
+    {
+      "key": "quinta_eucalipto_huasteca",
+      "name": "Quinta Eucalipto La Huasteca",
+      "short": "Eucalipto Huasteca",
+      "groupLabel": "Saltillo & Monterrey",
+      "state": "Nuevo León",
+      "town": "Santa Catarina (La Huasteca road)",
+      "place": "Santa Catarina (La Huasteca road), Nuevo León",
+      "lat": 25.6387,
+      "lng": -100.461,
+      "loc_precision": "exact",
+      "type": "quinta",
+      "description": "Large quinta on the road into La Huasteca canyon with a roofed salon-terrace, gardens, a small waterfall and pond and a lookout, rented with a kitchen for your own caterer.",
+      "scores": {
+        "setting": 3
+      },
+      "setting_why": "The Huasteca cliffs make a dramatic backdrop, but the quinta itself (pool, play area) is basic and reviews mention upkeep problems.",
+      "end": "06:00",
+      "end_h": 6,
+      "end_src": "listed",
+      "taq_label": "Yes",
+      "taq_txt": "No in-house catering and no banquet exclusivity; the kitchen is provided for the couple's caterer.",
+      "cap_min": 10,
+      "cap_max": 1000,
+      "covered": "covered terrace",
+      "winter_note": "Roofed salon-terrace for 500+, but open-sided, so cold nights need panels or heaters.",
+      "drive_saltillo_min": 60,
+      "drive_mty_min": 30,
+      "ap": "MTY",
+      "rev": "3.9 from 12 reviews (bodas.com.mx)",
+      "conf": "listed",
+      "photos_url": "https://www.bodas.com.mx/jardines-para-bodas/quinta-eucalipto-la-huasteca--e72300",
+      "src": [
+        "https://www.bodas.com.mx/jardines-para-bodas/quinta-eucalipto-la-huasteca--e72300"
+      ],
+      "catch": "Weak reviews: dirty grounds and power cuts reported",
+      "facts_list": [
+        "Address: Huasteca 129, La Española, Santa Catarina",
+        "Parties allowed until 06:00",
+        "No exclusivity on banquet, band or photographer",
+        "Handles the municipal event permit; offers candle lanterns and tree lighting"
+      ],
+      "price_note": "Listing shows 'Menú desde $55' per guest (implausible) and a fixed rental fee without the amount (bodas.com.mx)",
+      "reason": "No price published yet. Listing shows 'Menú desde $55' per guest (implausible) and a fixed rental fee without the amount (bodas.com.mx)"
     }
   ],
   "override": {
     "terraserena": {
       "status": "out",
-      "reason": "Its own 2026–27 wedding PDF: the party has to end at midnight, banquet is exclusive to Villa Ferré (plated 3 courses, MXN 1,350–1,600 a guest + IVA), and the venue alone is MXN 210,000 plus a required tent (MXN 99,000–165,000 + IVA). Roughly MXN 535k (about $29k) at 110 guests before music, photo or bar."
+      "reason": "Its own 2026–27 wedding PDF: the party has to end at midnight, banquet is exclusive to Villa Ferré (plated 3 courses, MXN 1,350–1,600 a guest + IVA), and the venue alone is MXN 210,000 plus a required tent (MXN 99,000–165,000 + IVA). Roughly MXN 535k (about $29k) at 110 guests before music, photo or bar.",
+      "scores": {
+        "setting": 4
+      }
+    },
+    "capricho_parras": {
+      "scores": {
+        "setting": 3
+      }
     }
   }
 }

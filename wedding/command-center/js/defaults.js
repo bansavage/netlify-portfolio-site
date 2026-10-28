@@ -96,7 +96,7 @@ export const DEFAULT_CONFIG = {
   // Saltillo & Monterrey: a wedding near Daina's family, ranked on the venue itself, never rooms (Oct 27)
   norte: {
     guests: { low: 90, plan: 110, high: 130 }, // more of the Saltillo family comes when it's a drive away
-    weights: { setting: 60, cost: 30, near: 10 },
+    weights: { setting: 70, cost: 30, near: 0 }, // Kyle, Oct 27: setting and cost only
   },
   weekend: {
     welcome: { on: true, pp: 700 },
