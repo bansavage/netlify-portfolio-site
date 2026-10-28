@@ -375,13 +375,137 @@
     }
   },
   "antigua_ldm": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "info@haciendaantigua.com",
-      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices."
-    }
+      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27, 7:31 PM: replied with rates and terms (event fee, 4-night minimum, music down at 11 p.m.)."
+    },
+    "rows": [
+      [
+        "Event fee, up to 75 guests: US$1,250 (76–125 guests: US$1,500); includes the space for one day, next-morning cleaning, traffic control and trash",
+        23062,
+        23062,
+        1,
+        "Their email Oct 27; max 125 guests",
+        "venue"
+      ],
+      [
+        "Main house, 4-night minimum, 5 suites at US$995 a night in November (up to 8 suites at US$1,535)",
+        73431,
+        73431,
+        1,
+        "Thanksgiving week +20%; refundable damage deposit extra",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        10000,
+        10000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "quote": "Email Oct 27: a private hacienda in a gated development with a big lawn and patio for ceremony and reception, a gourmet kitchen for caterers, indoor/outdoor sound, an upstairs cantina with a patio, and an outdoor kitchen/grill/bar palapa by the lawn. 4-night minimum; November nightly rate US$995–1,535 depending on suites (5–8 suites for 10–16 people); 20% surcharge Thanksgiving week. Three neighbouring villas sleep another 6–31. Event fee: up to 75 guests US$1,250; 76–125 US$1,500 (max 125). No curfew, but music must be turned down at 11 p.m. (HOA rule in the event agreement). Everything else comes in from outside (tables, chairs, dinnerware, catering, flowers); string lights US$275. Refundable damage deposit. They offered a list of planners they use.",
+    "catch": "Music must drop at 11 p.m. (HOA); everything rented in; 4-night villa minimum"
   },
   "galindo": {
     "stage": "asked",
