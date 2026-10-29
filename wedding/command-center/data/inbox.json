@@ -125,8 +125,9 @@
       "sent": "2026-10-24",
       "email": "haciendasusula@gmail.com",
       "phone": "+52 999 551 1641",
-      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call."
-    }
+      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing."
+    },
+    "date": "2026-10-29"
   },
   "cocoyoc": {
     "stage": "quoted",
@@ -2519,14 +2520,14 @@
     ]
   },
   "yaxnic": {
-    "stage": "asked",
+    "stage": "replied",
     "date": "2026-10-29",
     "contact": {
       "channel": "email",
       "email": "reservas@haciendayaxnic.com",
       "whatsapp": "+52 999 102 9455",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Waiting on their reply."
+      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests."
     }
   }
 }
