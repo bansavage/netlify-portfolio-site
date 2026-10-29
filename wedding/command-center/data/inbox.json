@@ -2529,5 +2529,147 @@
       "sent": "2026-10-29",
       "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests."
     }
+  },
+  "zotoluca": {
+    "stage": "quoted",
+    "date": "2026-10-29",
+    "verified": true,
+    "contact": {
+      "channel": "whatsapp",
+      "sent": "2026-10-29",
+      "status": "Oct 29: Daina has been talking with them on WhatsApp and forwarded their answers: the hacienda rental is MXN 250,000; dates offered were \"Friday the 30th of November or Saturday the 31st\" (as written, so the month is unclear); a guided visit costs MXN 1,500 a person. Still open: music end time and extra-hour cost, outside taquero and kitchen or corkage fees, guest minimum, teens, only event that day, rain cover, and whether IVA is on top."
+    },
+    "quote": "Via Daina on WhatsApp, Oct 29: rental of Hacienda Zotoluca MXN 250,000 (IVA not mentioned). Includes the heliport, the troje, side and back gardens, the greenhouse (El Invernadero), the pool area, a civil-ceremony area, 25 rooms for 50 people (rooms with LED TV, Sky, Nespresso, Marshall speaker, L’Occitane soaps), cleaning, security and parking, and chairs and tables for 60. Room rate MXN 7,000 a night plus taxes with breakfast. Hotel La Finca por Zotoluca, 6 minutes away, has 104 rooms at MXN 3,500 plus taxes with breakfast. No in-house banquet; they recommend Pachuca vendors for banquet, flowers and music. Guided visit MXN 1,500 a person.",
+    "catch": "Rental MXN 250,000 (written), outside banquet; 25 rooms for 50 on site plus a 104-room hotel 6 min away",
+    "rows": [
+      [
+        "Hacienda rental: MXN 250,000 (heliport, troje, gardens, greenhouse, pool area, civil-ceremony area, 25 rooms for 50, cleaning, security, parking, chairs and tables for 60)",
+        250000,
+        250000,
+        1,
+        "Their WhatsApp to Daina, Oct 29. IVA not mentioned; ask",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Patio heaters (Nov lows <=57F/14C)",
+        12000,
+        12000,
+        0,
+        "",
+        "heaters"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        10000,
+        10000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   }
 }
