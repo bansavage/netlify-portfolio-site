@@ -2379,19 +2379,143 @@
     }
   },
   "chaka": {
-    "stage": "replied",
+    "stage": "quoted",
     "date": "2026-10-29",
-    "quote": "WhatsApp Oct 29: rental only; they don't offer catering or packages, and any vendor is allowed at no extra cost. The party can run until 4 a.m. (the extra-hour cost is in their PDF). No lodging: one bedroom for the couple from 9 a.m. on the event day until the party ends. Same price from the first guest up to their 350 maximum. Teens are fine. Only one space, the garden, so one event per day. They didn't say what happens if it rains. Price is in their 5-page PDF (not read yet).",
+    "quote": "WhatsApp Oct 29: rental only; they don't offer catering or packages, and any vendor is allowed at no extra cost. The party can run until 4 a.m.. No lodging: one bedroom for the couple from 9 a.m. on the event day until the party ends. Same price from the first guest up to their 350 maximum. Teens are fine. Only one space, the garden, so one event per day. They didn't say what happens if it rains. Written quote (PDF, Oct 29; valid to the end of the month): rental MXN 80,000 + IVA for a 6-hour event, the same up to 350 guests. Includes valet, air-conditioned guest restrooms with continuous cleaning staff and supplies, a 90 kVA backup generator, garden fumigation, parking for 90 cars, a banquet kitchen with staff restrooms, a host bedroom from 9 a.m. until the end, and access for setup and photos from 8 a.m. Extra hour MXN 4,500. 2 free hours if paid in full in cash. To book: sign the contract and pay MXN 20,000 to hold the date; the balance is due 30 days before the event. No covered space mentioned.",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 999 224 5687",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (they list no email). Their site says: no catering (rental only, any vendor allowed), no music time limit (6 hours included, extra hours bookable), one event per day, no rooms on site, 25% deposit to reserve. Oct 29, 12:46–12:52 PM: sent their rental quote (PDF \"HACIENDA CHAKÁ OCT\", 5 pages; not read yet) and answered on WhatsApp: rental only, music until 4 a.m."
+      "status": "Oct 29: sent the template on WhatsApp (they list no email). Their site says: no catering (rental only, any vendor allowed), no music time limit (6 hours included, extra hours bookable), one event per day, no rooms on site, 25% deposit to reserve. Oct 29, 12:46–12:52 PM: sent their rental quote (PDF \"HACIENDA CHAKÁ OCT\", 5 pages: MXN 80,000 + IVA for 6 hours, extra hour MXN 4,500) and answered on WhatsApp: rental only, music until 4 a.m."
     },
     "end": "04:00",
     "end_h": 4,
     "end_src": "written",
     "taq_label": "Yes",
-    "taq_txt": "Yes: rental only, any caterer or taquero at no extra cost (their WhatsApp, Oct 29)"
+    "taq_txt": "Yes: rental only, any caterer or taquero at no extra cost (their WhatsApp, Oct 29)",
+    "verified": true,
+    "catch": "Garden rental only (MXN 80,000 + IVA, 6 h, any vendor free, music to 4 a.m.); nobody sleeps on site and no rain plan stated",
+    "rows": [
+      [
+        "Rental, 6 h, up to 350 guests: MXN 80,000 + 16% IVA (valet, air-conditioned guest restrooms with staff, 90 kVA backup generator, garden fumigation, parking for 90 cars, banquet kitchen, host bedroom from 9 a.m., setup from 8 a.m.)",
+        92800,
+        92800,
+        1,
+        "Their written quote (PDF, Oct 29; valid to the end of the month). MXN 20,000 holds the date, balance 30 days before",
+        "venue"
+      ],
+      [
+        "4 extra hours to run ~5 p.m. to ~2:30 a.m. (6 h included): MXN 4,500 an hour",
+        18000,
+        18000,
+        1,
+        "Their PDF: extra hour MXN 4,500 (IVA may apply); music allowed until 4 a.m. Paying in full in cash adds 2 free hours, cutting this to MXN 9,000",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        16000,
+        16000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   }
 }
