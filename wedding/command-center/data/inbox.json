@@ -3074,5 +3074,15 @@
         "tips"
       ]
     ]
+  },
+  "santamariaregla": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "informes@haciendasantamariaregla.com",
+      "sent": "2026-10-28",
+      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply."
+    }
   }
 }

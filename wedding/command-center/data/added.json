@@ -160,6 +160,35 @@
       "src": [
         "https://casaconejos.mx/"
       ]
+    },
+    {
+      "key": "santamariaregla",
+      "name": "Hacienda Santa María Regla",
+      "short": "Hacienda Santa María Regla",
+      "status": "wild",
+      "groupLabel": "Hidalgo–Tlaxcala–Puebla",
+      "state": "Hidalgo",
+      "town": "Huasca de Ocampo",
+      "place": "Santa María Regla, Huasca de Ocampo, Hidalgo",
+      "place_hint": "Next to the Prismas Basálticos; about 2 h from MEX",
+      "lat": 20.2297,
+      "lng": -98.5617,
+      "loc_precision": "town",
+      "loc_note": "Pin placed at Santa María Regla, next to the Prismas Basálticos (exact address not confirmed).",
+      "ap": "MEX",
+      "drive": 120,
+      "type": "hacienda",
+      "description": "An 18th-century silver hacienda turned hotel beside the Prismas Basálticos, near the Pueblo Mágico of Huasca de Ocampo.",
+      "reason": "Template sent Oct 28, 2026; added Oct 29. They sent an automatic reply and said their team will follow up with packages and prices.",
+      "facts": [
+        "Hotel hacienda next to the Prismas Basálticos",
+        "Oct 29: automatic reply; packages and prices to follow"
+      ],
+      "nextstep": "Wait for their packages and prices; chase the 7 questions if the reply doesn’t answer them",
+      "photos_url": "https://haciendasantamariaregla.com/",
+      "src": [
+        "https://haciendasantamariaregla.com/"
+      ]
     }
   ]
 }
