@@ -3084,5 +3084,110 @@
       "sent": "2026-10-28",
       "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply."
     }
+  },
+  "sanmiguel_vall": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "reservaciones@haciendasanmiguelyucatan.com",
+      "whatsapp": "+52 985 110 5094",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply."
+    }
+  },
+  "dzibikak": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "info@haciendadzibikak.com",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (info@haciendadzibikak.com). Waiting on their reply. A vacation-rental listing for the property says no events, so confirm events are allowed."
+    }
+  },
+  "kaanac": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "gerencia@kaanac.com",
+      "whatsapp": "+52 985 100 6759",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (gerencia@kaanac.com). Waiting on their reply."
+    }
+  },
+  "oxholon": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "haciendaoxhlon@gmail.com",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (haciendaoxhlon@gmail.com, spelled as published on their contact page). Waiting on their reply."
+    }
+  },
+  "hunxectaman": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "contacto@hunxectaman.com",
+      "whatsapp": "+52 999 950 4002",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (anfitrion@tramamx.com and contacto@hunxectaman.com). Waiting on their reply."
+    }
+  },
+  "chuntuac": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "ventas@chuntuac.com",
+      "whatsapp": "+52 999 900 3010",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (ventas@chuntuac.com). Waiting on their reply."
+    }
+  },
+  "sotuta": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "ventas@haciendaviva.com",
+      "whatsapp": "+52 999 175 9923",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (ventas@haciendaviva.com). Waiting on their reply."
+    }
+  },
+  "tahdzibichen": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "email",
+      "email": "ykassis.haciendas@dreamdaycollection.com",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template by email (ykassis.haciendas@dreamdaycollection.com). Waiting on their reply."
+    }
+  },
+  "poxila": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 999 197 6032",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: greeting from their wedding planner asking how they can help; waiting on answers."
+    }
+  },
+  "kinchil": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 999 278 4540",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Waiting on their reply."
+    }
   }
 }
