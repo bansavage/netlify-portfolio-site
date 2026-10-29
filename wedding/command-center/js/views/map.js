@@ -226,6 +226,7 @@ function buildGeo() {
 function venueFeatures() {
   const cl = [], solo = [], names = [];
   for (const r of app.list) {
+    if (r.norte) continue; // the Saltillo tab has its own map
     const v = r.v, st = S.venues[v.key];
     const star = st && st.star ? 1 : 0;
     const props = { key: v.key, status: r.status, top: r.top || 0, star, pri: r.status === "top" ? 100 - r.top : PRI[r.status] + star * 10 };
@@ -573,14 +574,15 @@ function renderList() {
   if (!listEl) return;
   const sort = S.ui.filters.sort;
   let html = "", last = null;
-  if (!app.list.length) html = `<div class="empty" style="margin:10px">No venues match. Clear a filter or the search.</div>`;
-  for (const r of app.list) {
+  const list = app.list.filter((r) => !r.norte); // the Saltillo tab has its own map
+  if (!list.length) html = `<div class="empty" style="margin:10px">No venues match. Clear a filter or the search.</div>`;
+  for (const r of list) {
     const g = sort === "region" ? r.v.groupLabel : sort === "rank" ? (S.ui.filters.star ? "Shortlist" : STATUS[r.status].long) : null;
     if (g && g !== last) { html += `<div class="grp">${esc(g)}</div>`; last = g; }
     html += rowHTML(r);
   }
   listEl.innerHTML = html;
-  document.getElementById("mpCount").textContent = `${app.list.length} of ${app.venues.length} venues`;
+  document.getElementById("mpCount").textContent = `${list.length} of ${app.venues.length} venues`;
   document.getElementById("mpLegend").innerHTML = legendHTML();
   root.querySelector(".mp-head .eyebrow").textContent = `Live map · ${S.cfg.guests.plan} guests`;
   const fxEl = root.querySelector('[data-out="mapfx"]');

@@ -379,6 +379,7 @@ table.vt th.n { font: 600 9.5px/1.2 var(--f-mono); }
 table.vt .vn b { display: block; font-weight: 600; white-space: nowrap; max-width: 270px; overflow: hidden; text-overflow: ellipsis; }
 table.vt .vn small { display: block; color: var(--ink-3); font-size: 12px; white-space: nowrap; max-width: 270px; overflow: hidden; text-overflow: ellipsis; }
 table.vt .rk { width: 44px; }
+table.vt .rk .trk { display: block; margin-top: 2px; font-size: 9.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3, var(--muted)); }
 table.vt .st { width: 34px; }
 table.vt .money b { font: 600 13px/1.1 var(--f-mono); display: block; }
 table.vt .money small { font: 400 10.5px/1.2 var(--f-mono); color: var(--ink-3); }

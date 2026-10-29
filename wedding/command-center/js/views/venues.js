@@ -2,7 +2,7 @@
 // guest count and vision, with the shortlist star and pipeline stage inline.
 
 import { S, commit, venueState } from "../store.js";
-import { app, nav, STATUS, pinHTML, regionsList, shortEnd, shortBeds } from "../app.js";
+import { app, nav, STATUS, pinHTML, regionsList, shortEnd, shortBeds, allResults } from "../app.js";
 import { illo } from "../illo.js";
 import { photoTag } from "../photos.js";
 import { esc, k, kMXN, vbadge, ICON, debounce } from "../util.js";
@@ -42,7 +42,7 @@ function toolbarHTML() {
 function chipsHTML() {
   const f = S.ui.filters;
   const counts = {};
-  for (const r of app.ev.results.values()) counts[r.status] = (counts[r.status] || 0) + 1;
+  for (const r of allResults()) counts[r.status] = (counts[r.status] || 0) + 1;
   const nStar = Object.values(S.venues).filter((s) => s.star).length;
   const ST = ["top", "fit", "wild", "over", "out"];
   const allOn = !f.star && ST.every((s) => f.show[s]);
@@ -60,12 +60,12 @@ function rowHTML(r) {
   const c = S.cfg.budget.ceiling;
   const day = r.plan ? `<div class="money${r.high.usd > c ? " over" : ""}" title="${r.low.n}–${r.high.n} guests: ${k(r.low.usd)}–${k(r.high.usd)} · ${kMXN(r.low.mxn)}–${kMXN(r.high.mxn)}"><b>${k(r.plan.usd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.mxn)}</small></div>` : `<span class="muted">${r.status === "wild" ? "Quote needed" : "—"}</span>`;
   const wk = r.plan ? `<div class="money${r.plan.weekendUsd > c ? " over" : ""}"><b>${k(r.plan.weekendUsd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.weekendMxn)}</small></div>` : "";
-  const rk = r.status === "top" ? pinHTML(r) : r.rank ? `<span class="num muted">${r.rank}</span>` : pinHTML(r);
+  const rk = (r.status === "top" ? pinHTML(r) : r.rank ? `<span class="num muted">${r.rank}</span>` : pinHTML(r)) + (r.norte ? `<small class="trk" title="Ranked and priced on the Saltillo tab, for ${S.cfg.norte.guests.plan} guests">Saltillo</small>` : "");
   const stage = st.stage || "none";
   return `<tr data-key="${esc(v.key)}" class="${app.activeKey === v.key ? "is-active" : ""}${r.status === "out" ? " dim" : ""}">
     <td class="st"><button class="starbtn" type="button" data-star="${esc(v.key)}" aria-pressed="${!!st.star}" aria-label="${st.star ? "Remove from" : "Add to"} shortlist">${ICON.star}</button></td>
     <td class="rk">${rk}</td>
-    <td class="vn"><b>${esc(v.short)}</b><small title="${esc(v.groupLabel)}">${esc(v.place)}</small></td>
+    <td class="vn"><b>${esc(v.short)}</b><small title="${esc(v.groupLabel)}">${esc(v.place)}${r.norte ? ` · ${S.cfg.norte.guests.plan} guests` : ""}</small></td>
     <td>${v.scores ? dots(v.scores.setting) : ""}</td>
     <td style="white-space:nowrap;font-size:12.5px">${esc(shortEnd(v))}</td>
     <td style="font-size:12.5px">${esc(v.taq_label || "—")}</td>
@@ -91,7 +91,7 @@ function tableHTML() {
 
 function cardHTML(r) {
   const v = r.v, st = S.venues[v.key] || {};
-  const badge = r.status === "top" ? `<span class="badge top">Top 20 · #${r.top}</span>` : `<span class="badge ${r.status}">${esc(STATUS[r.status].label)}</span>`;
+  const badge = r.status === "top" ? `<span class="badge top">${r.norte ? "Saltillo top 10" : "Top 20"} · #${r.top}</span>` : `<span class="badge ${r.status}">${esc(STATUS[r.status].label)}</span>`;
   const money = r.plan ? `<div class="money"><b class="${r.high.usd > S.cfg.budget.ceiling ? "over" : ""}">${k(r.plan.usd)}${vbadge(r.v)}</b><small>${kMXN(r.plan.mxn)} · wedding day · ${r.plan.n} guests</small></div>` : `<div class="money"><b>—</b><small>${r.status === "wild" ? "quote needed" : esc(r.why || "")}</small></div>`;
   const chips = [];
   if (v.end) chips.push(`<span class="chip">Ends ${esc(shortEnd(v))}</span>`);
@@ -107,14 +107,14 @@ function renderBody() {
   const body = root.querySelector("#vBody");
   body.innerHTML = S.ui.venueView === "cards" ? (app.list.length ? `<div class="vcards">${app.list.map(cardHTML).join("")}</div>` : `<div class="empty"><b>No venues match.</b>Clear a filter or the search to see more.</div>`) : tableHTML();
   root.querySelector("#vChips").innerHTML = chipsHTML();
-  root.querySelector("#vCount").textContent = `${app.list.length} of ${app.venues.length} · priced for ${S.cfg.guests.plan} guests`;
+  root.querySelector("#vCount").textContent = `${app.list.length} of ${allResults().length} · priced for ${S.cfg.guests.plan} guests (Saltillo ${S.cfg.norte.guests.plan})`;
 }
 
 export const venues = {
   render(el) {
     root = el;
     el.innerHTML = `<div class="wrap">
-      <div class="sec-h"><div><span class="eyebrow">03 — Venues</span><h2>Every venue, <em>live</em></h2><p>All ${app.venues.length} venues from the atlas, re-priced and re-ranked whenever you change the guest count, the vision or the weights. Click a row for everything we know.</p></div>
+      <div class="sec-h"><div><span class="eyebrow">03 — Venues</span><h2>Every venue, <em>live</em></h2><p>All ${allResults().length} venues, the destination atlas and the Saltillo &amp; Monterrey list together, re-priced and re-ranked whenever you change the guest count, the vision or the weights. Saltillo venues keep their own guest count and rank; pick that region to see them alone. Click a row for everything we know.</p></div>
       <div class="acts"><button class="btn" type="button" data-go="map">${ICON.map} Open the map</button></div></div>
       ${toolbarHTML()}
       <div id="vBody"></div>

@@ -40,10 +40,19 @@ export function recompute() {
 
 // on the Saltillo tab a venue is judged by that tab's own ranking
 export const inNorte = () => S.ui.tab === "norte";
-export const res = (key) => (inNorte() && app.nev && app.nev.results.get(key)) || (app.ev && app.ev.results.get(key));
+export const res = (key) => (inNorte() && app.nev && app.nev.results.get(key)) || (app.ev && app.ev.results.get(key)) || (app.nev && app.nev.results.get(key));
 // the destination ranking, whatever tab is showing (map, budget and overview read this)
 export const mainRes = (key) => app.ev && app.ev.results.get(key);
 export const drawerList = () => (inNorte() ? app.nlist : app.list);
+
+// the Venues list carries every venue: the destination ranking plus the Saltillo tab's own
+// venues, which keep their Saltillo pricing (its guest count) and Saltillo rank
+export function allResults() {
+  if (!app.ev) return [];
+  const out = [...app.ev.results.values()];
+  if (app.nev) for (const r of app.nev.results.values()) if (r.v.norteOnly) out.push(r);
+  return out;
+}
 
 export function norteList() {
   if (!app.nev) return [];
@@ -76,7 +85,7 @@ export function passes(r, f = S.ui.filters) {
 
 export function sorter(sort = S.ui.filters.sort) {
   const price = (r) => (r.plan ? r.plan.usd : 9e9);
-  const base = (a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || (a.top || 99) - (b.top || 99) || (a.rank || 999) - (b.rank || 999) || a.v.short.localeCompare(b.v.short);
+  const base = (a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || !!a.norte - !!b.norte || (a.top || 99) - (b.top || 99) || (a.rank || 999) - (b.rank || 999) || a.v.short.localeCompare(b.v.short);
   switch (sort) {
     case "price": return (a, b) => price(a) - price(b) || base(a, b);
     case "weekend": return (a, b) => (a.plan ? a.plan.weekendUsd : 9e9) - (b.plan ? b.plan.weekendUsd : 9e9) || base(a, b);
@@ -96,14 +105,14 @@ const stageRank = (key) => STAGE_RANK[(S.venues[key] && S.venues[key].stage) || 
 export function filterList() {
   if (!app.ev) return [];
   const out = [];
-  for (const r of app.ev.results.values()) if (passes(r)) out.push(r);
+  for (const r of allResults()) if (passes(r)) out.push(r);
   out.sort(sorter());
   return out;
 }
 
 export function regionsList() {
   const m = new Map();
-  for (const v of app.venues) m.set(v.groupLabel, (m.get(v.groupLabel) || 0) + 1);
+  for (const v of [...app.venues, ...app.norte.filter((x) => x.norteOnly)]) m.set(v.groupLabel, (m.get(v.groupLabel) || 0) + 1);
   return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], "es"));
 }
 
