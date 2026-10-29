@@ -17,20 +17,20 @@
   },
   "labor": {
     "stage": "quoted",
-    "date": "2026-09-28",
+    "date": "2026-10-29",
     "quote": "Their reply: only Saturday Nov 13 is open, with a 2-night lodging minimum (a holiday weekend in Mexico). The attached proposal covers the venue and lodging, with up to 8 hours in up to 3 spaces; each extra hour is MXN 12,000, and with every room booked there's no limit on extra hours. Furniture and lighting are quoted separately. Outside vendors are welcome with no fee; a planner is recommended. 21 rooms plus 3 lofts. 30% to hold the date, the rest monthly, paid off a month before.",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
       "channel": "email",
       "email": "info@haciendalalabor.com",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; they sent a proposal Sep 28. Not re-contacted Oct 24."
+      "status": "Emailed Sep 27; they sent a proposal Sep 28. Oct 29: emailed the questions still open (must we book every room, guest minimum, teens, only event that day and rain cover)."
     },
     "verified": true
   },
   "sacchich": {
     "stage": "quoted",
-    "date": "2026-09-27",
+    "date": "2026-10-29",
     "quote": "Matches the app: 3-night minimum at US$2,420 a night (high season, Oct to Apr) plus a US$4,900 venue fee for up to 100 guests, then 10% service and taxes on top. Sleeps 21 in 8 bedrooms. Events end at 2 a.m.; later costs an extra fee that goes to the village school. A planner is required. US$1,000 refundable damage deposit.",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
@@ -38,13 +38,13 @@
       "email": "info@haciendasacchich.com",
       "phone": "+52 999 278 1178",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options."
+      "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options. Oct 29: emailed the questions still open (extra-hour cost after 2 a.m., outside taquero and kitchen/corkage/vendor fees, guest minimum, teens, only event that day and rain cover)."
     },
     "verified": true
   },
   "ochil": {
     "stage": "quoted",
-    "date": "2026-09-28",
+    "date": "2026-10-29",
     "quote": "Available Saturday Nov 6, 2027 (not the 13th). No rooms at Ochil; Catherwood suggests Hacienda Itzincab for close family: 14 rooms, up to 28 people, and it can host the welcome dinner and Sunday brunch. Space and lodging only; music, food, furniture and lighting come from outside vendors. A planner is required. Payments: 30% to book, 40% midway, the rest 6 weeks before. Prices are on Catherwood's 2027-28 rate card (a Drive link).",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
@@ -52,7 +52,7 @@
       "email": "reservations@catherwood.mx",
       "whatsapp": "+52 999 183 8478",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27 (reservations@catherwood.mx); Catherwood replied Sep 28 with their 2027–28 rate card and Nov 6 availability. We said Oct 8 we're reviewing options."
+      "status": "Emailed Sep 27 (reservations@catherwood.mx); Catherwood replied Sep 28 with their 2027–28 rate card and Nov 6 availability. We said Oct 8 we're reviewing options. Oct 29: emailed the questions still open (music end and extra-hour cost, reception end, kitchen/corkage/vendor fees, guest minimum, teens, only event that day and rain cover)."
     },
     "verified": true
   },
@@ -84,14 +84,14 @@
   },
   "magdalena": {
     "stage": "quoted",
-    "date": "2026-09-28",
+    "date": "2026-10-29",
     "quote": "They replied with their Petite package PDF and offered a Zoom call; no Saturday price for our group in the email itself, so the app's price still comes from the listing.",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
       "channel": "email",
       "email": "ventas@haciendalamagdalena.com",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27 (eventos@, cc ventas@); they replied Sep 28 with their Petite package PDF and offered a Zoom. We said Oct 8 we're reviewing options."
+      "status": "Emailed Sep 27 (eventos@, cc ventas@); they replied Sep 28 with their Petite package PDF and offered a Zoom. We said Oct 8 we're reviewing options. Oct 29: sent the 7-question template by email."
     }
   },
   "xcanatun": {
@@ -109,13 +109,13 @@
   },
   "santalucia": {
     "stage": "asked",
-    "date": "2026-09-27",
+    "date": "2026-10-29",
     "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet.",
     "contact": {
       "channel": "email",
       "email": "contacto@haciendasantalucia.com.mx",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27. No reply."
+      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email."
     }
   },
   "susula": {
