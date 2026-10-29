@@ -1474,6 +1474,14 @@
         "venue"
       ],
       [
+        "2 extra hours for a ~5 p.m. golden-hour ceremony (package is 6 h; runs to 1 a.m.): MXN 15,000 an hour for 100 guests",
+        18000,
+        21000,
+        0,
+        "Their email Oct 28: extra hour MXN 15,000 for 100 guests, never past 1 a.m.; scaled to 110 (about MXN 33,000). Sunset is about 6 p.m. in November, so a 7 p.m. start would be after dark",
+        "venue"
+      ],
+      [
         "Mariachi, cocktail hour (1 h)",
         6000,
         6000,
@@ -1611,6 +1619,14 @@
         1,
         "Quoted with the venue; Friday tent MXN 48,000",
         "tent"
+      ],
+      [
+        "2 extra hours for a ~5 p.m. golden-hour ceremony (rental is 7 p.m.–2 a.m.): MXN 5,000 an hour",
+        10000,
+        10000,
+        1,
+        "Their WhatsApp Oct 28: extra hour MXN 5,000. Sunset is about 6 p.m. in November",
+        "venue"
       ],
       [
         "Mexican buffet (caterer, incl. furniture & waiters)",
@@ -2266,6 +2282,17 @@
       "email": "hola@hacienda1800.com",
       "sent": "2026-10-28",
       "status": "Oct 28: sent the template by email (Saltillo version: 100–120 guests). Suggested by our planner on Oct 27; priced from their 2027 brochure until they reply."
+    }
+  },
+  "chaka": {
+    "stage": "asked",
+    "date": "2026-10-29",
+    "quote": "We sent our questions on Oct 29, 2026. No reply yet.",
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 999 224 5687",
+      "sent": "2026-10-29",
+      "status": "Oct 29: sent the template on WhatsApp (they list no email). Their site says: no catering (rental only, any vendor allowed), no music time limit (6 hours included, extra hours bookable), one event per day, no rooms on site, 25% deposit to reserve."
     }
   }
 }
