@@ -2671,5 +2671,153 @@
         "tips"
       ]
     ]
+  },
+  "casaconejos": {
+    "stage": "quoted",
+    "date": "2026-10-29",
+    "verified": true,
+    "contact": {
+      "channel": "whatsapp",
+      "whatsapp": "+52 414 140 6116",
+      "email": "info@casaconejos.mx",
+      "status": "Oct 29: Daina got their garden-rental sheet (2026 prices) and their 2027 wedding package by WhatsApp; both PDFs are in Drive. We haven’t sent our 7 questions yet."
+    },
+    "quote": "Garden rental only (2026 sheet, valid 30 days): MXN 80,000 up to 250 guests, 90,000 for 250 to 350; plus IVA if invoiced. Exclusive use of the gardens for the welcome cocktail, ceremony and party; parking for 140 cars; restrooms with cleaning; architectural lighting; a vendor area to set up a kitchen; 8 hours from the ceremony (extra hour MXN 6,000 booked ahead, 8,000 on the day); the bridal room free if every room is booked. MXN 10,000 holds the date, balance in up to 5 payments, paid off 90 days before (10% off paid in full); MXN 15,000 refundable deposit. Generator rental is mandatory. Lodging (booked on their site): 11 rooms at Casa Conejos, 8 at Hacienda Las Adelitas and a 10-person bungalow, about 66 people; no reception, room service, restaurant or housekeeping. Buffet breakfast MXN 280 a person (minimum 20). Next-day tornaboda in the Tejaban for 70: MXN 15,000. Their 2027 all-in package (with a planner company) starts at 100 guests at MXN 3,095 a person, plated 3 courses, DJ, florals, dance floor and generator included, extra hour MXN 16,000, so it doesn’t fit 60–80 guests or the taquiza.",
+    "catch": "Garden rental MXN 80,000 (2026), your own caterer and taquero; generator mandatory; rooms for about 66 on site",
+    "end": "8 h from the ceremony; extra hours MXN 6,000",
+    "end_h": null,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Garden rental with a vendor kitchen area; bring your own caterer and taquero (their 2026 sheet)",
+    "rows": [
+      [
+        "Garden rental, exclusive, up to 250 guests, 8 h from the ceremony: MXN 80,000 (2026 price)",
+        80000,
+        80000,
+        1,
+        "Their 2026 garden sheet (PDF via Daina, Oct 29). Plus IVA if invoiced; 2027 price not confirmed",
+        "venue"
+      ],
+      [
+        "2 extra hours to ~2:30 a.m. after a ~5 p.m. ceremony: MXN 6,000 an hour booked ahead",
+        12000,
+        12000,
+        1,
+        "Their sheet: MXN 6,000 an hour booked ahead, 8,000 on the day",
+        "venue"
+      ],
+      [
+        "Generator (planta de luz), mandatory",
+        12000,
+        12000,
+        0,
+        "Required by the venue; price not quoted",
+        "generator"
+      ],
+      [
+        "Patio heaters (Nov nights near Tequisquiapan ~6°C)",
+        13000,
+        13000,
+        0,
+        "Their planner lists heaters at MXN 1,300 each; about 10",
+        "heaters"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   }
 }

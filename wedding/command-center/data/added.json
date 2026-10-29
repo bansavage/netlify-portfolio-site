@@ -112,6 +112,54 @@
         "https://www.haciendaelcarmen.mx/",
         "https://historichotels.org/hotels-resorts/hacienda-el-carmen-hotel-and-spa/location.php"
       ]
+    },
+    {
+      "key": "casaconejos",
+      "name": "Casa Conejos & Hacienda Las Adelitas",
+      "short": "Casa Conejos",
+      "status": "fit",
+      "groupLabel": "Bajío",
+      "state": "Querétaro",
+      "town": "Tequisquiapan",
+      "place": "Near Tequisquiapan, Querétaro",
+      "place_hint": "About 15 min from Tequisquiapan; roughly 2 h 15 min from MEX",
+      "lat": 20.52,
+      "lng": -99.89,
+      "loc_precision": "town",
+      "loc_note": "Pin placed at Tequisquiapan; their site says the venue is 15 minutes from town (exact address not confirmed).",
+      "ap": "MEX",
+      "drive": 135,
+      "type": "garden",
+      "description": "Garden venue with mature trees next to Hacienda Las Adelitas, rented exclusively for one event a day, with on-site rooms in both houses.",
+      "reason": "Daina found it, added Oct 29, 2026, from their 2026 garden-rental sheet and their 2027 package.",
+      "scores": {
+        "setting": 3.5,
+        "access": 2.6
+      },
+      "end": "8 h from the ceremony; extra hours MXN 6,000",
+      "end_h": null,
+      "end_src": "written",
+      "taq_label": "Yes",
+      "taq_txt": "Garden rental with a vendor area to set up a kitchen; bring your own caterer and taquero",
+      "beds": 66,
+      "beds_txt": "About 66 in 23 rooms plus a bungalow (Casa Conejos and Hacienda Las Adelitas)",
+      "facts": [
+        "Exclusive use of the gardens the day of the event",
+        "8 hours from the ceremony; extra hour MXN 6,000 booked ahead, 8,000 on the day",
+        "Generator rental is mandatory for vendors and garden lighting",
+        "Lodging only: no reception, room service, restaurant or housekeeping",
+        "Buffet breakfast MXN 280 a person (minimum 20)",
+        "Next-day tornaboda in the Tejaban, MXN 15,000"
+      ],
+      "callouts": [
+        "Garden rental MXN 80,000 up to 250 guests (2026 price)",
+        "On-site rooms for about 66 people"
+      ],
+      "nextstep": "Send the 7-question template; ask for 2027 garden-rental price, room rates and whether music can run past 1 a.m.",
+      "photos_url": "https://casaconejos.mx/",
+      "src": [
+        "https://casaconejos.mx/"
+      ]
     }
   ]
 }
