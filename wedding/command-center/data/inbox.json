@@ -31,16 +31,151 @@
   "sacchich": {
     "stage": "quoted",
     "date": "2026-10-29",
-    "quote": "Matches the app: 3-night minimum at US$2,420 a night (high season, Oct to Apr) plus a US$4,900 venue fee for up to 100 guests, then 10% service and taxes on top. Sleeps 21 in 8 bedrooms. Events end at 2 a.m.; later costs an extra fee that goes to the village school. A planner is required. US$1,000 refundable damage deposit.",
+    "quote": "Matches the app: 3-night minimum at US$2,420 a night (high season, Oct to Apr) plus a US$4,900 venue fee for up to 100 guests, then 10% service and taxes on top. Sleeps 21 in 8 bedrooms. Events end at 2 a.m.; later costs an extra fee that goes to the village school. A planner is required. US$1,000 refundable damage deposit. Email Oct 29: the party can run to 4 a.m. for an extra US$400. Any vendors are allowed, but a wedding planner is mandatory and vendors set up their own outside kitchen (the hacienda kitchen is never used). No guest minimum. Teens are fine. The hacienda is ours alone that day, and the loggia is the covered space for rain.",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
       "channel": "email",
       "email": "info@haciendasacchich.com",
       "phone": "+52 999 278 1178",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options. Oct 29: emailed the questions still open (extra-hour cost after 2 a.m., outside taquero and kitchen/corkage/vendor fees, guest minimum, teens, only event that day and rain cover)."
+      "status": "Emailed Sep 27; they replied the same day with full rates. We said Oct 8 we're reviewing options. Oct 29: emailed the questions still open (extra-hour cost after 2 a.m., outside taquero and kitchen/corkage/vendor fees, guest minimum, teens, only event that day and rain cover). Oct 29, 1:43 PM (email): answered all of them."
     },
-    "verified": true
+    "verified": true,
+    "end": "04:00 (US$400 past 2 a.m.)",
+    "end_h": 4,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: any vendors; they set up their own outside kitchen; planner mandatory (their email, Oct 29)",
+    "rows": [
+      [
+        "3-night buyout US$7,260 + venue fee US$4,900, +10% service, +taxes (your Sept 27 reply)",
+        292912,
+        292912,
+        1,
+        "Lodging for 21 incl. — covers couple + close family",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Wedding planner (required by venue)",
+        32000,
+        32000,
+        0,
+        "",
+        "planner"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        18000,
+        18000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ],
+      [
+        "Party to 4 a.m.: US$400 extra (about MXN 7,400)",
+        7400,
+        7400,
+        1,
+        "Their email Oct 29",
+        "venue"
+      ]
+    ]
   },
   "ochil": {
     "stage": "quoted",
@@ -1840,13 +1975,133 @@
     "verified": true
   },
   "los_membrillos": {
-    "stage": "asked",
+    "stage": "quoted",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 359 3720",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date. 6:15 PM: told them a symbolic wedding for 100–120 in November 2027 (flexible) and asked for answers and prices.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date. 6:15 PM: told them a symbolic wedding for 100–120 in November 2027 (flexible) and asked for answers and prices. Oct 29, 2:09 PM: sent their 2027 wedding menu (PDF \"BODAS 2027\", in Drive), photos and policies.",
       "sent": "2026-10-27"
-    }
+    },
+    "verified": true,
+    "date": "2026-10-29",
+    "quote": "WhatsApp Oct 29 with their 2027 menu PDF: an all-in banquet per guest, 4 plated courses (appetizer, soup or salad, main with two sides, dessert): chicken or pork MXN 1,175–1,185, beef 1,190–1,395, brisket 1,950, salmon 1,215. Includes exclusive use (5 hours of reception plus 3 for the ceremony, cocktail and photos), chairs, tables, linens, china and glassware, waiters, soft drinks and coffee, ceremony setup, free move indoors if it rains, tasting, security, cleaning and a maintenance tech; corkage and pouring free. Not included: music, wine, decoration and dance floor; valet is mandatory at MXN 48 per adult. Minimums: Friday 100 guests, Saturday 150, Sunday 80. 20% deposit with the contract; quotes valid 10 days; dates confirmed only in their office with a contract. Capacity 1,200; 3 indoor salons and 4 gardens. No taquiza on the menu (plated only).",
+    "catch": "All-in plated banquet from MXN 1,175 a guest; Saturday needs 150 guests (Friday 100); valet MXN 48 a guest",
+    "taq_label": "Unclear",
+    "taq_txt": "Their 2027 menu is plated only (4 courses); no taquiza listed; ask whether a taquero can be added",
+    "rows": [
+      [
+        "Saturday: all-in banquet for the 150-guest minimum at MXN 1,175 a guest (4 plated courses, furniture, linens, waiters, soft drinks, coffee, corkage free)",
+        176250,
+        176250,
+        1,
+        "Their 2027 menu (PDF, Oct 29). Friday minimum is 100 guests (110 × 1,175 = MXN 129,250); Sunday minimum 80",
+        "venue"
+      ],
+      [
+        "Valet parking, mandatory: MXN 48 per adult (110)",
+        5280,
+        5280,
+        1,
+        "Their WhatsApp, Oct 29",
+        "venue"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar — BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8–10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Décor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        12000,
+        12000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   },
   "huerta_mil_amores": {
     "stage": "quoted",
