@@ -2779,14 +2779,20 @@
   },
   "yaxnic": {
     "stage": "replied",
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "contact": {
       "channel": "email",
       "email": "reservas@haciendayaxnic.com",
       "whatsapp": "+52 999 102 9455",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests. 3:54 PM (WhatsApp, automated assistant): passed our 60–80-guest request to the sales team, who will send a custom quote in the same chat. Waiting on it."
-    }
+      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests. 3:54 PM (WhatsApp, automated assistant): passed our 60–80-guest request to the sales team, who will send a custom quote in the same chat. Waiting on it. Oct 30 (email): answered all 7 questions; no prices yet, they asked us to continue on WhatsApp for their files."
+    },
+    "end": "03:00",
+    "end_h": 3,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: outside taquero with no charge and no corkage; caterers work from their banquet area, not their kitchen (their email, Oct 30)",
+    "quote": "Email Oct 30: events run 8 hours from the start and can go until 3 a.m.; each extra hour costs 10% of the rent. We set our own timing. Outside taquero allowed with no charge, no corkage or outside-vendor fees; their kitchen isn’t lent to outside banquets, but they have a banquet area caterers use, and partner caterers they can recommend. Two rooms are free for the day; only the couple may stay the night, for MXN 3,000. No room minimum. No guest minimum and no charge for fewer. Teens welcome. Only event that day; covered corridors for rain. They can also supply furniture, tableware, food, drinks and waiters. Files to follow on WhatsApp (999 102 9455)."
   },
   "zotoluca": {
     "stage": "quoted",
@@ -3100,14 +3106,152 @@
     }
   },
   "dzibikak": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "quoted",
+    "date": "2026-10-30",
     "contact": {
       "channel": "email",
       "email": "info@haciendadzibikak.com",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (info@haciendadzibikak.com). Waiting on their reply. A vacation-rental listing for the property says no events, so confirm events are allowed."
-    }
+      "status": "Oct 29: sent the template by email (info@haciendadzibikak.com). Waiting on their reply. A vacation-rental listing for the property says no events, so confirm events are allowed. Oct 30 (email): answered all 7 questions and sent their price list and photo deck (both in Drive). Events are allowed."
+    },
+    "verified": true,
+    "end": "No limit",
+    "end_h": 99,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: any caterer or vendor, no extra charge; the caterer gets the space and brings its own equipment (their email, Oct 30)",
+    "catch": "Rental only, MXN 80,000 + IVA for 51–100 guests (8 h); music until the party ends; generator required; 6 rooms sleep 20–22",
+    "quote": "Email Oct 30: music can run until the party ends; the contract covers 8 hours from guest arrival, extra hour MXN 3,000 (MXN 1,500 with the weekend package, which includes 10 hours). The reception ends whenever we decide. Any vendors we like, no extra charge; the caterer gets the space and brings its own equipment. 6 rooms in all, including the couple’s suite that comes with the rental; renting them is optional (wedding-night rates MXN 1,500–3,000 a room, up to 4 a room; each extra night is MXN 20,000 for all rooms). Rent scales with guest count (no minimum): up to 50 MXN 60,000, 51–100 MXN 80,000, 101–200 MXN 90,000, plus IVA. Any age welcome. One event at a time; rain plan: ceremony under the arches of the old formal garden, dinner under the arches of the main house. Their price list also offers a weekend package: Fri–Mon, 3 nights in all 6 rooms (up to 20), Saturday wedding for 10 hours and a Sunday pool party, MXN 170,000 + IVA. A generator rental is required (unstable CFE power). Price list and photo deck in Drive.",
+    "rows": [
+      [
+        "Hacienda rental, 51–100 guests, 8 h: MXN 80,000 + 16% IVA (couple’s suite the wedding night, restroom cleaning, guarded parking, garden lighting, fumigation, photo use, on-site supervisor)",
+        92800,
+        92800,
+        1,
+        "Their price list (Sep 2025) and email, Oct 30. Weekend option: 3 nights in all 6 rooms (up to 20), 10 h wedding and a Sunday pool party for MXN 170,000 + IVA (MXN 197,200)",
+        "venue"
+      ],
+      [
+        "2 extra hours to run ~5 p.m. to ~2:30 a.m. (8 h included): MXN 3,000 an hour + IVA",
+        6960,
+        6960,
+        1,
+        "Their email, Oct 30: music can run until the party ends; extra hour MXN 3,000 (MXN 1,500 on the weekend package)",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "Their price list: a generator rental is required because CFE power is unstable",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        16000,
+        16000,
+        0,
+        "",
+        "shuttles"
+      ]
+    ]
   },
   "kaanac": {
     "stage": "asked",
@@ -3153,15 +3297,126 @@
     }
   },
   "sotuta": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "quoted",
+    "date": "2026-10-30",
     "contact": {
       "channel": "email",
       "email": "ventas@haciendaviva.com",
       "whatsapp": "+52 999 175 9923",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (ventas@haciendaviva.com). Waiting on their reply."
-    }
+      "status": "Oct 29: sent the template by email (ventas@haciendaviva.com). Waiting on their reply. Oct 30 (email): answered all 7 questions and attached a proposal PDF (space, banquet and rooms for ~60, 2027 rates); not yet saved to Drive."
+    },
+    "verified": true,
+    "taq_label": "Yes",
+    "taq_txt": "Yes: outside taquero and vendors with no access, kitchen or corkage fee, but their kitchen isn’t lent out (their email, Oct 30)",
+    "catch": "Space rental MXN 95,000 with our own caterer (MXN 47,500 only with their banquet, plated at 60 because their taquiza/buffet needs 80+); 30 cabins sleep up to 120",
+    "quote": "Email Oct 30 (Hacienda Viva, the Sotuta de Peón hotel): music end and extra-hour cost, and the reception end, are set in the contract by date and guest count. Our own musicians, DJ, taquero and vendors are welcome with no access, kitchen or corkage fee (vendor details 15 days ahead), but their kitchen isn’t lent to outside caterers. Their taquiza and buffets need at least 80 guests, so at 60 their banquet is plated. Space rental is MXN 95,000, dropping to MXN 47,500 only with their banquet. 30 cabins (16 Superior, 14 Deluxe), up to 4 a cabin; no minimum nights and no need to book all 30: guests book with a group code at 25% off the public rate (rates in their proposal PDF). No guest minimum; rental is a flat event fee. Teens welcome (13+ count as adults for rooms and food). Ours would be the only social event that day; up to 120 fit under one roof if it rains. MXN 10,000 non-refundable holds the date. Their proposal PDF (space, banquet, rooms for ~60 at 2027 rates) is attached to the email and not yet in Drive.",
+    "rows": [
+      [
+        "Space rental with our own caterer: MXN 95,000 (MXN 47,500 only with their banquet)",
+        95000,
+        95000,
+        1,
+        "Their email, Oct 30. IVA not stated. Their taquiza/buffet needs 80+ guests; their kitchen isn’t lent to outside caterers. MXN 10,000 holds the date",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ]
   },
   "tahdzibichen": {
     "stage": "replied",
