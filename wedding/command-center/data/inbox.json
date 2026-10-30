@@ -17,16 +17,17 @@
   },
   "labor": {
     "stage": "quoted",
-    "date": "2026-10-29",
-    "quote": "Their reply: only Saturday Nov 13 is open, with a 2-night lodging minimum (a holiday weekend in Mexico). The attached proposal covers the venue and lodging, with up to 8 hours in up to 3 spaces; each extra hour is MXN 12,000, and with every room booked there's no limit on extra hours. Furniture and lighting are quoted separately. Outside vendors are welcome with no fee; a planner is recommended. 21 rooms plus 3 lofts. 30% to hold the date, the rest monthly, paid off a month before.",
+    "date": "2026-10-30",
+    "quote": "Their reply: only Saturday Nov 13 is open, with a 2-night lodging minimum (a holiday weekend in Mexico). The attached proposal covers the venue and lodging, with up to 8 hours in up to 3 spaces; each extra hour is MXN 12,000, and with every room booked there's no limit on extra hours. Furniture and lighting are quoted separately. Outside vendors are welcome with no fee; a planner is recommended. 21 rooms plus 3 lofts. 30% to hold the date, the rest monthly, paid off a month before. Oct 30 email: rooms need not be booked by us (guests can book), but with no lodging at all the event must end by 9 p.m. No guest minimum (price varies with the final count). Teens welcome. One event at a time within the contracted hours. Rain: the covered Cavalia terrace. Nov 13, 2027 is now booked.",
     "note": "We replied Oct 8 that we're reviewing options.",
     "contact": {
       "channel": "email",
       "email": "info@haciendalalabor.com",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; they sent a proposal Sep 28. Oct 29: emailed the questions still open (must we book every room, guest minimum, teens, only event that day and rain cover)."
+      "status": "Emailed Sep 27; they sent a proposal Sep 28. Oct 29: emailed the questions still open (must we book every room, guest minimum, teens, only event that day and rain cover). Oct 30 (email): answered all four; Nov 13 is now booked, they offered to check other dates."
     },
-    "verified": true
+    "verified": true,
+    "catch": "Nov 13 is gone; without guest lodging the party must end by 9 p.m."
   },
   "sacchich": {
     "stage": "quoted",
@@ -260,9 +261,9 @@
       "sent": "2026-10-24",
       "email": "haciendasusula@gmail.com",
       "phone": "+52 999 551 1641",
-      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing."
+      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing. Oct 29, 10:09 PM (WhatsApp): automatic greeting only; no quote yet."
     },
-    "date": "2026-10-29"
+    "date": "2026-10-30"
   },
   "cocoyoc": {
     "stage": "quoted",
@@ -983,9 +984,9 @@
       "channel": "whatsapp",
       "sent": "2026-10-24",
       "whatsapp": "+52 444 142 5633",
-      "status": "Oct 26: first package holds at 65; others need re-pricing; IVA only with an invoice; sleeps about 40 now (normally 60–70). They want our package choice and a date to check. Oct 26: we asked for quotes on the Compromiso and Ilusión packages for 65, availability for Sat Nov 13, 2027 (alternates Nov 6, Oct 30), and why lodging is 40 right now. Oct 26 evening: they'll re-price both packages for 65 and check the dates; the 5 cabins are rented out as offices with no end date, so lodging is about 40 for now."
+      "status": "Oct 26: first package holds at 65; others need re-pricing; IVA only with an invoice; sleeps about 40 now (normally 60–70). They want our package choice and a date to check. Oct 26: we asked for quotes on the Compromiso and Ilusión packages for 65, availability for Sat Nov 13, 2027 (alternates Nov 6, Oct 30), and why lodging is 40 right now. Oct 26 evening: they'll re-price both packages for 65 and check the dates; the 5 cabins are rented out as offices with no end date, so lodging is about 40 for now. Oct 29 (WhatsApp): Sat Nov 13, 2027 is still free; Nov 6 and Oct 30 are taken. They asked whose name to put on the packages, then sent a 2-page quote PDF (COTIZACIÓN) at 10:40 PM; not in Drive yet."
     },
-    "date": "2026-10-25",
+    "date": "2026-10-30",
     "quote": "WhatsApp Oct 24–25: music can run later (extra hours quoted); the reception ends when you plan it to; you CAN bring your own food and taqueros (kitchen use quoted separately) or they can cater; 7–8 rooms plus 5 cabins, lodging MXN 12,600 a night for 14 people plus MXN 900 per extra person, minimum 14; no guest minimum, they charge only for the guests you have; teens welcome; yours is the only event that day; covered space in the main house and a pergola. 2026 package PDF (per person, listed for 100–500 guests; IVA not stated): Anillo de Compromiso MXN 995 (colonial Mexican buffet, corkage, ice and soft drinks 5 h, linens, kitchen and waiters, hacienda, coordination); Anillo de Matrimonio MXN 1,095 (4-course or traditional Mexican buffet, adds stemware); Ilusión MXN 1,395 (6 h, crossback chairs and wood tables, centerpieces, 1 h mariachi); Boda de tus Sueños MXN 1,995 (adds luxury tents and DJ). Oct 26 reply: the first package (Anillo de Compromiso, MXN 995 pp) holds at 65 guests; the other packages would need re-pricing for fewer than 100 people. Prices are plus IVA only if we want a formal invoice (factura). Extra-hour cost to be confirmed (they assume the top package). Lodging: about 40 people right now, normally 60–70. They asked which package and which specific date to check.",
     "rows": [
       [
@@ -3161,15 +3162,21 @@
     }
   },
   "tahdzibichen": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "replied",
+    "date": "2026-10-30",
     "contact": {
       "channel": "whatsapp",
       "email": "ykassis.haciendas@dreamdaycollection.com",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (ykassis.haciendas@dreamdaycollection.com); it bounced (recipient address rejected). Same evening: sent the template on WhatsApp (+52 999 328 9198, a business account). Waiting on their reply.",
+      "status": "Oct 29: sent the template by email (ykassis.haciendas@dreamdaycollection.com); it bounced (recipient address rejected). Same evening: sent the template on WhatsApp (+52 999 328 9198, a business account). Waiting on their reply. Oct 29, 8:41–8:50 PM (WhatsApp): answered questions 1–3 and 5–7 and sent two PDFs (in Drive); the 100-page brochure is photos only, no prices readable. Rooms (question 4) and the price are still open.",
       "whatsapp": "+52 999 328 9198"
-    }
+    },
+    "quote": "WhatsApp Oct 29: the hacienda is rented by the day, so no music cut-off; it is big enough not to bother anyone. Reception can run to 6 a.m. the next day at the latest. Outside taquero and buffet fine (a vendor new to the hacienda signs their rules); no kitchen, corkage or outside-vendor fees; they can help pick vendors. No guest minimum and no charge for being under. Ages 13 and 16 welcome. Ours would be the only event that day, with covered space for rain. Their 10-things PDF: half-hacienda or full-hacienda pricing, a consecrated church next door, 4 minutes from the Mérida ring road.",
+    "end": "06:00 (next morning)",
+    "end_h": 6,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: outside taquero and buffet allowed, no kitchen, corkage or vendor fees; new vendors sign their rules (their WhatsApp, Oct 29)"
   },
   "poxila": {
     "stage": "asked",
@@ -3182,19 +3189,143 @@
     }
   },
   "kinchil": {
-    "stage": "replied",
-    "date": "2026-10-29",
+    "stage": "quoted",
+    "date": "2026-10-30",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 999 278 4540",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (no email published). Same evening they answered all 7 questions on WhatsApp and sent three PDFs (spaces brochure, 2027 wedding packages with prices, real weddings). Prices are in the packages PDF, not yet read."
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same evening they answered all 7 questions on WhatsApp and sent three PDFs (spaces brochure, 2027 wedding packages with prices, real weddings). Prices are in the packages PDF, not yet read. Oct 29: read their BODAS 2027 PDF (in Drive): venue + 1 night MXN 235,000."
     },
-    "quote": "WhatsApp Oct 29, 7:30–7:53 PM: with a 1-, 2- or 3-night package the whole hacienda (10 rooms, up to 30 guests) is closed for us, with no time limit and no extra-hour charge; they are outside the village, so no noise curfew. Venue-only rental is also possible, up to 12 hours from guest arrival. Any outside vendors welcome (they can recommend some); a kitchen for the caterer is included in the rent; no corkage. Rooms not obligatory. No minimum guests: brochure prices cover 1 to 300 guests, quoted by date and package. Ages 13 and 16 welcome. One event at a time. Rain: Salón Soskil (air-conditioned) and other covered spaces. Consecrated chapel; May–Sep is 20% off list. They asked for our date and whether we want lodging.",
+    "quote": "WhatsApp Oct 29, 7:30–7:53 PM: with a 1-, 2- or 3-night package the whole hacienda (10 rooms, up to 30 guests) is closed for us, with no time limit and no extra-hour charge; they are outside the village, so no noise curfew. Venue-only rental is also possible, up to 12 hours from guest arrival. Any outside vendors welcome (they can recommend some); a kitchen for the caterer is included in the rent; no corkage. Rooms not obligatory. No minimum guests: brochure prices cover 1 to 300 guests, quoted by date and package. Ages 13 and 16 welcome. One event at a time. Rain: Salón Soskil (air-conditioned) and other covered spaces. Consecrated chapel; May–Sep is 20% off list. They asked for our date and whether we want lodging. BODAS 2027 PDF: venue only MXN 185,000 (12 hours, up to 300 guests; +10% per extra 100); venue + 1 night MXN 235,000, + 2 nights 290,000, + 3 nights 325,000 (10 rooms for 30, no time limit, multiple events). 25% deposit, balance 30 days before; 20% off the venue May–Sep. Setup the day before; teardown up to 12 h after.",
     "end": "No limit (with a lodging package; venue-only 12 h)",
     "end_h": 99,
     "end_src": "written",
     "taq_label": "Yes",
-    "taq_txt": "Yes: all vendors welcome, caterer kitchen included in the rent, no corkage (their WhatsApp, Oct 29)"
+    "taq_txt": "Yes: all vendors welcome, caterer kitchen included in the rent, no corkage (their WhatsApp, Oct 29)",
+    "verified": true,
+    "rows": [
+      [
+        "Venue + 1 night package: whole hacienda, 10 suites for up to 30 guests, no time limit on events, host night included",
+        235000,
+        235000,
+        1,
+        "Their BODAS 2027 PDF (WhatsApp, Oct 29). Venue only MXN 185,000 (12 h); + 2 nights 290,000; + 3 nights 325,000. 25% holds the date, balance 30 days before; 20% off the venue May–Sep. IVA not stated",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        16000,
+        16000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Venue + 1 night is MXN 235,000 before food; rooms sleep only 30"
   }
 }
