@@ -3164,10 +3164,11 @@
     "stage": "asked",
     "date": "2026-10-29",
     "contact": {
-      "channel": "email",
+      "channel": "whatsapp",
       "email": "ykassis.haciendas@dreamdaycollection.com",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (ykassis.haciendas@dreamdaycollection.com). Waiting on their reply."
+      "status": "Oct 29: sent the template by email (ykassis.haciendas@dreamdaycollection.com); it bounced (recipient address rejected). Same evening: sent the template on WhatsApp (+52 999 328 9198, a business account). Waiting on their reply.",
+      "whatsapp": "+52 999 328 9198"
     }
   },
   "poxila": {
@@ -3181,13 +3182,19 @@
     }
   },
   "kinchil": {
-    "stage": "asked",
+    "stage": "replied",
     "date": "2026-10-29",
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 999 278 4540",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (no email published). Waiting on their reply."
-    }
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same evening they answered all 7 questions on WhatsApp and sent three PDFs (spaces brochure, 2027 wedding packages with prices, real weddings). Prices are in the packages PDF, not yet read."
+    },
+    "quote": "WhatsApp Oct 29, 7:30–7:53 PM: with a 1-, 2- or 3-night package the whole hacienda (10 rooms, up to 30 guests) is closed for us, with no time limit and no extra-hour charge; they are outside the village, so no noise curfew. Venue-only rental is also possible, up to 12 hours from guest arrival. Any outside vendors welcome (they can recommend some); a kitchen for the caterer is included in the rent; no corkage. Rooms not obligatory. No minimum guests: brochure prices cover 1 to 300 guests, quoted by date and package. Ages 13 and 16 welcome. One event at a time. Rain: Salón Soskil (air-conditioned) and other covered spaces. Consecrated chapel; May–Sep is 20% off list. They asked for our date and whether we want lodging.",
+    "end": "No limit (with a lodging package; venue-only 12 h)",
+    "end_h": 99,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: all vendors welcome, caterer kitchen included in the rent, no corkage (their WhatsApp, Oct 29)"
   }
 }
