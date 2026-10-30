@@ -97,6 +97,7 @@ export const DEFAULT_CONFIG = {
   norte: {
     guests: { low: 90, plan: 110, high: 130 }, // more of the Saltillo family comes when it's a drive away
     weights: { setting: 70, cost: 30, near: 0 }, // Kyle, Oct 27: setting and cost only
+    tacoRate: 800, // MXN a guest. Oct 29: a Saltillo taquero quoted MXN 80,000 for 100 (live trompos, salsas, tortillas)
   },
   weekend: {
     welcome: { on: true, pp: 700 },

@@ -186,6 +186,8 @@ export function evaluateNorte(venues, cfg, store = {}) {
   const N = cfg.norte, G = N.guests, W = N.weights;
   // rooms never count here, so the weekend total leaves covered rooms out
   const ncfg = { ...cfg, guests: { ...cfg.guests, ...G }, weekend: { ...cfg.weekend, rooms: { ...cfg.weekend.rooms, on: false } } };
+  // the taquero line uses the local quote here; the destination track keeps its own rate
+  if (+N.tacoRate > 0) ncfg.vision = cfg.vision.map((c) => (c.key === "taco" && c.unit === "guest" ? { ...c, rate: +N.tacoRate, text: c.text + " Priced from a Saltillo taquero's quote." } : c));
   const wsum = NORTE_KEYS.reduce((s, k) => s + (+W[k] || 0), 0) || 1;
   const out = new Map();
   const viable = [];
