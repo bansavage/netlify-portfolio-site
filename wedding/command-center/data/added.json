@@ -189,6 +189,35 @@
       "src": [
         "https://haciendasantamariaregla.com/"
       ]
+    },
+    {
+      "key": "chichisuarez",
+      "name": "Hacienda Chichí Suárez",
+      "short": "Hacienda Chichí Suárez",
+      "status": "wild",
+      "groupLabel": "Yucatán",
+      "state": "Yucatán",
+      "town": "Mérida",
+      "place": "Chichí Suárez, Mérida, Yucatán",
+      "place_hint": "Northeast edge of Mérida, just past the Periférico",
+      "lat": 21.0219,
+      "lng": -89.5578,
+      "loc_precision": "town",
+      "loc_note": "Pin placed at the village of Chichí Suárez (exact address not confirmed).",
+      "ap": "MID",
+      "drive": 20,
+      "type": "hacienda",
+      "description": "One of Yucatán’s oldest haciendas, reportedly founded in the 16th century, now a popular venue for weddings and social events on the edge of Mérida.",
+      "reason": "Found on Yucatán Love’s hacienda list; template sent by email Oct 30, 2026.",
+      "facts": [
+        "On the edge of Mérida, about 20 minutes from the airport",
+        "Oct 30: template sent to ventas@haciendachichisuarez.com"
+      ],
+      "nextstep": "Wait for answers and prices; WhatsApp 999 292 4904 if no reply",
+      "photos_url": "https://www.instagram.com/haciendachichisuarez/",
+      "src": [
+        "https://yucatantoday.com/en/blog/your-special-event-at-a-yucatecan-hacienda"
+      ]
     }
   ]
 }

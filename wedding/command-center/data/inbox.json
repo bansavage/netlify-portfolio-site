@@ -3329,5 +3329,15 @@
       ]
     ],
     "catch": "Venue + 1 night is MXN 235,000 before food; rooms sleep only 30"
+  },
+  "chichisuarez": {
+    "stage": "asked",
+    "date": "2026-10-30",
+    "contact": {
+      "channel": "email",
+      "email": "ventas@haciendachichisuarez.com",
+      "sent": "2026-10-30",
+      "status": "Oct 30: sent the 7-question template by email (address from Yucatán Today). Waiting on their reply."
+    }
   }
 }
