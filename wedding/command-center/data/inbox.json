@@ -246,12 +246,13 @@
   "santalucia": {
     "stage": "asked",
     "date": "2026-10-29",
-    "quote": "We asked for availability and a quote on Sep 27, 2026. No reply yet.",
+    "quote": "WhatsApp Oct 29: the hacienda’s WhatsApp is run by Aeternnum Planning (Mérida); they want our date, venue, guest count and style before sending anything. No prices or answers yet.",
     "contact": {
-      "channel": "email",
+      "channel": "email+whatsapp",
       "email": "contacto@haciendasantalucia.com.mx",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email."
+      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email. Same day: sent the template on WhatsApp (+52 999 278 5900, the number in their Instagram bio). Oct 29, 11:17 AM (WhatsApp): the number belongs to Aeternnum Planning, a Mérida wedding planner, who asked for our date, the venue we are considering, guest count, the kind of celebration and how we found them. None of our 7 questions answered yet.",
+      "whatsapp": "+52 999 278 5900"
     }
   },
   "susula": {
@@ -2784,7 +2785,7 @@
       "email": "reservas@haciendayaxnic.com",
       "whatsapp": "+52 999 102 9455",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests."
+      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests. 3:54 PM (WhatsApp, automated assistant): passed our 60–80-guest request to the sales team, who will send a custom quote in the same chat. Waiting on it."
     }
   },
   "zotoluca": {
