@@ -244,21 +244,145 @@
     "verified": true
   },
   "santalucia": {
-    "stage": "replied",
+    "stage": "quoted",
     "date": "2026-10-31",
-    "quote": "Email Oct 31: the event includes 5 hours; extra hours are possible, priced by guest count, but the event must end by 4 a.m. at the latest. In-house catering only, so no outside caterer for the reception; outside vendors are allowed for a late-night snack such as a taquiza at the end. Rooms: a bridal suite (king) and two rooms with a double bed, MXN 2,500 per room with breakfast. Saturday minimum is 100 guests; other days have no minimum and the quote adjusts to the guest count. All ages welcome. One event per day. Covered space for rain not answered. They attached a 2027 PDF (not in Drive yet) and offered a visit. Earlier, WhatsApp Oct 29–30: the Instagram number belongs to Aeternnum Planning, a Mérida wedding planner.",
+    "quote": "Email Oct 31: the event includes 5 hours; extra hours are possible, priced by guest count, but the event must end by 4 a.m. at the latest. In-house catering only, so no outside caterer for the reception; outside vendors are allowed for a late-night snack such as a taquiza at the end. Rooms: a bridal suite (king) and two rooms with a double bed, MXN 2,500 per room with breakfast. Saturday minimum is 100 guests; other days have no minimum and the quote adjusts to the guest count. All ages welcome. One event per day. Their 2027 PDF: Experiencia Esencial package (rental + banquet) priced per person by guest count, month and day; Nov Sun–Thu MXN 2,195 pp at 50 guests, 1,795 at 100; Mexican buffet MXN 50 pp less than the 4-course menu; all prices + IVA; excludes alcohol, decor, audio/DJ and coordination; extra hour MXN 5,000 (51–99 guests); salon closes 4 a.m.; covered slab for any weather in La Casona, the reception space. The hacienda is in Zapopan (Guadalajara). Note: the WhatsApp number we used on Oct 29 belongs to Aeternnum Planning in Mérida, not this hacienda.",
     "contact": {
       "channel": "email+whatsapp",
       "email": "contacto@haciendasantalucia.com.mx",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email. Same day: sent the template on WhatsApp (+52 999 278 5900, the number in their Instagram bio). Oct 29, 11:17 AM (WhatsApp): the number belongs to Aeternnum Planning, a Mérida wedding planner, who asked for our date, the venue we are considering, guest count, the kind of celebration and how we found them. None of our 7 questions answered yet. Oct 30 (WhatsApp): sent Aeternnum our details (2027 flexible, ideally November; 60–80 guests; symbolic wedding with live taqueros, Mexican buffet, band and DJ) and asked for prices and answers. Oct 30, 7:44 PM (WhatsApp): Aeternnum said they are a planning company, offered their coordination packages and shared the hacienda’s own contact cards for venue information. Oct 31 (email): the hacienda answered our questions directly (see quote) with a 2027 PDF attached; no price in the email body.",
+      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email. Same day: sent the template on WhatsApp (+52 999 278 5900, the number in their Instagram bio). Oct 29, 11:17 AM (WhatsApp): the number belongs to Aeternnum Planning, a Mérida wedding planner, who asked for our date, the venue we are considering, guest count, the kind of celebration and how we found them. None of our 7 questions answered yet. Oct 30 (WhatsApp): sent Aeternnum our details (2027 flexible, ideally November; 60–80 guests; symbolic wedding with live taqueros, Mexican buffet, band and DJ) and asked for prices and answers. Oct 30, 7:44 PM (WhatsApp): Aeternnum said they are a planning company, offered their coordination packages and shared the hacienda’s own contact cards for venue information. Oct 31 (email): the hacienda answered our questions directly (see quote) with a 2027 PDF attached; no price in the email body. Nov 2: Kyle saved their 2027 PDF; priced from it (verified).",
       "whatsapp": "+52 999 278 5900"
     },
     "end": "04:00",
     "end_h": 4,
     "end_src": "written",
     "taq_label": "Late only",
-    "taq_txt": "In-house catering for the reception, no outside caterer; an outside taquiza is allowed only as a late-night snack (their email, Oct 31)"
+    "taq_txt": "In-house catering for the reception, no outside caterer; an outside taquiza is allowed only as a late-night snack (their email, Oct 31)",
+    "verified": true,
+    "rows": [
+      [
+        "Experiencia Esencial, Sun–Thu in November, 50-guest tier: MXN 2,195 pp minus MXN 50 for the Mexican buffet = MXN 2,145 pp + 16% IVA (rental 6 h: 1 h cocktail + 5 h salon, banquet, tables and crossback chairs, linens, glassware, waiters 1 per 12, bartender, valet, security, 3 getting-ready rooms)",
+        149292,
+        174174,
+        1,
+        "Their 2027 PDF (Oct 31). Saturday needs 100 guests (MXN 1,945 pp at 100); Friday has no 50-guest price in Feb–May/Oct–Dec. Jan and Jun–Sep Sun–Thu: MXN 1,995 pp. Catering only by their exclusive caterer; 4-course beef menu is the base, alternative menus on request. MXN 650 refunded per guest who cancels. 50% deposit for 50–99 guests, rest in monthly payments, paid in full 15 days before",
+        "venue"
+      ],
+      [
+        "2 extra hours to run to ~2:30 a.m. (6 h included): MXN 5,000 an hour (51–99 guests) + IVA",
+        11600,
+        11600,
+        1,
+        "Their 2027 PDF: extra hour MXN 5,000 for 51–99 guests; the salon must close by 4 a.m.",
+        "venue"
+      ],
+      [
+        "Late-night taquiza (outside taqueros allowed only as a late snack)",
+        9000,
+        10500,
+        0,
+        "Their email, Oct 31",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "Alcohol not included; corkage not stated",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "Audio and DJ not included",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "Coordination not included; their partner planner is optional",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "Decor not included",
+        "decor"
+      ],
+      [
+        "Patio heaters (Nov lows 48-57F)",
+        12000,
+        12000,
+        0,
+        "",
+        "heaters"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        10000,
+        10000,
+        0,
+        "Only 3 rooms on site; guests stay at partner hotels in the city",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Weeknight only at our size (Saturday minimum 100 guests); exclusive caterer, outside taquiza only as a late snack; 3 rooms on site"
   },
   "susula": {
     "stage": "asked",
@@ -3096,7 +3220,7 @@
       "channel": "email",
       "email": "informes@haciendasantamariaregla.com",
       "sent": "2026-10-28",
-      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information."
+      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information. Nov 2 (email): told them the date is still to be decided, that we are gathering preliminary information to find a venue that fits our vision, and asked for their packages and the space-only option."
     },
     "quote": "Email Nov 2: sales asked for our exact or tentative date, our budget, and whether we want packages or only the space rental. None of the seven questions answered yet."
   },
@@ -3108,7 +3232,7 @@
       "email": "reservaciones@haciendasanmiguelyucatan.com",
       "whatsapp": "+52 985 110 5094",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply. Oct 31 (email): answered most questions (see quote), no prices; they asked for our wedding date."
+      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply. Oct 31 (email): answered most questions (see quote), no prices; they asked for our wedding date. Nov 2 (email): told them the date is still to be decided and asked for packages and prices for both options."
     },
     "end": "No limit",
     "end_h": 99,
@@ -3284,7 +3408,7 @@
       "channel": "email",
       "email": "haciendaoxhlon@gmail.com",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (haciendaoxhlon@gmail.com, spelled as published on their contact page). Waiting on their reply. Oct 31 (email, from haciendaoxholon@gmail.com): asked for our WhatsApp number to send the information."
+      "status": "Oct 29: sent the template by email (haciendaoxhlon@gmail.com, spelled as published on their contact page). Waiting on their reply. Oct 31 (email, from haciendaoxholon@gmail.com): asked for our WhatsApp number to send the information. Nov 2 (email): sent our WhatsApp number."
     },
     "quote": "Email Oct 31: asked for our WhatsApp number so they can send all the information there. None of the seven questions answered yet."
   },
