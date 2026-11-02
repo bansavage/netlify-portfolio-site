@@ -244,16 +244,21 @@
     "verified": true
   },
   "santalucia": {
-    "stage": "asked",
-    "date": "2026-10-29",
-    "quote": "WhatsApp Oct 29: the hacienda’s WhatsApp is run by Aeternnum Planning (Mérida); they want our date, venue, guest count and style before sending anything. No prices or answers yet.",
+    "stage": "replied",
+    "date": "2026-10-31",
+    "quote": "Email Oct 31: the event includes 5 hours; extra hours are possible, priced by guest count, but the event must end by 4 a.m. at the latest. In-house catering only, so no outside caterer for the reception; outside vendors are allowed for a late-night snack such as a taquiza at the end. Rooms: a bridal suite (king) and two rooms with a double bed, MXN 2,500 per room with breakfast. Saturday minimum is 100 guests; other days have no minimum and the quote adjusts to the guest count. All ages welcome. One event per day. Covered space for rain not answered. They attached a 2027 PDF (not in Drive yet) and offered a visit. Earlier, WhatsApp Oct 29–30: the Instagram number belongs to Aeternnum Planning, a Mérida wedding planner.",
     "contact": {
       "channel": "email+whatsapp",
       "email": "contacto@haciendasantalucia.com.mx",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email. Same day: sent the template on WhatsApp (+52 999 278 5900, the number in their Instagram bio). Oct 29, 11:17 AM (WhatsApp): the number belongs to Aeternnum Planning, a Mérida wedding planner, who asked for our date, the venue we are considering, guest count, the kind of celebration and how we found them. None of our 7 questions answered yet. Oct 30 (WhatsApp): sent Aeternnum our details (2027 flexible, ideally November; 60–80 guests; symbolic wedding with live taqueros, Mexican buffet, band and DJ) and asked for prices and answers.",
+      "status": "Emailed Sep 27. No reply. Oct 29: sent the 7-question template by email. Same day: sent the template on WhatsApp (+52 999 278 5900, the number in their Instagram bio). Oct 29, 11:17 AM (WhatsApp): the number belongs to Aeternnum Planning, a Mérida wedding planner, who asked for our date, the venue we are considering, guest count, the kind of celebration and how we found them. None of our 7 questions answered yet. Oct 30 (WhatsApp): sent Aeternnum our details (2027 flexible, ideally November; 60–80 guests; symbolic wedding with live taqueros, Mexican buffet, band and DJ) and asked for prices and answers. Oct 30, 7:44 PM (WhatsApp): Aeternnum said they are a planning company, offered their coordination packages and shared the hacienda’s own contact cards for venue information. Oct 31 (email): the hacienda answered our questions directly (see quote) with a 2027 PDF attached; no price in the email body.",
       "whatsapp": "+52 999 278 5900"
-    }
+    },
+    "end": "04:00",
+    "end_h": 4,
+    "end_src": "written",
+    "taq_label": "Late only",
+    "taq_txt": "In-house catering for the reception, no outside caterer; an outside taquiza is allowed only as a late-night snack (their email, Oct 31)"
   },
   "susula": {
     "stage": "asked",
@@ -985,7 +990,7 @@
       "channel": "whatsapp",
       "sent": "2026-10-24",
       "whatsapp": "+52 444 142 5633",
-      "status": "Oct 26: first package holds at 65; others need re-pricing; IVA only with an invoice; sleeps about 40 now (normally 60–70). They want our package choice and a date to check. Oct 26: we asked for quotes on the Compromiso and Ilusión packages for 65, availability for Sat Nov 13, 2027 (alternates Nov 6, Oct 30), and why lodging is 40 right now. Oct 26 evening: they'll re-price both packages for 65 and check the dates; the 5 cabins are rented out as offices with no end date, so lodging is about 40 for now. Oct 29 (WhatsApp): Sat Nov 13, 2027 is still free; Nov 6 and Oct 30 are taken. They asked whose name to put on the packages, then sent a 2-page quote PDF (COTIZACIÓN) at 10:40 PM. Read the quote: Anillo de Compromiso MXN 995 pp and Ilusión MXN 1,440 pp for 65 guests, Nov 13, 2027. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues."
+      "status": "Oct 26: first package holds at 65; others need re-pricing; IVA only with an invoice; sleeps about 40 now (normally 60–70). They want our package choice and a date to check. Oct 26: we asked for quotes on the Compromiso and Ilusión packages for 65, availability for Sat Nov 13, 2027 (alternates Nov 6, Oct 30), and why lodging is 40 right now. Oct 26 evening: they'll re-price both packages for 65 and check the dates; the 5 cabins are rented out as offices with no end date, so lodging is about 40 for now. Oct 29 (WhatsApp): Sat Nov 13, 2027 is still free; Nov 6 and Oct 30 are taken. They asked whose name to put on the packages, then sent a 2-page quote PDF (COTIZACIÓN) at 10:40 PM. Read the quote: Anillo de Compromiso MXN 995 pp and Ilusión MXN 1,440 pp for 65 guests, Nov 13, 2027. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues. Oct 31 (WhatsApp): friendly acknowledgment, open to more questions."
     },
     "date": "2026-10-30",
     "quote": "WhatsApp Oct 24–25: music can run later (extra hours quoted); the reception ends when you plan it to; you CAN bring your own food and taqueros (kitchen use quoted separately) or they can cater; 7–8 rooms plus 5 cabins, lodging MXN 12,600 a night for 14 people plus MXN 900 per extra person, minimum 14; no guest minimum, they charge only for the guests you have; teens welcome; yours is the only event that day; covered space in the main house and a pergola. 2026 package PDF (per person, listed for 100–500 guests; IVA not stated): Anillo de Compromiso MXN 995 (colonial Mexican buffet, corkage, ice and soft drinks 5 h, linens, kitchen and waiters, hacienda, coordination); Anillo de Matrimonio MXN 1,095 (4-course or traditional Mexican buffet, adds stemware); Ilusión MXN 1,395 (6 h, crossback chairs and wood tables, centerpieces, 1 h mariachi); Boda de tus Sueños MXN 1,995 (adds luxury tents and DJ). Oct 26 reply: the first package (Anillo de Compromiso, MXN 995 pp) holds at 65 guests; the other packages would need re-pricing for fewer than 100 people. Prices are plus IVA only if we want a formal invoice (factura). Extra-hour cost to be confirmed (they assume the top package). Lodging: about 40 people right now, normally 60–70. They asked which package and which specific date to check. Written quote Oct 29 (65 guests, Sat Nov 13, 2027): Anillo de Compromiso MXN 995 a person (colonial Mexican buffet, corkage, ice and soft drinks 5 h, printed menu, glassware and china, linens, kitchen staff and waiters, hacienda, coordination); Ilusión MXN 1,440 a person (4-course menu or traditional Mexican buffet, 6 h of soft drinks, crossback chairs and wood tables, centerpieces, 1 h of mariachi).",
@@ -1832,7 +1837,7 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 179 5944",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee. 9:08 PM: quoted Saturday MXN 138,500 + tent MXN 59,300 and offered a Friday. 9:41 PM: said yes to hearing the Friday price for 100–120 and asked again about the extra-hour cost and any kitchen fee. Oct 28, 2:10 PM: Friday is MXN 118,500 plus tent 48,000; no kitchen fee; extra hour MXN 5,000. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). They replied asking which 2027 date. 5:25 PM: told them November 2027, flexible, and re-asked all seven questions. Answered most questions by 5:37 PM but no price yet. 6:01 PM: asked for the price for 100–120 guests, the extra-hour cost and any kitchen fee. 9:08 PM: quoted Saturday MXN 138,500 + tent MXN 59,300 and offered a Friday. 9:41 PM: said yes to hearing the Friday price for 100–120 and asked again about the extra-hour cost and any kitchen fee. Oct 28, 2:10 PM: Friday is MXN 118,500 plus tent 48,000; no kitchen fee; extra hour MXN 5,000. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues. Oct 30 (WhatsApp): acknowledged our thank-you.",
       "sent": "2026-10-27"
     },
     "quote": "WhatsApp Oct 27: rental is 7 hours, 7 p.m. to 2 a.m., with a free extra hour for photos. No exclusive vendors, so any caterer or taquero. Free corkage. No rooms. Minors welcome. One event per day. A giant tent (black, camel, white or olive) without lighting. Prices are by guest bracket (0–200, 200–300 ...) but no figure given yet. Price Oct 27, 9:08 PM: Saturday for 0–200 guests is MXN 138,500 for the venue plus MXN 59,300 for the tent; they asked whether a Friday would interest us since our wedding is small. Oct 28, 2:10 PM: Friday for 100–120 is MXN 118,500 for the venue plus MXN 48,000 for the tent (MXN 166,500 total vs 197,800 Saturday). No charge for using the kitchen. Each extra hour costs MXN 5,000.",
@@ -1982,7 +1987,7 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 359 3720",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date. 6:15 PM: told them a symbolic wedding for 100–120 in November 2027 (flexible) and asked for answers and prices. Oct 29, 2:09 PM: sent their 2027 wedding menu (PDF \"BODAS 2027\", in Drive), photos and policies. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked what kind of event and the date. 6:15 PM: told them a symbolic wedding for 100–120 in November 2027 (flexible) and asked for answers and prices. Oct 29, 2:09 PM: sent their 2027 wedding menu (PDF \"BODAS 2027\", in Drive), photos and policies. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues. Oct 31 (WhatsApp): thanked us and invited us to book a visit.",
       "sent": "2026-10-27"
     },
     "verified": true,
@@ -2238,7 +2243,7 @@
     "contact": {
       "channel": "whatsapp",
       "whatsapp": "+52 844 102 8017",
-      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date. Answered all seven the same day; wants guest count and date for a quote. 5:31 PM: asked for the quote for 100–120 guests, November 2027, flexible. 6:58–7:00 PM: sent the quote, photos of past events and payment terms. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues.",
+      "status": "Sent the template Oct 27 (Saltillo version: 100–120 guests). Their WhatsApp bot asked for guest count and a tentative date. Answered all seven the same day; wants guest count and date for a quote. 5:31 PM: asked for the quote for 100–120 guests, November 2027, flexible. 6:58–7:00 PM: sent the quote, photos of past events and payment terms. Oct 30: sent a (WhatsApp) thank-you saying we’re reviewing their details and comparing several venues. Oct 31 (WhatsApp): invited us to visit the garden any time, no commitment.",
       "sent": "2026-10-27"
     },
     "quote": "WhatsApp Oct 27: parties end at 2 a.m. any day except Sunday (11 p.m.). 7 hours included; extra hours MXN 2,000 each, but only to start earlier, not to end later. Their partner caterer can do a taquiza, or bring any outside vendor with no kitchen or corkage fee. No rooms (hotels nearby). No guest minimum. Kids welcome. Ours would be the only event that day. Covered esplanade. They'll quote once they have our guest count and date. Quote Oct 27: garden for 120 guests in 2027, everything described included: MXN 89,200 Friday or Saturday, MXN 62,400 Sunday to Thursday. Optional banquet MXN 360 a guest (3 courses, waiters for 5 hours at one per two tables, linens, tableware, glassware, unlimited ice and soft drinks, no corkage). Entrance tunnel decorated with jute, lights and jasmine. MXN 10,000 holds the date; the rest in monthly payments, paid off two months before.",
@@ -2623,7 +2628,7 @@
       "channel": "whatsapp",
       "whatsapp": "+52 844 362 6028",
       "sent": "2026-10-27",
-      "status": "Oct 27: received our Saltillo template by mistake (the number was listed for Bodegas del Viento). 9:18 PM: replied with their 2027 rate sheet and asked which month. Oct 30 (WhatsApp): told them November 2027, date flexible, and that we’re reviewing and comparing venues."
+      "status": "Oct 27: received our Saltillo template by mistake (the number was listed for Bodegas del Viento). 9:18 PM: replied with their 2027 rate sheet and asked which month. Oct 30 (WhatsApp): told them November 2027, date flexible, and that we’re reviewing and comparing venues. Oct 31 (WhatsApp): offered to book us a visit to the quinta next week."
     }
   },
   "hacienda_1800": {
@@ -3085,25 +3090,33 @@
     ]
   },
   "santamariaregla": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "replied",
+    "date": "2026-11-02",
     "contact": {
       "channel": "email",
       "email": "informes@haciendasantamariaregla.com",
       "sent": "2026-10-28",
-      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply."
-    }
+      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information."
+    },
+    "quote": "Email Nov 2: sales asked for our exact or tentative date, our budget, and whether we want packages or only the space rental. None of the seven questions answered yet."
   },
   "sanmiguel_vall": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "replied",
+    "date": "2026-10-31",
     "contact": {
       "channel": "email",
       "email": "reservaciones@haciendasanmiguelyucatan.com",
       "whatsapp": "+52 985 110 5094",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply."
-    }
+      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply. Oct 31 (email): answered most questions (see quote), no prices; they asked for our wedding date."
+    },
+    "end": "No limit",
+    "end_h": 99,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: with the exclusive rental any vendor can be hired, no vendor fee and no corkage (their email, Oct 31)",
+    "quote": "Email Oct 31: two event options. (1) The event space, the chapel for a symbolic wedding and one night in 3 rooms (double occupancy). (2) Exclusive rental of the whole property with one night in all rooms at base occupancy. 16 rooms: base occupancy 32 people, maximum 54. With the exclusive rental there is no time limit on the reception, any vendors can be hired, and there is no vendor fee or corkage. No guest minimum, no age restrictions, never more than one event per day. No covered space big enough for an event this size. No prices yet: they asked for our date.",
+    "catch": "No covered space big enough for the reception (rain plan needed); no prices yet"
   },
   "dzibikak": {
     "stage": "quoted",
@@ -3265,14 +3278,15 @@
     }
   },
   "oxholon": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "replied",
+    "date": "2026-10-31",
     "contact": {
       "channel": "email",
       "email": "haciendaoxhlon@gmail.com",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (haciendaoxhlon@gmail.com, spelled as published on their contact page). Waiting on their reply."
-    }
+      "status": "Oct 29: sent the template by email (haciendaoxhlon@gmail.com, spelled as published on their contact page). Waiting on their reply. Oct 31 (email, from haciendaoxholon@gmail.com): asked for our WhatsApp number to send the information."
+    },
+    "quote": "Email Oct 31: asked for our WhatsApp number so they can send all the information there. None of the seven questions answered yet."
   },
   "hunxectaman": {
     "stage": "asked",
