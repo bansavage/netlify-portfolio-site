@@ -179,16 +179,21 @@
       "drive": 120,
       "type": "hacienda",
       "description": "An 18th-century silver hacienda turned hotel beside the Prismas Basálticos, near the Pueblo Mágico of Huasca de Ocampo.",
-      "reason": "Template sent Oct 28, 2026; added Oct 29. They sent an automatic reply and said their team will follow up with packages and prices.",
+      "reason": "Template sent Oct 28, 2026; added Oct 29. Nov 3: sales shared three 2026 package PDFs (Boda Hacienda, Diamante, Elite).",
       "facts": [
         "Hotel hacienda next to the Prismas Basálticos",
-        "Oct 29: automatic reply; packages and prices to follow"
+        "Boda Hacienda package: MXN 2,600 pp at 60 guests, 2,400 at 70, + IVA",
+        "8 hours, ending by 2 a.m.; DJ 6 h and free corkage included",
+        "4-course plated menu in the package; buffet not offered yet",
+        "Extra hour MXN 400 pp"
       ],
-      "nextstep": "Wait for their packages and prices; chase the 7 questions if the reply doesn’t answer them",
+      "nextstep": "Waiting on answers (asked Nov 3): outside taquero and a Mexican buffet instead of plated, rooms and rates, rain plan for the garden",
       "photos_url": "https://haciendasantamariaregla.com/",
       "src": [
         "https://haciendasantamariaregla.com/"
-      ]
+      ],
+      "taq_label": "Unclear",
+      "taq_txt": "Unclear: asked Nov 3 whether an outside taquero is allowed"
     },
     {
       "key": "chichisuarez",
