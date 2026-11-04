@@ -3862,11 +3862,12 @@
     "stage": "asked",
     "date": "2026-10-29",
     "contact": {
-      "channel": "whatsapp",
+      "channel": "email+whatsapp",
       "whatsapp": "+52 999 197 6032",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com.",
-      "whatsapp_note": "999 197 6032 is an independent wedding planner, not the hacienda"
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com. Nov 4: emailed the template to haciendapoxila@gmail.com.",
+      "whatsapp_note": "999 197 6032 is an independent wedding planner, not the hacienda",
+      "email": "haciendapoxila@gmail.com"
     }
   },
   "kinchil": {
