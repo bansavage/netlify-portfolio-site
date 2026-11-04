@@ -233,15 +233,106 @@
   "xcanatun": {
     "stage": "quoted",
     "date": "2026-11-03",
-    "quote": "The app's price is their Sept 29 group proposal (resent Oct 8). On Oct 9 we said it's over budget; they asked what to adjust. On Oct 23 we asked for a wedding-day-only proposal of US$20,000 to 25,000 for 60 to 80 guests: symbolic ceremony, cocktail hour with mariachi, Mexican buffet with a live taquero, live band then DJ, and drinks.",
-    "note": "Nov 3: they sent the adjusted wedding-day budget as a PDF (\"Ceremonia Kyle.pdf\", in Gmail only); not read yet.",
+    "quote": "The app's price is their Sept 29 group proposal (resent Oct 8). On Oct 9 we said it's over budget; they asked what to adjust. On Oct 23 we asked for a wedding-day-only proposal of US$20,000 to 25,000 for 60 to 80 guests: symbolic ceremony, cocktail hour with mariachi, Mexican buffet with a live taquero, live band then DJ, and drinks. Nov 3 (PDF, Ceremonia Kyle): 80 guests, symbolic ceremony 4–11 p.m. in Jardín Palmeras; 2 h Gold open bar MXN 765 pp, canapés (6 pieces) 955 pp, 1 h mariachi 14,000, regional buffet dinner 1,320 pp, 4 h Gold open bar 1,375 pp, DJ 25,000, venue rental 25,000. Subtotal 417,200 + IVA 66,752 + 15% service 52,980 = MXN 536,932. Rules: hotel is the only food and drink provider; buffets last 2 h max; indoor events end 11 p.m.; outdoor events near rooms end 10:30 p.m., or 2 a.m. if we rent 18 hacienda rooms; 90 dB max outdoors; outside music vendors need hotel approval; a generator is required; no covered space, tent recommended; 50% deposit, rest 30 days before, paid in full 20 days before. Valid until Nov 13, 2026.",
+    "note": "Nov 3 proposal is above our US$20–25k ask: about MXN 508k (~US$28k) at 75 guests for food, drinks, venue, DJ and mariachi alone. Valid until Nov 13, 2026.",
     "contact": {
       "channel": "email",
       "phone": "+52 999 930 2154",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Oct 28 (email): they'll send a proposal of what they can offer the next day. Nov 3 (email): sent the adjusted budget for our US$20–25k ask as a PDF attachment, after waiting on vendor quotes."
+      "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Oct 28 (email): they'll send a proposal of what they can offer the next day. Nov 3 (email): sent the adjusted budget for our US$20–25k ask as a PDF attachment, after waiting on vendor quotes. Nov 3: Kyle saved the PDF; priced from it (verified)."
     },
-    "verified": true
+    "verified": true,
+    "rows": [
+      [
+        "Wedding-day proposal Nov 3 (4–11 p.m., Jardín Palmeras): MXN 4,415 pp (2 h Gold bar 765, 6 canapés 955, regional buffet 1,320, 4 h Gold bar 1,375) + 16% IVA + 15% service, plus venue MXN 25,000, DJ 25,000 and 1 h mariachi 14,000 + IVA",
+        421254,
+        479097,
+        1,
+        "Their PDF, Nov 3: MXN 536,932 total for 80 guests (417,200 + IVA 66,752 + service 52,980). Valid until Nov 13, 2026. Hotel is the only food and drink provider",
+        "venue"
+      ],
+      [
+        "Live taquero: not allowed (hotel is the only food provider); their regional buffet replaces it",
+        0,
+        0,
+        1,
+        "Their PDF, Nov 3",
+        "taco"
+      ],
+      [
+        "Rooms needed for a 2 a.m. end: 18 hacienda rooms (otherwise outdoor events end 10:30 p.m.)",
+        0,
+        0,
+        0,
+        "Their PDF, Nov 3; room cost not in this proposal",
+        "venue"
+      ],
+      [
+        "Tent (recommended; no covered rain space) + garden flooring",
+        35000,
+        35000,
+        0,
+        "Their PDF: no covered space or rain alternative; tent recommended",
+        "tent"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles (only through their events team)",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "Their PDF: the property grid cannot be used; a generator is required",
+        "generator"
+      ]
+    ],
+    "catch": "MXN 537k (~US$30k) for 80 guests before rooms; outdoor music ends 10:30 p.m. unless we rent 18 rooms; no outside food, no covered space"
   },
   "santalucia": {
     "stage": "quoted",
@@ -3319,7 +3410,7 @@
       "channel": "email",
       "email": "informes@haciendasantamariaregla.com",
       "sent": "2026-10-28",
-      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information. Nov 2 (email): told them the date is still to be decided, that we are gathering preliminary information to find a venue that fits our vision, and asked for their packages and the space-only option. Nov 3: sales shared three package PDFs by Drive (Boda Hacienda, Diamante, Elite); priced from Boda Hacienda (verified)."
+      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information. Nov 2 (email): told them the date is still to be decided, that we are gathering preliminary information to find a venue that fits our vision, and asked for their packages and the space-only option. Nov 3: sales shared three package PDFs by Drive (Boda Hacienda, Diamante, Elite); priced from Boda Hacienda (verified). Nov 3 (email): asked whether we can bring an outside taquero and swap the plated menu for a Mexican buffet, their rooms and rates, and their rain plan for the garden."
     },
     "quote": "Nov 3: sales shared three package PDFs on Drive (Boda Hacienda, Boda Diamante, Boda Elite, 2026 prices). Boda Hacienda: 8 hours total, ending by 2 a.m.; salon of choice (Hornos Ingleses, Hornos Españoles or Vizcaínas), hacienda grounds for photos, 1 h ceremony space with 6 aisle arrangements, decorated suite for the wedding night, DJ with lighting 6 h, 4-course plated menu (chicken, beef or pork) with tasting for 2, kids menu, free corkage 6 h with mixers, mineral water and ice, coffee, tables, Tiffany chairs, linens, china, centerpieces, head table, printed menus, 1 waiter per 15 guests. Price per guest + IVA: 50 guests MXN 2,800 (140,000), 60 MXN 2,600 (156,000), 70 MXN 2,400 (168,000), 80+ MXN 2,300 (184,000). Extra hour MXN 400 pp; garden instead of salon from 71 guests MXN 500 pp + IVA; kids 3–11 MXN 800 + IVA. Space-only rental also available on request. Not yet answered: outside taquero, rooms, rain plan beyond the indoor salons.",
     "verified": true,
