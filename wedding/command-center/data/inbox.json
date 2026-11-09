@@ -3808,9 +3808,9 @@
       "email": "gerencia@kaanac.com",
       "whatsapp": "+52 985 100 6759",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (gerencia@kaanac.com). Waiting on their reply. Nov 9 (email, from recepcion@kaanac.com): asked us to write them on WhatsApp (985 100 6759) for more information. Nov 9 (WhatsApp): sent our details (60–80 guests, Nov 2027 TBD) and asked for rental and lodging prices plus the 7 questions; their auto-greeting replied. Waiting on answers. Nov 9 (WhatsApp): sent their 2026 wedding package PDF (garden + rooms; 2026 price held for 2027 if booked now) and answered: no time limit on the event, all vendors external, no guest limit (lodging per the package), any age allowed, we would be the only event that day. Nov 9: read the package PDF (MXN 120,000 whole castle with 12 rooms; MXN 90,000 garden for 6 h). Nov 9 (WhatsApp): thanked them and asked whether the MXN 120,000 includes IVA, about covered space for rain, the rate for extra nights in the 12 rooms, and which days are best to visit."
+      "status": "Oct 29: sent the template by email (gerencia@kaanac.com). Waiting on their reply. Nov 9 (email, from recepcion@kaanac.com): asked us to write them on WhatsApp (985 100 6759) for more information. Nov 9 (WhatsApp): sent our details (60–80 guests, Nov 2027 TBD) and asked for rental and lodging prices plus the 7 questions; their auto-greeting replied. Waiting on answers. Nov 9 (WhatsApp): sent their 2026 wedding package PDF (garden + rooms; 2026 price held for 2027 if booked now) and answered: no time limit on the event, all vendors external, no guest limit (lodging per the package), any age allowed, we would be the only event that day. Nov 9: read the package PDF (MXN 120,000 whole castle with 12 rooms; MXN 90,000 garden for 6 h). Nov 9 (WhatsApp): thanked them and asked whether the MXN 120,000 includes IVA, about covered space for rain, the rate for extra nights in the 12 rooms, and which days are best to visit. Nov 9 (WhatsApp): answered: price is net without a factura (+IVA with one), no covered space (gardens only), night before MXN 45,000, weekday visits preferred."
     },
-    "quote": "WhatsApp Nov 9: no time limit for the event; every vendor is external (bring our own taqueros and buffet); no guest minimum or maximum, lodging as listed in the package; guests of any age (minors with parents); ours would be the only event that day. Their 2026 package price is held for 2027 if we book in 2026; prices and room details are in the PDF \"KAANAC PAQUETE BODA 2026 JARDIN, HABITACION\". Still unanswered: covered space for rain. Package PDF (Nov 9): Paquete Kaan Ac MXN 120,000 (whole castle from 3 p.m. on the wedding day to noon the next day, 12 rooms for up to 34 people, breakfast for 34, chapel, 5 h photo session on another day, no extra-hour charge). Paquete Leonel & Berenguela MXN 90,000 (garden for 6 h, photo session, honeymoon suite for the couple). IVA not stated in either.",
+    "quote": "WhatsApp Nov 9: no time limit for the event; every vendor is external (bring our own taqueros and buffet); no guest minimum or maximum, lodging as listed in the package; guests of any age (minors with parents); ours would be the only event that day. Their 2026 package price is held for 2027 if we book in 2026; prices and room details are in the PDF \"KAANAC PAQUETE BODA 2026 JARDIN, HABITACION\". Package PDF (Nov 9): Paquete Kaan Ac MXN 120,000 (whole castle from 3 p.m. on the wedding day to noon the next day, 12 rooms for up to 34 people, breakfast for 34, chapel, 5 h photo session on another day, no extra-hour charge). Paquete Leonel & Berenguela MXN 90,000 (garden for 6 h, photo session, honeymoon suite for the couple). WhatsApp Nov 9 follow-up: MXN 120,000 is net without a factura, IVA is added if we need one; no covered space, only gardens (we would need a tent for rain); the night before costs MXN 45,000; weekday visits preferred.",
     "end": "No limit",
     "end_h": 99,
     "end_src": "written",
@@ -3818,11 +3818,11 @@
     "taq_txt": "All vendors are external: bring our own taqueros and buffet",
     "rows": [
       [
-        "Paquete Kaan Ac (2026 price, held for 2027): MXN 120,000; whole castle 3 p.m. to noon next day, no time limit",
+        "Paquete Kaan Ac (2026 price, held for 2027): MXN 120,000 net without invoice (+IVA with factura); whole castle 3 p.m. to noon next day, no time limit",
         120000,
         120000,
         1,
-        "Their wedding package PDF (WhatsApp, Nov 9). Includes all 12 rooms (villas + suites, up to 34 people), breakfast for 34 the next morning, the chapel, and a 5 h photo session on another day; no extra-hour charge. IVA not stated. Smaller option: garden only for 6 h + honeymoon suite, MXN 90,000.",
+        "Their wedding package PDF (WhatsApp, Nov 9). Includes all 12 rooms (villas + suites, up to 34 people), breakfast for 34 the next morning, the chapel, and a 5 h photo session on another day; no extra-hour charge. MXN 120,000 is the net price without a factura; with a factura, IVA is added (MXN 139,200). The night before (all 12 rooms) is MXN 45,000. Smaller option: garden only for 6 h + honeymoon suite, MXN 90,000.",
         "venue"
       ],
       [
@@ -3914,6 +3914,14 @@
         "extras"
       ],
       [
+        "Tent (no covered space: gardens only)",
+        20000,
+        20000,
+        0,
+        "They confirmed Nov 9 there is no covered space, only gardens",
+        "tent"
+      ],
+      [
         "Generator (planta de luz)",
         12000,
         12000,
@@ -3939,7 +3947,7 @@
       ]
     ],
     "verified": true,
-    "catch": "Rooms sleep only 34, so about half the guests stay in Valladolid; 2 h from Cancún airport. A 2024 review reports power cuts and no signal in the rooms."
+    "catch": "No covered space (gardens only), so a tent is needed for rain. Rooms sleep 34, so about half the guests stay in Valladolid; about 2 h from both Mérida and Cancún airports. A 2024 review reports power cuts and no signal in the rooms."
   },
   "oxholon": {
     "stage": "replied",
