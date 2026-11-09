@@ -3808,9 +3808,14 @@
       "email": "gerencia@kaanac.com",
       "whatsapp": "+52 985 100 6759",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (gerencia@kaanac.com). Waiting on their reply. Nov 9 (email, from recepcion@kaanac.com): asked us to write them on WhatsApp (985 100 6759) for more information. Nov 9 (WhatsApp): sent our details (60–80 guests, Nov 2027 TBD) and asked for rental and lodging prices plus the 7 questions; their auto-greeting replied. Waiting on answers."
+      "status": "Oct 29: sent the template by email (gerencia@kaanac.com). Waiting on their reply. Nov 9 (email, from recepcion@kaanac.com): asked us to write them on WhatsApp (985 100 6759) for more information. Nov 9 (WhatsApp): sent our details (60–80 guests, Nov 2027 TBD) and asked for rental and lodging prices plus the 7 questions; their auto-greeting replied. Waiting on answers. Nov 9 (WhatsApp): sent their 2026 wedding package PDF (garden + rooms; 2026 price held for 2027 if booked now) and answered: no time limit on the event, all vendors external, no guest limit (lodging per the package), any age allowed, we would be the only event that day."
     },
-    "quote": "Email Nov 9: asked us to continue on WhatsApp for the information. None of the seven questions answered yet."
+    "quote": "WhatsApp Nov 9: no time limit for the event; every vendor is external (bring our own taqueros and buffet); no guest minimum or maximum, lodging as listed in the package; guests of any age (minors with parents); ours would be the only event that day. Their 2026 package price is held for 2027 if we book in 2026; prices and room details are in the PDF \"KAANAC PAQUETE BODA 2026 JARDIN, HABITACION\". Still unanswered: covered space for rain.",
+    "end": "No limit",
+    "end_h": 99,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "All vendors are external: bring our own taqueros and buffet"
   },
   "oxholon": {
     "stage": "replied",
