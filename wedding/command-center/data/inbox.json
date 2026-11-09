@@ -239,7 +239,7 @@
       "channel": "email",
       "phone": "+52 999 930 2154",
       "sent": "2026-09-27",
-      "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Oct 28 (email): they'll send a proposal of what they can offer the next day. Nov 3 (email): sent the adjusted budget for our US$20–25k ask as a PDF attachment, after waiting on vendor quotes. Nov 3: Kyle saved the PDF; priced from it (verified). Nov 4 (email): we thanked them, said we can't accept within the proposal's validity window, and that we'll reach out once dates for a Mérida trip from Miami are set; asked whether weekdays are best for a visit."
+      "status": "Emailed Sep 27; their group sales manager sent a proposal Sep 29 (resent Oct 8; the thread is in Gmail under Wedding). On Oct 9 we said it's over budget; on Oct 23 we asked for a US$20–25k wedding-day-only proposal for 60–80 guests. Oct 28 (email): they'll send a proposal of what they can offer the next day. Nov 3 (email): sent the adjusted budget for our US$20–25k ask as a PDF attachment, after waiting on vendor quotes. Nov 3: Kyle saved the PDF; priced from it (verified). Nov 4 (email): we thanked them, said we can't accept within the proposal's validity window, and that we'll reach out once dates for a Mérida trip from Miami are set; asked whether weekdays are best for a visit. Nov 4 (email): no problem; tell them when we plan the trip; weekdays between 10 a.m. and 5 p.m. are best for a visit."
     },
     "verified": true,
     "rows": [
@@ -476,15 +476,22 @@
     "catch": "Weeknight only at our size (Saturday minimum 100 guests); exclusive caterer, outside taquiza only as a late snack; 3 rooms on site"
   },
   "susula": {
-    "stage": "asked",
+    "stage": "replied",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "haciendasusula@gmail.com",
       "phone": "+52 999 551 1641",
-      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing. Oct 29, 10:09 PM (WhatsApp): automatic greeting only; no quote yet. Oct 30, 5:54 PM (WhatsApp): asked for event type, name, guest count, date, services and a phone to quote. 6:49 PM: sent symbolic wedding, 60–80 guests, 2027 flexible (ideally November), banquet (taquiza and Mexican buffet) and rooms, contact on this WhatsApp."
+      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing. Oct 29, 10:09 PM (WhatsApp): automatic greeting only; no quote yet. Oct 30, 5:54 PM (WhatsApp): asked for event type, name, guest count, date, services and a phone to quote. 6:49 PM: sent symbolic wedding, 60–80 guests, 2027 flexible (ideally November), banquet (taquiza and Mexican buffet) and rooms, contact on this WhatsApp. Nov 5 (email, from their sales address): answered the questions except the guest minimum; no prices yet."
     },
-    "date": "2026-10-30"
+    "date": "2026-11-05",
+    "end": "02:00",
+    "end_h": 2,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: bring your own catering and pay only the garden rental; their kitchen can’t be used, so caterers set up a tented kitchen behind the area (their email, Nov 5)",
+    "quote": "Email Nov 5 (sales, groups and banquets): without rooms, music and reception until 2 a.m.; it can be extended, with cost and length depending on whether we book rooms and on the date. We can bring our own catering and pay only the venue for the chosen area or garden; no kitchen use, caterers set up a tented kitchen behind. 29 rooms (standard, suite, master suite) for up to 62 people; rates depend on number of rooms and date, by quote. Teens welcome. Our event is guaranteed to be the only one only if we rent all the rooms. A covered salon for 50–60 is being built; for now the only covered area is the restaurant (90 people, divided spaces); tents can be rented. Not answered: guest minimum, extra-hour cost, venue price.",
+    "catch": "Exclusive only if all 29 rooms are booked; no covered salon yet (restaurant or tents for rain)"
   },
   "cocoyoc": {
     "stage": "quoted",
@@ -598,7 +605,7 @@
       "channel": "email+whatsapp",
       "sent": "2026-10-24",
       "email": "info@haciendasoltepec.com",
-      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza. Their email desk also asked for names and a phone; Daina replied with our numbers. 7:02 PM: yes to the Mexican buffet; asked for a video call to present prices. 7:27 PM: asked for the written proposal for 70–80 with room rates before any video call, and a clear yes/no on a live taquero. Oct 28: no outside caterers or food vendors (Tesoros de México policy); their kitchen does the Mexican buffet. 3:02 PM: yes, they can do a trompo al pastor. 4:08 PM: sent the written proposal for 70 guests (PDF \"Coti Kyle 70 Pax\", in Drive). Extra-hour cost still not stated.",
+      "status": "Emailed Oct 24. No reply yet. Oct 27: nudged by email in the same thread (70–80 guests, Nov 2027), asking for answers and prices. Oct 27: their wedding planner answered on WhatsApp; in-house banquet only, no prices yet, invited us to visit. 5:41 PM: said we can't visit from Miami; asked for prices for 70–80 (extra hours, room rates) and a yes/no on a live-taquero taquiza. Their email desk also asked for names and a phone; Daina replied with our numbers. 7:02 PM: yes to the Mexican buffet; asked for a video call to present prices. 7:27 PM: asked for the written proposal for 70–80 with room rates before any video call, and a clear yes/no on a live taquero. Oct 28: no outside caterers or food vendors (Tesoros de México policy); their kitchen does the Mexican buffet. 3:02 PM: yes, they can do a trompo al pastor. 4:08 PM: sent the written proposal for 70 guests (PDF \"Coti Kyle 70 Pax\", in Drive). Extra-hour cost still not stated. Nov 6 (WhatsApp): sent a short video of their María Félix room and asked whether we had looked at the quote.",
       "whatsapp": "+52 241 179 0080"
     },
     "quote": "WhatsApp Oct 27 (the hacienda's wedding planner, replying to our nudge): 7-hour base service counted from the start of the banquet (the ceremony doesn't use it up); no rigid end time, extra hours available. Banquet is in-house only, but flexible: from relaxed Mexican buffets and barbacoa tacos to 6-course dinners. 130+ rooms; no minimum and booking them isn't required. No guest minimum (weddings from 16 guests). No age limits; pets welcome. Gardens and salons for 20–300. One event per weekend. No prices yet: they invite us to visit (Saturday or Sunday) for a personalized quote. Oct 27, 7:02 PM: YES, their kitchen can do a fully Mexican-style buffet as we described. They proposed a video call (suggested tomorrow at 12 p.m.) for a virtual tour, room rates and a proposal for 70–80 guests. WhatsApp Oct 28: outside caterers or food vendors aren't allowed (house standards, as part of Tesoros de México); their own kitchen does the Mexican buffet. 3:02 PM: yes, they can handle a trompo al pastor station. Written proposal Oct 28 (PDF, 70 adults, salon or garden): MXN 2,480 a guest = 173,600 for 70; 15% off (MXN 2,108 a guest, 147,560) if booked in November 2026. Includes 7 hours plus a free hour for the guests' arrival and ceremony, a Mexican buffet, furniture, glassware and silverware, an event coordinator, waiters, cooks, cleaning, guarded parking and an emergency generator. Free with the package: menu and setup tasting, a suite for the wedding night, corkage, ice and Coca-Cola mixers, a space for the ceremony. Extras: their DJ (8 hours, LED and robotic lights) MXN 18,000; dance floor 14,000; clear or white tent 10×12 m 16,800; late-night chilaquiles, esquites and tacos de canasta 8,200 for 70; welcome cocktails MXN 350 a guest; full music package (sax, live band, DJ, norteño) 52,800. Rooms with breakfast (2026 event rates): MXN 2,690–3,590 a night for 1, 3,140–4,040 for 2, up to 4,640 for 4. Cash back: MXN 500 off the wedding bill for every adult guest who stays at the event rate. Extra-hour cost not stated.",
@@ -3097,21 +3104,137 @@
     ]
   },
   "yaxnic": {
-    "stage": "replied",
-    "date": "2026-10-30",
+    "stage": "quoted",
+    "date": "2026-11-04",
     "contact": {
       "channel": "email",
       "email": "reservas@haciendayaxnic.com",
       "whatsapp": "+52 999 102 9455",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests. 3:54 PM (WhatsApp, automated assistant): passed our 60–80-guest request to the sales team, who will send a custom quote in the same chat. Waiting on it. Oct 30 (email): answered all 7 questions; no prices yet, they asked us to continue on WhatsApp for their files. Oct 30: sent a (email) thank-you saying we’re reviewing their details and comparing several venues. Nov 4 (WhatsApp): thanked them for the answers and asked for the quote or packages with prices for 60–80 guests."
+      "status": "Oct 29: sent the template by email (reservas@haciendayaxnic.com) and on WhatsApp. Their site lists gardens, a consecrated chapel and room for up to 500 guests. Oct 29, 3:34 PM (WhatsApp, automated assistant): every wedding gets a custom proposal from their sales team covering music hours, kitchen and outside vendors, rooms, minimum guests, ages and a covered space; they asked for our tentative 2027 date. Same day: sent our tentative date (Sat Nov 13, 2027, or Nov 6) and 60–80 guests. 3:54 PM (WhatsApp, automated assistant): passed our 60–80-guest request to the sales team, who will send a custom quote in the same chat. Waiting on it. Oct 30 (email): answered all 7 questions; no prices yet, they asked us to continue on WhatsApp for their files. Oct 30: sent a (email) thank-you saying we’re reviewing their details and comparing several venues. Nov 4 (WhatsApp): thanked them for the answers and asked for the quote or packages with prices for 60–80 guests. Nov 4 (WhatsApp): sent their catalog with rental prices and invited us for a tour."
     },
     "end": "03:00",
     "end_h": 3,
     "end_src": "written",
     "taq_label": "Yes",
     "taq_txt": "Yes: outside taquero with no charge and no corkage; caterers work from their banquet area, not their kitchen (their email, Oct 30)",
-    "quote": "Email Oct 30: events run 8 hours from the start and can go until 3 a.m.; each extra hour costs 10% of the rent. We set our own timing. Outside taquero allowed with no charge, no corkage or outside-vendor fees; their kitchen isn’t lent to outside banquets, but they have a banquet area caterers use, and partner caterers they can recommend. Two rooms are free for the day; only the couple may stay the night, for MXN 3,000. No room minimum. No guest minimum and no charge for fewer. Teens welcome. Only event that day; covered corridors for rain. They can also supply furniture, tableware, food, drinks and waiters. Files to follow on WhatsApp (999 102 9455)."
+    "quote": "Email Oct 30: events run 8 hours from the start and can go until 3 a.m.; each extra hour costs 10% of the rent. We set our own timing. Outside taquero allowed with no charge, no corkage or outside-vendor fees; their kitchen isn’t lent to outside banquets, but they have a banquet area caterers use, and partner caterers they can recommend. Two rooms are free for the day; only the couple may stay the night, for MXN 3,000. No room minimum. No guest minimum and no charge for fewer. Teens welcome. Only event that day; covered corridors for rain. They can also supply furniture, tableware, food, drinks and waiters. Files to follow on WhatsApp (999 102 9455). Nov 4 (WhatsApp): sent their wedding catalog with rental rates: one garden MXN 75,000, gardens + house + corridors MXN 90,000, whole hacienda incl. the Cenote Club MXN 150,000 (IVA included; deposit to hold the date). Spaces: front corridor 120, back garden 200, main garden 1,000, Cenote Club 250; colonial chapel; equipped kitchen and a caterers area; 4 free hours for a pre-wedding photo shoot. About 30 min from Mérida on paved roads. They invited us to visit.",
+    "verified": true,
+    "rows": [
+      [
+        "Venue rental, one garden (2026 catalog): MXN 75,000 IVA included; 8 h event to 3 a.m.",
+        75000,
+        75000,
+        1,
+        "Their wedding catalog PDF (WhatsApp, Nov 4, in Drive). Gardens + house + corridors MXN 90,000; whole hacienda incl. Cenote Club MXN 150,000. Extra hour 10% of rent. Deposit required to hold the date.",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        16000,
+        16000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "catch": "Only 2 rooms (just the couple may stay); guests sleep in Mérida, ~30 min away"
   },
   "zotoluca": {
     "stage": "quoted",
@@ -3410,14 +3533,14 @@
       "channel": "email",
       "email": "informes@haciendasantamariaregla.com",
       "sent": "2026-10-28",
-      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information. Nov 2 (email): told them the date is still to be decided, that we are gathering preliminary information to find a venue that fits our vision, and asked for their packages and the space-only option. Nov 3: sales shared three package PDFs by Drive (Boda Hacienda, Diamante, Elite); priced from Boda Hacienda (verified). Nov 3 (email): asked whether we can bring an outside taquero and swap the plated menu for a Mexican buffet, their rooms and rates, and their rain plan for the garden."
+      "status": "Sent the template Oct 28. Oct 29 (email): automatic thank-you; a team member will contact us with packages, services and options. Waiting on their reply. Nov 2 (email, ventas3@): sales asked for our date, budget, and packages vs. space-only rental before sending information. Nov 2 (email): told them the date is still to be decided, that we are gathering preliminary information to find a venue that fits our vision, and asked for their packages and the space-only option. Nov 3: sales shared three package PDFs by Drive (Boda Hacienda, Diamante, Elite); priced from Boda Hacienda (verified). Nov 3 (email): asked whether we can bring an outside taquero and swap the plated menu for a Mexican buffet, their rooms and rates, and their rain plan for the garden. Nov 4 (email): outside vendor fee MXN 3,800; menu can change with any difference charged; 50 rooms for 135 people; rain plan B depending on guests."
     },
-    "quote": "Nov 3: sales shared three package PDFs on Drive (Boda Hacienda, Boda Diamante, Boda Elite, 2026 prices). Boda Hacienda: 8 hours total, ending by 2 a.m.; salon of choice (Hornos Ingleses, Hornos Españoles or Vizcaínas), hacienda grounds for photos, 1 h ceremony space with 6 aisle arrangements, decorated suite for the wedding night, DJ with lighting 6 h, 4-course plated menu (chicken, beef or pork) with tasting for 2, kids menu, free corkage 6 h with mixers, mineral water and ice, coffee, tables, Tiffany chairs, linens, china, centerpieces, head table, printed menus, 1 waiter per 15 guests. Price per guest + IVA: 50 guests MXN 2,800 (140,000), 60 MXN 2,600 (156,000), 70 MXN 2,400 (168,000), 80+ MXN 2,300 (184,000). Extra hour MXN 400 pp; garden instead of salon from 71 guests MXN 500 pp + IVA; kids 3–11 MXN 800 + IVA. Space-only rental also available on request. Not yet answered: outside taquero, rooms, rain plan beyond the indoor salons.",
+    "quote": "Nov 3: sales shared three package PDFs on Drive (Boda Hacienda, Boda Diamante, Boda Elite, 2026 prices). Boda Hacienda: 8 hours total, ending by 2 a.m.; salon of choice (Hornos Ingleses, Hornos Españoles or Vizcaínas), hacienda grounds for photos, 1 h ceremony space with 6 aisle arrangements, decorated suite for the wedding night, DJ with lighting 6 h, 4-course plated menu (chicken, beef or pork) with tasting for 2, kids menu, free corkage 6 h with mixers, mineral water and ice, coffee, tables, Tiffany chairs, linens, china, centerpieces, head table, printed menus, 1 waiter per 15 guests. Price per guest + IVA: 50 guests MXN 2,800 (140,000), 60 MXN 2,600 (156,000), 70 MXN 2,400 (168,000), 80+ MXN 2,300 (184,000). Extra hour MXN 400 pp; garden instead of salon from 71 guests MXN 500 pp + IVA; kids 3–11 MXN 800 + IVA. Space-only rental also available on request. Nov 4 (email): outside vendors pay an entry fee of MXN 3,800; the menu can be changed (e.g. to a buffet), paying any price difference. 50 rooms for up to 135 people (rates not given). A rain plan B is possible depending on guest count.",
     "verified": true,
     "end": "02:00",
     "end_h": 2,
     "end_src": "written",
-    "catch": "Plated 4-course menu in the package (no buffet stated); 2 a.m. end; outside taquero not answered",
+    "catch": "Plated menu by default (buffet swap at extra cost); outside vendor fee MXN 3,800; 2 a.m. end",
     "rows": [
       [
         "Boda Hacienda package (2026 prices): MXN 2,600 pp at 60 guests, 2,400 pp at 70 + 16% IVA (8 h, salon, ceremony space, DJ 6 h, 4-course plated menu, free corkage with mixers, furniture, centerpieces, suite)",
@@ -3429,10 +3552,10 @@
       ],
       [
         "Live taquero station (pastor, arrachera, pollo)",
-        9000,
-        10500,
+        12800,
+        14300,
         0,
-        "Outside taquero not answered yet",
+        "Includes their MXN 3,800 outside-vendor fee (email, Nov 4)",
         "taco"
       ],
       [
@@ -3507,7 +3630,9 @@
         "",
         "tips"
       ]
-    ]
+    ],
+    "taq_label": "Yes, fee",
+    "taq_txt": "Yes: outside vendor entry fee MXN 3,800; the menu can be swapped, paying any difference (their email, Nov 4)"
   },
   "sanmiguel_vall": {
     "stage": "replied",
@@ -3517,7 +3642,7 @@
       "email": "reservaciones@haciendasanmiguelyucatan.com",
       "whatsapp": "+52 985 110 5094",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply. Oct 31 (email): answered most questions (see quote), no prices; they asked for our wedding date. Nov 2 (email): told them the date is still to be decided and asked for packages and prices for both options."
+      "status": "Oct 29: sent the template by email (reservaciones@haciendasanmiguelyucatan.com). Waiting on their reply. Oct 31 (email): answered most questions (see quote), no prices; they asked for our wedding date. Nov 2 (email): told them the date is still to be decided and asked for packages and prices for both options. Nov 6 (email): follow-up asking whether we need any other information; packages and prices still not sent."
     },
     "end": "No limit",
     "end_h": 99,
@@ -3859,16 +3984,23 @@
     "taq_txt": "Yes: outside taquero and buffet allowed, no kitchen, corkage or vendor fees; new vendors sign their rules (their WhatsApp, Oct 29)"
   },
   "poxila": {
-    "stage": "asked",
-    "date": "2026-10-29",
+    "stage": "replied",
+    "date": "2026-11-08",
     "contact": {
       "channel": "email+whatsapp",
       "whatsapp": "+52 999 197 6032",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com. Nov 4: emailed the template to haciendapoxila@gmail.com.",
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com. Nov 4: emailed the template to haciendapoxila@gmail.com. Nov 8 (email): answered all 7 questions and sent their 2027 events brochure as a separate attachment.",
       "whatsapp_note": "999 197 6032 is an independent wedding planner, not the hacienda",
       "email": "haciendapoxila@gmail.com"
-    }
+    },
+    "end": "04:00",
+    "end_h": 4,
+    "end_src": "written",
+    "taq_label": "Yes",
+    "taq_txt": "Yes: any outside vendors, no entry fee (their email, Nov 8)",
+    "quote": "Email Nov 8: events last 8 hours; extra hours MXN 7,500 each; latest end 4 a.m. Any outside vendors allowed with no fee. 10 rooms (6 in the main house, 4 in Chan Poxilá on the grounds), double occupancy for 20 people: nine with one king, one with two queens. No minimum nights and not required to book all rooms, but nights and guests must be confirmed before signing the lodging contract (extras cost more after). No guest minimum. Teens welcome. Exclusive use of the hacienda for the event and during the stay. Rain: tents allowed; long corridors used in rain hold up to 100. Prices are in their 2027 events brochure (Gmail attachment, not yet read). For a personalized quote they want our full names, phone and which area of the hacienda.",
+    "catch": "Prices not read yet (brochure arrived as a Gmail attachment)"
   },
   "kinchil": {
     "stage": "quoted",
