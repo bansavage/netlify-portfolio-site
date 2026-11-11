@@ -4237,13 +4237,13 @@
     "taq_txt": "Yes: outside taquero and buffet allowed, no kitchen, corkage or vendor fees; new vendors sign their rules (their WhatsApp, Oct 29)"
   },
   "poxila": {
-    "stage": "replied",
+    "stage": "quoted",
     "date": "2026-11-11",
     "contact": {
       "channel": "email+whatsapp",
       "whatsapp": "+52 999 559 7388",
       "sent": "2026-10-29",
-      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com. Nov 4: emailed the template to haciendapoxila@gmail.com. Nov 8 (email): answered all 7 questions and sent their 2027 events brochure as a separate attachment. Nov 8: read the brochure (Kyle saved it): spaces and inclusions, no prices. The hacienda’s own WhatsApp is 999 559 7388. Nov 8 (email): sent our names, 60–80 guests, November 2027 (date TBD), interest in the Ceiba or Principal garden with all 10 rooms, and asked for rental and lodging prices. Nov 11 (email): sent a quote that includes lodging, as a Word document (\"Cotización Kyle Bansavage & Daina Luce nov 2026.docx\"); not read yet.",
+      "status": "Oct 29: sent the template on WhatsApp (no email published). Same day: a greeting from a wedding planner asking how they could help. Nov 4 (WhatsApp): replied to the planner pointing to our questions in the first message and asked for packages and prices for 60–80 guests, November 2027. Same day: they said they are an independent wedding planner, not the venue (the number was listed for Poxilá in a Yucatán Today article). Still need the hacienda itself: the same article lists +52 999 160 2833 and haciendapoxila@gmail.com. Nov 4: emailed the template to haciendapoxila@gmail.com. Nov 8 (email): answered all 7 questions and sent their 2027 events brochure as a separate attachment. Nov 8: read the brochure (Kyle saved it): spaces and inclusions, no prices. The hacienda’s own WhatsApp is 999 559 7388. Nov 8 (email): sent our names, 60–80 guests, November 2027 (date TBD), interest in the Ceiba or Principal garden with all 10 rooms, and asked for rental and lodging prices. Nov 11 (email): sent a quote that includes lodging, as a Word document (\"Cotización Kyle Bansavage & Daina Luce nov 2026.docx\"). Nov 11: read the quote (Kyle saved it): MXN 340,000 + IVA for the event (main or Ceiba garden, 8 h) plus 2 nights in all 10 suites with 3 meals a day; damage deposit MXN 15,000 refundable; 25/25/50 payments; valid 30 days.",
       "whatsapp_note": "999 197 6032 is an independent wedding planner, not the hacienda",
       "email": "haciendapoxila@gmail.com"
     },
@@ -4252,8 +4252,131 @@
     "end_src": "written",
     "taq_label": "Yes",
     "taq_txt": "Yes: any outside vendors, no entry fee (their email, Nov 8)",
-    "quote": "Email Nov 8: events last 8 hours; extra hours MXN 7,500 each; latest end 4 a.m. Any outside vendors allowed with no fee. 10 rooms (6 in the main house, 4 in Chan Poxilá on the grounds), double occupancy for 20 people: nine with one king, one with two queens. No minimum nights and not required to book all rooms, but nights and guests must be confirmed before signing the lodging contract (extras cost more after). No guest minimum. Teens welcome. Exclusive use of the hacienda for the event and during the stay. Rain: tents allowed; long corridors used in rain hold up to 100. Their 2027 events brochure (read Nov 8) has no prices. Rental includes exclusive use, a setup day before and teardown day after, storage, a kitchen/banquet area, basic installed lighting, guest parking, up to 8 hours, a 5-person hacienda crew, a getting-ready room, loading area and stocked restrooms for staff and guests. Gardens: Principal (front of the main house, up to 500), Ceiba (200), Polo (800), Bebederos (180); the last three have their own entrance. For a personalized quote they want our full names, phone and which area of the hacienda. Email Nov 11: quote with lodging sent as a Word document (not read yet).",
-    "catch": "No prices yet: the brochure lists what the rental includes but no rates"
+    "quote": "Email Nov 8: events last 8 hours; extra hours MXN 7,500 each; latest end 4 a.m. Any outside vendors allowed with no fee. 10 rooms (6 in the main house, 4 in Chan Poxilá on the grounds), double occupancy for 20 people: nine with one king, one with two queens. No minimum nights and not required to book all rooms, but nights and guests must be confirmed before signing the lodging contract (extras cost more after). No guest minimum. Teens welcome. Exclusive use of the hacienda for the event and during the stay. Rain: tents allowed; long corridors used in rain hold up to 100. Their 2027 events brochure (read Nov 8) has no prices. Rental includes exclusive use, a setup day before and teardown day after, storage, a kitchen/banquet area, basic installed lighting, guest parking, up to 8 hours, a 5-person hacienda crew, a getting-ready room, loading area and stocked restrooms for staff and guests. Gardens: Principal (front of the main house, up to 500), Ceiba (200), Polo (800), Bebederos (180); the last three have their own entrance. For a personalized quote they want our full names, phone and which area of the hacienda. Email Nov 11: quote with lodging sent as a Word document. Quote (Nov 10): event + lodging MXN 340,000 + 16% IVA (if paid by transfer): main garden (500 max) or Ceiba garden (200 max) plus two courtesy gardens for ceremony and cocktail, up to 8 h, setup and teardown days, kitchen area, basic lighting, parking, restrooms, 5 staff; 2 nights in all 10 suites (20 people) with breakfast, lunch, dinner, snacks and soft drinks, exclusive use of the hacienda. Refundable damage deposit MXN 15,000. Payments 25% at signing, 25% a month later, 50% a month before.",
+    "catch": "MXN 340,000 + IVA is one package with 2 nights in all 10 suites and meals for 20; only 20 beds, so most guests stay in Mérida (about 25 min). Rain: tents allowed or long corridors for up to 100.",
+    "rows": [
+      [
+        "Hacienda Poxilá event + lodging package: MXN 340,000 + 16% IVA (their quote, Nov 10); main garden or Ceiba garden, whole hacienda exclusive, 10 suites for 2 nights",
+        394400,
+        394400,
+        1,
+        "One package, any November 2027 weekend: main garden (up to 500) or Ceiba garden (up to 200) for the wedding on one day, plus two more gardens for ceremony and cocktail; event up to 8 h (extra hours MXN 7,500 each, latest 4 a.m.); setup day before 8 a.m.–7 p.m. and teardown day after 8 a.m.–5 p.m.; kitchen area for caterers, basic lighting, parking, restrooms, 5 hacienda staff. Lodging: 2 nights in all 10 suites (9 king, 1 with two queens; 20 people) with 3 meals a day plus snacks and soft drinks, room cleaning, exclusive use of the hacienda during the stay; liquor bought from our list at our cost. IVA applies when paying by transfer. Refundable damage deposit MXN 15,000. Payments: 25% at signing, 25% a month later, 50% plus the deposit a month before. Quote valid 30 days.",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Guest shuttles (round trip, late return)",
+        16000,
+        16000,
+        0,
+        "",
+        "shuttles"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "verified": true
   },
   "kinchil": {
     "stage": "quoted",
