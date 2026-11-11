@@ -476,22 +476,137 @@
     "catch": "Weeknight only at our size (Saturday minimum 100 guests); exclusive caterer, outside taquiza only as a late snack; 3 rooms on site"
   },
   "susula": {
-    "stage": "replied",
+    "stage": "quoted",
     "contact": {
       "channel": "email",
       "sent": "2026-10-24",
       "email": "haciendasusula@gmail.com",
       "phone": "+52 999 551 1641",
-      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing. Oct 29, 10:09 PM (WhatsApp): automatic greeting only; no quote yet. Oct 30, 5:54 PM (WhatsApp): asked for event type, name, guest count, date, services and a phone to quote. 6:49 PM: sent symbolic wedding, 60–80 guests, 2027 flexible (ideally November), banquet (taquiza and Mexican buffet) and rooms, contact on this WhatsApp. Nov 5 (email, from their sales address): answered the questions except the guest minimum; no prices yet. Nov 8 (email): asked for prices: garden rental for 60–80, room rates and the cost of all 29 rooms for exclusivity, extra-hour cost, and the guest minimum. Nov 10 (email): sent a quote PDF (\"Cotización - hospedaje todo incluido y banquete - noviembre - 80 pax\") and said the hacienda can never be fully exclusive (other areas stay in use), but the garden would be ours alone. PDF not read yet."
+      "status": "Oct 26: they asked for a phone number so their sales manager can call with a quote. Oct 26: we sent a phone number for their sales manager to call; Daina will help on the call. Oct 29: nudged by email and on WhatsApp (their site number) asking for the quote and answers in writing. Oct 29, 10:09 PM (WhatsApp): automatic greeting only; no quote yet. Oct 30, 5:54 PM (WhatsApp): asked for event type, name, guest count, date, services and a phone to quote. 6:49 PM: sent symbolic wedding, 60–80 guests, 2027 flexible (ideally November), banquet (taquiza and Mexican buffet) and rooms, contact on this WhatsApp. Nov 5 (email, from their sales address): answered the questions except the guest minimum; no prices yet. Nov 8 (email): asked for prices: garden rental for 60–80, room rates and the cost of all 29 rooms for exclusivity, extra-hour cost, and the guest minimum. Nov 10 (email): sent a quote PDF (\"Cotización - hospedaje todo incluido y banquete - noviembre - 80 pax\") and said the hacienda can never be fully exclusive (other areas stay in use), but the garden would be ours alone. Nov 11: read the quote PDF: main garden MXN 130,000 + IVA; ceremony garden MXN 30,000 + IVA optional; 27 rooms for 2 nights MXN 254,107.74 + IVA; rooms + garden MXN 384,107.74 + IVA (MXN 364,903 if booked by Nov 25, 2026); their banquet MXN 1,390 per person + IVA; garden until 10 p.m. unless all rooms are booked."
     },
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "end": "02:00",
     "end_h": 2,
     "end_src": "written",
     "taq_label": "Yes",
     "taq_txt": "Yes: bring your own catering and pay only the garden rental; their kitchen can’t be used, so caterers set up a tented kitchen behind the area (their email, Nov 5)",
-    "quote": "Email Nov 5 (sales, groups and banquets): without rooms, music and reception until 2 a.m.; it can be extended, with cost and length depending on whether we book rooms and on the date. We can bring our own catering and pay only the venue for the chosen area or garden; no kitchen use, caterers set up a tented kitchen behind. 29 rooms (standard, suite, master suite) for up to 62 people; rates depend on number of rooms and date, by quote. Teens welcome. Our event is guaranteed to be the only one only if we rent all the rooms. A covered salon for 50–60 is being built; for now the only covered area is the restaurant (90 people, divided spaces); tents can be rented. Not answered: guest minimum, extra-hour cost, venue price. Email Nov 10: quote sent as a PDF for 80 guests in November with all-inclusive lodging and banquet (not read yet). The hacienda is never fully exclusive, since other areas stay open for other activities, but our garden would be ours alone.",
-    "catch": "Exclusive only if all 29 rooms are booked; no covered salon yet (restaurant or tents for rain)"
+    "quote": "Email Nov 5 (sales, groups and banquets): without rooms, music and reception until 2 a.m.; it can be extended, with cost and length depending on whether we book rooms and on the date. We can bring our own catering and pay only the venue for the chosen area or garden; no kitchen use, caterers set up a tented kitchen behind. 29 rooms (standard, suite, master suite) for up to 62 people; rates depend on number of rooms and date, by quote. Teens welcome. Our event is guaranteed to be the only one only if we rent all the rooms. A covered salon for 50–60 is being built; for now the only covered area is the restaurant (90 people, divided spaces); tents can be rented. Not answered: guest minimum, extra-hour cost, venue price. Email Nov 10: quote sent as a PDF for 80 guests in November with all-inclusive lodging and banquet. The hacienda is never fully exclusive, since other areas stay open for other activities, but our garden would be ours alone. Quote PDF (Nov 10, for Nov 6, 2027): main garden for the dinner MXN 130,000 + IVA (up to 8 h, until 10 p.m.; later only if 100% of rooms are booked); optional ceremony garden MXN 30,000 + IVA; 27 rooms × 2 nights MXN 254,107.74 + IVA incl. breakfast (extra person MXN 950 + taxes); rooms + main garden MXN 384,107.74 + IVA, or MXN 364,903 + IVA if booked by Nov 25, 2026; their banquet MXN 1,390 per person + IVA (3-course plated); all-inclusive food and drinks optional at MXN 3,875 per person. Courtesies require booking both rooms and banquet, otherwise a proportional venue charge is added. Still unanswered: guest minimum, cost of extending past 10 p.m. / 2 a.m.",
+    "catch": "Garden is MXN 130,000 + IVA alone; the quote ends at 10 p.m. unless all rooms are booked (their Nov 5 email said 2 a.m. without rooms), and skipping their banquet or rooms adds a proportional venue charge. Never fully exclusive; no covered salon yet (restaurant or tents for rain).",
+    "rows": [
+      [
+        "Main garden (Jardín Susulá) for the dinner: MXN 130,000 + 16% IVA (their quote PDF, Nov 10)",
+        150800,
+        150800,
+        1,
+        "Quote for Nov 6, 2027, 80 guests: garden for up to 8 h, max 10 p.m. unless all rooms are booked (then the end time can change); includes cocktail area, private parking, restrooms, security, bridal room. Optional ceremony garden (Jardín Secreto) MXN 30,000 + IVA. Room block: 27 rooms for 2 nights (Fri–Sun, up to 84 people with extra-person fees) MXN 254,107.74 + IVA with American breakfast. Rooms + main garden = MXN 384,107.74 + IVA, or MXN 364,903 + IVA if booked by Nov 25, 2026. Their banquet (3-course plated, 7 h service, furniture, waiters) is MXN 1,390 per person + IVA (MXN 111,200 for 80) and is not in that total. Optional all-inclusive food and drinks MXN 3,875 per person for the stay. Courtesies apply only if rooms (2+ nights) and the banquet are both booked; dropping either adds a proportional venue charge. 30% deposit, rest in monthly payments, paid off 7 days before; quote valid 10 business days.",
+        "venue"
+      ],
+      [
+        "Mexican buffet (caterer, incl. furniture & waiters)",
+        45000,
+        52500,
+        0,
+        "",
+        "buffet"
+      ],
+      [
+        "Live taquero station (pastor, arrachera, pollo)",
+        9000,
+        10500,
+        0,
+        "",
+        "taco"
+      ],
+      [
+        "Open bar - BYO alcohol + bartenders",
+        21000,
+        24500,
+        0,
+        "",
+        "bar"
+      ],
+      [
+        "Mariachi, cocktail hour (1 h)",
+        6000,
+        6000,
+        0,
+        "",
+        "mariachi"
+      ],
+      [
+        "Live band (first part of reception)",
+        25000,
+        25000,
+        0,
+        "",
+        "band"
+      ],
+      [
+        "DJ + lighting + dance floor to ~2:30 a.m.",
+        20000,
+        20000,
+        0,
+        "",
+        "dj"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Coordinator (month-of)",
+        20000,
+        20000,
+        0,
+        "",
+        "coord"
+      ],
+      [
+        "Symbolic officiant",
+        8000,
+        8000,
+        0,
+        "",
+        "officiant"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Generator (planta de luz)",
+        12000,
+        12000,
+        0,
+        "",
+        "generator"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "verified": true
   },
   "cocoyoc": {
     "stage": "quoted",
