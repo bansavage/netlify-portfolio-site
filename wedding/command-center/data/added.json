@@ -223,6 +223,154 @@
       "src": [
         "https://yucatantoday.com/en/blog/your-special-event-at-a-yucatecan-hacienda"
       ]
+    },
+    {
+      "key": "dreams_tulum",
+      "name": "Dreams Tulum (Secret Garden)",
+      "short": "Dreams Tulum",
+      "status": "fit",
+      "groupLabel": "Riviera Maya",
+      "state": "Quintana Roo",
+      "town": "Tulum",
+      "place": "Tankah Bay, Tulum, Quintana Roo",
+      "place_hint": "Km 236 on the Chetumal–Puerto Juárez highway, Tankah Bay, north of Tulum",
+      "lat": 20.2557,
+      "lng": -87.4103,
+      "loc_precision": "approx",
+      "loc_note": "Pin placed at Tankah Bay from the resort’s address (Carretera Chetumal–Puerto Juárez km 236).",
+      "ap": "CUN",
+      "drive": 90,
+      "type": "resort",
+      "end": "03:00",
+      "end_h": 3,
+      "end_src": "written",
+      "taq_label": "House taquiza",
+      "taq_txt": "Live taquero through the resort only (USD 25 per guest, 2026); no outside food or drink",
+      "beds": 150,
+      "beds_txt": "Resort: guests stay on site (80% must)",
+      "rooms_usd": 6240,
+      "scores": {
+        "setting": 4,
+        "access": 3.1
+      },
+      "conf": "quote",
+      "description": "All-inclusive beach resort on Tankah Bay whose Secret Garden is a private, jungle-wrapped gazebo; our plan is a ceremony at the beach palapa, then cocktail hour and reception in the Secret Garden.",
+      "motifs": [
+        "beach",
+        "garden",
+        "palapa"
+      ],
+      "callouts": [
+        "Secret Garden reception, palapa ceremony",
+        "Everything through the resort: no outside food, drink or decorations",
+        "Outside vendors pay USD 1,000 + tax each",
+        "80% of guests must stay at the resort; others pay USD 60 for a pass",
+        "Guest count locks 20 days before"
+      ],
+      "reason": "Visited Oct 14, 2026; packages and prices from Lidise’s emails and the Paradise Weddings quote.",
+      "rows": [
+        [
+          "Secret Garden wedding package: USD 7,749 for 40 guests + USD 112 per extra guest (+16% tax +15% service on extras)",
+          198101,
+          225666,
+          1,
+          "Includes Secret Garden reception (required for this package), symbolic minister or Mayan shaman, on-site coordinator, cocktail hour (4 hors d’oeuvres), 3 h dinner with open bar (buffet over 50 guests), cake and sparkling wine, live Mexican trio for 45 min at cocktail hour, bouquet and boutonnieres, 50 photos and album, ceremony video, hair and makeup for one, couples spa treatment. Base price from the Paradise Weddings quote; whether it already includes tax and service is unconfirmed. Deposit USD 500.",
+          "venue"
+        ],
+        [
+          "Tulum Beach Palapa for the ceremony: USD 800 + 16% tax + 15% setup",
+          19690,
+          19690,
+          1,
+          "Covered palapa over the beach, up to 130 for a ceremony; curfew 10 p.m.; fee not refunded if moved for weather",
+          "venue"
+        ],
+        [
+          "Live taquero in place of / with the buffet: USD 25 per guest + 16% tax + 15% service (2 h, 2026)",
+          36918,
+          43072,
+          0,
+          "Lidise’s Aug 24 email: in place of the included buffet; whether it can run alongside the buffet, and the 2027 price, not confirmed",
+          "taquero_dreams"
+        ],
+        [
+          "Live band (versatile: salsa, norteño), 45 min: USD 2,800 + 16% tax",
+          59926,
+          59926,
+          1,
+          "Their Oct 24 email (2026 price); garden rules limit norteño to 10 p.m.",
+          "band_dreams"
+        ],
+        [
+          "Resort DJ with MC, 7 h (7 p.m.–2 a.m.): USD 2,000 for 5 h + 2 × USD 450 (+16% tax +15% setup)",
+          71376,
+          71376,
+          1,
+          "Their Oct 24 price sheet (2026). Outside DJs pay a USD 1,000 + tax vendor fee.",
+          "dj_dreams"
+        ],
+        [
+          "Late open bar 10 p.m.–2 a.m.: USD 18 per guest per hour + 16% tax + 15% service",
+          106325,
+          124046,
+          1,
+          "Only the Secret Garden, Dreams Garden and ballroom can go past 11 p.m.",
+          "bar_late"
+        ],
+        [
+          "Staff fee for going past 11 p.m.: USD 500 (31–60 guests) / USD 700 (61–90) + 16% tax + 15% service",
+          12306,
+          17229,
+          1,
+          "Their labor-fee table; reads as charged once",
+          "labor"
+        ],
+        [
+          "Outside photographer vendor fee: USD 1,000 + 16% tax",
+          21402,
+          21402,
+          1,
+          "Package photos cover the ceremony only; a full-day outside photographer pays this fee on top of their own price",
+          "vendor_fee"
+        ],
+        [
+          "Photographer (8-10 h)",
+          25000,
+          25000,
+          0,
+          "",
+          "photo"
+        ],
+        [
+          "Decor: papel picado + candles",
+          10000,
+          10000,
+          0,
+          "",
+          "decor"
+        ],
+        [
+          "Lighting / lounge / misc rentals",
+          8000,
+          8000,
+          0,
+          "",
+          "extras"
+        ],
+        [
+          "Tips (waiters, taqueros, bartenders)",
+          6000,
+          6000,
+          0,
+          "",
+          "tips"
+        ]
+      ],
+      "photos_url": "https://www.instagram.com/dreamstulum/",
+      "src": [
+        "https://www.instagram.com/dreamstulum/"
+      ],
+      "nextstep": "Teams call Nov 13: confirm tax on base price, 3 a.m. in writing, taquero with the buffet, papel picado price"
     }
   ]
 }

@@ -70,7 +70,9 @@ export const taqOK = (v) => v.taq_label === "Yes" || v.taq_label === "Likely" ||
 export function passes(r, f = S.ui.filters) {
   const v = r.v;
   const st = S.venues[v.key];
-  if (f.star) { if (!(st && st.star)) return false; }
+  // a list someone shared by link shows exactly those venues, whatever their status
+  if (f.keys && f.keys.length) { if (!f.keys.includes(v.key)) return false; }
+  else if (f.star) { if (!(st && st.star)) return false; }
   else if (!f.show[r.status]) return false;
   if (f.regions && f.regions.length && !f.regions.includes(v.groupLabel)) return false;
   if (f.q && !v._hay.includes(norm(f.q))) return false;

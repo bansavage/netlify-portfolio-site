@@ -4527,5 +4527,120 @@
       "sent": "2026-10-30",
       "status": "Oct 30: sent the 7-question template by email (address from Yucatán Today). Waiting on their reply."
     }
+  },
+  "dreams_tulum": {
+    "stage": "quoted",
+    "date": "2026-11-13",
+    "verified": true,
+    "contact": {
+      "channel": "email (via Paradise Weddings)",
+      "sent": "2026-09-29",
+      "email": "lidise.che@dreamsresorts.com",
+      "status": "Sep 29: asked for a site visit. Oct 14: toured with the wedding sales coordinator. Oct 21: sent our setup and asked for pricing. Oct 24 (email): package inclusions (Secret Garden, Beyond Memorable), mariachi USD 900 + tax, versatile band USD 2,800 + tax for 45 min, DJ price sheet, extra hours USD 18 per guest per hour + tax + service plus a labor fee after 11 p.m., deposits USD 500 / 750, 80% paid 20 days before. Oct 24: asked for a written taquiza and buffet spec. Nov 11: Teams call set for Nov 13. Nov 13: plan set: palapa ceremony, Secret Garden reception, Mexican trio, live band, DJ, papel picado, about 50 guests."
+    },
+    "quote": "Secret Garden package USD 7,749 for 40 + USD 112 per extra guest (+16% tax +15% service), includes reception in the Secret Garden, cocktail hour with Mexican trio (45 min), 3 h dinner and open bar, cake, minister, ceremony photos and video. Beyond Memorable USD 13,349 for 50–79 (needs 75 paid room nights). Palapa ceremony USD 800 + tax + 15% setup. Live taquero USD 25 per guest + tax + service for 2 h (2026). Versatile band USD 2,800 + tax for 45 min. DJ USD 2,000 for 5 h + USD 450 per extra hour (+tax +setup). Extra hours USD 18 per guest per hour + tax + service; labor fee USD 500 (31–60 guests) past 11 p.m. Our plan for 50 guests to 1 a.m. ≈ USD 22,800; to 3 a.m. ≈ USD 26,400.",
+    "catch": "Everything goes through the resort (no outside food, drink, decorations or string lights; outside vendors pay USD 1,000 + tax each), the guest count locks 20 days out, and 80% of guests must stay at the resort. Tax on the package base price is unconfirmed. Priced here to 2 a.m.",
+    "rows": [
+      [
+        "Secret Garden wedding package: USD 7,749 for 40 guests + USD 112 per extra guest (+16% tax +15% service on extras)",
+        198101,
+        225666,
+        1,
+        "Includes Secret Garden reception (required for this package), symbolic minister or Mayan shaman, on-site coordinator, cocktail hour (4 hors d’oeuvres), 3 h dinner with open bar (buffet over 50 guests), cake and sparkling wine, live Mexican trio for 45 min at cocktail hour, bouquet and boutonnieres, 50 photos and album, ceremony video, hair and makeup for one, couples spa treatment. Base price from the Paradise Weddings quote; whether it already includes tax and service is unconfirmed. Deposit USD 500.",
+        "venue"
+      ],
+      [
+        "Tulum Beach Palapa for the ceremony: USD 800 + 16% tax + 15% setup",
+        19690,
+        19690,
+        1,
+        "Covered palapa over the beach, up to 130 for a ceremony; curfew 10 p.m.; fee not refunded if moved for weather",
+        "venue"
+      ],
+      [
+        "Live taquero in place of / with the buffet: USD 25 per guest + 16% tax + 15% service (2 h, 2026)",
+        36918,
+        43072,
+        0,
+        "Lidise’s Aug 24 email: in place of the included buffet; whether it can run alongside the buffet, and the 2027 price, not confirmed",
+        "taquero_dreams"
+      ],
+      [
+        "Live band (versatile: salsa, norteño), 45 min: USD 2,800 + 16% tax",
+        59926,
+        59926,
+        1,
+        "Their Oct 24 email (2026 price); garden rules limit norteño to 10 p.m.",
+        "band_dreams"
+      ],
+      [
+        "Resort DJ with MC, 7 h (7 p.m.–2 a.m.): USD 2,000 for 5 h + 2 × USD 450 (+16% tax +15% setup)",
+        71376,
+        71376,
+        1,
+        "Their Oct 24 price sheet (2026). Outside DJs pay a USD 1,000 + tax vendor fee.",
+        "dj_dreams"
+      ],
+      [
+        "Late open bar 10 p.m.–2 a.m.: USD 18 per guest per hour + 16% tax + 15% service",
+        106325,
+        124046,
+        1,
+        "Only the Secret Garden, Dreams Garden and ballroom can go past 11 p.m.",
+        "bar_late"
+      ],
+      [
+        "Staff fee for going past 11 p.m.: USD 500 (31–60 guests) / USD 700 (61–90) + 16% tax + 15% service",
+        12306,
+        17229,
+        1,
+        "Their labor-fee table; reads as charged once",
+        "labor"
+      ],
+      [
+        "Outside photographer vendor fee: USD 1,000 + 16% tax",
+        21402,
+        21402,
+        1,
+        "Package photos cover the ceremony only; a full-day outside photographer pays this fee on top of their own price",
+        "vendor_fee"
+      ],
+      [
+        "Photographer (8-10 h)",
+        25000,
+        25000,
+        0,
+        "",
+        "photo"
+      ],
+      [
+        "Decor: papel picado + candles",
+        10000,
+        10000,
+        0,
+        "",
+        "decor"
+      ],
+      [
+        "Lighting / lounge / misc rentals",
+        8000,
+        8000,
+        0,
+        "",
+        "extras"
+      ],
+      [
+        "Tips (waiters, taqueros, bartenders)",
+        6000,
+        6000,
+        0,
+        "",
+        "tips"
+      ]
+    ],
+    "end": "03:00",
+    "end_h": 3,
+    "taq_label": "House taquiza",
+    "taq_txt": "Live taquero through the resort only (USD 25 per guest, 2026); no outside food or drink"
   }
 }

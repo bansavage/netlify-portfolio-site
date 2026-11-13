@@ -61,8 +61,31 @@ function show(tab) {
   document.getElementById("gNum").textContent = (tab === "norte" ? S.cfg.norte.guests : S.cfg.guests).plan;
 }
 
+// A shared link (#/venues?list=...&region=...) sets the venue filters once, then tidies the URL.
+function applyShared(qs) {
+  const p = new URLSearchParams(qs), f = S.ui.filters, ST = ["top", "fit", "wild", "over", "out"];
+  const list = (p.get("list") || "").split(",").filter((k) => app.byKey.has(k));
+  f.keys = list;
+  f.star = false;
+  if (!list.length) {
+    const show = (p.get("show") || ST.slice(0, 4).join(",")).split(",");
+    ST.forEach((s) => { f.show[s] = show.includes(s); });
+    f.regions = p.get("region") ? p.get("region").split("|") : [];
+    f.q = p.get("q") || "";
+    f.quick = p.get("quick") ? p.get("quick").split(",") : [];
+  } else { f.regions = []; f.q = ""; f.quick = []; }
+  f.sort = p.get("sort") || "rank";
+  commit("filters");
+}
+
 function parseHash() {
-  const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  const raw = location.hash.replace(/^#\/?/, "");
+  const qi = raw.indexOf("?");
+  if (qi >= 0) {
+    applyShared(raw.slice(qi + 1));
+    history.replaceState(null, "", "#/" + raw.slice(0, qi));
+  }
+  const h = decodeURIComponent(qi >= 0 ? raw.slice(0, qi) : raw);
   const [tab, key] = h.split("/");
   return { tab: tab || S.ui.tab || "overview", key: key || null };
 }

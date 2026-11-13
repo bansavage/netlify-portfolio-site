@@ -7,7 +7,7 @@ const KEY = "venue-hunt-cc:v1";
 
 const DEFAULT_UI = {
   tab: "overview",
-  filters: { q: "", regions: [], show: { top: true, fit: true, wild: true, over: true, out: false }, quick: [], star: false, sort: "rank" },
+  filters: { q: "", regions: [], show: { top: true, fit: true, wild: true, over: true, out: false }, quick: [], star: false, keys: [], sort: "rank" },
   venueView: "table",
   layers: { lines: true, names: true, cities: true, airports: false, vnames: false },
   panel: "shown",

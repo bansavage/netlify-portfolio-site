@@ -5,7 +5,7 @@ import { S, commit, venueState } from "../store.js";
 import { app, nav, STATUS, pinHTML, regionsList, shortEnd, shortBeds, allResults } from "../app.js";
 import { illo } from "../illo.js";
 import { photoTag } from "../photos.js";
-import { esc, k, kMXN, vbadge, ICON, debounce } from "../util.js";
+import { esc, k, kMXN, vbadge, ICON, debounce, copyText, toast } from "../util.js";
 import { STAGES } from "../defaults.js";
 import { budgetBar } from "../drawer.js";
 
@@ -33,6 +33,7 @@ function toolbarHTML() {
       </select>
       <span class="grow"></span>
       <span class="count" id="vCount"></span>
+      <button class="btn sm" type="button" id="vShare" title="Copy a link that opens this exact filtered list">${ICON.link} Share this view</button>
       <div class="seg" role="group" aria-label="Layout"><button type="button" data-vv="table" aria-pressed="${S.ui.venueView === "table"}">${ICON.table} Table</button><button type="button" data-vv="cards" aria-pressed="${S.ui.venueView === "cards"}">${ICON.grid} Cards</button></div>
     </div>
     <div class="tb-row" id="vChips"></div>
@@ -45,12 +46,30 @@ function chipsHTML() {
   for (const r of allResults()) counts[r.status] = (counts[r.status] || 0) + 1;
   const nStar = Object.values(S.venues).filter((s) => s.star).length;
   const ST = ["top", "fit", "wild", "over", "out"];
-  const allOn = !f.star && ST.every((s) => f.show[s]);
+  const shared = f.keys && f.keys.length;
+  const allOn = !shared && !f.star && ST.every((s) => f.show[s]);
   const total = ST.reduce((n, s) => n + (counts[s] || 0), 0);
   // "All" shows every status; a status chip shows only that status
   const st = `<button class="fchip" type="button" data-show="all" aria-pressed="${allOn}">All <span class="n">${total}</span></button>` + ST.map((s) => `<button class="fchip" type="button" data-show="${s}" aria-pressed="${!allOn && !!f.show[s] && !f.star}" style="--c:${STATUS[s].color}"><span class="dot${s === "wild" ? " dia" : ""}"></span>${STATUS[s].label} <span class="n">${counts[s] || 0}</span></button>`).join("");
   const q = QUICK.map(([id, l]) => `<button class="fchip" type="button" data-q="${id}" aria-pressed="${f.quick.includes(id)}">${l}</button>`).join("");
-  return `${st}<button class="fchip" type="button" data-star aria-pressed="${!!f.star}">${ICON.star} Shortlist <span class="n">${nStar}</span></button><span style="width:10px"></span>${q}`;
+  const sh = shared ? `<button class="fchip" type="button" data-clearkeys aria-pressed="true" title="Clear the shared list">Shared list <span class="n">${f.keys.length}</span> ✕</button>` : "";
+  return `${sh}${st}<button class="fchip" type="button" data-star aria-pressed="${!!f.star && !shared}">${ICON.star} Shortlist <span class="n">${nStar}</span></button><span style="width:10px"></span>${q}`;
+}
+
+// A link that reopens this exact list for someone else. A shortlist (or a shared list) travels
+// as the venue keys, since stars live in each person's own browser; other filters travel as-is.
+function shareURL() {
+  const f = S.ui.filters, p = new URLSearchParams();
+  if (f.star || (f.keys && f.keys.length)) p.set("list", app.list.map((r) => r.v.key).join(","));
+  else {
+    const ST = ["top", "fit", "wild", "over", "out"];
+    p.set("show", ST.filter((s) => f.show[s]).join(","));
+    if (f.regions.length) p.set("region", f.regions.join("|"));
+    if (f.q) p.set("q", f.q);
+    if (f.quick.length) p.set("quick", f.quick.join(","));
+  }
+  if (f.sort && f.sort !== "rank") p.set("sort", f.sort);
+  return `${location.origin}${location.pathname}#/venues?${p.toString()}`;
 }
 
 function dots(n) { let s = ""; for (let i = 1; i <= 5; i++) s += `<i class="${n >= i - 0.25 ? "on" : ""}"></i>`; return `<span class="dots" title="Setting ${n} of 5">${s}</span>`; }
@@ -131,12 +150,15 @@ export const venues = {
       if (vv) { S.ui.venueView = vv.dataset.vv; vv.parentElement.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b === vv))); commit("ui"); renderBody(); return; }
       const star = e.target.closest("[data-star]");
       if (star && star.dataset.star) { const st = venueState(star.dataset.star); st.star = !st.star; commit("venue"); return; }
-      if (star) { f.star = !f.star; commit("filters"); return; }
+      if (star) { f.keys = []; f.star = !f.star; commit("filters"); return; }
+      if (e.target.closest("[data-clearkeys]")) { f.keys = []; commit("filters"); return; }
+      if (e.target.closest("#vShare")) { copyText(shareURL()).then(() => toast(`Link copied: ${app.list.length} venues, as filtered`), () => toast("Couldn't copy the link")); return; }
       const sh = e.target.closest("[data-show]");
       if (sh) {
         const ST = ["top", "fit", "wild", "over", "out"], want = sh.dataset.show;
         const only = !f.star && ST.filter((s) => f.show[s]).length === 1 && f.show[want];
         f.star = false;
+        f.keys = [];
         // clicking the one status already shown goes back to All
         ST.forEach((s) => { f.show[s] = want === "all" || only ? true : s === want; });
         commit("filters");
