@@ -1,0 +1,5 @@
+---
+// Homepage hero only. Each letter rises in turn: 120ms, then 32ms apart.
+const letters = [...'Bansavage'];
+---
+<h1 class="bs-wordmark" aria-label="Bansavage">{letters.map((letter, i) => <span aria-hidden="true" class="bs-rise" style={`animation-delay:${120 + i * 32}ms`}>{letter}</span>)}</h1>

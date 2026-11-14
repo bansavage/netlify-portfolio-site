@@ -1,0 +1,25 @@
+---
+// Opens a subpage: the title, one lead (second sentence muted), and up to two actions.
+interface Action {
+  label: string;
+  href: string;
+}
+interface Props {
+  title: string;
+  lead: string;
+  leadMuted?: string;
+  primary?: Action;
+  secondary?: Action;
+}
+const { title, lead, leadMuted, primary, secondary } = Astro.props;
+---
+<div class="bs-wrap bs-pagehead">
+  <h1 class="bs-statement">{title}</h1>
+  <p class="bs-lead">{lead}{leadMuted && <Fragment> <span class="bs-muted">{leadMuted}</span></Fragment>}</p>
+  {(primary || secondary) && (
+    <div class="bs-actions">
+      {primary && <a class="bs-button" href={primary.href}>{primary.label}</a>}
+      {secondary && <a class="bs-link" href={secondary.href}>{secondary.label}</a>}
+    </div>
+  )}
+</div>

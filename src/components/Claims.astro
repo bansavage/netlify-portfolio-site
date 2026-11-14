@@ -1,0 +1,14 @@
+---
+// Three short claims under the hero. No section header.
+import { claims } from '../data/site';
+---
+<section class="bs-wrap bs-section">
+  <div class="bs-claims">
+    {claims.map((claim) => (
+      <div class="bs-claim">
+        <h2 class="bs-claim__title">{claim.title}</h2>
+        <p class="bs-claim__text">{claim.text}</p>
+      </div>
+    ))}
+  </div>
+</section>

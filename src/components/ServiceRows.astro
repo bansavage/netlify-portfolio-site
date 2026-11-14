@@ -1,0 +1,19 @@
+---
+interface Row {
+  title: string;
+  text: string;
+  href?: string;
+}
+interface Props {
+  rows: Row[];
+}
+const { rows } = Astro.props;
+---
+<ul class="bs-rows">
+  {rows.map((row) => (
+    <li class="bs-row">
+      <h3 class="bs-row__title">{row.href ? <a href={row.href}>{row.title}</a> : row.title}</h3>
+      <p class="bs-row__text">{row.text}</p>
+    </li>
+  ))}
+</ul>

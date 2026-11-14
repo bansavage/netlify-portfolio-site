@@ -1,0 +1,18 @@
+---
+// Sticky bar on every page. On the homepage the links stay in-page; elsewhere they lead home.
+interface Props {
+  home?: boolean;
+}
+const { home = false } = Astro.props;
+const base = home ? '' : '/';
+---
+<header class="bs-nav">
+  <div class="bs-wrap bs-nav__bar">
+    <a class="bs-nav__brand" href={home ? '#top' : '/'}>Bansavage</a>
+    <nav class="bs-nav__links" aria-label="Main">
+      <a class="bs-nav__link" href={`${base}#services`}>Services</a>
+      <a class="bs-nav__link" href={`${base}#work`}>Work</a>
+      <a class="bs-button bs-button--sm" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>

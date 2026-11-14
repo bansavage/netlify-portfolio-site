@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Statement from '../components/Statement.astro';
+---
+<Base noindex title="Page not found — Bansavage" description="There’s nothing at this address.">
+  <PageHeader
+    title="Page not found"
+    lead="There’s nothing at this address."
+    leadMuted="The homepage is a better place to start."
+    primary={{ label: 'Go to the homepage', href: '/' }}
+  />
+
+  <Statement />
+</Base>

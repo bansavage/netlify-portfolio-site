@@ -1,0 +1,43 @@
+---
+// Ported from design/homepage.dc.html in the handoff.
+import Base from '../layouts/Base.astro';
+import ChromeForm from '../components/ChromeForm.astro';
+import Wordmark from '../components/Wordmark.astro';
+import Claims from '../components/Claims.astro';
+import Section from '../components/Section.astro';
+import ServiceRows from '../components/ServiceRows.astro';
+import ClientList from '../components/ClientList.astro';
+import Statement from '../components/Statement.astro';
+import { contact, services, site } from '../data/site';
+
+const serviceRows = services.map((service) => ({
+  title: service.name,
+  text: service.summary,
+  href: `/${service.slug}/`,
+}));
+---
+<Base home title={site.title} description={site.description}>
+  <section class="bs-wrap bs-hero">
+    <ChromeForm />
+    <Wordmark />
+    <div class="bs-hero__foot bs-fadeup" style="animation-delay:520ms;animation-duration:560ms">
+      <p class="bs-lead">{site.lead} <span class="bs-muted">{site.leadMuted}</span></p>
+      <div class="bs-actions">
+        <a class="bs-button" href={`mailto:${contact.email}`}>Start a project</a>
+        <a class="bs-link" href="#work">See the work</a>
+      </div>
+    </div>
+  </section>
+
+  <Claims />
+
+  <Section id="services" title="What I build">
+    <ServiceRows rows={serviceRows} />
+  </Section>
+
+  <Section id="work" title="Trusted by discerning brands">
+    <ClientList />
+  </Section>
+
+  <Statement />
+</Base>
