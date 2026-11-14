@@ -2,8 +2,8 @@
 
 export const contact = {
   email: 'kyle@bansavage.dev',
-  linkedin: 'https://www.linkedin.com/in/kylebansavage/',
-  github: 'https://github.com/bansavage',
+  linkedin: 'https://www.linkedin.com/company/bansavage',
+  github: 'https://github.com/bansavage-Inc/',
 };
 
 export const site = {
