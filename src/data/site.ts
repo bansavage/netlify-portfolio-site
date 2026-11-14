@@ -64,7 +64,7 @@ export type Service = {
   summary: string; // the one-sentence row on the homepage
   lead: string;
   leadMuted: string;
-  workHref: string; // where "See the work" points
+  workHref?: string; // where "See the work" points; omitted when the page has no work section
   sections: ServiceSection[];
 };
 
@@ -154,7 +154,6 @@ export const services: Service[] = [
     summary: 'Native iPhone apps, designed, built, and shipped to the App Store.',
     lead: 'Native iPhone apps that feel at home on the device.',
     leadMuted: 'Designed, built, and shipped to the App Store.',
-    workHref: '/#work',
     sections: [
       {
         title: 'What I build',
@@ -183,7 +182,6 @@ export const services: Service[] = [
     summary: 'Fast, hand-built brand and marketing sites.',
     lead: 'Brand and marketing sites, built by hand and built to be fast.',
     leadMuted: 'Written for your site alone, not adapted from a template.',
-    workHref: '/#work',
     sections: [
       {
         title: 'What I build',

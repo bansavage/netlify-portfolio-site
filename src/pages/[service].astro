@@ -20,7 +20,7 @@ const { service } = Astro.props as { service: Service };
     lead={service.lead}
     leadMuted={service.leadMuted}
     primary={{ label: 'Start a project', href: `mailto:${contact.email}` }}
-    secondary={{ label: 'See the work', href: service.workHref }}
+    secondary={service.workHref ? { label: 'See the work', href: service.workHref } : undefined}
   />
 
   {service.sections.map((section) => (
