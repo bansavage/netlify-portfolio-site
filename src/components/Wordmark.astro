@@ -1,5 +1,11 @@
 ---
-// Homepage hero only. Each letter rises in turn: 120ms, then 32ms apart.
-const letters = [...'Bansavage'];
+// Hero headline in display-wordmark: "Bansavage" on the homepage, "404" on the error page.
+// Each character rises in turn: 120ms, then 32ms apart.
+interface Props {
+  text?: string;
+  label?: string;
+}
+const { text = 'Bansavage', label = text } = Astro.props;
+const chars = [...text];
 ---
-<h1 class="bs-wordmark" aria-label="Bansavage">{letters.map((letter, i) => <span aria-hidden="true" class="bs-rise" style={`animation-delay:${120 + i * 32}ms`}>{letter}</span>)}</h1>
+<h1 class="bs-wordmark" aria-label={label}>{chars.map((char, i) => <span aria-hidden="true" class="bs-rise" style={`animation-delay:${120 + i * 32}ms`}>{char}</span>)}</h1>
