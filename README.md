@@ -15,7 +15,7 @@ npm run build    # static output in dist/
 - `src/components/`: one Astro component per part in the design system.
 - `src/styles/bundle.css` and `src/scripts/bansavage-form.js`: copies of the design handoff's component bundle. `bundle.css` is verbatim. `bansavage-form.js` adds one thing, the load intro where the form starts as an orb and pushes out its arms (`intro` option); keep that when dropping in a newer handoff.
 - `src/styles/tokens.css`: the design tokens from `tokens.json`. `src/styles/site.css`: the few site-level rules outside the bundle.
-- `public/`: the favicon set (a black "B" in Geist Serif) and robots.txt.
+- `public/`: the favicon set (a white Geist SemiBold "B" on black) and robots.txt.
 
 ## Design rules, in short
 
