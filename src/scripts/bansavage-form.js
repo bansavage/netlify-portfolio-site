@@ -1,4 +1,6 @@
-/* Bansavage bundle. One export: Bansavage.mountForm(canvas, options) draws the live chrome form. It has no React components. */
+/* Bansavage bundle. One export: Bansavage.mountForm(canvas, options) draws the live chrome form. It has no React components.
+   Site change from the design handoff: an optional `intro` (and `introDelay`) where the form starts as an orb and
+   pushes out its arms. Search for "intro" to see it; carry it over if this file is replaced with a newer handoff. */
 (function () {
   'use strict';
 
@@ -202,15 +204,17 @@
     try { ctx = canvas.getContext('2d'); } catch (err) { ctx = null; }
     var glx = initGL();
     var s = {
-      raf: 0, last: 0, spin: 0.7, clock: 0, arm: 0, top: null, kick: 0,
+      raf: 0, last: 0, spin: 0.7, clock: 0, arm: 0, top: null, kick: 0, intro: 0,
       scale: 1, acc: 0, n: 0, errs: 0, drawn: false, dead: false
     };
     var m = new Float32Array(9);
     var ua = new Float32Array(48);
     var ub = new Float32Array(48);
 
-    function pose(t, ta, reach) {
+    /* g is the intro's growth, 0 (arms drawn in, one orb) to 1 (full form); it may overshoot slightly. */
+    function pose(t, ta, reach, g) {
       var count = LOBES.length;
+      var bulb = 0.55 + 0.45 * Math.min(g, 1);
       for (var n = 0; n < count; n++) {
         var o = LOBES[n];
         var vx = o[0] + 0.03 * Math.sin(t * 0.11 + n * 1.7);
@@ -223,10 +227,10 @@
         var u = ta / o[8] + o[9];
         u = u - Math.floor(u);
         var e = armCurve(u);
-        var r1 = o[6] * (1.06 - 0.12 * e);
-        var r0 = o[5] * (1.1 - 0.22 * e);
-        var d1 = Math.min(o[4] + o[7] * reach * e, 0.98 - r1);
+        var r1 = o[6] * (1.06 - 0.12 * e) * bulb;
+        var r0 = o[5] * (1.1 - 0.22 * e) * bulb;
         var d0 = o[3];
+        var d1 = d0 + (Math.min(o[4] + o[7] * reach * e, 0.98 - r1) - d0) * g;
         var hh = Math.max(d1 - d0, Math.abs(r1 - r0) + 0.03);
         var bb = (r0 - r1) / hh;
         var aa = Math.sqrt(Math.max(0, 1 - bb * bb));
@@ -275,12 +279,12 @@
     }
 
     /* Flat drawing for browsers without WebGL. */
-    function draw2d(w, h, count) {
+    function draw2d(w, h, count, core) {
       ctx.clearRect(0, 0, w, h);
       var cx = w * 0.5;
       var cy = h * 0.5;
       var k = Math.min(w, h) * 0.44;
-      var orbs = [{ x: 0, y: 0, z: 0, r: 0.23 }];
+      var orbs = [{ x: 0, y: 0, z: 0, r: core * (0.23 / 0.18) }];
       for (var n = 0; n < count; n++) {
         var d1 = ua[n * 4 + 3] + ub[n * 4];
         var ox = ua[n * 4] * d1;
@@ -345,7 +349,18 @@
       s.clock += dt;
       s.arm += dt * pace;
       var t = s.clock;
-      var count = pose(t, s.arm, reach);
+      /* Intro: an orb for `introDelay` seconds, then the arms push out over `intro` seconds
+         while the core shrinks back. Off when intro is 0, skipped under reduced motion. */
+      var introLen = clamp(num(opts.intro, 0), 0, 6);
+      var g = 1;
+      if (introLen > 0 && !reduce) {
+        s.intro += dt;
+        var p = clamp((s.intro - clamp(num(opts.introDelay, 0.35), 0, 3)) / introLen, 0, 1);
+        var q = p - 1;
+        g = 1 + 2.2 * q * q * q + 1.2 * q * q; /* ease out with a small overshoot */
+      }
+      var core = 0.18 + 0.24 * (1 - clamp(g, 0, 1));
+      var count = pose(t, s.arm, reach, g);
       matrix(s.spin);
       if (glx && glx.gl.isContextLost()) { glx = null; }
       if (glx) {
@@ -362,7 +377,7 @@
         gl.uniform4fv(u.a, ua);
         gl.uniform4fv(u.b, ub);
         gl.uniform1f(u.n, count);
-        gl.uniform1f(u.core, 0.18);
+        gl.uniform1f(u.core, core);
         gl.uniform1f(u.k, 0.1);
         gl.uniform1f(u.warp, 0.02);
         gl.uniform3f(u.ph, (t * 0.17) % 6.2831853, (t * 0.14) % 6.2831853, (t * 0.12) % 6.2831853);
@@ -372,7 +387,7 @@
         ctx.clearRect(0, 0, w, h);
         ctx.drawImage(gc, 0, 0);
       } else {
-        draw2d(w, h, count);
+        draw2d(w, h, count, core);
       }
       s.drawn = true;
     }

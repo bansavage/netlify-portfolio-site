@@ -9,6 +9,10 @@ export interface FormOptions {
   sheen?: number;
   /** False stops scrolling from nudging the rotation. Default true. */
   scroll?: boolean;
+  /** Site addition: seconds for the load intro, where an orb pushes out its arms. 0 to 6, default 0 (off). */
+  intro?: number;
+  /** Site addition: seconds the orb holds before the arms push out. 0 to 3, default 0.35. */
+  introDelay?: number;
 }
 export interface FormHandle {
   set(options: FormOptions): void;

@@ -10,6 +10,7 @@
 
   const canvas = document.getElementById('bs-form');
   if (canvas instanceof HTMLCanvasElement) {
-    window.Bansavage.mountForm(canvas, { sheen: 0.5 });
+    // Starts as an orb, then pushes out its arms once on load.
+    window.Bansavage.mountForm(canvas, { sheen: 0.5, intro: 1.4 });
   }
 </script>
