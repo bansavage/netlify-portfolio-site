@@ -1,0 +1,19 @@
+---
+// The closing block on every page. Spacing follows the approved homepage.
+import { contact } from '../data/site';
+
+interface Props {
+  line?: string;
+}
+const { line = 'Tell me what you’re building.' } = Astro.props;
+---
+<section id="contact" class="bs-wrap bs-section" style="padding-bottom:clamp(56px,7vw,104px)">
+  <div class="bs-section__inner" style="display:block">
+    <h2 class="bs-statement">{line}</h2>
+    <div class="bs-actions" style="padding-top:clamp(24px,3.4vw,48px);column-gap:28px">
+      <a class="bs-button" href={`mailto:${contact.email}`}>{contact.email}</a>
+      <a class="bs-link" href={contact.linkedin}>LinkedIn</a>
+      <a class="bs-link" href={contact.github}>GitHub</a>
+    </div>
+  </div>
+</section>

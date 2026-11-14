@@ -1,0 +1,18 @@
+/* Site-level rules that sit outside the component bundle (bundle.css stays a verbatim copy of the handoff). */
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Bare links follow the homepage design. :where() keeps every bs- class in charge. */
+:where(a) { color: var(--ink); }
+:where(a:hover) { color: var(--ink-muted); }
+:where(a:focus-visible) { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* In-page targets clear the 64px sticky nav. */
+:where(section[id]) { scroll-margin-top: 64px; }
+
+/* Homepage service titles link to their pages, styled like the client links.
+   Vertical padding on the inline link makes a 44px tap target without moving the row. */
+.bs-row__title a { color: inherit; text-decoration: none; padding: 9px 0; }
+.bs-row__title a:hover { color: var(--ink-muted); }
+.bs-row__title a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }

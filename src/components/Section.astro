@@ -1,0 +1,16 @@
+---
+// A band that opens with a hairline: header on the left, content on the right.
+interface Props {
+  title: string;
+  id?: string;
+}
+const { title, id } = Astro.props;
+---
+<section id={id} class="bs-wrap bs-section">
+  <div class="bs-section__inner">
+    <h2 class="bs-section__head">{title}</h2>
+    <div class="bs-section__body">
+      <slot />
+    </div>
+  </div>
+</section>

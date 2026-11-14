@@ -1,0 +1,7 @@
+---
+// Names only, linked. The stylesheet draws the slashes.
+import { clients } from '../data/site';
+---
+<ul class="bs-clients">
+  {clients.map((client) => <li><a href={client.url}>{client.name}</a></li>)}
+</ul>

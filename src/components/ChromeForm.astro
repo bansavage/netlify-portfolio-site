@@ -1,0 +1,16 @@
+---
+// The one live chrome object. Hero only, one per page, nothing behind or over it.
+---
+<div class="bs-form bs-fadeup">
+  <canvas id="bs-form" role="img" aria-label="A chrome form with five rounded arms, slowly rotating"></canvas>
+</div>
+
+<script>
+  import '../scripts/bansavage-form.js';
+
+  const canvas = document.getElementById('bs-form');
+  if (canvas instanceof HTMLCanvasElement) {
+    // Starts as an orb, then pushes out its arms once on load.
+    window.Bansavage.mountForm(canvas, { sheen: 0.5, intro: 1.4 });
+  }
+</script>

@@ -1,0 +1,19 @@
+---
+// Built like the homepage hero: chrome form, a rising "404", then the lead and actions.
+import Base from '../layouts/Base.astro';
+import ChromeForm from '../components/ChromeForm.astro';
+import Wordmark from '../components/Wordmark.astro';
+---
+<Base noindex contactHref="/#contact" title="Page not found — Bansavage" description="There’s nothing at this address.">
+  <section class="bs-wrap bs-hero">
+    <ChromeForm />
+    <Wordmark text="404" label="404: page not found" />
+    <div class="bs-hero__foot bs-fadeup" style="animation-delay:420ms;animation-duration:560ms">
+      <p class="bs-lead">There’s nothing at this address.</p>
+      <div class="bs-actions">
+        <a class="bs-button" href="/">Go to the homepage</a>
+        <a class="bs-link" href="/#services">See what I build</a>
+      </div>
+    </div>
+  </section>
+</Base>
