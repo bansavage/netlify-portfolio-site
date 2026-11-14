@@ -2,6 +2,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://bansavage.dev',
+  site: 'https://www.bansavage.dev',
   trailingSlash: 'always',
 });
